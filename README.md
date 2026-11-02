@@ -1,5 +1,5 @@
 # HOMEGUARD AI NOMAD
-### Portable Home-and-Outdoor Intelligent Guardian
+### Portable Outdoor Intelligent Guardian
 
 **Your Intelligent Guardian. Wherever You Go.**
 
@@ -27,7 +27,26 @@ HOMEGUARD AI is a software-first building-condition intelligence platform. It or
 
 The 29-capability catalogue is a roadmap, not 29 implemented models. No trained model is required for the first demonstrator.
 
-## HOMEGUARD AI NOMAD — portable robot concept (PROPOSED)
+## HOMEGUARD AI robot family — two purpose-built designs (PROPOSED)
+
+HOMEGUARD AI should use **two separate robot types** rather than forcing one physical platform to perform equally well indoors and outdoors. They share the PUI89 AI Core, evidence model, reporting approach and safety principles, but have different mechanical designs, sensors, navigation and environmental protection.
+
+| Product | Intended environment | Design priority |
+|---|---|---|
+| **HOMEGUARD AI HOME** | Indoor homes and buildings | Compact, quiet movement; safe navigation around people, furniture and pets; indoor mapping; return to a charging dock |
+| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Portable four-wheel all-terrain platform; GPS when available; local navigation; weather protection; outdoor monitoring |
+
+### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
+
+HOME is a dedicated indoor mobile-robot concept. Its priorities are a compact footprint, low-noise movement, careful navigation through doors and corridors, obstacle and drop-off awareness, privacy-conscious sensing, and reliable docking. Its final dimensions, wheel arrangement, sensor package, battery and charging design remain open engineering decisions; no unverified hardware specification is claimed.
+
+### HOMEGUARD AI NOMAD — outdoor robot concept (PROPOSED)
+
+NOMAD is the separate outdoor platform for owner-supervised travel and camping. It retains the proposed portable, four-wheel all-terrain design and outdoor sensing goals described below. It is not intended to be the indoor home-patrol robot.
+
+### Shared intelligence, separate physical platforms
+
+Both products are intended to share PUI89 AI Core capabilities: observe, verify evidence quality, understand context, assess uncertainty and risk, choose a safe response, and explain the result to the owner. Indoor and outdoor navigation, sensor configuration, mechanical design and environmental limits must remain product-specific.
 
 ### How HOMEGUARD AI NOMAD is intended to work
 
@@ -54,18 +73,19 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 
 The design priority is a low, wide, lightweight body that one person can lift and transport. The 8 kg target and dimensions are engineering goals, not verified performance. Final dimensions depend on battery capacity, sensor selection, stability, weather protection, payload and safety testing.
 
-A future NOMAD robot may extend the software platform with these missions:
+A future NOMAD robot may extend the software platform with these outdoor missions:
 
-1. **Protect:** autonomously patrol approved indoor areas, identify unusual activity and report evidence for human review.
+1. **Outdoor awareness:** monitor an owner-approved travel or campsite area, identify potentially relevant activity and report evidence for human review. Indoor patrol belongs to the separate HOME product.
 2. **Detect hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
 3. **Explore:** build and update maps, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
 4. **Travel and camping:** accompany its owner on trips and monitor an approved campsite while the owner rests, reporting possible movement, wildlife, smoke or environmental changes for human review. This is awareness support, not wildlife deterrence or guaranteed protection.
 
-### Home, travel and camping operating profiles (PROPOSED)
+### NOMAD outdoor operating profiles (PROPOSED)
 
-- **Home mode:** indoor patrol, building-condition awareness, possible wildlife alerts and return to a home dock.
 - **Travel mode:** owner-supervised outdoor movement in a defined operating area, with GPS outdoors and local navigation where GPS is unavailable or unsuitable.
 - **Camping night mode:** quiet monitoring with reduced lighting and non-essential sound; alert the owner when a potentially relevant event is detected.
+
+HOME has its own indoor operating profile and charging-dock concept; it is a separate robot design, not another mode of NOMAD.
 - **Outdoor hardware goals:** weather-resistant enclosure; all-terrain wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
 - **Safe return / safe stop:** return to its owner only when localization, route safety and battery reserve are sufficient. If safe return cannot be established, stop safely and alert the owner when communication is available.
 - **Operating limits:** define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not send the robot roaming into unknown wilderness without supervision.
