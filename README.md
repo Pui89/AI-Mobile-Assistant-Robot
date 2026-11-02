@@ -34,7 +34,7 @@ HOMEGUARD AI should use **two separate robot types** rather than forcing one phy
 | Product | Intended environment | Design priority |
 |---|---|---|
 | **HOMEGUARD AI HOME** | Indoor homes and buildings | Compact, quiet movement; safe navigation around people, furniture and pets; indoor mapping; return to a charging dock |
-| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Portable four-wheel all-terrain platform; GPS when available; local navigation; weather protection; outdoor monitoring |
+| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Suitcase-sized portable platform; four compact wheels; retractable handle; removable battery; supervised outdoor monitoring |
 
 ### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
 
@@ -42,7 +42,7 @@ HOME is a dedicated indoor mobile-robot concept. Its priorities are a compact fo
 
 ### HOMEGUARD AI NOMAD — outdoor robot concept (PROPOSED)
 
-NOMAD is the separate outdoor platform for owner-supervised travel and camping. It retains the proposed portable, four-wheel all-terrain design and outdoor sensing goals described below. It is not intended to be the indoor home-patrol robot.
+NOMAD is the separate outdoor platform for owner-supervised travel and camping. Its proposed form is suitcase-sized and slim, with four compact wheels, a retractable travel handle and a removable battery. It is not intended to be the indoor home-patrol robot.
 
 ### Shared intelligence, separate physical platforms
 
@@ -69,9 +69,9 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Body width | 30–35 cm |
 | Body length | 40–45 cm |
 | Target total weight | Approximately 8 kg |
-| Wheels | Four all-terrain wheels, approximately 10–13 cm diameter |
+| Wheels | Four compact wheels, approximately 10–13 cm diameter |
 
-The design priority is a low, wide, lightweight body that one person can lift and transport. The 8 kg target and dimensions are engineering goals, not verified performance. Final dimensions depend on battery capacity, sensor selection, stability, weather protection, payload and safety testing.
+The design priority is a slim, hard-shell travel case that one person can carry and transport. The 8–12 kg target and 15 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
 
 A future NOMAD robot may extend the software platform with these outdoor missions:
 
@@ -86,7 +86,7 @@ A future NOMAD robot may extend the software platform with these outdoor mission
 - **Camping night mode:** quiet monitoring with reduced lighting and non-essential sound; alert the owner when a potentially relevant event is detected.
 
 HOME has its own indoor operating profile and charging-dock concept; it is a separate robot design, not another mode of NOMAD.
-- **Outdoor hardware goals:** weather-resistant enclosure; all-terrain wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
+- **Outdoor hardware goals:** weather-resistant enclosure; compact wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
 - **Safe return / safe stop:** return to its owner only when localization, route safety and battery reserve are sufficient. If safe return cannot be established, stop safely and alert the owner when communication is available.
 - **Operating limits:** define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not send the robot roaming into unknown wilderness without supervision.
 
