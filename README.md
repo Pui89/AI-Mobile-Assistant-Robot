@@ -105,6 +105,21 @@ Safety is a design requirement, not a capability that can be claimed without tes
 
 The HOMEGUARD AI NOMAD robot, its suitcase-sized dimensions, 8–10 kg target and 12 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
+
+## Shared HOME and NOMAD handling standard (PROPOSED)
+
+Both products use the same one-person handling design goals and the same complete-weight limits. Their body shapes remain different for their environments; neither is intended to be heavier by design.
+
+| Requirement | HOME — indoor | NOMAD — portable outdoor |
+|---|---|---|
+| Hand lifting | Recessed ergonomic grips on both sides | Integrated top lifting handle plus recessed side grips |
+| Hand pulling | Retractable rear pull handle | Retractable telescopic pull handle |
+| Wheels | Four compact wheels | Four compact suitcase-style wheels |
+| Complete weight target | 8–10 kg | 8–10 kg |
+| Absolute maximum complete weight | 12 kg | 12 kg |
+
+The complete weight includes the battery, sensors, computer, wheels, handles and casing. These values are engineering targets, not measured specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms must be tested before any safety or validation claim. One-person lifting comfort cannot be guaranteed for every person.
+
 ## Quick start
 Requires Python 3.11+.
 ```bash
