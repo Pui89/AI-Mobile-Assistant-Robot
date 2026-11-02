@@ -33,16 +33,27 @@ The HOMEGUARD AI software platform is a software-first building-condition intell
 
 The 29-capability catalogue is a roadmap, not 29 implemented models. No trained model is required for the first demonstrator.
 
-## Future mobile robot concept (PROPOSED)
+## HOMEGUARD AI NOMAD — portable robot concept (PROPOSED)
 
-A future Homeguard AI mobile robot may extend the platform with three missions:
+| Physical design target | Proposed value |
+|---|---:|
+| Overall height, including sensor pod | Up to 50 cm |
+| Main body height | Approximately 30–35 cm |
+| Body width | 30–35 cm |
+| Body length | 40–45 cm |
+| Total weight | Approximately 8 kg |
+| Wheels | Four all-terrain wheels, approximately 10–13 cm diameter |
+
+These are preliminary design targets, not measured specifications. The priority is a low, wide body that one person can lift and transport. Final dimensions and mass depend on battery capacity, sensors, chassis strength, stability, weather sealing and safety tests.
+
+The proposed NOMAD platform has four missions:
 
 1. **Protect:** autonomously patrol approved indoor areas, identify unusual activity and report evidence for human review.
 2. **Detect hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
 3. **Explore:** build and update maps, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
 4. **Travel and camping:** accompany its owner on trips and monitor an approved campsite while the owner rests, reporting possible movement, wildlife, smoke or environmental changes for human review. This is awareness support, not wildlife deterrence or guaranteed protection.
 
-### Home, Travel and Camping modes (PROPOSED)
+### Home, Travel and Camping operating modes (PROPOSED)
 
 - **Home mode:** supervised indoor patrol, building-condition awareness, cautious wildlife alerts and return to the home dock.
 - **Travel mode:** accompany the owner in a defined outdoor operating area; use GPS outdoors with local navigation and obstacle avoidance.
