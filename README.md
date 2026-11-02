@@ -3,7 +3,11 @@
 
 **Detect Early. Locate Precisely. Protect Better.**
 
-![HOMEGUARD AI — Evidence-driven building intelligence](docs/images/homeguard-ai-overview.svg)
+<p align="center"><img src="docs/images/homeguard-ai-mark.svg" alt="HOMEGUARD AI geometric building intelligence mark" width="310" /></p>
+
+![HOMEGUARD AI — Building intelligence concept](docs/images/homeguard-ai-building-concept.svg)
+
+> **How it works:** Observe building conditions → locate each observation → verify evidence quality → understand the building's changing state → recommend human-reviewed action → measure whether the improvement worked.
 
 > **How it works:** Sense building conditions → locate evidence in the building → check data quality and uncertainty → maintain a building world-state → create a human-reviewed evidence report.
 
