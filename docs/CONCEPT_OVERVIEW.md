@@ -2,7 +2,7 @@
 
 HOMEGUARD AI is a software-first building-condition intelligence concept. It brings building observations into one traceable view, checks whether the evidence is trustworthy, compares it with documented baselines and helps a responsible person decide what should be verified.
 
-![HOMEGUARD AI concept overview](../docs/images/homeguard-ai-overview.svg)
+![HOMEGUARD AI concept overview](images/homeguard-ai-overview.svg)
 
 ## How to read the concept
 
