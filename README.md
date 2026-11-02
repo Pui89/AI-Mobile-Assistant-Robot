@@ -31,11 +31,21 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 
 <p align="center"><em>Concept illustration only — proposed design, not a built or certified robot.</em></p>
 
-A future Homeguard AI mobile robot may extend the platform with three missions:
+A future Homeguard AI mobile robot may extend the platform with four missions:
 
 1. **Protect:** autonomously patrol approved indoor areas, identify unusual activity and report evidence for human review.
-2. **Detect hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
+2. **Detect building hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
 3. **Explore:** build and update an indoor map, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
+4. **Wildlife intrusion detection:** detect and report possible snakes and other reptiles inside the home, including geckos, lizards and monitor lizards. Estimate their location and movement, preserve a visual evidence snapshot where privacy settings permit, and send an alert for human review. Species identification and confidence must be treated cautiously; an uncertain snake sighting should be handled as potentially dangerous.
+
+### Wildlife safety behaviour (PROPOSED)
+
+- Keep a safe distance; do not touch, chase, corner, scare, trap or attempt to remove an animal.
+- Do not block its escape route or move closer to obtain a better image.
+- Stop movement or retreat only when the robot can do so without approaching the animal; otherwise remain at a safe distance and alert the homeowner.
+- Notify people to keep children and pets away. For a suspected snake, advise contacting a qualified local wildlife or snake-rescue service.
+- Report the sighting location, time, direction of travel, image evidence (if permitted) and model confidence. Clearly label uncertain classifications.
+- Avoid unnecessary indoor recording; process locally where feasible and apply privacy-by-design controls.
 
 ### Robot safety and protective engineering
 
@@ -47,7 +57,7 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The mobile robot is a **future proposal only**. It has not been built, integrated, certified or validated. Its sensors, mobility, battery protection, fire performance and any explosion-protection rating will require separate requirements, engineering reviews and test evidence before deployment.
+The mobile robot and wildlife-detection capability are **future proposals only**. They have not been built, integrated, certified or validated. Sensors, animal detection, species classification, mobility, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 ## Quick start
 Requires Python 3.11+.
