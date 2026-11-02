@@ -29,6 +29,10 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 
 ## HOMEGUARD AI NOMAD — portable robot concept (PROPOSED)
 
+![HOMEGUARD AI NOMAD mobile guardian engineering concept](docs/images/homeguard-ai-nomad.svg)
+
+**Design direction:** a compact, low-profile four-wheel rover with a protected central chassis, raised 360-degree sensor mast, forward obstacle-sensing pod, visible status lighting and guarded wheel modules. The proposed platform is intended for owner-supervised home, travel and campsite awareness—not confrontation or autonomous emergency response.
+
 <em>Physical design target — concept only, not a built or measured specification.</em>
 
 | Design parameter | Proposed target |
