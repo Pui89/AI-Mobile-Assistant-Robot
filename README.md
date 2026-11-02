@@ -29,6 +29,14 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 
 ## HOMEGUARD AI NOMAD — portable robot concept (PROPOSED)
 
+### How HOMEGUARD AI NOMAD is intended to work
+
+![HOMEGUARD AI NOMAD working concept: observe, check evidence, understand context, choose safely, and report to the owner](docs/images/homeguard-ai-nomad-working.svg)
+
+**Proposed workflow:** observe → check evidence quality → understand location and context → choose a safe movement state → report to the owner. The owner reviews alerts and decides what action to take. The robot should return only when its location, route and battery reserve are safe; otherwise it should stop safely.
+
+This is an explanatory concept, not an implemented autonomous system. Sensor inputs, navigation, return-to-owner and safe-stop behaviour require separate engineering and testing.
+
 <p align="center"><img src="docs/images/homeguard-ai-nomad-concept.svg" alt="HOMEGUARD AI NOMAD portable four-wheel robot concept" width="720" /></p>
 
 *Latest NOMAD robot concept illustration — proposed design, not a built or validated robot.*
