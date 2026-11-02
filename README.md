@@ -42,7 +42,7 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 | Body width | 30–35 cm |
 | Body length | 40–45 cm |
 | Total weight | Approximately 8 kg |
-| Wheels | Four all-terrain wheels, approximately 10–13 cm diameter |
+| Wheels | **Four all-terrain wheels total — two on each side**, approximately 10–13 cm diameter |
 
 These are preliminary design targets, not measured specifications. The priority is a low, wide body that one person can lift and transport. Final dimensions and mass depend on battery capacity, sensors, chassis strength, stability, weather sealing and safety tests.
 
@@ -58,7 +58,7 @@ The proposed NOMAD platform has four missions:
 - **Home mode:** supervised indoor patrol, building-condition awareness, cautious wildlife alerts and return to the home dock.
 - **Travel mode:** accompany the owner in a defined outdoor operating area; use GPS outdoors with local navigation and obstacle avoidance.
 - **Camping mode:** quiet night monitoring with reduced lighting and non-essential sound; notify the owner about potentially relevant events.
-- **Outdoor hardware goals:** weather-resistant enclosure; four all-terrain wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
+- **Outdoor hardware goals:** weather-resistant enclosure; exactly four all-terrain wheels (two on each side); low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
 - **Safe return / safe stop:** return to the owner only when localization, route safety and battery reserve are sufficient. Otherwise stop safely and alert the owner when communication is available.
 - **Operating limits:** define and test rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not allow unsupervised roaming into unknown wilderness.
 
