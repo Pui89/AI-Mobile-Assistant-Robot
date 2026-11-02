@@ -29,6 +29,10 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 
 ## HOMEGUARD AI NOMAD — portable robot concept (PROPOSED)
 
+<p align="center"><img src="docs/images/homeguard-ai-nomad-concept.svg" alt="HOMEGUARD AI NOMAD portable four-wheel robot concept" width="720" /></p>
+
+*Latest NOMAD robot concept illustration — proposed design, not a built or validated robot.*
+
 <em>Physical design target — concept only, not a built or measured specification.</em>
 
 | Design parameter | Proposed target |
