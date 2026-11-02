@@ -1,15 +1,25 @@
-# HOMEGUARD AI
-### Evidence-Driven Multi-Modal Predictive Building Intelligence
+# HOMEGUARD AI NOMAD
+### Portable Home-and-Outdoor Intelligent Guardian
+
+**Your Intelligent Guardian. Wherever You Go.**
+
+> **Product naming:** HOMEGUARD AI is the evidence-driven software platform; **HOMEGUARD AI NOMAD** is its proposed portable mobile-robot product. GitHub repository: `Pui89/Homeguard-Ai-Nomad`.
 
 **Detect Early. Locate Precisely. Protect Better.**
 
 <p align="center"><img src="docs/images/homeguard-ai-mark.svg" alt="HOMEGUARD AI geometric building intelligence mark" width="310" /></p>
 
-![HOMEGUARD AI — Building intelligence concept](docs/images/homeguard-ai-building-concept.svg)
+![HOMEGUARD AI — Building intelligence software concept](docs/images/homeguard-ai-building-concept.svg)
+
+### HOMEGUARD AI NOMAD — physical robot concept
+
+![HOMEGUARD AI NOMAD compact four-wheel portable robot concept with 360-degree sensor pod and portable charging dock](docs/images/homeguard-ai-nomad-concept.svg)
+
+<sub>Illustrative design only. The robot has not been built, and the drawing does not represent verified dimensions or tested performance.</sub>
 
 > **How it works:** Observe building conditions → locate each observation → verify evidence quality → understand the building's changing state → recommend human-reviewed action → measure whether the improvement worked.
 
-HOMEGUARD AI is a software-first building-condition intelligence platform. It organizes observations from structural, electrical, fire/life-safety, water, environmental, acoustic, light and thermal sources; compares them with documented baselines; exposes uncertainty; and helps people prioritize verification.
+The HOMEGUARD AI software platform is a software-first building-condition intelligence system. HOMEGUARD AI NOMAD is the proposed portable robot product intended to extend this evidence-first approach into home and owner-supervised outdoor environments. It organizes observations from structural, electrical, fire/life-safety, water, environmental, acoustic, light and thermal sources; compares them with documented baselines; exposes uncertainty; and helps people prioritize verification.
 
 > **Current status: FOUNDATION / SIMULATION-ONLY.** This is an initial deterministic software demonstrator, not a deployed building-monitoring product. No real sensor integration, trained AI model, certified alarm, structural certification or real-world hazard-detection performance is claimed.
 
@@ -29,7 +39,17 @@ A future Homeguard AI mobile robot may extend the platform with three missions:
 
 1. **Protect:** autonomously patrol approved indoor areas, identify unusual activity and report evidence for human review.
 2. **Detect hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
-3. **Explore:** build and update an indoor map, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
+3. **Explore:** build and update maps, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
+4. **Travel and camping:** accompany its owner on trips and monitor an approved campsite while the owner rests, reporting possible movement, wildlife, smoke or environmental changes for human review. This is awareness support, not wildlife deterrence or guaranteed protection.
+
+### Home, Travel and Camping modes (PROPOSED)
+
+- **Home mode:** supervised indoor patrol, building-condition awareness, cautious wildlife alerts and return to the home dock.
+- **Travel mode:** accompany the owner in a defined outdoor operating area; use GPS outdoors with local navigation and obstacle avoidance.
+- **Camping mode:** quiet night monitoring with reduced lighting and non-essential sound; notify the owner about potentially relevant events.
+- **Outdoor hardware goals:** weather-resistant enclosure; four all-terrain wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
+- **Safe return / safe stop:** return to the owner only when localization, route safety and battery reserve are sufficient. Otherwise stop safely and alert the owner when communication is available.
+- **Operating limits:** define and test rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not allow unsupervised roaming into unknown wilderness.
 
 ### Robot safety and protective engineering
 
@@ -41,7 +61,7 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The mobile robot is a **future proposal only**. It has not been built, integrated, certified or validated. Its sensors, mobility, battery protection, fire performance and any explosion-protection rating will require separate requirements, engineering reviews and test evidence before deployment.
+HOMEGUARD AI NOMAD, its 8 kg / 50 cm design targets, operating modes and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 ## Quick start
 Requires Python 3.11+.
