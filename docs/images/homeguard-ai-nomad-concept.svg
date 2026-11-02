@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">HOMEGUARD AI NOMAD portable guardian robot concept</title>
+<desc id="desc">A compact low-profile four-wheel outdoor robot with a rounded navy protective body, cyan status lighting, a raised 360-degree sensor module, front cameras, rugged wheels and a portable charging dock. Concept illustration only.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#0b2943"/></linearGradient>
+ <linearGradient id="shell" x1="0" y1="0" x2="0.9" y2="1"><stop stop-color="#254c70"/><stop offset=".48" stop-color="#102b46"/><stop offset="1" stop-color="#071726"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42cde8"/><stop offset=".5" stop-color="#a0fbff"/><stop offset="1" stop-color="#35bfe3"/></linearGradient>
+ <linearGradient id="tire" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#304b61"/><stop offset="1" stop-color="#07111d"/></linearGradient>
+ <filter id="glow" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="13" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="24"/></filter>
+</defs>
+<rect width="1600" height="1000" rx="38" fill="url(#bg)"/>
+<g opacity=".14" stroke="#5de7fa" fill="none"><path d="M90 790H1510M140 170H1460M240 110V870M1360 110V870" stroke-dasharray="5 14"/><circle cx="800" cy="510" r="380"/><circle cx="800" cy="510" r="300"/></g>
+<ellipse cx="780" cy="795" rx="510" ry="65" fill="#000" opacity=".45" filter="url(#shadow)"/>
+<!-- portable dock -->
+<g transform="translate(1190 660)">
+ <path d="M0 90L175 55L285 92L110 132Z" fill="#0b1b2b" stroke="#3c7897" stroke-width="4"/>
+ <path d="M18 85L180 55L260 83L98 115Z" fill="#173b58"/>
+ <path d="M44 78L180 53L226 69L90 95Z" fill="none" stroke="url(#cyan)" stroke-width="5" filter="url(#glow)"/>
+ <path d="M50 117L50 143M236 96L236 121" stroke="#1a3a53" stroke-width="12"/>
+ <text x="142" y="177" fill="#8bddea" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" letter-spacing="4">PORTABLE DOCK</text>
+</g>
+<!-- wheels -->
+<g>
+ <g transform="translate(400 650) rotate(-12)"><rect x="-54" y="-125" width="110" height="250" rx="45" fill="url(#tire)" stroke="#42647c" stroke-width="8"/><path d="M-40 -80H40M-45 -25H45M-45 30H45M-38 82H38" stroke="#66849a" stroke-width="9" opacity=".45"/><circle r="39" fill="#0b1b2b" stroke="#5de7fa" stroke-width="5"/></g>
+ <g transform="translate(1040 645) rotate(12)"><rect x="-54" y="-125" width="110" height="250" rx="45" fill="url(#tire)" stroke="#42647c" stroke-width="8"/><path d="M-40 -80H40M-45 -25H45M-45 30H45M-38 82H38" stroke="#66849a" stroke-width="9" opacity=".45"/><circle r="39" fill="#0b1b2b" stroke="#5de7fa" stroke-width="5"/></g>
+</g>
+<!-- chassis -->
+<path d="M350 520Q365 445 465 415L965 390Q1075 410 1115 500L1090 685Q1074 746 990 770L465 750Q360 735 335 660Z" fill="url(#shell)" stroke="#47718d" stroke-width="8"/>
+<path d="M400 540Q425 475 495 458L950 440Q1035 455 1060 525L1040 660Q1018 706 955 716L475 700Q405 690 385 635Z" fill="#0a1d30" stroke="#234e6b" stroke-width="5"/>
+<!-- upper protective shell -->
+<path d="M430 490Q455 420 545 400L900 382Q1010 395 1045 475L1020 620Q1000 670 930 680L505 670Q435 660 415 600Z" fill="url(#shell)" stroke="#47718d" stroke-width="7"/>
+<path d="M470 494Q500 445 560 435L900 420Q965 430 990 490" fill="none" stroke="#78d9eb" stroke-width="4" opacity=".38"/>
+<!-- side cyan light -->
+<path d="M460 645Q680 680 950 652" fill="none" stroke="url(#cyan)" stroke-width="10" stroke-linecap="round" filter="url(#glow)"/>
+<!-- front face and camera -->
+<path d="M670 555Q800 525 930 552L910 628Q800 652 690 628Z" fill="#06111e" stroke="#3d6d88" stroke-width="5"/>
+<circle cx="800" cy="586" r="34" fill="#102e48" stroke="#5de7fa" stroke-width="5"/><circle cx="800" cy="586" r="17" fill="#5de7fa" opacity=".8" filter="url(#glow)"/>
+<circle cx="715" cy="580" r="12" fill="#80f6ff"/><circle cx="885" cy="580" r="12" fill="#80f6ff"/>
+<!-- sensor mast -->
+<path d="M770 400L770 300Q770 276 800 276Q830 276 830 300L830 397Z" fill="#0b2034" stroke="#4d7e99" stroke-width="6"/>
+<rect x="700" y="218" width="200" height="95" rx="38" fill="url(#shell)" stroke="#5a8ca7" stroke-width="7"/>
+<path d="M720 260H880" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+<circle cx="800" cy="264" r="18" fill="#06121f" stroke="#9afaff" stroke-width="5"/>
+<circle cx="800" cy="264" r="7" fill="#9afaff"/>
+<!-- 360 arc -->
+<path d="M670 205Q800 135 930 205" fill="none" stroke="#5de7fa" stroke-width="4" stroke-dasharray="8 12" opacity=".75"/>
+<path d="M800 150V120M650 190L630 170M950 190L970 170" stroke="#5de7fa" stroke-width="4"/>
+<!-- annotations -->
+<g font-family="Arial,sans-serif" fill="#dffaff">
+ <text x="800" y="80" font-size="36" font-weight="700" text-anchor="middle" letter-spacing="8">HOMEGUARD AI NOMAD</text>
+ <text x="800" y="118" font-size="19" text-anchor="middle" fill="#7fd9e9" letter-spacing="5">PORTABLE HOME + OUTDOOR GUARDIAN · CONCEPT</text>
+ <path d="M920 260L1130 190H1280" stroke="#63dff2" stroke-width="3" fill="none"/><circle cx="920" cy="260" r="6" fill="#63dff2"/>
+ <text x="1150" y="175" font-size="21" fill="#83f4ff">360° SENSOR POD</text><text x="1150" y="205" font-size="16" fill="#a8c9d7">Navigation and awareness sensors</text>
+ <path d="M890 585L1190 505H1390" stroke="#63dff2" stroke-width="3" fill="none"/><circle cx="890" cy="585" r="6" fill="#63dff2"/>
+ <text x="1190" y="475" font-size="21" fill="#83f4ff">PROTECTED CAMERA</text><text x="1190" y="505" font-size="16" fill="#a8c9d7">Low-light / thermal options proposed</text>
+ <path d="M440 665L260 740H120" stroke="#63dff2" stroke-width="3" fill="none"/><circle cx="440" cy="665" r="6" fill="#63dff2"/>
+ <text x="120" y="720" font-size="21" fill="#83f4ff">ALL-TERRAIN WHEELS</text><text x="120" y="750" font-size="16" fill="#a8c9d7">Four-wheel mobility concept</text>
+ <text x="800" y="900" font-size="19" fill="#85aabd" text-anchor="middle" letter-spacing="3">PROPOSED DESIGN · NOT BUILT · NOT TESTED · NOT CERTIFIED</text>
+</g>
+</svg>
