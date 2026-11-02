@@ -3,6 +3,10 @@
 
 **Detect Early. Locate Precisely. Protect Better.**
 
+![HOMEGUARD AI — Evidence-driven building intelligence](docs/images/homeguard-ai-overview.svg)
+
+> **How it works:** Sense building conditions → locate evidence in the building → check data quality and uncertainty → maintain a building world-state → create a human-reviewed evidence report.
+
 HOMEGUARD AI is a software-first building-condition intelligence platform. It organizes observations from structural, electrical, fire/life-safety, water, environmental, acoustic, light and thermal sources; compares them with documented baselines; exposes uncertainty; and helps people prioritize verification.
 
 > **Current status: FOUNDATION / SIMULATION-ONLY.** This is an initial deterministic software demonstrator, not a deployed building-monitoring product. No real sensor integration, trained AI model, certified alarm, structural certification or real-world hazard-detection performance is claimed.
