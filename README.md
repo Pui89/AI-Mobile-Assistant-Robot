@@ -57,7 +57,27 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The mobile robot and wildlife-detection capability are **future proposals only**. They have not been built, integrated, certified or validated. Sensors, animal detection, species classification, mobility, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
+### Dual-environment operation: Home + Outdoor Travel (PROPOSED)
+
+The same robot platform is intended to support two environments through selectable operating profiles:
+
+- **Home mode:** indoor patrol, building-hazard awareness, wildlife intrusion alerts and automatic return to its home dock.
+- **Travel / camping mode:** accompany its owner on trips and monitor an approved campsite while the owner rests. Detect and report nearby movement, possible wildlife, smoke and environmental changes without approaching animals or disturbing sleep.
+
+Proposed outdoor design requirements:
+- Weather-resistant enclosure with defined ingress-protection targets and test evidence.
+- All-terrain wheel design suitable for the intended paths, slopes and ground conditions.
+- Low-light camera and an appropriately selected thermal sensor; thermal imagery must not be presented as guaranteed species identification.
+- 360° obstacle detection with safe stopping distances.
+- Quiet night mode with reduced lighting and non-essential sound.
+- Portable charging system and replaceable or serviceable battery strategy, subject to battery safety review.
+- GPS outdoors, combined with local navigation; indoor positioning must not depend on GPS.
+- Offline-first operation with local processing and clear indication when connectivity is unavailable.
+- Safe return-to-owner only when localization, route safety and battery reserve are sufficient; otherwise enter a safe-stop mode and send an alert when communication is available.
+
+Outdoor operation must define limits for rain, temperature, terrain, water exposure, darkness and battery endurance. The robot must not promise wildlife protection, snake deterrence or guaranteed detection.
+
+The mobile robot, outdoor mode and wildlife-detection capability are **future proposals only**. They have not been built, integrated, certified or validated. Sensors, animal detection, species classification, navigation, weather resistance, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 ## Quick start
 Requires Python 3.11+.
