@@ -64,12 +64,15 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 
 | Design parameter | Proposed target |
 |---|---:|
-| Total height, including sensor unit | Up to 50 cm |
-| Main body height | Approximately 30–35 cm |
-| Body width | 30–35 cm |
-| Body length | 40–45 cm |
-| Target total weight | Approximately 8 kg |
-| Wheels | Four compact wheels, approximately 10–13 cm diameter |
+| Height | 50–60 cm |
+| Width | 30–36 cm |
+| Depth | 20–25 cm |
+| Complete weight target | 8–12 kg, including battery, sensors and computer |
+| Absolute maximum complete weight | 15 kg |
+| Wheels | Four small, compact wheels; no oversized off-road tyres |
+| Handle | Retractable travel handle |
+| Battery | Removable; airline carriage subject to carrier rules |
+| Structure | Lightweight hard shell |
 
 The design priority is a slim, hard-shell travel case that one person can carry and transport. The 8–12 kg target and 15 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
 
@@ -100,7 +103,7 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The HOMEGUARD AI NOMAD robot, its 8 kg / 50 cm design targets, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
+The HOMEGUARD AI NOMAD robot, its suitcase-sized dimensions, 8–12 kg target and 15 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 ## Quick start
 Requires Python 3.11+.
