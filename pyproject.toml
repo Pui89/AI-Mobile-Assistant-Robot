@@ -13,7 +13,7 @@ authors = [{ name = "PUI89" }]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<9"]
+dev = ["pytest>=8,<10"]
 
 [project.scripts]
 homeguard-simulate = "homeguard_ai.simulator:main"
