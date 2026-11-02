@@ -25,6 +25,12 @@ The 29-capability catalogue is a roadmap, not 29 implemented models. No trained 
 
 ## Future mobile robot concept (PROPOSED)
 
+<p align="center">
+  <img src="docs/images/homeguard-ai-robot-concept.svg" alt="3D-style PUI89 Homeguard AI robot concept with rounded navy and electric-cyan body, protected cameras and sensors, concealed wheels and automatic charging dock" width="100%" />
+</p>
+
+<p align="center"><em>Concept illustration only — proposed design, not a built or certified robot.</em></p>
+
 A future Homeguard AI mobile robot may extend the platform with three missions:
 
 1. **Protect:** autonomously patrol approved indoor areas, identify unusual activity and report evidence for human review.
