@@ -1,83 +1,78 @@
-# PUI89 Advanced Technology Roadmap
+# PUI89 Advanced Technology Implementation Plan
 
 **Project:** HOMEGUARD AI NOMAD  
-**Engineering status:** capability roadmap and governance specification; not a claim that all listed technology is implemented.  
-**Operating principle:** free-first, local-first, evidence-first.
+**Scope:** all four PUI89 applications, coordinated through one shared AI Core contract  
+**Priority:** core first  
+**Cost policy:** strict zero-paid-services, local-first, no automatic downloads  
+**Status:** implementation plan and evidence index; not a claim that every advanced capability is implemented.
 
-## Mission
+## 1. Architecture decision
 
-Integrate advanced AI and robotics capabilities through a shared PUI89 engineering approach while preserving each project's domain-specific design. This repository's capability registry is the machine-readable source of truth for this roadmap.
+PUI89 already contains reusable intelligence foundations. Do not create a second world-state engine, observation evaluator, report generator or simulation framework inside Homeguard. Reuse the current implementation and make Homeguard a domain adapter to the shared PUI89 report contract.
 
-## Capabilities tracked
+The cross-project contract is `schemas/pui89-intelligence-report.schema.json`. It is byte-identical across all four repositories and covers all four project identifiers. Homeguard's existing `schemas/finding-report.schema.json` remains in place as a domain-specific extension.
 
-1. **Multimodal perception and sensor fusion** — Images, text, audio and sensor streams; missing and conflicting modalities must remain explicit.
-2. **World-state model and temporal event tracking** — Track entities, locations, timestamps, state changes and stale observations; never invent missing state.
-3. **Uncertainty, abstention and calibration** — Expose confidence limits, calibration status and UNKNOWN/REVIEW_REQUIRED outcomes.
-4. **Digital twin and physics-based simulation** — Use reproducible synthetic scenarios; simulation results are not field validation.
-5. **SLAM, mapping and autonomous navigation** — Optional robotics integration; only activate with a compatible simulator/hardware profile and safety review.
-6. **Motion, manipulation and mission planning** — Generate plans and safety constraints; no direct hardware actuation from this audit system.
-7. **Predictive fault and anomaly detection** — Monitor sensor freshness, communication, battery and system-health signals where available.
-8. **Tool-using agents and supervised workflows** — Agents may propose and evaluate tasks; require allowlisted tools, bounded actions and human approval for consequential actions.
-9. **Multi-agent and multi-robot coordination** — Research/simulation only until communication, arbitration and fail-safe behaviour are validated.
-10. **Safety verification and fail-safe decision gates** — Fail closed on missing or invalid safety signals; retain emergency-stop priority and human override.
-11. **Offline/local model inference adapters** — Optional only; no model download or runtime activation by CI; check memory, hardware and license first.
-12. **Evidence provenance and reproducible reports** — Record source, timestamp, version, dataset split, metric, test conditions and limitations.
+## 2. Existing foundations to reuse
 
-## Technology candidates (not installed by this change)
+- `src/homeguard_ai/core.py` — observation and baseline records, evidence evaluation, stale/quality/calibration checks, limitations and findings.
+- `src/homeguard_ai/simulator.py` — deterministic scenario simulation.
+- `schemas/finding-report.schema.json` — Homeguard-specific finding report.
+- `tests/test_core.py` — existing regression tests for evidence quality, baselines, timestamps and simulation output.
 
-- ROS 2 Jazzy / Nav2 — robot middleware and navigation.
-- Gazebo Harmonic — physics-based robot and environment simulation.
-- OpenCV — computer vision.
-- ONNX Runtime — portable local inference.
-- PyTorch — deep-learning research.
-- SLAM Toolbox — mapping and localisation.
-- Qdrant — optional local evidence retrieval.
-- NVIDIA Isaac Sim — optional advanced robotics simulation.
+## 3. Domain adapter responsibilities
 
-These are candidates for evaluation, not approved dependencies. Check the exact version, licence, hardware requirements, redistribution terms, security posture and commercial-use obligations before adoption. This change does not install packages, download models, enable cloud services or add paid services.
+- Multi-sensor observation and evidence quality.
+- Local mapping and supervised navigation.
+- Hazard/event anomaly triage.
+- Battery, connectivity and safe-return state estimation.
+- Owner-approved task planning and human-reviewed alerts.
 
-## Project-specific engineering focus
+Translate Homeguard observations into the shared world-state, evidence, uncertainty, risk, recommendation, safety-gate and verification fields. Preserve timestamps, sensor identity, calibration, quality, uncertainty and limitations. Do not infer certified protection or real-world hazard detection from a simulated finding.
 
-- multi-sensor observation and evidence quality
-- local mapping and supervised navigation
-- hazard/event anomaly triage
-- battery, connectivity and safe-return state estimation
-- owner-approved task planning and human-reviewed alerts
+## 4. Core-first implementation sequence
 
-## Automation
+1. **Contract convergence:** keep the same report schema in all four projects; validate JSON syntax and project identifiers.
+2. **Core reuse:** extend the current observation evaluator only where a missing shared contract field requires it. Do not create another world-state or confidence engine.
+3. **Adapter conformance:** map Homeguard findings into the shared report while preserving the existing finding-report schema.
+4. **Evidence and uncertainty:** record provenance, timestamps, calibration state, stale data, limitations and conflicting inputs.
+5. **Safety and human review:** fail closed on missing safety signals; require owner approval for consequential tasks; prohibit CI and report tooling from issuing hardware commands.
+6. **Deterministic regression:** test normal, missing, stale, malformed, conflicting, fault and recovery cases with fixed scenarios.
+7. **Simulation integration:** reuse the current simulator and its test suite before introducing a heavier robotics simulator.
+8. **Optional advanced adapters:** evaluate local models, SLAM, navigation, predictive monitoring and supervised agents individually after licence and resource checks.
 
-The GitHub Actions workflow `.github/workflows/pui89-advanced-technology-audit.yml` checks the registry and governance policy on relevant pushes, pull requests and manual dispatch. It uses Python's standard library only and uploads a small JSON audit report.
+## 5. Technology adoption gates
 
-The audit verifies registry integrity and policy constraints. It does **not** prove model accuracy, simulation fidelity, physical safety or product readiness.
+Candidates include OpenCV, ONNX Runtime, PyTorch, ROS 2, Nav2, Gazebo and optional local vector retrieval. They are not mandatory dependencies and are not installed by this plan.
 
-## Evidence and status rules
+Before adoption, record exact version and licence, commercial-use and redistribution terms, local CPU/RAM/disk requirements, offline behaviour, provenance, acceptance metrics and safe fallback behaviour.
 
-- `ROADMAP`: planned; not implemented.
-- `FOUNDATION`: supporting interfaces or documentation exist; capability not yet validated.
-- `PROTOTYPE`: a prototype exists; evaluation is incomplete.
-- `VERIFIED`: reproducible evidence is linked and reviewed against defined acceptance criteria.
-- `BLOCKED`: blocked by missing data, licensing, safety, hardware or other prerequisites.
+For ROS 2 simulation, the official compatibility pairing for ROS 2 Jazzy is Gazebo Harmonic. Use the existing project's supported environment rather than upgrading blindly. See https://gazebosim.org/docs/latest/ros_installation/ and https://gazebosim.org/docs/harmonic/install/.
 
-A capability cannot be marked `VERIFIED` without evidence references. Keep uncertain outputs as `UNKNOWN` or `REVIEW_REQUIRED`; do not silently convert them into positive detections.
+## 6. Strict execution policy
 
-## Cost, licensing and safety boundaries
+- No paid APIs, subscriptions, cloud GPU or paid hosted databases.
+- No automatic model or dataset downloads.
+- No dependency installation in the lightweight registry audit.
+- Prefer existing code and Python standard library where sufficient.
+- Review model, dataset and package licences before use.
+- No physical actuator commands from CI, tests, agents or report generation.
+- Unknown or conflicting evidence must produce an explicit review/hold state.
 
-- No paid API, subscription, cloud GPU or unapproved spend.
-- No automatic model downloads or dependency installation in this audit workflow.
-- Review licences before adopting or distributing any model, dataset, library or simulator.
-- No direct hardware actuation from CI or from this registry.
-- Missing or invalid safety signals must fail closed to `SAFE_HOLD`.
-- High-impact decisions require qualified human review.
+## 7. Automated verification and evidence
 
-## Project-specific limitations
+Retain existing HOMEGUARD CI, shared-contract and security workflows. The advanced-technology audit checks registry integrity and cost/safety policy. Shared-report contract tests check schema validity and project coverage. Existing Homeguard tests remain the source of domain-specific verification.
 
-The repository describes a proposed product and software demonstrator. No certified alarm, real-world hazard detection, autonomous roaming, physical protection or safe-return performance is claimed.
+Each report should record project, commit, schema version, capability status, evidence references, test conditions, limitations and result. A capability is `FOUNDATION` when supporting code exists, `PROTOTYPE` when an executable prototype exists, and `VERIFIED` only when defined acceptance criteria pass with reproducible evidence. Documentation or a passing registry audit alone never qualifies as verification.
 
-## Next engineering sequence
+## 8. Release gates
 
-1. Keep the shared report contract and safety gates consistent.
-2. Implement and test capability adapters one at a time.
-3. Add deterministic simulation scenarios where the relevant simulator is configured.
-4. Benchmark against licensed, documented datasets and fixed evaluation splits.
-5. Record failures, uncertainty, resource use and limitations.
-6. Promote a capability's status only when the evidence supports it.
+A change is ready for merge only when:
+- shared schema is valid and byte-identical to the other project copies;
+- audit and shared-contract tests pass;
+- existing Homeguard tests pass;
+- no paid service, automatic download or unreviewed dependency was introduced;
+- all safety and performance claims remain within the evidence.
+
+## 9. Current limitations
+
+Homeguard remains an evidence-driven monitoring demonstrator. It does not establish certified alarm capability, real-world hazard detection, physical protection, autonomous roaming or safe-return performance.
