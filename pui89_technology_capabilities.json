@@ -87,18 +87,22 @@
     {
       "id": "world_state_model",
       "name": "World-state model and temporal event tracking",
-      "description": "Track entities, locations, timestamps, state changes and stale observations; never invent missing state.",
-      "status": "ROADMAP",
-      "implementation_evidence": [],
+      "description": "Track entities, locations, timestamps, state changes and stale observations; never invent missing state. Existing foundation identified; this does not imply a complete or validated capability.",
+      "status": "FOUNDATION",
+      "implementation_evidence": [
+        "src/homeguard_ai/core.py"
+      ],
       "license_review": "REQUIRED_BEFORE_ADOPTION",
       "activation": "DISABLED_BY_DEFAULT"
     },
     {
       "id": "uncertainty_calibration",
       "name": "Uncertainty, abstention and calibration",
-      "description": "Expose confidence limits, calibration status and UNKNOWN/REVIEW_REQUIRED outcomes.",
-      "status": "ROADMAP",
-      "implementation_evidence": [],
+      "description": "Expose confidence limits, calibration status and UNKNOWN/REVIEW_REQUIRED outcomes. Existing foundation identified; this does not imply a complete or validated capability.",
+      "status": "FOUNDATION",
+      "implementation_evidence": [
+        "src/homeguard_ai/core.py"
+      ],
       "license_review": "REQUIRED_BEFORE_ADOPTION",
       "activation": "DISABLED_BY_DEFAULT"
     },
@@ -141,9 +145,11 @@
     {
       "id": "agent_workflows",
       "name": "Tool-using agents and supervised workflows",
-      "description": "Agents may propose and evaluate tasks; require allowlisted tools, bounded actions and human approval for consequential actions.",
-      "status": "ROADMAP",
-      "implementation_evidence": [],
+      "description": "Agents may propose and evaluate tasks; require allowlisted tools, bounded actions and human approval for consequential actions. Existing foundation identified; this does not imply a complete or validated capability.",
+      "status": "FOUNDATION",
+      "implementation_evidence": [
+        "src/homeguard_ai/simulator.py"
+      ],
       "license_review": "REQUIRED_BEFORE_ADOPTION",
       "activation": "DISABLED_BY_DEFAULT"
     },
@@ -177,9 +183,11 @@
     {
       "id": "evidence_provenance",
       "name": "Evidence provenance and reproducible reports",
-      "description": "Record source, timestamp, version, dataset split, metric, test conditions and limitations.",
-      "status": "ROADMAP",
-      "implementation_evidence": [],
+      "description": "Record source, timestamp, version, dataset split, metric, test conditions and limitations. Existing foundation identified; this does not imply a complete or validated capability.",
+      "status": "FOUNDATION",
+      "implementation_evidence": [
+        "src/homeguard_ai/core.py"
+      ],
       "license_review": "REQUIRED_BEFORE_ADOPTION",
       "activation": "DISABLED_BY_DEFAULT"
     }
