@@ -1,11 +1,16 @@
 """Tests for the free-first PUI89 technology registry audit."""
+import importlib.util
 import json
 import unittest
 from pathlib import Path
 
-from pui89_technology_audit import audit_registry
-
 ROOT = Path(__file__).resolve().parents[1]
+SPEC = importlib.util.spec_from_file_location("pui89_technology_audit", ROOT / "pui89_technology_audit.py")
+if SPEC is None or SPEC.loader is None:
+    raise ImportError("Could not load pui89_technology_audit.py")
+AUDIT = importlib.util.module_from_spec(SPEC)
+SPEC.loader.exec_module(AUDIT)
+audit_registry = AUDIT.audit_registry
 
 class TechnologyAuditTests(unittest.TestCase):
     @classmethod
