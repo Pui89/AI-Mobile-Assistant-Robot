@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "project": "Homeguard AI Nomad",
+  "exposure": "Outdoor rain, puddle splash, dust, humidity and wet-ground operation",
+  "sensors": [
+    "enclosure_leak_sensor",
+    "internal_humidity_sensor",
+    "electronics_temperature_sensor",
+    "battery_health_monitor",
+    "wheel_motor_health_monitor"
+  ],
+  "temperature_limit_c": 60,
+  "physical_validation": "NOT_PERFORMED",
+  "hardware_integration": "NOT_CONFIRMED",
+  "ip_rating": "NOT_CLAIMED",
+  "project_notes": "Separate indoor HOME and outdoor NOMAD environmental envelopes. NOMAD requires sealed electronics, protected wheel drives and safe-stop/return logic; no underwater operation is implied."
+}
