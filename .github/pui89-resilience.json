@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "standard": "PUI89-TOTAL-RESILIENCE",
+  "project": "Homeguard AI Nomad",
+  "project_type": "homeguard-mobile-robot-concept",
+  "status": "policy-baseline-only; physical protections not verified",
+  "protection_domains": {
+    "cybersecurity": "authentication, least privilege, secure updates, local privacy, network isolation, tamper alerts",
+    "water_environment": "household spills, humidity, dust, cleaning exposure; ingress rating not established",
+    "fire_heat_power": "battery BMS, charging safety, thermal monitoring, overcurrent, safe power isolation",
+    "communications": "Wi-Fi/network outage, sensor disconnect, stale commands, local safe behavior",
+    "ai_data": "false alarms, missed events, uncertain detection, privacy, data retention",
+    "mechanical": "obstacle collision, falls, hand/pull limits, pinch points, emergency stop",
+    "human_mission": "child/pet safety, authorized operation, privacy zones, safe stop, manual recovery"
+  },
+  "project_specific_hazards": [
+    "children and pets",
+    "indoor obstacles and stairs",
+    "hand lifting/pulling mechanism",
+    "household spills",
+    "privacy-sensitive home monitoring"
+  ]
+}
