@@ -42,9 +42,11 @@ HOMEGUARD AI should use **two separate robot types** rather than forcing one phy
 
 ![HOMEGUARD AI HOME compact indoor robot concept](docs/images/homeguard-ai-home-concept.svg)
 
-HOME is the dedicated indoor mobile-robot platform for homes and buildings. Its proposed design is a compact, low-profile mobile base with protected sensors, a soft perimeter bumper, obstacle/drop-off awareness, privacy-conscious sensing and a charging-dock concept. The final drive arrangement, sensor package, battery chemistry, docking interface and enclosure materials require engineering selection and validation.
+HOME is the dedicated indoor mobile-robot platform for homes and buildings. Its proposed design is a compact, low-profile **four-wheel mobile base** with four protected drive wheels, protected sensors, a soft perimeter bumper, obstacle/drop-off awareness, privacy-conscious sensing and a charging-dock concept. The four-wheel layout is a fixed design requirement; wheel size, motor arrangement, suspension, sensor package, battery chemistry, docking interface and enclosure materials still require engineering selection and validation.
 
 **Proposed complete-weight requirement:** 8 kg target and 10 kg absolute maximum, including battery, sensors, computer, enclosure and all installed accessories. This is a design requirement, not a measured prototype specification. The mass budget must be verified before hardware architecture is frozen.
+
+**Wheel requirement:** exactly four wheels, enclosed or guarded against finger, hair and loose-object entanglement. The wheelbase and turning geometry must suit narrow indoor passages, thresholds and furniture clearance. Low-speed motion, controlled acceleration, anti-tip stability and a physical emergency stop are design requirements for future engineering and testing.
 
 HOME is intended for indoor monitoring and evidence collection under owner supervision. It must move slowly around people, children and pets; maintain safe clearances; avoid stairs and drop-offs; stop when localization or obstacle evidence is uncertain; and never operate locks, breakers, valves, cooking appliances or certified alarms. Privacy-by-design means local processing where feasible, minimal collection, no unnecessary indoor video or audio recording, and clear owner control.
 
@@ -84,7 +86,7 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Battery | Removable battery concept; safety and endurance require testing |
 | Structure | Lightweight hard shell |
 
-The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
+The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, wheel/motor selection and safety testing.
 
 A future NOMAD robot may extend the software platform with these outdoor missions:
 
