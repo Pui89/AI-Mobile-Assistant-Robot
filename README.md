@@ -86,7 +86,7 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Battery | Removable battery concept; safety and endurance require testing |
 | Structure | Lightweight hard shell |
 
-The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, wheel/motor selection and safety testing.
+The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, leg/motor selection and safety testing.
 
 A future NOMAD robot may extend the software platform with these outdoor missions:
 
