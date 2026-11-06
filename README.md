@@ -70,8 +70,8 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Complete weight target | 8–10 kg, including battery, sensors and computer |
 | Absolute maximum complete weight | 12 kg |
 | Wheels | Four small, articulated legs; no oversized off-road tyres |
-| Handle | Retractable travel handle |
-| Battery | Removable; airline carriage subject to carrier rules |
+| Mobility | Four articulated legs; gait and terrain limits require validation |
+| Battery | Removable battery concept; safety and endurance require testing |
 | Structure | Lightweight hard shell |
 
 The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
@@ -89,7 +89,7 @@ A future NOMAD robot may extend the software platform with these outdoor mission
 - **Camping night mode:** quiet monitoring with reduced lighting and non-essential sound; alert the owner when a potentially relevant event is detected.
 
 HOME has its own indoor operating profile and charging-dock concept; it is a separate robot design, not another mode of NOMAD.
-- **Outdoor hardware goals:** weather-resistant enclosure; compact wheels; low-light camera and suitable thermal sensor; 360° obstacle detection; portable charging; offline-first local operation.
+- **Outdoor hardware goals:** weather-resistant enclosure target; articulated legs; low-light camera and suitable thermal sensor; obstacle detection; portable charging; offline-first local operation.
 - **Safe return / safe stop:** return to its owner only when localization, route safety and battery reserve are sufficient. If safe return cannot be established, stop safely and alert the owner when communication is available.
 - **Operating limits:** define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not send the robot roaming into unknown wilderness without supervision.
 
