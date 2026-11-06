@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="t d">
+<title id="t">PUI89 HOMEGUARD AI HOME indoor robot concept</title><desc id="d">Compact low-profile navy and electric-cyan indoor mobile home guardian robot with protected sensor mast, front camera array, soft bumper, four concealed drive wheels and docking concept. Proposed 8 kilogram target and 10 kilogram maximum, concept only.</desc>
+<defs>
+ <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12395b"/></linearGradient>
+ <linearGradient id="body" x2="1" y2="1"><stop stop-color="#355b79"/><stop offset=".55" stop-color="#173650"/><stop offset="1" stop-color="#091a2c"/></linearGradient>
+ <linearGradient id="cyan"><stop stop-color="#9afaff"/><stop offset="1" stop-color="#00bde8"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<rect width="1400" height="900" rx="30" fill="url(#bg)"/>
+<circle cx="1120" cy="230" r="250" fill="#17bde5" opacity=".07"/><circle cx="220" cy="700" r="220" fill="#17bde5" opacity=".06"/>
+<text x="72" y="76" fill="#83efff" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="5">PUI89 / INDOOR INTELLIGENCE</text>
+<text x="72" y="145" fill="#f4fbff" font-family="Arial,sans-serif" font-size="60" font-weight="800">HOMEGUARD AI HOME</text>
+<text x="76" y="190" fill="#78eaff" font-family="Arial,sans-serif" font-size="25" letter-spacing="2">COMPACT INDOOR MOBILE GUARDIAN</text>
+<ellipse cx="690" cy="700" rx="430" ry="46" fill="#020a13" opacity=".55"/>
+<!-- wheels -->
+<g fill="#071421" stroke="#5b829e" stroke-width="8"><rect x="360" y="530" width="70" height="125" rx="28"/><rect x="940" y="530" width="70" height="125" rx="28"/><rect x="465" y="625" width="95" height="48" rx="22"/><rect x="830" y="625" width="95" height="48" rx="22"/></g>
+<!-- lower chassis -->
+<path d="M320 475Q320 420 380 400L950 400Q1030 420 1040 490L1010 620Q995 665 935 675H425Q350 665 335 610Z" fill="url(#body)" stroke="#8eb3cb" stroke-width="7"/>
+<path d="M375 485Q390 445 440 440H920Q970 445 985 490L965 590Q955 620 910 625H445Q400 620 390 585Z" fill="#0a2035" stroke="#36d9f4" stroke-width="4"/>
+<path d="M465 480H895" stroke="#4b7692" stroke-width="4"/>
+<path d="M500 555H860" stroke="url(#cyan)" stroke-width="8" stroke-linecap="round" filter="url(#glow)"/>
+<text x="680" y="610" text-anchor="middle" fill="#f3fbff" font-family="Arial,sans-serif" font-size="42" font-weight="800" letter-spacing="7">PUI89</text>
+<!-- soft perimeter bumper -->
+<path d="M350 535Q345 625 430 640H930Q1010 625 1005 535" fill="none" stroke="#83efff" stroke-width="13" opacity=".8"/>
+<!-- sensor mast -->
+<path d="M655 420V330Q655 300 685 300H755Q785 300 785 330V420" fill="#122d45" stroke="#83b4cf" stroke-width="7"/>
+<rect x="610" y="250" width="220" height="100" rx="34" fill="url(#body)" stroke="#8eb3cb" stroke-width="7"/>
+<rect x="645" y="275" width="150" height="48" rx="20" fill="#071a2b" stroke="#36d9f4" stroke-width="4"/>
+<g filter="url(#glow)"><circle cx="685" cy="299" r="12" fill="#9afaff"/><circle cx="755" cy="299" r="12" fill="#9afaff"/></g>
+<circle cx="720" cy="235" r="24" fill="#163d5b" stroke="#83efff" stroke-width="5"/><circle cx="720" cy="235" r="8" fill="#9afaff"/>
+<!-- top status ring -->
+<path d="M520 420Q680 380 880 420" fill="none" stroke="#37d9f3" stroke-width="5" opacity=".65"/>
+<!-- callouts -->
+<g font-family="Arial,sans-serif" fill="#a7f5ff" font-size="18" font-weight="700">
+ <path d="M830 290L1030 220H1260" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1260" y="205" text-anchor="end">PROTECTED SENSOR HEAD*</text>
+ <path d="M365 570L180 500H80" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="80" y="480">SOFT BUMPER*</text>
+ <path d="M940 640L1100 710H1300" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1300" y="690" text-anchor="end">LOW-PROFILE DRIVE*</text>
+ <path d="M680 400L520 315H390" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="390" y="300" text-anchor="end">PROTECTED CORE</text>
+</g>
+<rect x="72" y="770" width="1256" height="75" rx="18" fill="#0b2238" stroke="#245779" stroke-width="2"/>
+<g font-family="Arial,sans-serif" fill="#d9f6ff" font-size="19"><text x="110" y="815">8 kg TARGET</text><text x="390" y="815">10 kg MAXIMUM</text><text x="700" y="815">INDOOR-FIRST</text><text x="990" y="815">DOCKING CONCEPT*</text></g>
+<text x="72" y="882" fill="#9cb9ce" font-family="Arial,sans-serif" font-size="15">*Proposed design features only. Mobility, sensing, docking, obstacle avoidance and protective performance require engineering and validation.</text>
+</svg>
