@@ -3,135 +3,75 @@
 
 **Your Intelligent Guardian. Wherever You Go.**
 
-> **Product identity:** HOMEGUARD AI NOMAD is the proposed portable mobile-robot product within PUI89's HOMEGUARD AI concept. The current repository is `Guard-Ai-Home-Nomad`.
+HOMEGUARD AI NOMAD is PUI89's independent outdoor mobile-robot concept: a compact quadruped robot dog for owner-supervised travel, camping and outdoor awareness.
 
-**Detect Early. Locate Precisely. Protect Better.**
+- **Repository:** https://github.com/Pui89/Guard-Ai-Home-Nomad
+- **Website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html)
+- **Separate indoor product:** [HOMEGUARD AI HOME](https://github.com/Pui89/HOMEGUARD-AI) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
-**HOME indoor robot website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [Project repository](https://github.com/Pui89/Guard-Ai-Home-Nomad)
+![HOMEGUARD AI NOMAD quadruped robot-dog concept](docs/images/homeguard-ai-nomad-concept.svg)
 
-<p align="center"><img src="docs/images/homeguard-ai-mark.svg" alt="HOMEGUARD AI geometric building intelligence mark" width="310" /></p>
+> **Product boundary:** NOMAD is for outdoor and travel contexts. HOME is a separate four-wheel indoor robot with its own repository, website pages, requirements and safety case. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
-![HOMEGUARD AI NOMAD quadruped AI robot dog concept](docs/images/homeguard-ai-nomad-concept.svg)
+## NOMAD purpose
 
-> **How it works:** Observe building conditions → locate each observation → verify evidence quality → understand the building's changing state → recommend human-reviewed action → measure whether the improvement worked.
+NOMAD is intended as an owner-supervised outdoor companion and awareness platform. Proposed research areas include:
+- Outdoor scene and obstacle awareness
+- Owner-approved travel and campsite monitoring
+- Mapping and localization research, with safe-stop behaviour when uncertain
+- Environmental observations such as smoke, abnormal heat, sound and weather-related conditions when suitable sensors are selected and validated
+- Wildlife/activity awareness for human review, not wildlife deterrence or guaranteed protection
+- Offline-first operation and clear owner-facing reports
 
-HOMEGUARD AI is a software-first intelligence platform. The NOMAD product direction is a compact quadruped outdoor robot dog. It organizes observations from structural, electrical, fire/life-safety, water, environmental, acoustic, light and thermal sources; compares them with documented baselines; exposes uncertainty; and helps people prioritize verification.
+NOMAD is not a firefighting robot, emergency responder or unsupervised roaming machine. It must not enter hazardous areas merely to investigate.
 
-> **Current status: FOUNDATION / SIMULATION-ONLY.** This is an initial deterministic software demonstrator, not a deployed building-monitoring product. No real sensor integration, trained AI model, certified alarm, structural certification or real-world hazard-detection performance is claimed.
+## Proposed physical design targets
 
-## Initial implementation
-- Typed, provenance-aware sensor observations and baselines
-- Quality checks for stale, missing, invalid and uncalibrated evidence
-- Transparent baseline-deviation detection
-- Deterministic synthetic three-floor scenario
-- Machine-readable JSON findings
-- Automated tests and GitHub Actions CI
-
-The 29-capability catalogue is a roadmap, not 29 implemented models. No trained model is required for the first demonstrator.
-
-## HOMEGUARD AI robot family — two purpose-built designs (PROPOSED)
-
-HOMEGUARD AI should use **two separate robot types** rather than forcing one physical platform to perform equally well indoors and outdoors. They share the PUI89 AI Core, evidence model, reporting approach and safety principles, but have different mechanical designs, sensors, navigation and environmental protection.
-
-| Product | Intended environment | Design priority |
-|---|---|---|
-| **HOMEGUARD AI HOME** | Indoor homes and buildings | Compact, quiet movement; safe navigation around people, furniture and pets; indoor mapping; return to a charging dock |
-| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Compact quadruped robot dog; four articulated legs; protected sensor head; removable battery; supervised outdoor monitoring |
-
-### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
-
-![HOMEGUARD AI HOME compact indoor robot concept](docs/images/homeguard-ai-home-concept.svg)
-
-HOME is the dedicated indoor mobile-robot platform for homes and buildings. Its proposed design is a compact, low-profile mobile base with protected sensors, a soft perimeter bumper, obstacle/drop-off awareness, privacy-conscious sensing and a charging-dock concept. The final drive arrangement, sensor package, battery chemistry, docking interface and enclosure materials require engineering selection and validation.
-
-**Proposed complete-weight requirement:** 8 kg target and 10 kg absolute maximum, including battery, sensors, computer, enclosure and all installed accessories. This is a design requirement, not a measured prototype specification. The mass budget must be verified before hardware architecture is frozen.
-
-HOME is intended for indoor monitoring and evidence collection under owner supervision. It must move slowly around people, children and pets; maintain safe clearances; avoid stairs and drop-offs; stop when localization or obstacle evidence is uncertain; and never operate locks, breakers, valves, cooking appliances or certified alarms. Privacy-by-design means local processing where feasible, minimal collection, no unnecessary indoor video or audio recording, and clear owner control.
-
-The proposed 8 kg target and 10 kg maximum are engineering constraints. They do not imply that the robot is built, that runtime or payload is known, or that safety and navigation performance has been validated.
-
-### HOMEGUARD AI NOMAD — outdoor robot concept (PROPOSED)
-
-NOMAD is the separate outdoor platform for owner-supervised travel and camping. Its proposed form is a compact four-legged robot dog with articulated legs, a sensor-equipped head, a protected central electronics enclosure and a removable battery. It is designed as an owner-supervised outdoor companion, not an unsupervised roaming machine. It is not intended to be the indoor home-patrol robot.
-
-### Shared intelligence, separate physical platforms
-
-Both products are intended to share PUI89 AI Core capabilities: observe, verify evidence quality, understand context, assess uncertainty and risk, choose a safe response, and explain the result to the owner. Indoor and outdoor navigation, sensor configuration, mechanical design and environmental limits must remain product-specific.
-
-### How HOMEGUARD AI NOMAD is intended to work
-
-![HOMEGUARD AI NOMAD working concept: observe, check evidence, understand context, choose safely, and report to the owner](docs/images/homeguard-ai-nomad-working.svg)
-
-**Proposed workflow:** observe → check evidence quality → understand location and context → choose a safe movement state → report to the owner. The owner reviews alerts and decides what action to take. The robot should return only when its location, route and battery reserve are safe; otherwise it should stop safely.
-
-This is an explanatory concept, not an implemented autonomous system. Sensor inputs, navigation, return-to-owner and safe-stop behaviour require separate engineering and testing.
-
-<p align="center"><img src="docs/images/homeguard-ai-nomad-concept.svg" alt="HOMEGUARD AI NOMAD quadruped AI robot dog concept" width="720" /></p>
-
-*Latest NOMAD robot concept illustration — proposed design, not a built or validated robot.*
-
-<em>Physical design target — concept only, not a built or measured specification.</em>
-
-| Design parameter | Proposed target |
+| Parameter | Proposed target |
 |---|---:|
+| Form | Four-legged quadruped robot dog |
 | Height | 50–60 cm |
 | Width | 30–36 cm |
 | Depth | 20–25 cm |
-| Complete weight target | 8–10 kg, including battery, sensors and computer |
+| Complete weight target | 8–10 kg |
 | Absolute maximum complete weight | 12 kg |
-| Wheels | Four small, articulated legs; no oversized off-road tyres |
-| Mobility | Four articulated legs; gait and terrain limits require validation |
-| Battery | Removable battery concept; safety and endurance require testing |
-| Structure | Lightweight hard shell |
+| Battery | Removable-battery concept |
+| Structure | Lightweight protective shell; guarded joints and wiring |
+| Environment | Outdoor travel and camping, within validated operating limits |
 
-The design priority is a compact quadruped platform with stable stance, protected joints, guarded wiring, serviceable modules and a low centre of mass. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
+Weight includes battery, sensors, computer, enclosure and accessories. Dimensions and weight are design goals, not measured prototype specifications. Terrain, gait, endurance, weather limits and payload remain unvalidated.
 
-A future NOMAD robot may extend the software platform with these outdoor missions:
+## Proposed operating workflow
 
-1. **Outdoor awareness:** monitor an owner-approved travel or campsite area, identify potentially relevant activity and report evidence for human review. Indoor patrol belongs to the separate HOME product.
-2. **Detect hazards:** collect and assess fire-related and explosion-related warning signals, such as smoke, abnormal heat, acoustic events or pressure changes, where suitable sensors are installed and validated. The robot is an awareness and reporting system; it is not a firefighting robot, does not handle explosive materials and does not cause or trigger explosions.
-3. **Explore:** build and update maps, navigate around people and obstacles, inspect assigned areas and return to a charging dock when conditions permit.
-4. **Travel and camping:** accompany its owner on trips and monitor an approved campsite while the owner rests, reporting possible movement, wildlife, smoke or environmental changes for human review. This is awareness support, not wildlife deterrence or guaranteed protection.
+Observe → check evidence quality → understand location and context → assess uncertainty and risk → choose a safe movement state → report to the owner.
 
-### NOMAD outdoor operating profiles (PROPOSED)
+The owner remains responsible for decisions. Return-to-owner behaviour is only a future requirement: if localization, route safety or battery reserve is insufficient, the robot should stop safely rather than attempt an unsafe return.
 
-- **Travel mode:** owner-supervised outdoor movement in a defined operating area, with GPS outdoors and local navigation where GPS is unavailable or unsuitable.
-- **Camping night mode:** quiet monitoring with reduced lighting and non-essential sound; alert the owner when a potentially relevant event is detected.
+## Safety and resilience requirements
 
-HOME has its own indoor operating profile and charging-dock concept; it is a separate robot design, not another mode of NOMAD.
-- **Outdoor hardware goals:** weather-resistant enclosure target; articulated legs; low-light camera and suitable thermal sensor; obstacle detection; portable charging; offline-first local operation.
-- **Safe return / safe stop:** return to its owner only when localization, route safety and battery reserve are sufficient. If safe return cannot be established, stop safely and alert the owner when communication is available.
-- **Operating limits:** define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity. Do not send the robot roaming into unknown wilderness without supervision.
+- Define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity.
+- Prioritize battery protection, electrical isolation, overcurrent protection, thermal monitoring and guarded wiring.
+- Treat weather resistance, water resistance, fire performance and any hazardous-atmosphere protection as engineering requirements requiring specified tests; do not claim waterproof, fireproof or explosion-proof performance.
+- Never delay emergency response or substitute for certified alarms and qualified responders.
+- Use human supervision, safe-stop defaults and clear uncertainty reporting.
+- Protect location data and avoid unnecessary recording of people.
 
-### Robot safety and protective engineering
+## Shared intelligence, separate product engineering
 
-Safety is a design requirement, not a capability that can be claimed without testing.
+NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its quadruped locomotion, outdoor navigation, sensor layout, environmental protection and risk assessment remain NOMAD-specific.
 
-- **Do not become an ignition source:** prioritize battery safety, thermal-runaway mitigation, electrical isolation, overcurrent protection, protected wiring and suitable component selection.
-- **Fire resistance:** select enclosure and insulation materials for defined temperature and flame-exposure requirements, then verify them through appropriate independent testing. “Fire-resistant” does not mean fireproof.
-- **Explosion protection:** distinguish preventing the robot from igniting a hazardous atmosphere from surviving an external blast. These are different engineering problems. Operation in a classified explosive atmosphere requires a design assessed and certified for the specific zone, gas/dust group and temperature class. No general blast-survival or explosion-proof claim is made.
-- **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
-- **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
+## Current development status
 
-The HOMEGUARD AI NOMAD robot dog, its proposed quadruped design, 8–10 kg target and 12 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
+**FOUNDATION / SIMULATION-ONLY / CONCEPT.** The repository contains an early deterministic software foundation, documentation and automated tests. It does not establish a built robot, real sensor integration, trained AI model, validated locomotion, outdoor reliability, certified safety or real-world hazard-detection performance.
 
-## Quick start
-Requires Python 3.11+.
-```bash
-python -m pip install -e ".[dev]"
-pytest
-homeguard-simulate --seed 89 --output report.json
-```
+## Zero-cost and supply-chain policy
 
-## Safety and privacy
-Decision support only. The current software demonstrator does not operate breakers, valves, lifts, doors or alarms; certify a building; or replace qualified professionals. Certified smoke, fire, CO and electrical protection devices remain primary. Never wait for AI analysis before following a certified alarm or established emergency procedure. Minimize personal data; prefer acoustic features over recording conversations; avoid unnecessary indoor video, face recognition and profiling.
-
-## Procurement policy
-The initial foundation has no remote inference, model download, paid API, subscription or cloud-GPU dependency. This project excludes Chinese-origin AI models, providers and model-hosting services from its approved stack. Future dependencies require provenance, ownership, licence, security, privacy, network, resource and cost review.
+No paid API, subscription, cloud GPU or automatic model download is required for this project foundation. Do not add packages, models or external services without checking origin, licence, security, resource requirements and total cost. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
 
 ## Evidence labels
+
 PROPOSED = planned; IMPLEMENTED = code exists; TESTED = automated test passed; SIMULATION-ONLY = synthetic inputs only; MEASURED = quantitative result with method; VERIFIED = reproducibly checked; NOT_VALIDATED = real-world performance not established.
 
-See [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md) and [Roadmap](docs/ROADMAP.md).
+See [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md), [Roadmap](docs/ROADMAP.md), [Water Resilience Standard](docs/PUI89_WATER_RESILIENCE_STANDARD.md) and [Resilience Standard](docs/PUI89_RESILIENCE_STANDARD.md).
 
 **PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
