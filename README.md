@@ -67,15 +67,15 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Height | 50–60 cm |
 | Width | 30–36 cm |
 | Depth | 20–25 cm |
-| Complete weight target | 8–10 kg, including battery, sensors and computer |
-| Absolute maximum complete weight | 12 kg |
+| Complete weight target | 8 kg, including battery, sensors and computer |
+| Absolute maximum complete weight | 10 kg |
 | Locomotion | Four articulated robotic legs; no suitcase wheels or pull handle |
 | Feet | Replaceable, non-slip feet designed for defined terrain |
 | Joints | Guarded articulation with pinch-point protection and torque/current limits |
 | Battery | Protected, removable only after electrical and mechanical safety review |
 | Structure | Lightweight protective chassis with guarded moving parts |
 
-The design priority is a compact, balanced quadruped with guarded joints, stable feet, a protected battery and safe lifting points. Retain the shared 8–10 kg complete-weight target and 12 kg absolute maximum for HOME and NOMAD as preliminary engineering goals only; these are not measured specifications. Four-leg actuation, stability, fall recovery, thermal management, battery safety, weather protection and safe human handling require engineering review and testing.
+The design priority is a compact, balanced quadruped with guarded joints, stable feet, a protected battery and safe lifting points. Use the shared 8 kg complete-weight target and 10 kg absolute maximum for HOME and NOMAD as preliminary engineering goals only; these are not measured specifications. Four-leg actuation, stability, fall recovery, thermal management, battery safety, weather protection and safe human handling require engineering review and testing.
 
 A future NOMAD robot may extend the software platform with these outdoor missions:
 
@@ -104,7 +104,7 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The HOMEGUARD AI NOMAD robot, its quadruped robot-dog form, 8–10 kg target and 12 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
+The HOMEGUARD AI NOMAD robot, its quadruped robot-dog form, 8 kg target and 10 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 
 ## Shared HOME & NOMAD handling and weight standard (PROPOSED)
@@ -115,10 +115,10 @@ The HOMEGUARD AI NOMAD robot, its quadruped robot-dog form, 8–10 kg target and
 | Hand pulling | Yes | Not applicable — lift/carry only using engineered grips |
 | Retractable pull handle | Yes | Not applicable — quadruped legs |
 | Stable mobility | Indoor compact wheels | Four articulated legs |
-| Weight target | 8–10 kg | 8–10 kg |
-| Maximum | 12 kg | 12 kg |
+| Weight target | 8 kg | 8 kg |
+| Maximum | 10 kg | 10 kg |
 
-Both products are designed around the same handling and weight standard. HOME is the indoor companion robot; NOMAD is the four-legged outdoor quadruped robot-dog concept. The complete-weight target and maximum include the battery, sensors, computer, wheels, handles and casing. These are proposed engineering targets, not measured hardware specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms require testing before any safety or validation claim.
+Both products are designed around the same handling and weight standard. HOME is the indoor companion robot; NOMAD is the four-legged outdoor quadruped robot-dog concept. The 8 kg target and 10 kg maximum complete weight include the battery, sensors, computer, wheels, handles and casing. These are proposed engineering targets, not measured hardware specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms require testing before any safety or validation claim.
 
 
 
