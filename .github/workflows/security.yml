@@ -63,7 +63,6 @@ jobs:
           fetch-depth: 0
       - name: Scan repository history
         uses: gitleaks/gitleaks-action@v2
-        env:
 
   dependency-review:
     name: Review pull request dependencies
