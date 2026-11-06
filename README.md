@@ -76,3 +76,21 @@ PROPOSED = planned; IMPLEMENTED = code exists; TESTED = automated test passed; S
 See [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md), [Roadmap](docs/ROADMAP.md), [Water Resilience Standard](docs/PUI89_WATER_RESILIENCE_STANDARD.md) and [Resilience Standard](docs/PUI89_RESILIENCE_STANDARD.md).
 
 **PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+
+## Hugging Face model candidates — Non-Chinese origin only
+
+**PUI89 mandatory rule:** use only models with verified non-Chinese developer and checkpoint provenance. Unknown or unclear origin means exclude. This section is a candidate list only; no weights have been downloaded, installed, or evaluated.
+
+| Candidate checkpoint | Research role | Status |
+|---|---|---|
+| [microsoft/Florence-2-base](https://huggingface.co/microsoft/Florence-2-base) | Outdoor scene descriptions, candidate object localization and OCR | CANDIDATE — review required |
+| [facebook/dinov2-base](https://huggingface.co/facebook/dinov2-base) | Visual feature extraction for scene understanding and change comparison | CANDIDATE — review required |
+| [google/siglip2-base-patch16-224](https://huggingface.co/google/siglip2-base-patch16-224) | Text-image similarity for outdoor objects and scene categories | CANDIDATE — review required |
+| [openai/whisper-tiny](https://huggingface.co/openai/whisper-tiny) | Optional multilingual voice-command transcription | CANDIDATE — review required |
+
+Perception candidates only. They do not validate quadruped locomotion, obstacle avoidance, following, payload, navigation, weather resistance or safe movement. No direct motor/leg control.
+
+**Adoption gates:** verify the exact checkpoint's developer, origin, immutable revision, model-card and file licence, training-data disclosures, code/dependency security, file format, hardware fit and total cost before any download or execution. No paid APIs, hosted inference, cloud GPUs, automatic downloads or direct physical control. Florence-2 requires extra source review because its documented loader uses trust_remote_code=True. All models remain research-only until independently evaluated and approved.
+
+**Shared policy:** [PUI89 Hugging Face Model Policy](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_HUGGINGFACE_MODEL_POLICY.md).
+
