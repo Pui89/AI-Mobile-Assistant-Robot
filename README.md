@@ -34,15 +34,15 @@ HOMEGUARD AI should use **two separate robot types** rather than forcing one phy
 | Product | Intended environment | Design priority |
 |---|---|---|
 | **HOMEGUARD AI HOME** | Indoor homes and buildings | Compact, quiet movement; safe navigation around people, furniture and pets; indoor mapping; return to a charging dock |
-| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Suitcase-sized portable platform; four compact wheels; retractable handle; removable battery; supervised outdoor monitoring |
+| **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Four-legged quadruped robot-dog platform; articulated legs; supervised outdoor monitoring |
 
 ### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
 
 HOME is a dedicated indoor mobile-robot concept. Its priorities are a compact footprint, low-noise movement, careful navigation through doors and corridors, obstacle and drop-off awareness, privacy-conscious sensing, and reliable docking. Its final dimensions, wheel arrangement, sensor package, battery and charging design remain open engineering decisions; no unverified hardware specification is claimed.
 
-### HOMEGUARD AI NOMAD — outdoor robot concept (PROPOSED)
+### HOMEGUARD AI NOMAD — quadruped robot-dog concept (PROPOSED)
 
-NOMAD is the separate outdoor platform for owner-supervised travel and camping. Its proposed form is suitcase-sized and slim, with four compact wheels, a retractable travel handle and a removable battery. It is not intended to be the indoor home-patrol robot.
+NOMAD is a four-legged quadruped mobile robot for owner-supervised outdoor travel, camping and environmental awareness. Its dog-like form uses four articulated legs rather than suitcase wheels or a pull handle. The design is intended to support controlled walking over suitable outdoor terrain, stable standing, obstacle-aware movement and cautious inspection. It is not an animal, does not replace a trained service or rescue dog, and is not intended to operate without supervision.
 
 ### Shared intelligence, separate physical platforms
 
@@ -56,7 +56,7 @@ Both products are intended to share PUI89 AI Core capabilities: observe, verify 
 
 This is an explanatory concept, not an implemented autonomous system. Sensor inputs, navigation, return-to-owner and safe-stop behaviour require separate engineering and testing.
 
-<p align="center"><img src="docs/images/homeguard-ai-nomad-concept.svg" alt="HOMEGUARD AI NOMAD portable four-wheel robot concept" width="720" /></p>
+<p align="center"><img src="docs/images/homeguard-ai-nomad-concept.svg" alt="HOMEGUARD AI NOMAD four-legged quadruped robot-dog concept" width="720" /></p>
 
 *Latest NOMAD robot concept illustration — proposed design, not a built or validated robot.*
 
@@ -69,12 +69,13 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 | Depth | 20–25 cm |
 | Complete weight target | 8–10 kg, including battery, sensors and computer |
 | Absolute maximum complete weight | 12 kg |
-| Wheels | Four small, compact wheels; no oversized off-road tyres |
-| Handle | Retractable travel handle |
-| Battery | Removable; airline carriage subject to carrier rules |
-| Structure | Lightweight hard shell |
+| Locomotion | Four articulated robotic legs; no suitcase wheels or pull handle |
+| Feet | Replaceable, non-slip feet designed for defined terrain |
+| Joints | Guarded articulation with pinch-point protection and torque/current limits |
+| Battery | Protected, removable only after electrical and mechanical safety review |
+| Structure | Lightweight protective chassis with guarded moving parts |
 
-The design priority is a slim, hard-shell travel case that one person can carry and transport. The 8–10 kg target and 12 kg absolute maximum include the battery, sensors and computer. These are engineering goals, not measured specifications; final dimensions depend on battery capacity, sensor selection, stability, weather protection and safety testing.
+The design priority is a compact, balanced quadruped with guarded joints, stable feet, a protected battery and safe lifting points. Retain the shared 8–10 kg complete-weight target and 12 kg absolute maximum for HOME and NOMAD as preliminary engineering goals only; these are not measured specifications. Four-leg actuation, stability, fall recovery, thermal management, battery safety, weather protection and safe human handling require engineering review and testing.
 
 A future NOMAD robot may extend the software platform with these outdoor missions:
 
@@ -103,21 +104,21 @@ Safety is a design requirement, not a capability that can be claimed without tes
 - **Emergency behaviour:** on a suspected hazard, warn the responsible people, preserve available evidence and stop or retreat only when the route and robot state are assessed as safe. Never send the robot into a dangerous area merely to investigate.
 - **Human safety first:** certified building alarms, emergency procedures and qualified responders remain authoritative. The robot must not delay evacuation or emergency response.
 
-The HOMEGUARD AI NOMAD robot, its suitcase-sized dimensions, 8–10 kg target and 12 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
+The HOMEGUARD AI NOMAD robot, its quadruped robot-dog form, 8–10 kg target and 12 kg absolute maximum, outdoor mode and wildlife-awareness functions are **future proposals only**. They have not been built, integrated, certified or validated. Sensor performance, navigation, weather resistance, animal detection, battery protection, fire performance and any explosion-protection rating require separate requirements, engineering reviews and test evidence before deployment.
 
 
-## Shared HOME & NOMAD design standard (PROPOSED)
+## Shared HOME & NOMAD handling and weight standard (PROPOSED)
 
 | Requirement | HOME | NOMAD |
 |---|---|---|
 | Hand lifting | Yes | Yes |
-| Hand pulling | Yes | Yes |
-| Retractable pull handle | Yes | Yes |
-| Compact wheels | Yes | Yes |
+| Hand pulling | Yes | Not applicable — lift/carry only using engineered grips |
+| Retractable pull handle | Yes | Not applicable — quadruped legs |
+| Stable mobility | Indoor compact wheels | Four articulated legs |
 | Weight target | 8–10 kg | 8–10 kg |
 | Maximum | 12 kg | 12 kg |
 
-Both products are designed around the same handling and weight standard. HOME is the indoor companion robot; NOMAD is the portable outdoor suitcase-style robot. The complete-weight target and maximum include the battery, sensors, computer, wheels, handles and casing. These are proposed engineering targets, not measured hardware specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms require testing before any safety or validation claim.
+Both products are designed around the same handling and weight standard. HOME is the indoor companion robot; NOMAD is the four-legged outdoor quadruped robot-dog concept. The complete-weight target and maximum include the battery, sensors, computer, wheels, handles and casing. These are proposed engineering targets, not measured hardware specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms require testing before any safety or validation claim.
 
 ## Quick start
 Requires Python 3.11+.
