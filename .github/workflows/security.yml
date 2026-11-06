@@ -32,12 +32,12 @@ jobs:
           cache: pip
       - name: Install project and security tools
         run: |
-          python -m pip install --upgrade pip
+          python -m pip install --upgrade pip setuptools
           python -m pip install -e ".[dev]" pip-audit bandit
       - name: Run tests
         run: pytest
       - name: Audit installed dependencies
-        run: pip-audit
+        run: pip-audit --skip-editable
       - name: Scan Python source
         run: bandit -r src -ll
       - name: Compile Python source
