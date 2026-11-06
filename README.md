@@ -1,29 +1,30 @@
-# PUI89 AI NOMAD — Mobile Assistant Robot
-### Portable Quadruped Assistant for Travel and Outdoor Use
+# PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
+### A Portable Quadruped Assistant for Home, Travel and Everyday Life
 
-**A helpful mobile companion for journeys, carrying essentials and outdoor awareness.**
+**A mobile companion designed to help people indoors and outdoors.**
 
-PUI89 AI NOMAD is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people during travel and outdoor activities through owner-supervised mobility, assistance with carrying belongings and environmental awareness. These are design goals, not validated capabilities.
+PUI89 AI NOMAD is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people in everyday environments, including carrying belongings, supervised accompaniment, travel and outdoor awareness. These are design goals, not validated capabilities.
 
-- **Repository:** https://github.com/Pui89/Guard-Ai-Home-Nomad
+- **Repository:** https://github.com/Pui89/AI-NOMAD
 - **Website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html)
-- **Separate indoor product:** [HOMEGUARD AI HOME](https://github.com/Pui89/HOMEGUARD-AI) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
+- **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
-![HOMEGUARD AI NOMAD quadruped robot-dog concept](docs/images/homeguard-ai-nomad-concept.svg)
+![PUI89 AI NOMAD quadruped robot-dog concept](docs/images/homeguard-ai-nomad-concept.svg)
 
-> **Product boundary:** NOMAD is for outdoor and travel contexts. HOME is a separate four-wheel indoor robot with its own repository, website pages, requirements and safety case. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
+> **Product boundary:** NOMAD is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
 ## NOMAD purpose
 
-NOMAD is intended as an owner-supervised outdoor companion and awareness platform. Proposed research areas include:
-- Outdoor scene and obstacle awareness
-- Owner-approved travel and campsite monitoring
+NOMAD is intended as an owner-supervised mobile companion. Proposed research areas include:
+- Carrying shopping, luggage and personal belongings within a validated payload limit
+- Owner-supervised accompaniment in suitable indoor and outdoor environments
+- Travel, walking, park, station and campsite assistance concepts
+- Indoor/outdoor scene and obstacle awareness
 - Mapping and localization research, with safe-stop behaviour when uncertain
-- Environmental observations such as smoke, abnormal heat, sound and weather-related conditions when suitable sensors are selected and validated
-- Wildlife/activity awareness for human review, not wildlife deterrence or guaranteed protection
+- Environmental observations when suitable sensors are selected and validated
 - Offline-first operation and clear owner-facing reports
 
-NOMAD is not a firefighting robot, emergency responder or unsupervised roaming machine. It must not enter hazardous areas merely to investigate.
+NOMAD is not an emergency responder or an unsupervised roaming machine. It must not enter hazardous areas merely to investigate. Carrying capacity, following behaviour, accessibility support and safe operation remain unvalidated design goals.
 
 ## Proposed physical design targets
 
@@ -37,32 +38,32 @@ NOMAD is not a firefighting robot, emergency responder or unsupervised roaming m
 | Absolute maximum complete weight | 10 kg |
 | Battery | Removable-battery concept |
 | Structure | Lightweight protective shell; guarded joints and wiring |
-| Environment | Outdoor travel and camping, within validated operating limits |
+| Environment | Indoor and outdoor use, only within separately validated operating limits |
 
-Weight includes battery, sensors, computer, enclosure and accessories. Dimensions and weight are design goals, not measured prototype specifications. Terrain, gait, endurance, weather limits and payload remain unvalidated.
+Weight includes battery, sensors, computer, enclosure and accessories. Dimensions and weight are design goals, not measured prototype specifications. Terrain, gait, endurance, weather limits, payload and indoor floor compatibility remain unvalidated.
 
 ## Proposed operating workflow
 
 Observe → check evidence quality → understand location and context → assess uncertainty and risk → choose a safe movement state → report to the owner.
 
-The owner remains responsible for decisions. Return-to-owner behaviour is only a future requirement: if localization, route safety or battery reserve is insufficient, the robot should stop safely rather than attempt an unsafe return.
+The owner remains responsible for decisions. If localization, route safety or battery reserve is insufficient, the robot should stop safely rather than attempt an unsafe return or continue moving.
 
 ## Safety and resilience requirements
 
-- Define and test limits for rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity.
+- Define and test separate limits for indoor floors, thresholds, stairs, people, pets, rain, dust, temperature, slopes, loose ground, water exposure, darkness, battery endurance and connectivity.
 - Prioritize battery protection, electrical isolation, overcurrent protection, thermal monitoring and guarded wiring.
-- Treat weather resistance, water resistance, fire performance and any hazardous-atmosphere protection as engineering requirements requiring specified tests; do not claim waterproof, fireproof or explosion-proof performance.
+- Treat weather resistance, water resistance and fire performance as engineering requirements requiring specified tests; do not claim waterproof or fireproof performance.
 - Never delay emergency response or substitute for certified alarms and qualified responders.
 - Use human supervision, safe-stop defaults and clear uncertainty reporting.
 - Protect location data and avoid unnecessary recording of people.
 
 ## Shared intelligence, separate product engineering
 
-NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its quadruped locomotion, outdoor navigation, sensor layout, environmental protection and risk assessment remain NOMAD-specific.
+NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its quadruped locomotion, indoor/outdoor navigation, sensor layout, environmental protection and risk assessment remain NOMAD-specific.
 
 ## Current development status
 
-**FOUNDATION / SIMULATION-ONLY / CONCEPT.** The repository contains an early deterministic software foundation, documentation and automated tests. It does not establish a built robot, real sensor integration, trained AI model, validated locomotion, outdoor reliability, certified safety or real-world hazard-detection performance.
+**FOUNDATION / SIMULATION-ONLY / CONCEPT.** The repository contains an early deterministic software foundation, documentation and automated tests. It does not establish a built robot, real sensor integration, trained AI model, validated locomotion, indoor/outdoor reliability, certified safety or real-world hazard-detection performance.
 
 ## Zero-cost and supply-chain policy
 
