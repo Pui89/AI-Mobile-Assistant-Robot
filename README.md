@@ -60,6 +60,10 @@ This is an explanatory concept, not an implemented autonomous system. Sensor inp
 
 *Latest NOMAD robot concept illustration — proposed design, not a built or validated robot.*
 
+![HOMEGUARD AI NOMAD mobile guardian engineering concept](docs/images/homeguard-ai-nomad.svg)
+
+**Design direction:** a compact, low-profile four-wheel rover with a protected central chassis, raised 360-degree sensor mast, forward obstacle-sensing pod, visible status lighting and guarded wheel modules. The proposed platform is intended for owner-supervised home, travel and campsite awareness—not confrontation or autonomous emergency response.
+
 <em>Physical design target — concept only, not a built or measured specification.</em>
 
 | Design parameter | Proposed target |
@@ -122,6 +126,6 @@ The initial foundation has no remote inference, model download, paid API, subscr
 ## Evidence labels
 PROPOSED = planned; IMPLEMENTED = code exists; TESTED = automated test passed; SIMULATION-ONLY = synthetic inputs only; MEASURED = quantitative result with method; VERIFIED = reproducibly checked; NOT_VALIDATED = real-world performance not established.
 
-See [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md) and [Roadmap](docs/ROADMAP.md).
+See [NOMAD Concept Design](docs/NOMAD_CONCEPT.md), [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md) and [Roadmap](docs/ROADMAP.md).
 
 **PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
