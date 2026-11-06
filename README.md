@@ -3,7 +3,7 @@
 
 **Your Intelligent Guardian. Wherever You Go.**
 
-> **Product identity:** HOMEGUARD AI NOMAD is the proposed portable mobile-robot product within PUI89's HOMEGUARD AI concept. The repository name is `Homeguard-Ai-Nomad`.
+> **Product identity:** HOMEGUARD AI NOMAD is the proposed portable mobile-robot product within PUI89's HOMEGUARD AI concept. The current repository is `Guard-Ai-Home-Nomad`.
 
 **Detect Early. Locate Precisely. Protect Better.**
 
@@ -39,6 +39,18 @@ HOMEGUARD AI should use **two separate robot types** rather than forcing one phy
 ### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
 
 HOME is a dedicated indoor mobile-robot concept. Its priorities are a compact footprint, low-noise movement, careful navigation through doors and corridors, obstacle and drop-off awareness, privacy-conscious sensing, and reliable docking. Its final dimensions, wheel arrangement, sensor package, battery and charging design remain open engineering decisions; no unverified hardware specification is claimed.
+
+### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
+
+![HOMEGUARD AI HOME compact indoor robot concept](docs/images/homeguard-ai-home-concept.svg)
+
+HOME is the dedicated indoor mobile-robot platform for homes and buildings. Its proposed design is a compact, low-profile mobile base with protected sensors, a soft perimeter bumper, obstacle/drop-off awareness, privacy-conscious sensing and a charging-dock concept. The final drive arrangement, sensor package, battery chemistry, docking interface and enclosure materials require engineering selection and validation.
+
+**Proposed complete-weight requirement:** 8 kg target and 10 kg absolute maximum, including battery, sensors, computer, enclosure and all installed accessories. This is a design requirement, not a measured prototype specification. The mass budget must be verified before hardware architecture is frozen.
+
+HOME is intended for indoor monitoring and evidence collection under owner supervision. It must move slowly around people, children and pets; maintain safe clearances; avoid stairs and drop-offs; stop when localization or obstacle evidence is uncertain; and never operate locks, breakers, valves, cooking appliances or certified alarms. Privacy-by-design means local processing where feasible, minimal collection, no unnecessary indoor video or audio recording, and clear owner control.
+
+The proposed 8 kg target and 10 kg maximum are engineering constraints. They do not imply that the robot is built, that runtime or payload is known, or that safety and navigation performance has been validated.
 
 ### HOMEGUARD AI NOMAD — outdoor robot concept (PROPOSED)
 
