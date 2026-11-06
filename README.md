@@ -120,6 +120,16 @@ The HOMEGUARD AI NOMAD robot, its quadruped robot-dog form, 8–10 kg target and
 
 Both products are designed around the same handling and weight standard. HOME is the indoor companion robot; NOMAD is the four-legged outdoor quadruped robot-dog concept. The complete-weight target and maximum include the battery, sensors, computer, wheels, handles and casing. These are proposed engineering targets, not measured hardware specifications. Handle strength, grip comfort, balance, wheel stability and locking mechanisms require testing before any safety or validation claim.
 
+
+
+## Project QR code
+
+Scan to open the [HOMEGUARD AI NOMAD GitHub repository](https://github.com/Pui89/Homeguard-Ai-Nomad).
+
+![QR code for HOMEGUARD AI NOMAD GitHub repository](https://api.qrserver.com/v1/create-qr-code/?size=180x180&margin=8&data=https%3A%2F%2Fgithub.com%2FPui89%2FHomeguard-Ai-Nomad)
+
+The QR image is served by an external QR image service; the destination is the public PUI89 repository.
+
 ## Quick start
 Requires Python 3.11+.
 ```bash
