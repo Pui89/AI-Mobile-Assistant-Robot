@@ -7,6 +7,8 @@
 
 **Detect Early. Locate Precisely. Protect Better.**
 
+**HOME indoor robot website:** [English](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html) · [Project repository](https://github.com/Pui89/Guard-Ai-Home-Nomad)
+
 <p align="center"><img src="docs/images/homeguard-ai-mark.svg" alt="HOMEGUARD AI geometric building intelligence mark" width="310" /></p>
 
 ![HOMEGUARD AI NOMAD quadruped AI robot dog concept](docs/images/homeguard-ai-nomad-concept.svg)
@@ -35,10 +37,6 @@ HOMEGUARD AI should use **two separate robot types** rather than forcing one phy
 |---|---|---|
 | **HOMEGUARD AI HOME** | Indoor homes and buildings | Compact, quiet movement; safe navigation around people, furniture and pets; indoor mapping; return to a charging dock |
 | **HOMEGUARD AI NOMAD** | Outdoor travel and camping | Compact quadruped robot dog; four articulated legs; protected sensor head; removable battery; supervised outdoor monitoring |
-
-### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
-
-HOME is a dedicated indoor mobile-robot concept. Its priorities are a compact footprint, low-noise movement, careful navigation through doors and corridors, obstacle and drop-off awareness, privacy-conscious sensing, and reliable docking. Its final dimensions, wheel arrangement, sensor package, battery and charging design remain open engineering decisions; no unverified hardware specification is claimed.
 
 ### HOMEGUARD AI HOME — indoor robot concept (PROPOSED)
 
