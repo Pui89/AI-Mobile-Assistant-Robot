@@ -1,9 +1,9 @@
-# HOMEGUARD AI NOMAD
-### Portable Outdoor Intelligent Guardian
+# PUI89 AI NOMAD — Mobile Assistant Robot
+### Portable Quadruped Assistant for Travel and Outdoor Use
 
-**Your Intelligent Guardian. Wherever You Go.**
+**A helpful mobile companion for journeys, carrying essentials and outdoor awareness.**
 
-HOMEGUARD AI NOMAD is PUI89's independent outdoor mobile-robot concept: a compact quadruped robot dog for owner-supervised travel, camping and outdoor awareness.
+PUI89 AI NOMAD is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people during travel and outdoor activities through owner-supervised mobility, assistance with carrying belongings and environmental awareness. These are design goals, not validated capabilities.
 
 - **Repository:** https://github.com/Pui89/Guard-Ai-Home-Nomad
 - **Website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html)
