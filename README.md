@@ -125,3 +125,7 @@ PROPOSED = planned; IMPLEMENTED = code exists; TESTED = automated test passed; S
 See [Architecture](docs/ARCHITECTURE.md), [Safety Case](docs/SAFETY_CASE.md), [Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md), [Supply-chain Policy](docs/MODEL_AND_SUPPLY_CHAIN_POLICY.md) and [Roadmap](docs/ROADMAP.md).
 
 **PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+
+## Commercial product readiness
+
+This project follows the [PUI89 Commercial Product & Company-Readiness Standard](PUI89_COMMERCIAL_PRODUCT_STANDARD.md). Commercial use of original materials is governed by the root [LICENSE](LICENSE); third-party assets retain their own terms. Sale-readiness and safety claims require evidence.
