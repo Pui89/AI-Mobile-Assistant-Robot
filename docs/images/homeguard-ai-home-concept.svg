@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 900" role="img" aria-labelledby="t d">
-<title id="t">PUI89 HOMEGUARD AI HOME indoor robot concept</title><desc id="d">Compact low-profile navy and electric-cyan indoor mobile home guardian robot with protected sensor mast, front camera array, soft bumper, four concealed drive wheels and docking concept. Proposed 8 kilogram target and 10 kilogram maximum, concept only.</desc>
+<title id="t">PUI89 HOMEGUARD AI HOME indoor robot concept</title><desc id="d">Compact low-profile navy and electric-cyan indoor mobile home guardian robot with protected sensor mast, front camera array, soft bumper, four protected drive wheels and docking concept. Proposed 8 kilogram target and 10 kilogram maximum, concept only.</desc>
 <defs>
  <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12395b"/></linearGradient>
  <linearGradient id="body" x2="1" y2="1"><stop stop-color="#355b79"/><stop offset=".55" stop-color="#173650"/><stop offset="1" stop-color="#091a2c"/></linearGradient>
@@ -34,10 +34,10 @@
 <g font-family="Arial,sans-serif" fill="#a7f5ff" font-size="18" font-weight="700">
  <path d="M830 290L1030 220H1260" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1260" y="205" text-anchor="end">PROTECTED SENSOR HEAD*</text>
  <path d="M365 570L180 500H80" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="80" y="480">SOFT BUMPER*</text>
- <path d="M940 640L1100 710H1300" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1300" y="690" text-anchor="end">LOW-PROFILE DRIVE*</text>
+ <path d="M940 640L1100 710H1300" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="1300" y="690" text-anchor="end">FOUR DRIVE WHEELS*</text>
  <path d="M680 400L520 315H390" stroke="#54e6fa" stroke-width="3" fill="none"/><text x="390" y="300" text-anchor="end">PROTECTED CORE</text>
 </g>
 <rect x="72" y="770" width="1256" height="75" rx="18" fill="#0b2238" stroke="#245779" stroke-width="2"/>
-<g font-family="Arial,sans-serif" fill="#d9f6ff" font-size="19"><text x="110" y="815">8 kg TARGET</text><text x="390" y="815">10 kg MAXIMUM</text><text x="700" y="815">INDOOR-FIRST</text><text x="990" y="815">DOCKING CONCEPT*</text></g>
+<g font-family="Arial,sans-serif" fill="#d9f6ff" font-size="19"><text x="110" y="815">8 kg TARGET</text><text x="390" y="815">10 kg MAXIMUM</text><text x="700" y="815">INDOOR-FIRST</text><text x="990" y="815">4 PROTECTED WHEELS</text></g>
 <text x="72" y="882" fill="#9cb9ce" font-family="Arial,sans-serif" font-size="15">*Proposed design features only. Mobility, sensing, docking, obstacle avoidance and protective performance require engineering and validation.</text>
 </svg>
