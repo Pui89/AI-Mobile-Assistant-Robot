@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=84.1.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -13,7 +13,7 @@ authors = [{ name = "PUI89" }]
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=8,<9"]
+dev = ["pytest>=9.0.3,<10", "setuptools>=84.1.0"]
 
 [project.scripts]
 homeguard-simulate = "homeguard_ai.simulator:main"
