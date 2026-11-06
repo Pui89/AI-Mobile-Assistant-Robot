@@ -33,8 +33,8 @@ NOMAD is not a firefighting robot, emergency responder or unsupervised roaming m
 | Height | 50–60 cm |
 | Width | 30–36 cm |
 | Depth | 20–25 cm |
-| Complete weight target | 8–10 kg |
-| Absolute maximum complete weight | 12 kg |
+| Complete weight target | 8 kg |
+| Absolute maximum complete weight | 10 kg |
 | Battery | Removable-battery concept |
 | Structure | Lightweight protective shell; guarded joints and wiring |
 | Environment | Outdoor travel and camping, within validated operating limits |
