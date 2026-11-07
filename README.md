@@ -171,7 +171,7 @@ Project-specific controls and review requirements:
 - AI suggestions must not directly control mobility, locks or safety-critical hardware; require human approval and safe-stop behaviour.
 - Keep CI permissions minimal and never expose secrets to untrusted pull-request code.
 
-A scan or passing test is evidence only for the checks actually run; it does not prove the repository is absence of malware or vulnerabilities.
+A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
 
 ## PUI89 seven-dimension quality recommendations
 
