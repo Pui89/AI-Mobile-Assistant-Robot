@@ -143,3 +143,20 @@ This is an evidence-weighted commercial-readiness estimate, not a code-completio
 **Status boundary:** Software tests and simulations do not establish a built, certified, field-tested or commercially validated physical product. Real-world claims require separate, traceable validation.
 
 <!-- PUI89_DAILY_PROGRESS:END -->
+
+
+---
+
+## Security, malware and supply-chain protection
+
+Security policy: [SECURITY.md](SECURITY.md). Report suspected vulnerabilities privately; do not post travel routes, precise locations, credentials or private sensor records publicly.
+
+Project-specific controls and review requirements:
+- Treat GPS, location, environmental sensors, camera/audio, maps, downloaded files and external messages as untrusted inputs.
+- Validate timestamps, source provenance, ranges, replay/stale data and offline behaviour.
+- Never commit credentials, private travel histories, home addresses or identifiable recordings.
+- Review packages, model files, simulator plugins and GitHub Actions for provenance, licence and vulnerability risks before adoption.
+- AI suggestions must not directly control mobility, locks or safety-critical hardware; require human approval and safe-stop behaviour.
+- Keep CI permissions minimal and never expose secrets to untrusted pull-request code.
+
+A scan or passing test is evidence only for the checks actually run; it does not prove the repository is free of malware or vulnerabilities.
