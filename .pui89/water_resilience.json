@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
-  "project": "Homeguard AI Nomad",
-  "exposure": "Outdoor rain, puddle splash, dust, humidity and wet-ground operation",
+  "project": "PUI89 AI NOMAD",
+  "exposure": "Future controlled evaluation of rain and splash, humidity, condensation, dust and wet-ground proximity; puddle entry, immersion and flood operation are excluded",
   "sensors": [
     "enclosure_leak_sensor",
     "internal_humidity_sensor",
     "electronics_temperature_sensor",
     "battery_health_monitor",
-    "wheel_motor_health_monitor"
+    "leg_actuator_health_monitor"
   ],
-  "temperature_limit_c": 60,
+  "temperature_limit_c": null,
   "physical_validation": "NOT_PERFORMED",
   "hardware_integration": "NOT_CONFIRMED",
   "ip_rating": "NOT_CLAIMED",
-  "project_notes": "Separate indoor HOME and outdoor NOMAD environmental envelopes. NOMAD requires sealed electronics, protected wheel drives and safe-stop/return logic; no underwater operation is implied."
+  "project_notes": "Separate indoor HOME and outdoor NOMAD environmental envelopes. Quadruped joints, actuators, cable entries, battery compartment and service panels require configuration-specific protection and validation. Sensor names are proposed monitoring requirements, not evidence of installed hardware. No water entry, immersion, flood/current operation or automatic wet-recovery behavior is implied."
 }
