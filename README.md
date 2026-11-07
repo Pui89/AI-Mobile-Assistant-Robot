@@ -1,5 +1,10 @@
 # PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
 
+## Open-source-first engineering
+
+PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
+
+
 > **PUI89 engineering standard:** [Simple, Safe and Professional](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md) — shared guidance for usability, safety, evidence, privacy and maintainable engineering.
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
@@ -171,7 +176,7 @@ Project-specific controls and review requirements:
 - AI suggestions must not directly control mobility, locks or safety-critical hardware; require human approval and safe-stop behaviour.
 - Keep CI permissions minimal and never expose secrets to untrusted pull-request code.
 
-A scan or passing test is evidence only for the checks actually run; it does not prove the repository is free of malware or vulnerabilities.
+A scan or passing test is evidence only for the checks actually run; it does not establish whether the repository contains malware or vulnerabilities.
 
 ## PUI89 seven-dimension quality recommendations
 
