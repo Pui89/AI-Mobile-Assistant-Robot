@@ -97,7 +97,7 @@ NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal
 
 ## local-first and supply-chain policy
 
-No paid API, subscription, cloud GPU or automatic model download is required for this project foundation. Do not add packages, models or external services without checking origin, licence, security, resource requirements and total cost. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
+External services and model downloads require prior origin, licensing, security and resource review. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
 
 ## Evidence labels
 
