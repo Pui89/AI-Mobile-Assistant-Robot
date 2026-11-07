@@ -1,5 +1,24 @@
 # PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
 
+
+## PUI89 — Intelligent Systems. Verifiable Decisions. Safer Outcomes.
+
+PUI89 develops intelligent software and next-generation robotic systems for practical challenges across agriculture, emergency response, multimodal inspection, home environments and mobility. Our engineering approach brings together perception, contextual reasoning, decision support, safety controls and evidence-led evaluation in a coherent system architecture.
+
+### Engineering capabilities
+
+- **Perception and sensing:** visual, spatial and multimodal information processing.
+- **Context and reasoning:** world-state representation, uncertainty handling and evidence alignment.
+- **Decision intelligence:** structured recommendations, action proposals and human approval boundaries.
+- **Safety engineering:** risk-aware operating limits, safe-state logic and failure reporting.
+- **Verification and assurance:** reproducible tests, benchmark records, provenance and traceable engineering evidence.
+
+### Technology governance
+
+PUI89 selects and integrates technologies according to capability, provenance, security, licence obligations, maintainability, interoperability and operational suitability. Product claims are based on documented implementation and validation—not on a list of underlying components. Required third-party notices and attributions are retained in the appropriate technical and legal records.
+
+**Development principle:** distinguish implemented capabilities, tested software behaviour, simulation results, proposed designs and independently validated real-world performance. A concept or passing software test is not represented as a commercially validated physical product.
+
 ## Commercial readiness progress
 
 **30% — evidence-based commercial-readiness estimate**  
@@ -95,7 +114,7 @@ NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal
 
 **FOUNDATION / SIMULATION-ONLY / CONCEPT.** The repository contains an early deterministic software foundation, documentation and automated tests. It does not establish a built robot, real sensor integration, trained AI model, validated locomotion, indoor/outdoor reliability, certified safety or real-world hazard-detection performance.
 
-## Zero-cost and supply-chain policy
+## cost-governed and supply-chain policy
 
 No paid API, subscription, cloud GPU or automatic model download is required for this project foundation. Do not add packages, models or external services without checking origin, licence, security, resource requirements and total cost. PUI89 excludes Chinese-origin AI models, providers and model-hosting services from its approved stack.
 
@@ -114,5 +133,5 @@ This repository now includes real Hugging Face checkpoint adapters in [`pui89_mo
 
 - **OWLv2:** `google/owlv2-base-patch16-ensemble` for text-conditioned object proposals.
 - **Intel DPT-Hybrid:** `Intel/dpt-hybrid-midas` for relative scene depth where appropriate; not calibrated distance or physical depth.
-- **Zero-cost default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
+- **cost-governed default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
 - **Evidence status:** adapter code is added; model inference and project-specific accuracy are NOT YET TESTED. Outputs remain uncertain observations for human review, never actuator commands.
