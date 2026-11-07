@@ -3,6 +3,24 @@
 ## Project website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/homeguard.html"><img src="https://pui89.github.io/qr/nomad-en.png" width="160" alt="PUI89 AI NOMAD English website QR code"></a><br><a href="https://pui89.github.io/homeguard.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/homeguard-th.html"><img src="https://pui89.github.io/qr/nomad-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI NOMAD"></a><br><a href="https://pui89.github.io/homeguard-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+
+## PUI89 product maturity snapshot — 7 November 2026
+
+**Strategic direction: From AI Projects to AI Products.**  
+**Current maturity: Grade 1–2 — Product Definition and Early Engineering Foundation.** NOMAD has a defined quadruped mobile-assistant direction, proposed physical targets and an early deterministic software foundation. It is not a built or validated robot dog.
+
+| Area | Verified position |
+|---|---|
+| Product definition | Separate quadruped indoor/outdoor mobile assistant for supervised travel, accompaniment and carrying concepts; HOME remains a separate four-wheel indoor product. |
+| Physical requirements | Proposed 50–60 cm height, 30–36 cm width, 20–25 cm depth, 8 kg target and 10 kg maximum. These are design targets, not measured specifications. |
+| Software and AI | Early deterministic software foundation, documentation and automated tests are present. Opt-in vision-model adapters are documented, but model inference and NOMAD-specific accuracy are not yet tested. |
+| Physical product | No built robot, validated gait, payload, endurance, terrain capability, weather/water resistance or certified safety performance is established. |
+
+**Next product gate:** produce a traceable mechanical/electrical requirements set and hazard analysis; assess centre of mass, joint protection, battery and thermal safety, safe-stop/recovery, payload stability and serviceability. Define separate indoor/outdoor simulation scenarios and measurable gait, endurance and obstacle tests before any hardware work.
+
+**Product discipline:** water resistance, fire performance and outdoor reliability are requirements to test, not existing claims. Keep owner supervision, privacy and safe-stop behaviour central. No paid API, cloud GPU, automatic model download or physical robot actuation is part of this update.
+
+
 ### A Portable Quadruped Assistant for Home, Travel and Everyday Life
 
 **A mobile companion designed to help people indoors and outdoors.**
