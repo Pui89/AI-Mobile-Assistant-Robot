@@ -1,24 +1,29 @@
 {
   "schema_version": 1,
   "standard": "PUI89-TOTAL-RESILIENCE",
-  "project": "Homeguard AI Nomad",
-  "project_type": "homeguard-mobile-robot-concept",
-  "status": "policy-baseline-only; physical protections not verified",
+  "project": "PUI89 AI NOMAD",
+  "project_type": "owner-supervised-quadruped-mobile-assistant-concept",
+  "status": "policy-baseline-only; software and physical protections not fully verified",
   "protection_domains": {
-    "cybersecurity": "authentication, least privilege, secure updates, local privacy, network isolation, tamper alerts",
-    "water_environment": "household spills, humidity, dust, cleaning exposure; ingress rating not established",
-    "fire_heat_power": "battery BMS, charging safety, thermal monitoring, overcurrent, safe power isolation",
-    "communications": "Wi-Fi/network outage, sensor disconnect, stale commands, local safe behavior",
-    "ai_data": "false alarms, missed events, uncertain detection, privacy, data retention",
-    "mechanical": "obstacle collision, falls, hand/pull limits, pinch points, emergency stop",
-    "human_mission": "child/pet safety, authorized operation, privacy zones, safe stop, manual recovery"
+    "cybersecurity": "least privilege, authenticated owner commands, secure updates, local privacy, network isolation, tamper and replay resistance",
+    "water_environment": "rain and splash only as future test cases, puddle and water-entry exclusion, humidity, condensation, dust, mud, corrosion and temperature; ingress rating not established",
+    "fire_heat_power": "battery BMS, charging safety, thermal monitoring, overcurrent and short-circuit protection, protected wiring and independently engineered power isolation",
+    "communications": "network and GPS loss or spoofing, sensor disconnection, stale or replayed commands, clock faults and local safe behavior",
+    "ai_data": "false or missed detections, uncertain localization, out-of-distribution terrain, sensor conflict, privacy and data retention",
+    "mechanical": "quadruped balance and falls, joint and actuator faults, pinch and crush points, collision, payload shift, emergency stop and manual recovery",
+    "human_mission": "owner supervision, child and pet separation, bystander safety, excluded areas, mission abort, safe stop, carry/lift recovery and privacy zones"
   },
   "project_specific_hazards": [
-    "children and pets",
-    "indoor obstacles and stairs",
-    "hand lifting/pulling mechanism",
-    "household spills",
-    "privacy-sensitive home monitoring"
+    "loss of balance, trip, fall or tip-over",
+    "stairs, ledges, thresholds, slopes and unknown terrain",
+    "collision or contact with people, children and pets",
+    "joint pinch, crush, shear, entanglement and actuator jam",
+    "payload overload or shifting load",
+    "battery damage, unsafe charging, overheating and fire",
+    "rain, splash, puddles, dust, humidity, condensation and corrosion",
+    "localization, GPS, sensor or communication loss and spoofing",
+    "privacy exposure from camera, audio and location data",
+    "unsafe restart or manual recovery after a fault"
   ],
   "shield_system": {
     "status": "architecture_baseline; implementation_and_physical_validation_not_verified",
@@ -53,19 +58,23 @@
     "fail_safe_rules": [
       "missing_stale_invalid_implausible_or_conflicting_inputs_must_not_be_treated_as_safe",
       "AI_outputs_are_proposals_and_must_not_bypass_project_safety_gates",
+      "physical_motion_requires_separate_hardware_safety_design_and_explicit_authorization",
+      "loss_of_supervision_localization_or_required_sensor_health_must_inhibit_new_motion_proposals",
+      "post_fall_collision_ingress_or_battery_fault_requires_inspection_before_restart",
       "critical_hardware_protection_must_be_independent_of_AI_software_where_required",
-      "project_specific_safe_state_must_be_defined_for_sensor_or_communication_loss",
       "human_authority_is_required_for_high_risk_recovery_and_reset",
       "no_physical_actuation_or_deployment_without_separate_authorization_and_validation"
     ],
     "physical_validation": "NOT_VERIFIED",
     "project_specific_warning_focus": [
-      "fire_smoke_heat_and_electrical_anomaly",
-      "water_leak_and_humidity",
-      "falls_stairs_and_obstacle_collision",
-      "child_and_pet_proximity",
-      "privacy_or_tampering",
-      "sensor_or_network_loss"
+      "quadruped_balance_fall_and_tip_over",
+      "stairs_edges_and_out_of_envelope_terrain",
+      "people_children_pets_and_collision",
+      "joint_actuator_and_payload_hazards",
+      "battery_thermal_and_electrical_faults",
+      "water_ingress_weather_and_corrosion",
+      "localization_sensor_and_communication_loss",
+      "privacy_tampering_and_unauthorized_movement"
     ]
   }
 }
