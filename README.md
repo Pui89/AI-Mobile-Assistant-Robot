@@ -1,5 +1,15 @@
 # PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
 
+> **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
+> 
+> **Project:** PUI89 AI NOMAD  
+> **Focus:** Owner-supervised quadruped mobile assistant robot concept  
+> **Development stage:** Early software foundation and design targets; locomotion, endurance and field performance are not validated.
+> 
+> **Project website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+> 
+> **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; NOMAD is not an emergency responder or unsupervised roaming system.
+
 ## Commercial readiness progress
 
 **30% — evidence-based commercial-readiness estimate**  
