@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" role="img" aria-labelledby="title desc">
+<title id="title">AI Mobile Assistant Robot — PUI89 quadruped concept</title>
+<desc id="desc">A premium isometric engineering concept illustration of a compact four-legged mobile assistant robot with a protected central body, top cargo deck, sensor head, articulated legs and rubberized feet. Titanium silver, deep navy and electric cyan. Concept only; not built or validated.</desc>
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset=".58" stop-color="#102b46"/><stop offset="1" stop-color="#06101d"/></linearGradient>
+ <linearGradient id="silver" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f4fbff"/><stop offset=".28" stop-color="#9fb5c6"/><stop offset=".58" stop-color="#536d82"/><stop offset="1" stop-color="#d5e2eb"/></linearGradient>
+ <linearGradient id="navy" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#294965"/><stop offset=".5" stop-color="#102a43"/><stop offset="1" stop-color="#071727"/></linearGradient>
+ <linearGradient id="cyan" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#a4fbff"/><stop offset=".5" stop-color="#16d5f5"/><stop offset="1" stop-color="#0088c8"/></linearGradient>
+ <linearGradient id="darkmetal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#46647c"/><stop offset="1" stop-color="#101f30"/></linearGradient>
+ <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feGaussianBlur stdDeviation="18"/></filter>
+ <filter id="glow" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="52" height="52" patternUnits="userSpaceOnUse"><path d="M52 0H0V52" fill="none" stroke="#6ab8d8" stroke-opacity=".11" stroke-width="1"/></pattern>
+</defs>
+<rect width="1600" height="1000" rx="34" fill="url(#bg)"/><rect width="1600" height="1000" rx="34" fill="url(#grid)"/>
+<circle cx="1270" cy="230" r="290" fill="#16c9ef" opacity=".055"/><circle cx="260" cy="800" r="260" fill="#16c9ef" opacity=".045"/>
+<path d="M80 210H1520M80 820H1520" stroke="#5abbd8" stroke-opacity=".18"/>
+<text x="92" y="92" fill="#9ceeff" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="7">PUI89  /  ROBOTICS ENGINEERING CONCEPT</text>
+<text x="90" y="164" fill="#f4f9ff" font-family="Arial,sans-serif" font-size="62" font-weight="800" letter-spacing="1">AI MOBILE ASSISTANT ROBOT</text>
+<text x="95" y="205" fill="#7deaff" font-family="Arial,sans-serif" font-size="23" letter-spacing="4">QUADRUPED PLATFORM  •  INDOOR &amp; OUTDOOR RESEARCH</text>
+<!-- ground plane -->
+<path d="M260 760L820 500L1370 735L810 930Z" fill="#020914" opacity=".48" filter="url(#shadow)"/>
+<path d="M250 735L810 470L1370 730L810 990Z" fill="none" stroke="#4ab9db" stroke-opacity=".22" stroke-width="2"/>
+<path d="M390 800L950 535M530 865L1090 600M670 930L1230 665M500 620L1060 880M650 550L1210 810M800 480L1360 740" stroke="#4ab9db" stroke-opacity=".12" stroke-width="2"/>
+<!-- far-side legs -->
+<g stroke="#8299aa" stroke-width="34" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M650 540L540 655L505 790"/><path d="M1050 535L1195 645L1245 770"/>
+</g>
+<g fill="url(#darkmetal)" stroke="#a8c1d0" stroke-width="5">
+ <circle cx="540" cy="655" r="29"/><circle cx="1195" cy="645" r="29"/>
+ <path d="M465 785Q505 765 545 788L558 815Q510 835 470 816Z"/><path d="M1205 770Q1245 752 1280 777L1295 804Q1250 825 1215 805Z"/>
+</g>
+<!-- main body lower chassis -->
+<path d="M465 430L820 260L1190 430L825 610Z" fill="#071727" stroke="#7b9bb0" stroke-width="5"/>
+<path d="M465 430L825 610V700L465 520Z" fill="#102b43" stroke="#4f7088" stroke-width="4"/>
+<path d="M825 610L1190 430V520L825 700Z" fill="#081b2d" stroke="#4f7088" stroke-width="4"/>
+<!-- body upper shell -->
+<path d="M445 390L820 205L1215 390L830 590Z" fill="url(#silver)" stroke="#e1f0f7" stroke-width="5"/>
+<path d="M445 390L830 590V650L445 450Z" fill="url(#navy)" stroke="#65859c" stroke-width="4"/>
+<path d="M830 590L1215 390V450L830 650Z" fill="#0a2035" stroke="#5d7e96" stroke-width="4"/>
+<path d="M505 388L820 235L1150 390L830 555Z" fill="url(#navy)" stroke="#9ab4c6" stroke-width="4"/>
+<path d="M540 390L820 255L1115 392L830 525Z" fill="#0b1d30" stroke="#26cfee" stroke-opacity=".8" stroke-width="3"/>
+<!-- protected equipment bay -->
+<path d="M630 385L820 292L1015 385L825 480Z" fill="#173b56" stroke="#6f9bb5" stroke-width="3"/>
+<path d="M670 386L820 312L970 386L825 460Z" fill="#07182a" stroke="#37d9f4" stroke-width="3"/>
+<path d="M720 385L820 337L920 385L825 435Z" fill="#163c58" stroke="#8eefff" stroke-width="2"/>
+<path d="M750 385L820 351L890 385L820 420Z" fill="#0b2034"/>
+<!-- top cargo / accessory deck -->
+<path d="M690 275L820 210L960 276L825 344Z" fill="#6e879a" stroke="#e0edf5" stroke-width="4"/>
+<path d="M710 273L820 220L938 276L825 331Z" fill="#142f48" stroke="#34d7f3" stroke-width="3"/>
+<path d="M744 270L820 234L902 272L825 312Z" fill="#0b1d2e" stroke="#6c91a8" stroke-width="2"/>
+<path d="M765 268L820 242L880 271L825 300Z" fill="url(#silver)" opacity=".8"/>
+<!-- brand panel -->
+<path d="M565 452L820 580L1095 445L1095 474L820 612L565 485Z" fill="#071727" opacity=".82"/>
+<text x="825" y="526" text-anchor="middle" fill="#e8f8ff" font-family="Arial,sans-serif" font-size="37" font-weight="800" letter-spacing="9">PUI89</text>
+<path d="M620 480L810 575L1030 466" fill="none" stroke="url(#cyan)" stroke-width="7" stroke-linecap="round" filter="url(#glow)"/>
+<!-- sensor mast and head -->
+<path d="M1030 315L1090 245" stroke="#8ba5b8" stroke-width="24" stroke-linecap="round"/>
+<path d="M1060 248L1080 190L1180 142L1260 184L1235 252L1135 300Z" fill="url(#silver)" stroke="#dceaf2" stroke-width="5"/>
+<path d="M1095 218L1110 184L1180 153L1230 182L1215 225L1138 264Z" fill="#071b2e" stroke="#31d8f4" stroke-width="4"/>
+<g filter="url(#glow)"><circle cx="1148" cy="209" r="13" fill="#9cfcff"/><circle cx="1200" cy="184" r="13" fill="#9cfcff"/></g>
+<rect x="1157" y="128" width="48" height="24" rx="8" fill="#163c59" stroke="#8defff" stroke-width="3"/>
+<path d="M1180 128V104" stroke="#8defff" stroke-width="5"/><circle cx="1180" cy="99" r="8" fill="#8defff"/>
+<!-- near legs -->
+<g stroke="#b0c3cf" stroke-width="38" stroke-linecap="round" stroke-linejoin="round" fill="none">
+ <path d="M535 500L390 625L350 790"/><path d="M730 575L690 700L705 850"/>
+ <path d="M970 575L1010 705L995 850"/><path d="M1130 485L1290 610L1340 780"/>
+</g>
+<g fill="#142d43" stroke="#b4cad8" stroke-width="6">
+ <circle cx="390" cy="625" r="31"/><circle cx="690" cy="700" r="31"/><circle cx="1010" cy="705" r="31"/><circle cx="1290" cy="610" r="31"/>
+ <circle cx="390" cy="625" r="12" fill="#19cce9" stroke="none"/><circle cx="690" cy="700" r="12" fill="#19cce9" stroke="none"/><circle cx="1010" cy="705" r="12" fill="#19cce9" stroke="none"/><circle cx="1290" cy="610" r="12" fill="#19cce9" stroke="none"/>
+</g>
+<g fill="#071726" stroke="#66849a" stroke-width="5">
+ <path d="M305 785Q350 760 395 786L410 820Q360 842 315 819Z"/><path d="M660 844Q705 824 745 850L758 882Q710 900 670 879Z"/><path d="M950 844Q995 824 1035 850L1048 882Q1000 900 960 879Z"/><path d="M1295 775Q1340 752 1380 780L1395 814Q1350 835 1310 812Z"/>
+</g>
+<!-- callout leaders -->
+<g fill="none" stroke="#54dff5" stroke-width="2.5">
+ <path d="M1180 160L1320 110H1470"/><path d="M850 280L850 225H650"/><path d="M390 625L230 570H95"/><path d="M1010 705L1150 760H1450"/>
+</g>
+<g font-family="Arial,sans-serif" fill="#a9f4ff" font-size="18" font-weight="700" letter-spacing="1">
+ <text x="1470" y="92" text-anchor="end">SENSOR MODULE</text><text x="650" y="205" text-anchor="end">MODULAR TOP DECK</text><text x="95" y="548">ARTICULATED LEGS</text><text x="1450" y="792" text-anchor="end">JOINTED DRIVE UNITS</text>
+</g>
+<rect x="88" y="875" width="1424" height="72" rx="16" fill="#081a2b" stroke="#315a75" stroke-width="2"/>
+<g font-family="Arial,sans-serif" font-size="17" fill="#d9f6ff" font-weight="700" letter-spacing="1">
+ <text x="125" y="918">QUADRUPED FORM</text><text x="445" y="918">OWNER-SUPERVISED</text><text x="795" y="918">MODULAR HARDWARE</text><text x="1160" y="918">CONCEPT ONLY</text>
+</g>
+<text x="90" y="978" fill="#9db7c9" font-family="Arial,sans-serif" font-size="15">Illustrative design proposal. Dimensions, payload, locomotion, sensing, endurance and environmental protection are not yet physically implemented or validated.</text>
+</svg>
