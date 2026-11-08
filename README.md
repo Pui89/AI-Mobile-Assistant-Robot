@@ -58,7 +58,7 @@ _Last readiness review: 7 November 2026. This estimate can rise or fall as evide
 
 PUI89 AI Mobile Assistant Robot is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people in everyday environments, including carrying belongings, supervised accompaniment, travel and outdoor awareness. These are design goals, not validated capabilities.
 
-- **Repository:** https://github.com/Pui89/AI-AI Mobile Assistant Robot
+- **Repository:** https://github.com/Pui89/AI-Mobile-Assistant-Robot
 - **Website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html)
 - **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
