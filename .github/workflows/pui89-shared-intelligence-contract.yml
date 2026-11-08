@@ -1,25 +1,54 @@
-name: PUI89 Shared Intelligence Contract
+name: PUI89 AI NOMAD Shared AI Core v0.1 Contract
 on:
   pull_request:
     paths:
       - "schemas/pui89-intelligence-report.schema.json"
       - "docs/PUI89_SHARED_INTELLIGENCE_WORKFLOW.md"
+      - "src/homeguard_ai/**"
+      - "pui89_models/**"
       - "tests/test_pui89_shared_workflow_contract.py"
+      - "tests/test_shared_core_v01.py"
+      - "pui89_shared_core_v01.py"
       - ".github/workflows/pui89-shared-intelligence-contract.yml"
   push:
     branches: [main]
+    paths:
+      - "src/homeguard_ai/**"
+      - "pui89_models/**"
+      - "tests/test_shared_core_v01.py"
+      - "pui89_shared_core_v01.py"
+      - ".github/workflows/pui89-shared-intelligence-contract.yml"
   workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: nomad-shared-core-contract-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   contract:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out AI NOMAD
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check out pinned Shared AI Core schemas
+        uses: actions/checkout@v4
+        with:
+          repository: Pui89/PUI89-Shared-AI-Core
+          ref: e762f38f1e34ddf2ce9e22e12605bc08aa493ff9
+          path: shared-ai-core
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-      - name: Validate JSON syntax
+      - name: Validate legacy report schema syntax
         run: python -c "import json; json.load(open('schemas/pui89-intelligence-report.schema.json', encoding='utf-8'))"
-      - name: Run dependency-free contract tests
-        run: python -m unittest discover -s tests -p 'test_pui89_shared_workflow_contract.py' -v
+      - name: Run existing contract tests
+        run: python -m unittest discover -s tests -p "test_pui89_shared_workflow_contract.py" -v
+      - name: Check NOMAD mapping against Shared AI Core v0.1
+        env:
+          PYTHONPATH: src
+          PUI89_SHARED_CORE_DIR: shared-ai-core
+        run: python -m unittest discover -s tests -p "test_shared_core_v01.py" -v
