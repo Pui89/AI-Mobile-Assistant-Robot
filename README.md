@@ -1,5 +1,11 @@
 # PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
 
+<!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
+![PUI89 AI NOMAD quadruped robot concept](docs/images/homeguard-ai-nomad-concept.svg)
+
+*Conceptual design illustration — not a built or validated robot. Dimensions, weight, mobility, endurance, weather resistance and field performance remain design targets pending engineering and physical validation.*
+<!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
+
 ## Open-source-first engineering
 
 PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
@@ -56,7 +62,6 @@ PUI89 AI NOMAD is an early-stage mobile assistant robot concept with a quadruped
 - **Website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html)
 - **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
-![PUI89 AI NOMAD quadruped robot-dog concept](docs/images/homeguard-ai-nomad-concept.svg)
 
 > **Product boundary:** NOMAD is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
