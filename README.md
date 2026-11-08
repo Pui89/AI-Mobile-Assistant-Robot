@@ -1,4 +1,4 @@
-# PUI89 AI Mobile Assistant Robot — Indoor & Outdoor Mobile Assistant Robot
+# PUI89 AI Mobile Assistant Robot
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
 ![PUI89 AI Mobile Assistant Robot quadruped robot concept](docs/images/homeguard-ai-nomad-concept.svg)
