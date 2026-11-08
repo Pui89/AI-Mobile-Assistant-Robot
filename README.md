@@ -1,7 +1,7 @@
-# PUI89 AI NOMAD — Indoor & Outdoor Mobile Assistant Robot
+# PUI89 AI Mobile Assistant Robot — Indoor & Outdoor Mobile Assistant Robot
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
-![PUI89 AI NOMAD quadruped robot concept](docs/images/homeguard-ai-nomad-concept.svg)
+![PUI89 AI Mobile Assistant Robot quadruped robot concept](docs/images/homeguard-ai-nomad-concept.svg)
 
 *Conceptual design illustration — not a built or validated robot. Dimensions, weight, mobility, endurance, weather resistance and field performance remain design targets pending engineering and physical validation.*
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
@@ -15,13 +15,13 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 > **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
 > 
-> **Project:** PUI89 AI NOMAD  
+> **Project:** PUI89 AI Mobile Assistant Robot  
 > **Focus:** Owner-supervised quadruped mobile assistant robot concept  
 > **Development stage:** Early software foundation and design targets; locomotion, endurance and field performance are not validated.
 > 
-> **Project website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+> **Project website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 > 
-> **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; NOMAD is not an emergency responder or unsupervised roaming system.
+> **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; AI Mobile Assistant Robot is not an emergency responder or unsupervised roaming system.
 
 ## Commercial readiness progress
 
@@ -51,23 +51,23 @@ _Last readiness review: 7 November 2026. This estimate can rise or fall as evide
 
 ## Project website QR codes
 
-<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/homeguard.html"><img src="https://pui89.github.io/qr/nomad-en.png" width="160" alt="PUI89 AI NOMAD English website QR code"></a><br><a href="https://pui89.github.io/homeguard.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/homeguard-th.html"><img src="https://pui89.github.io/qr/nomad-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI NOMAD"></a><br><a href="https://pui89.github.io/homeguard-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
+<table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/nomad.html"><img src="https://pui89.github.io/qr/nomad-en.png" width="160" alt="PUI89 AI Mobile Assistant Robot English website QR code"></a><br><a href="https://pui89.github.io/nomad.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/nomad-th.html"><img src="https://pui89.github.io/qr/nomad-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Mobile Assistant Robot"></a><br><a href="https://pui89.github.io/nomad-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
 ### A Portable Quadruped Assistant for Home, Travel and Everyday Life
 
 **A mobile companion designed to help people indoors and outdoors.**
 
-PUI89 AI NOMAD is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people in everyday environments, including carrying belongings, supervised accompaniment, travel and outdoor awareness. These are design goals, not validated capabilities.
+PUI89 AI Mobile Assistant Robot is an early-stage mobile assistant robot concept with a quadruped, robot-dog form. It is intended to support people in everyday environments, including carrying belongings, supervised accompaniment, travel and outdoor awareness. These are design goals, not validated capabilities.
 
-- **Repository:** https://github.com/Pui89/AI-NOMAD
-- **Website:** [English](https://pui89.github.io/homeguard.html) · [ภาษาไทย](https://pui89.github.io/homeguard-th.html)
+- **Repository:** https://github.com/Pui89/AI-Mobile-Assistant-Robot
+- **Website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html)
 - **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
 
-> **Product boundary:** NOMAD is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
+> **Product boundary:** AI Mobile Assistant Robot is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
-## NOMAD purpose
+## AI Mobile Assistant Robot purpose
 
-NOMAD is intended as an owner-supervised mobile companion. Proposed research areas include:
+AI Mobile Assistant Robot is intended as an owner-supervised mobile companion. Proposed research areas include:
 - Carrying shopping, luggage and personal belongings within a validated payload limit
 - Owner-supervised accompaniment in suitable indoor and outdoor environments
 - Travel, walking, park, station and campsite assistance concepts
@@ -76,7 +76,7 @@ NOMAD is intended as an owner-supervised mobile companion. Proposed research are
 - Environmental observations when suitable sensors are selected and validated
 - Offline-first operation and clear owner-facing reports
 
-NOMAD is not an emergency responder or an unsupervised roaming machine. It must not enter hazardous areas merely to investigate. Carrying capacity, following behaviour, accessibility support and safe operation remain unvalidated design goals.
+AI Mobile Assistant Robot is not an emergency responder or an unsupervised roaming machine. It must not enter hazardous areas merely to investigate. Carrying capacity, following behaviour, accessibility support and safe operation remain unvalidated design goals.
 
 ## Proposed physical design targets
 
@@ -111,7 +111,7 @@ The owner remains responsible for decisions. If localization, route safety or ba
 
 ## Shared intelligence, separate product engineering
 
-NOMAD may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its quadruped locomotion, indoor/outdoor navigation, sensor layout, environmental protection and risk assessment remain NOMAD-specific.
+AI Mobile Assistant Robot may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its quadruped locomotion, indoor/outdoor navigation, sensor layout, environmental protection and risk assessment remain AI Mobile Assistant Robot-specific.
 
 ## Current development status
 
@@ -199,7 +199,7 @@ This project uses the shared PUI89 quality framework. The indicators are guidanc
 | Product and commercial readiness | Validate the user problem, intended operator, value, support model, lawful IP/data position and release gates before commercial claims. | 🟠 Evidence required |
 | Professional environment and presentation | Use consistent technical diagrams, demonstrations and partner-facing materials; do not imply facilities or partnerships without evidence. | ⚪ Not assessed |
 
-**Project-specific priority:** Keep NOMAD distinct from indoor HOME as a portable/outdoor mobile assistant. Prioritise stability, obstacle handling, battery isolation, offline behaviour, enclosure drainage/sealing strategy, serviceability and supervised operation; dimensions, weight, locomotion, endurance and weather protection remain design targets until measured.
+**Project-specific priority:** Keep AI Mobile Assistant Robot distinct from indoor HOME as a portable/outdoor mobile assistant. Prioritise stability, obstacle handling, battery isolation, offline behaviour, enclosure drainage/sealing strategy, serviceability and supervised operation; dimensions, weight, locomotion, endurance and weather protection remain design targets until measured.
 
 **Status legend:** 🔵 framework guidance added · 🟢 engineering quality target · 🟠 evidence or validation still required · ⚪ not assessed. These labels describe the review state of recommendations, not overall project maturity. Project maturity changes only when supported by verified repository evidence, reproducible tests or controlled validation.
 
@@ -246,7 +246,7 @@ This score is separate from any commercial-readiness estimate and is not certifi
 
 ## Materials & Hardware — Research Plan
 
-**Status: NOMAD mobile-assistant concept and hardware research.** The proposed portable unit is not a validated product. Treat the luggage-style enclosure and target dimensions/weight as design goals until measured on a prototype.
+**Status: AI Mobile Assistant Robot mobile-assistant concept and hardware research.** The proposed portable unit is not a validated product. Treat the luggage-style enclosure and target dimensions/weight as design goals until measured on a prototype.
 
 | Subsystem | Candidate materials / hardware | Intended role | Required checks before selection |
 |---|---|---|---|
