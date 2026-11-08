@@ -1,5 +1,10 @@
 # PUI89 AI Mobile Assistant Robot
 
+
+## Public privacy boundary
+
+This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
+
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
 ![AI Mobile Assistant Robot — PUI89 quadruped concept](docs/images/ai-mobile-assistant-robot-concept.svg)
 
@@ -77,22 +82,6 @@ AI Mobile Assistant Robot is intended as an owner-supervised mobile companion. P
 - Offline-first operation and clear owner-facing reports
 
 AI Mobile Assistant Robot is not an emergency responder or an unsupervised roaming machine. It must not enter hazardous areas merely to investigate. Carrying capacity, following behaviour, accessibility support and safe operation remain unvalidated design goals.
-
-## Proposed physical design targets
-
-| Parameter | Proposed target |
-|---|---:|
-| Form | Four-legged quadruped robot dog |
-| Height | 50–60 cm |
-| Width | 30–36 cm |
-| Depth | 20–25 cm |
-| Complete weight target | 8 kg |
-| Absolute maximum complete weight | 10 kg |
-| Battery | Removable-battery concept |
-| Structure | Lightweight protective shell; guarded joints and wiring |
-| Environment | Indoor and outdoor use, only within separately validated operating limits |
-
-Weight includes battery, sensors, computer, enclosure and accessories. Dimensions and weight are design goals, not measured prototype specifications. Terrain, gait, endurance, weather limits, payload and indoor floor compatibility remain unvalidated.
 
 ## Proposed operating workflow
 
@@ -244,25 +233,3 @@ This score is separate from any commercial-readiness estimate and is not certifi
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
 
 
-## Materials & Hardware — Research Plan
-
-**Status: AI Mobile Assistant Robot mobile-assistant concept and hardware research.** The proposed portable unit is not a validated product. Treat the luggage-style enclosure and target dimensions/weight as design goals until measured on a prototype.
-
-| Subsystem | Candidate materials / hardware | Intended role | Required checks before selection |
-|---|---|---|---|
-| Outer shell | Impact-resistant polymer or aluminium shell, replaceable corner guards and weather seals | Protect internal equipment during travel | Impact, abrasion, temperature, repairability, ingress and material fire behaviour |
-| Frame and handle | Aluminium alloy or steel reinforcement, telescopic pull handle and reinforced attachment points | Support lifting, pulling and transport | Static/dynamic loads, fatigue, pinch points, corrosion and handle retention |
-| Mobility | Four replaceable wheels, sealed bearings and optional wheel brakes | Roll over indoor and outdoor surfaces | Load rating, stability, obstacle clearance, wear and water/mud ingress |
-| Power | Removable battery pack with BMS, fuses, protected charging port and battery-status sensing | Portable power | Airline/transport rules, chemistry, capacity, thermal protection and safe charging |
-| Compute | Low-power edge computer and microcontroller for sensor supervision | Local assistant functions | RAM/CPU, heat, battery runtime, update security and offline capability |
-| Perception | RGB cameras, optional depth sensor, microphones and ambient light sensor | Observe surroundings and support user interaction | Privacy, field of view, low-light limits, calibration and consent |
-| Navigation and location | IMU, wheel encoders, GNSS outdoors and optional proximity sensors | Estimate movement and location | Indoor GNSS limitations, drift, obstacle detection and safe stop |
-| Connectivity | Wi-Fi/Bluetooth and optional cellular module only if justified | User interface and optional remote connectivity | Offline fallback, encryption, data minimisation and recurring-cost review |
-| Environmental protection | Gaskets, protected connectors, drainage strategy and conformal coating where appropriate | Improve resistance to dust/moisture | Ingress tests, condensation, corrosion and repairability; no rating without test |
-| User interface | Display, physical controls, speaker, status LEDs and accessible tactile controls | Communicate status and alerts | Accessibility, glare, volume, failure indications and user testing |
-
-**Design priorities:** keep the device stable, repairable, easy to lift and pull, with protected wheels, accessible battery isolation and a clear manual shutdown. Any GPS, microphone or camera function must be transparent and privacy-preserving.
-
-**Development boundary:** build the software assistant, offline workflows and sensor-data contracts first. Do not assume autonomous following, stair climbing, obstacle avoidance or outdoor weather operation until each has been separately engineered and tested.
-
-**Procurement rule:** research first. No purchases, subscriptions, supplier contact or paid services without explicit approval. Verify dimensions, component weights, load ratings, transport rules, datasheets, warranty and total landed cost before selection.
