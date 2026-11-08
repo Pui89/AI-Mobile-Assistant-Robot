@@ -8,7 +8,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from homeguard_ai.core import Baseline, Observation, evaluate
-from pui89_shared_core_v01 import build_nomad_v01_records
+from homeguard_ai.pui89_shared_core_v01 import build_nomad_v01_records
 
 class NomadSharedCoreV01Tests(unittest.TestCase):
     def make_bundle(self):
