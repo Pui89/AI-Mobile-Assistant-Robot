@@ -1,7 +1,7 @@
 # PUI89 AI Mobile Assistant Robot
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
-![PUI89 AI Mobile Assistant Robot quadruped robot concept](docs/images/homeguard-ai-nomad-concept.svg)
+![AI Mobile Assistant Robot — PUI89 quadruped concept](docs/images/ai-mobile-assistant-robot-concept.svg)
 
 *Conceptual design illustration — not a built or validated robot. Dimensions, weight, mobility, endurance, weather resistance and field performance remain design targets pending engineering and physical validation.*
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
