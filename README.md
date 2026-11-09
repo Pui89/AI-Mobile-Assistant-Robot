@@ -27,6 +27,10 @@ The 28 × 22 cm floor footprint is a compact-space design target. The proposed s
 
 **Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These dimensions and the 8 kg limit have not been demonstrated by a physical prototype. Internal packaging, wheel size, ground clearance, battery capacity, stability, payload, turning clearance, thermal performance and accessibility must be checked through engineering before the dimensions or weight are treated as final. The design is not claimed to climb stairs or traverse deep sand, mud or rough terrain.
 
+### Preliminary mechanical and battery engineering
+
+The preferred wheel-layout candidate, component-placement principles, provisional 8 kg mass allocation, battery/electrical safety requirements and validation gates are documented in [AI NOMAD Mechanical Layout and Battery Requirements](docs/AI_NOMAD_MECHANICAL_LAYOUT_BATTERY_REQUIREMENTS.md). This is a proposed engineering baseline only; no hardware is selected, purchased, built or validated.
+
 ## Open-source-first engineering
 
 PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
