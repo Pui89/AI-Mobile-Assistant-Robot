@@ -42,10 +42,7 @@ class NomadSharedCoreV01Tests(unittest.TestCase):
         self.assertIn("not a diagnosis", serialized)
 
     def test_shared_core_schema_required_fields_match(self):
-        core_dir = os.environ.get("PUI89_SHARED_CORE_DIR")
-        if not core_dir:
-            self.skipTest("Shared AI Core checkout is supplied by GitHub Actions")
-        schema_dir = Path(core_dir) / "schemas" / "v0.1"
+        schema_dir = ROOT / "schemas" / "v0.1"
         bundle = self.make_bundle()
         for key, filename in (
             ("observation", "observation.schema.json"),
