@@ -1,0 +1,40 @@
+{
+  "profile_version": "0.1.0",
+  "project_id": "ai-mobile-assistant-robot",
+  "project_name": "AI NOMAD",
+  "integration_status": "profile_added_runtime_integration_pending",
+  "shared_core": {
+    "repository": "Pui89/PUI89-Shared-AI-Core",
+    "pull_request": "https://github.com/Pui89/PUI89-Shared-AI-Core/pull/26",
+    "release_status": "draft_not_merged"
+  },
+  "intended_use": "Advisory indoor/outdoor obstacle geometry and spatial context.",
+  "recommended_modalities": [
+    "rgb",
+    "lidar",
+    "depth",
+    "imu",
+    "gps"
+  ],
+  "planned_spatial_tasks": [
+    "Obstacle-relative geometry and room/area context",
+    "Coordinate-frame and timestamp consistency checks",
+    "Evidence records for future mobility evaluation"
+  ],
+  "limitations_and_safety_boundaries": [
+    "No localization integrity, weather resistance or mobility safety is validated.",
+    "No autonomous movement or physical control is enabled.",
+    "Outdoor GNSS and environmental degradation require separate testing."
+  ],
+  "common_gates": [
+    "usable evidence quality",
+    "valid calibration before fusion",
+    "matching coordinate frames",
+    "validated timestamp tolerance",
+    "sensor-health and uncertainty assessment",
+    "human review required",
+    "execution_authorized=false"
+  ],
+  "evidence_status": "No real sensor integration, accuracy, field validation or certification claimed.",
+  "cost_policy": "standard-library-first; no paid APIs, cloud GPU, model downloads or hardware purchases"
+}
