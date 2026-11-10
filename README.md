@@ -249,3 +249,8 @@ This score is separate from any commercial-readiness estimate and is not certifi
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
 
 
+
+
+## Spatial Intelligence integration
+
+See [the project-specific spatial integration profile](docs/spatial-intelligence/README.md). Runtime sensor integration and physical validation remain pending.
