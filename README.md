@@ -44,30 +44,16 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 > 
 > **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; AI Mobile Assistant Robot is not an emergency responder or unsupervised roaming system.
 
-## Commercial readiness progress
+## Development stage
 
-**30% — evidence-based commercial-readiness estimate**  
-**Target: 100% = ready for an appropriately scoped commercial release or formal commercial procurement submission.** This is not a code-completion percentage, a sales forecast, or a claim of product certification. Scores are provisional and based on the evidence currently documented in this repository; they must be revised when new evidence is verified.
+**Current stage:** Early software foundation & design targets  
+**ขั้นการพัฒนา:** พื้นฐานซอฟต์แวร์และเป้าหมายการออกแบบระยะแรก
 
-The repository contains concept requirements, architecture, early deterministic software foundation and automated tests. No built robot, validated locomotion, real sensor integration, endurance, weather protection or field performance is established.
+**Evidence:** Concept requirements, architecture and early deterministic software foundations are documented.
 
-| Readiness gate | Weight | Evidence credit |
-|---|---:|---:|
-| Product purpose & requirements | 10 | 8 |
-| Architecture & engineering design | 10 | 8 |
-| Working software baseline | 15 | 5 |
-| Reproducible tests & evaluation | 15 | 4 |
-| Integrated product prototype | 15 | 0 |
-| Safety, reliability & real-world validation | 15 | 1 |
-| Licensing, IP & regulatory readiness | 10 | 3 |
-| Commercial release package & support | 10 | 1 |
-| **Total** | **100** | **30** |
+**Limitations:** No built robot, validated four-wheel mobility, endurance, weather protection or field performance is established.
 
-**What 100% requires:** a defined product and acceptance criteria; integrated release candidate; reproducible performance and reliability evidence; appropriate safety and real-world validation; verified rights/licences and applicable regulatory conformity; manufacturing/deployment, pricing, warranty, maintenance, user documentation and support arrangements. A score of 100% is awarded only after all applicable release gates are evidenced and reviewed. Partner or research discussions may happen earlier, but must be labelled as development-stage collaboration—not a ready-to-sell product.
-
-**Next commercial-readiness gate:** close the missing evidence above, beginning with project-specific working-product validation and safety evidence. Never count a planned feature, concept image, tool inventory, synthetic-only result or unrun test as a completed gate.
-
-_Last readiness review: 7 November 2026. This estimate can rise or fall as evidence changes._
+**Next milestone:** Complete a software-only mission and hazard-state demonstrator.
 
 
 ## Project website QR codes
@@ -81,7 +67,7 @@ PUI89 AI NOMAD is an early-stage, owner-supervised compact four-wheel mobile-ass
 
 - **Repository:** https://github.com/Pui89/AI-Mobile-Assistant-Robot
 - **Website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html)
-- **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-HOME) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
+- **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
 
 > **Product boundary:** AI Mobile Assistant Robot is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
@@ -144,32 +130,7 @@ This repository now includes real Hugging Face checkpoint adapters in [`pui89_mo
 - **local-first default:** no packages or model weights are installed/downloaded automatically; CPU-only inference, local cache only by default, no hosted inference API or cloud GPU.
 - **Evidence status:** adapter code is added; model inference and project-specific accuracy are NOT YET TESTED. Outputs remain uncertain observations for human review, never actuator commands.
 
-<!-- PUI89_DAILY_PROGRESS:START -->
-## Daily project progress
 
-**🟠 30% — Foundation and prototype stage**  
-**Evidence score:** 30/100 · **Review date:** 7 November 2026 (Asia/Bangkok)  
-**Progress graph:** 🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ 30%
-
-This is an evidence-weighted commercial-readiness estimate, not a code-completion percentage, sales forecast, certification, or measured real-world performance. Scores change only when repository evidence is reviewed and the evidence credits below are updated. The daily run refreshes the review date; it never increases the score merely because time has passed.
-
-| Readiness gate | Evidence credit | Visual score |
-|---|---:|---|
-| Purpose & requirements | 8/10 | 🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜ |
-| Architecture & engineering | 8/10 | 🟩🟩🟩🟩🟩🟩🟩🟩⬜⬜ |
-| Working software baseline | 5/15 | 🟩🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Reproducible tests & evaluation | 4/15 | 🟩🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Integrated product prototype | 0/15 | ⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Safety & real-world validation | 1/15 | 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| Licensing & regulatory readiness | 3/10 | 🟩🟩🟩⬜⬜⬜⬜⬜⬜⬜ |
-| Release package & support | 1/10 | 🟩⬜⬜⬜⬜⬜⬜⬜⬜⬜ |
-| **Total** | **30/100** | **🟦🟦🟦🟦🟦🟦⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜** |
-
-**Next milestone:** Improve the lowest-scoring applicable gate with reproducible project-specific evidence. Planned work, concept artwork, unrun tests, synthetic-only results and tool inventories do not earn evidence credit.
-
-**Status boundary:** Software tests and simulations do not establish a built, certified, field-tested or commercially validated physical product. Real-world claims require separate, traceable validation.
-
-<!-- PUI89_DAILY_PROGRESS:END -->
 
 
 ---
@@ -245,7 +206,7 @@ Scores are awarded only through a dated review with a defined scope, version/com
 
 **Scoring method / รายละเอียดเกณฑ์:** [English](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD.md) · [ภาษาไทย](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PROJECT_STRENGTH_SCORECARD_TH.md)
 
-This score is separate from any commercial-readiness estimate and is not certification, safety approval or an investment rating.
+This project-strength review is separate from the documented development stage; it is not certification, safety approval or an investment rating.
 <!-- PUI89_PROJECT_STRENGTH_SCORECARD:END -->
 
 
