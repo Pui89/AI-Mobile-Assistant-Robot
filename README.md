@@ -44,6 +44,24 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 > 
 > **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; AI Mobile Assistant Robot is not an emergency responder or unsupervised roaming system.
 
+## Perception & Task Intelligence (PTI)
+
+**Role in this product:** support supervised outdoor and mixed-environment mobility for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated all-terrain or autonomous capability.
+
+**Priority perception tasks**
+- Check camera/depth/IMU input quality, timestamps, calibration state and sensor availability.
+- Detect people, objects, path boundaries and obstacles relevant to the planned route.
+- Estimate terrain changes, slopes and traversability only when suitable depth/spatial inputs and validation evidence are available.
+- Fuse localisation, inertial and perception observations; detect stale data, sensor disagreement and localisation loss.
+- Identify routes or surfaces outside the validated operating envelope and request human guidance.
+- Propose only bounded routes in a defined, supervised operating area; safe-hold when conditions are uncertain.
+
+**Task flow:** OBSERVE → PERCEIVE → ASSESS → DECIDE → RESPOND → LEARN FROM EVIDENCE. Outputs support a human supervisor; they do not authorise unrestricted navigation or physical movement beyond separately validated safeguards.
+
+**First evidence gate:** controlled indoor/outdoor route datasets and synthetic obstacle/terrain cases, then supervised low-speed trials only after independent hardware safety provisions exist. Measure obstacle misses, localisation error, stop response, recovery behaviour and compute/resource use.
+
+**Not established:** all-terrain operation, stair traversal, public-road autonomy, payload or mobility limits, or field-validated navigation. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+
 ## Development stage
 
 **Current stage:** Early software foundation & design targets  
