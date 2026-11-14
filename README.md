@@ -12,20 +12,28 @@ This public README is limited to the project overview, approved concept material
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
 
 
-## Compact product dimensions — proposed design target
+## Compact lightweight product dimensions — revised proposed target
 
-| Specification | Proposed target |
+The revised concept targets a smaller, lighter four-wheel mobile assistant while retaining the retractable handle and a distinct outdoor/mixed-environment role.
+
+| Specification | Revised target |
 |---|---:|
-| Width (W) | **28 cm** |
-| Length / depth (D) | **22 cm** |
-| Height (H) | **45 cm** — body height, excluding the extended handle |
-| Total mass | **Maximum 8 kg**, including battery |
-| Mobility concept | **Four protected/recessed wheels** |
-| Form | Rounded, suitcase-style compact body with retractable pull handle |
+| Width (W) | **30–33 cm** |
+| Length / depth (D) | **35–40 cm** |
+| Body height (H) | **35–40 cm**, excluding extended handle |
+| Complete robot mass | **7 kg target**, including battery |
+| Maximum design allowance | **10 kg ceiling**, not a target build mass |
+| Mobility concept | Four protected/recessed wheels |
+| Form | Rounded compact body with retractable pull handle |
 
-The 28 × 22 cm floor footprint is a compact-space design target. The proposed safety direction includes guarded/recessed wheels, rounded body edges, low-mounted battery mass, a physical emergency-stop control and conservative obstacle-aware stopping. These are requirements/proposals, not verified implemented safeguards.
+The dimensions describe the complete external body envelope, including wheels and fixed sensor housings; the handle is excluded from body height but its mass is included in total robot mass. The 7 kg target supersedes the earlier 8 kg target. The 10 kg maximum design ceiling is retained as an upper engineering limit, not a reason to add weight.
 
-**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These dimensions and the 8 kg limit have not been demonstrated by a physical prototype. Internal packaging, wheel size, ground clearance, battery capacity, stability, payload, turning clearance, thermal performance and accessibility must be checked through engineering before the dimensions or weight are treated as final. The design is not claimed to climb stairs or traverse deep sand, mud or rough terrain.
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These dimensions and mass have not been demonstrated by a physical prototype. The component-level mass ledger must include chassis, enclosure, wheels, motors, battery/BMS, compute, sensors, wiring, connectors, handle, guards, fasteners and accessories. Payload is separate and remains TBD.
+
+**Weight-reduction strategy:** optimise the chassis using load-path-based geometry; use appropriately sized motors and wheels based on torque, terrain and duty-cycle calculations; keep the battery low; consolidate electronics where compatible; minimise brackets, fasteners and duplicated housings; select lightweight but durable body materials; and make the handle structural only where required. Preserve wheel protection, braking, battery protection, weather-related engineering and stability.
+
+The revised envelope must be checked against ground clearance, wheel diameter, turning clearance, centre of gravity, handle loads, battery capacity, payload, thermal performance, water/dust exposure and maintainability. Do not claim stair climbing, all-terrain mobility, deep-water operation, waterproofing or validated field performance.
+
 
 ## Open-source-first engineering
 
