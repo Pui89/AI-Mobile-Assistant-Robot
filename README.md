@@ -35,6 +35,8 @@ The dimensions describe the complete external body envelope, including wheels an
 The revised envelope must be checked against ground clearance, wheel diameter, turning clearance, centre of gravity, handle loads, battery capacity, payload, thermal performance, water/dust exposure and maintainability. Do not claim stair climbing, all-terrain mobility, deep-water operation, waterproofing or validated field performance.
 
 
+**Detailed packaging and mass-budget plan:** [NOMAD compact layout and 7 kg target mass budget](docs/NOMAD_COMPACT_LAYOUT_AND_MASS_BUDGET.md). This is a planning document, not a measured bill of materials.
+
 ## Open-source-first engineering
 
 PUI89 prioritises open-source software, transparent licensing, reproducible workflows and evidence-led collaboration. Model weights, datasets, hosted services and hardware are assessed separately for provenance, licence terms, security, data handling, resource requirements and intended use. Public availability alone does not establish permission for reuse or commercial deployment.
