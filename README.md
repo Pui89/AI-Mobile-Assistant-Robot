@@ -253,3 +253,19 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
+
+## AI Engineering Intelligence & Outdoor-Robot Design
+
+This project adopts PUI89 Engineering Intelligence for outdoor scene understanding, route planning, mobility design, payload management, environmental protection and recovery. NOMAD remains distinct from indoor AI HOME: it is a compact, dog-inspired four-wheel outdoor/mobile assistant concept.
+
+**Product-specific design priorities**
+- **Outdoor mobility:** study wheel size, ground clearance, approach/departure angles, traction, slope limits, uneven terrain, curb/threshold negotiation and rollover margin.
+- **Structure and payload:** retain 8–10 kg as the current target range and 10 kg maximum design limit; validate load distribution, centre of gravity, retention and braking/stopping envelope.
+- **Environmental protection:** define rain, splash, dust, mud, humidity, corrosion and cleaning exposure separately; do not claim submersion or flood-crossing capability.
+- **Navigation:** combine camera/depth/LiDAR or other approved sensing with odometry and IMU; detect stale maps, GNSS loss, low visibility, people, pets and moving obstacles.
+- **Energy and recovery:** estimate terrain-dependent energy use, thermal limits, low-battery return/hold behaviour, stuck detection and safe manual recovery.
+- **Human interaction:** provide an accessible handle/manual recovery method, clear status and emergency stop; avoid unsafe following or crowd movement.
+
+**AI engineering methods to evaluate:** visual-inertial/odometric state estimation, terrain classification, traversability estimation, obstacle tracking, semantic mapping, route planning, task scheduling, anomaly detection and digital-twin mobility simulation.
+
+**Evidence gates:** terrain and operating-domain specification → simulation with parameter sweeps → sensor and navigation tests → supervised low-speed closed-area trials → payload, slope, braking, ingress and recovery validation. Proposed mobility limits are not established capabilities.
