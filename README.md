@@ -375,3 +375,17 @@ NOMAD uses a staged, owner-supervised engineering approach. Its current product 
 **Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
 **Evidence gates:** CAD and mass ledger → mechanical/electrical analysis → deterministic software tests and documented simulation → supervised low-speed closed-area trials → payload, stability, braking, endurance and environmental validation. Proposed mobility limits are not established capabilities.
+
+---
+
+## Preliminary Prototype Cost Estimate (15 November 2026)
+
+**Indicative one-unit engineering prototype planning range: ฿150,000–฿450,000 (THB).**
+
+**Included at a planning level:** A compact four-wheel mobile platform, drive/braking system, battery, perception/navigation sensors, handle and integration. This is a separate cost target from the current older 6 kg/1 kg-payload README specification; mass and payload must be reconciled before procurement.
+
+**Estimate status:** preliminary internal planning estimate only; not a supplier quotation, purchase commitment, verified bill of materials, fixed project budget or claim that a prototype exists. The range depends on final requirements, component selection, non-Chinese-origin supplier availability, compatibility, import/shipping costs and test scope. Obtain current written quotations and verify country of manufacture/origin, exact model/part number, specifications, warranty and lead time before any procurement.
+
+**Generally excluded:** engineering labour, research salaries, facilities, taxes/VAT, import duties, shipping unless stated in a supplier quotation, certification/regulatory approvals, production tooling, mass production, long-term maintenance and contingency. Project-specific exclusions: any major custom manufacturing or certification not specified in the prototype scope.
+
+**Lower-cost development path:** continue software-first development, open-source tools and simulation before purchasing physical hardware. Shared AI Core software and reusable development equipment may reduce duplicated costs; savings are not yet quantified. No purchase or installation is authorised by this estimate.
