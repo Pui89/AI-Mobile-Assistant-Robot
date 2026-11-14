@@ -44,6 +44,10 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 > 
 > **Validation boundary:** Proposed dimensions and weight are design targets, not measured prototype specifications; AI Mobile Assistant Robot is not an emergency responder or unsupervised roaming system.
 
+## Hardware & Materials Sourcing
+
+PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** support supervised outdoor and mixed-environment mobility for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated all-terrain or autonomous capability.
