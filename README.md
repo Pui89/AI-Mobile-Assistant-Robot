@@ -6,7 +6,9 @@
 This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
-![PUI89 AI NOMAD — compact four-wheel concept](docs/images/ai-nomad-compact-four-wheel.svg)
+![PUI89 AI NOMAD — compact mobile assistant with telescopic pull handle](docs/images/ai-nomad-compact-four-wheel.svg)
+
+*Concept illustration built as an embedded SVG. Proposed design only; physical construction and validation remain pending.*
 
 *Conceptual design illustration — not a built or validated robot. Dimensions, weight, mobility, endurance, weather resistance and field performance remain design targets pending engineering and physical validation.*
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
