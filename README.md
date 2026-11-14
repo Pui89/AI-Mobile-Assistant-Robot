@@ -96,6 +96,29 @@ PUI89 prioritises open-source software, transparent licensing, reproducible work
 
 PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensors, compute, power and control components. See the [bilingual Hardware & Materials Sourcing guide](https://pui89.github.io/materials.html) for the process covering exact manufacturer/model identification, Thailand and international supplier discovery, country-of-origin evidence, dated pricing and availability, lead times, shipping, compatibility checks and verification gates. Product-specific candidates are added only when supported by evidence; research candidates are not purchases or validated hardware.
 
+### Prototype materials & cost snapshot
+
+**Planning allowance for one research prototype: ฿36,000–107,000.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
+
+Compact outdoor/mobile four-wheel assistant with a retractable manual handle; 8–10 kg target and 10 kg maximum design mass.
+
+| Main item | Prototype quantity | Purpose |
+|---|---:|---|
+| Reinforced chassis/weather body | 1 set | Outdoor structure |
+| Encoder drive motors | 4 | Four-wheel-drive candidate |
+| Outdoor wheels + suspension | 4 + 1 set | Traction and vibration isolation |
+| Retractable handle | 1 | Manual handling |
+| RGB-D camera + 2D LiDAR | 1 each shared | Perception and navigation |
+| IMU/position sensors | 1 set | Motion and location |
+| Battery/BMS | 1 set | Protected power |
+| Compute/motor control | 1 set | Reuse shared compute where suitable |
+
+**Special engineering / purchase gate:** Validate frame strength, centre of gravity, handle locking, wheel/suspension loads, weather protection, battery safety and low-speed supervised stop behaviour. The 8–10 kg target and 10 kg maximum are design targets, not verified payload or performance.
+
+**Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
+
+**Cost status:** exact manufacturer/model, manufacturing origin, supplier, stock, lead time and dated prices remain to be verified. Freight, insurance, duty, VAT, brokerage, local delivery, custom fabrication labour and certification are not priced here; calculate Thai landed cost only from dated quotations. Quantities are for one prototype; no purchase or supplier commitment is authorised. Software-first work can continue with available computing and appropriately licensed open-source tools before hardware procurement.
+
 ## Perception & Task Intelligence (PTI)
 
 **Role in this product:** support supervised outdoor and mixed-environment mobility for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated all-terrain or autonomous capability.
