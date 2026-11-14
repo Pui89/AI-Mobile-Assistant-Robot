@@ -12,20 +12,66 @@ This public README is limited to the project overview, approved concept material
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
 
 
-## Compact product dimensions — proposed design target
+## Compact product specification — proposed 6 kg design
 
-| Specification | Proposed target |
+| Specification | Proposed engineering target |
 |---|---:|
-| Width (W) | **28 cm** |
-| Length / depth (D) | **22 cm** |
-| Height (H) | **45 cm** — body height, excluding the extended handle |
-| Total mass | **Maximum 8 kg**, including battery |
-| Mobility concept | **Four protected/recessed wheels** |
-| Form | Rounded, suitcase-style compact body with retractable pull handle |
+| Complete robot mass | **Maximum 6.0 kg**, including battery, retractable handle, wiring and fixed sensors |
+| Payload | **1.0 kg initial target**, carried separately from the robot's own mass |
+| Body width | **30–33 cm** |
+| Body length / depth | **35–40 cm** |
+| Body height | **35–40 cm**, excluding the extended handle |
+| Mobility | Four protected/recessed wheels; drive arrangement to be selected after torque, traction and braking analysis |
+| First operating domain | Indoor, flat, controlled surfaces; owner-supervised |
+| Later operating domain | Selected outdoor surfaces only after separate validation |
+| Compute direction | CPU-first, low-power, local/offline-capable AI; no automatic model or package downloads |
+| Human control | Manual override, physical emergency stop and conservative safe-stop behaviour |
 
-The 28 × 22 cm floor footprint is a compact-space design target. The proposed safety direction includes guarded/recessed wheels, rounded body edges, low-mounted battery mass, a physical emergency-stop control and conservative obstacle-aware stopping. These are requirements/proposals, not verified implemented safeguards.
+The 6.0 kg limit is the complete robot mass, not the robot-plus-payload mass. The initial 1.0 kg payload target is additional; the design must therefore be engineered and tested for a total moving mass of up to 7.0 kg. The handle's extended height is excluded from body height, but its mass is included in the 6.0 kg robot limit.
 
-**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These dimensions and the 8 kg limit have not been demonstrated by a physical prototype. Internal packaging, wheel size, ground clearance, battery capacity, stability, payload, turning clearance, thermal performance and accessibility must be checked through engineering before the dimensions or weight are treated as final. The design is not claimed to climb stairs or traverse deep sand, mud or rough terrain.
+**Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These are design targets, not measured prototype specifications. No physical NOMAD robot, payload rating, runtime, speed, braking distance, obstacle-clearance limit, ingress rating or field reliability is established.
+
+### Preliminary 6 kg mass-allocation budget
+
+| Assembly | Planning allocation |
+|---|---:|
+| Frame and enclosure | 1.4 kg |
+| Wheels, motors and drivetrain | 1.2 kg |
+| Battery and power protection | 1.0 kg |
+| Compute and control electronics | 0.7 kg |
+| Cameras and other sensors | 0.4 kg |
+| Handle, wiring and safety hardware | 0.5 kg |
+| Engineering allowance / mass reserve | 0.8 kg |
+| **Complete robot mass budget** | **6.0 kg** |
+
+This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 6.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
+
+### First buildable product: NOMAD Prototype 1
+
+The first physical prototype should prioritise a dependable supervised mobile base over complex autonomy:
+
+- Four-wheel chassis with guarded wheels, low-mounted battery and a stable payload area.
+- Appropriately sized motor/drive system, wheel encoders and a controller; final drive layout and torque remain to be calculated.
+- Protected battery, fuse/over-current protection, accessible isolation, thermal monitoring and safe wiring.
+- Physical emergency stop and manual recovery/control method.
+- Basic camera observation and obstacle alerts; optional depth sensing only after compute, power, cost and provenance review.
+- Battery/state telemetry and clear owner-facing status.
+- CPU-first local software, with deterministic control and safety functions kept separate from AI perception.
+- AI outputs are observations or bounded recommendations; they are not direct authority to drive actuators.
+
+**Not in Prototype 1:** unsupervised owner-following, public-space autonomy, stair climbing, all-terrain travel, water crossing, waterproof claims, emergency response or autonomous road operation. These require separate engineering, risk assessment and validation.
+
+### Engineering and validation gates
+
+1. **Requirements and CAD packaging:** confirm body envelope, access for service, handle loads, payload location, centre of gravity and wheel guarding.
+2. **Mass closure:** maintain a part-by-part mass ledger, including fasteners, wiring, connectors, guards, handle and battery; demonstrate a design total at or below 6.0 kg with the stated reserve.
+3. **Mechanical and drive analysis:** calculate static/dynamic wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance for the 6.0 kg robot plus up to 1.0 kg payload.
+4. **Electrical and thermal safety:** define battery chemistry/capacity only after runtime and power budgeting; verify fusing, isolation, charge protection, wiring, thermal limits and emergency stop.
+5. **Software-in-the-loop:** test command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery using deterministic tests and documented simulation.
+6. **Controlled physical trials:** begin unloaded at low speed in a closed, flat indoor area; then increase payload and test braking, stability, turning, thresholds and endurance under supervision.
+7. **Operating-domain expansion:** outdoor surfaces, rain/splash, dust, slopes and uneven ground each require their own acceptance criteria and evidence before being described as supported.
+
+**Release rule:** do not publish a measured weight, payload rating, runtime, speed, slope limit, ingress rating or safety claim until the method, conditions, results and supporting evidence are recorded. Simulation and software tests do not prove physical performance.
 
 ## Open-source-first engineering
 
@@ -260,16 +306,8 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 ## AI Engineering Intelligence & Outdoor-Robot Design
 
-This project adopts PUI89 Engineering Intelligence for outdoor scene understanding, route planning, mobility design, payload management, environmental protection and recovery. NOMAD remains distinct from indoor AI HOME: it is a compact, dog-inspired four-wheel outdoor/mobile assistant concept.
+NOMAD uses a staged, owner-supervised engineering approach. Its current product target is a complete robot mass of no more than 6.0 kg including battery and handle, with a separate initial payload target of 1.0 kg. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
 
-**Product-specific design priorities**
-- **Outdoor mobility:** study wheel size, ground clearance, approach/departure angles, traction, slope limits, uneven terrain, curb/threshold negotiation and rollover margin.
-- **Structure and payload:** retain 8–10 kg as the current target range and 10 kg maximum design limit; validate load distribution, centre of gravity, retention and braking/stopping envelope.
-- **Environmental protection:** define rain, splash, dust, mud, humidity, corrosion and cleaning exposure separately; do not claim submersion or flood-crossing capability.
-- **Navigation:** combine camera/depth/LiDAR or other approved sensing with odometry and IMU; detect stale maps, GNSS loss, low visibility, people, pets and moving obstacles.
-- **Energy and recovery:** estimate terrain-dependent energy use, thermal limits, low-battery return/hold behaviour, stuck detection and safe manual recovery.
-- **Human interaction:** provide an accessible handle/manual recovery method, clear status and emergency stop; avoid unsafe following or crowd movement.
+**Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
-**AI engineering methods to evaluate:** visual-inertial/odometric state estimation, terrain classification, traversability estimation, obstacle tracking, semantic mapping, route planning, task scheduling, anomaly detection and digital-twin mobility simulation.
-
-**Evidence gates:** terrain and operating-domain specification → simulation with parameter sweeps → sensor and navigation tests → supervised low-speed closed-area trials → payload, slope, braking, ingress and recovery validation. Proposed mobility limits are not established capabilities.
+**Evidence gates:** CAD and mass ledger → mechanical/electrical analysis → deterministic software tests and documented simulation → supervised low-speed closed-area trials → payload, stability, braking, endurance and environmental validation. Proposed mobility limits are not established capabilities.
