@@ -1,4 +1,4 @@
-# PUI89 AI Mobile Assistant Robot
+# PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot
 
 
 ## Public privacy boundary
@@ -15,9 +15,9 @@ This public README is limited to the project overview, approved concept material
 
 
 
-## Product identity — four-wheel, dog-inspired mobile assistant
+## Product identity — PUI89 AI NOMAD, four-wheel mobile assistant
 
-PUI89 NOMAD is a **four-wheel mobile assistant with a dog-inspired compact body language**. “Dog-inspired” describes the product's appearance and friendly mobile-assistant role; it does **not** mean a quadruped robot. NOMAD moves on four wheels and uses a retractable pull handle. Its engineering priorities are efficient rolling mobility, stable payload carrying, controlled turning, obstacle awareness and supervised indoor/outdoor use.
+**PUI89 AI NOMAD is a four-wheel mobile-assistant robot, not a quadruped robot.** Its compact, suitcase-inspired upright body uses four wheels for rolling mobility and a retractable manual pull handle. The four-wheel form is a defining product requirement; it must not be depicted or described with four articulated legs. Its engineering priorities are efficient rolling mobility, stable payload carrying, controlled turning, obstacle awareness and supervised indoor/outdoor use.
 
 NOMAD is deliberately different from **PUI89 Sentinel**, which is a separate four-legged quadruped inspection robot. Sentinel uses articulated legs for research into stepping over obstacles and traversing selected uneven terrain; NOMAD uses wheels for practical rolling mobility. Do not depict or describe NOMAD with four articulated legs, and do not transfer Sentinel's legged-mobility claims to NOMAD.
 
