@@ -1,4 +1,4 @@
-# PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot
+# PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
 
 
 ## Public privacy boundary
@@ -6,7 +6,7 @@
 This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
-![PUI89 AI NOMAD — compact mobile assistant with telescopic pull handle](docs/images/ai-nomad-compact-four-wheel.svg)
+![PUI89 AI NOMAD — carry-on suitcase-style mobile assistant with four spinner wheels and telescopic handle](docs/images/ai-nomad-compact-four-wheel.svg)
 
 *Concept illustration built as an embedded SVG. Proposed design only; physical construction and validation remain pending.*
 
@@ -15,11 +15,11 @@ This public README is limited to the project overview, approved concept material
 
 
 
-## Product identity — PUI89 AI NOMAD, four-wheel mobile assistant
+## Product identity — PUI89 AI NOMAD, four-wheel carry-on suitcase-style mobile AI assistant
 
-**PUI89 AI NOMAD is a four-wheel mobile-assistant robot, not a quadruped robot.** Its compact, suitcase-inspired upright body uses four wheels for rolling mobility and a retractable manual pull handle. The four-wheel form is a defining product requirement; it must not be depicted or described with four articulated legs. Its engineering priorities are efficient rolling mobility, stable payload carrying, controlled turning, obstacle awareness and supervised indoor/outdoor use.
+**PUI89 AI NOMAD is a carry-on-suitcase-style mobile AI assistant with exactly four luggage-style swivel caster wheels at the base and a retractable telescopic pull handle.** Its upright, compact rectangular luggage body is intended to look and be handled like a premium travel suitcase. The four base wheels are caster wheels, not legs. NOMAD must never be depicted or described as a dog, quadruped, four-legged robot or animal-shaped machine. The final powered-wheel arrangement, steering, braking and caster configuration remain engineering decisions. The suitcase-inspired form does not establish airline cabin-baggage approval.
 
-NOMAD is deliberately different from **PUI89 Sentinel**, which is a separate four-legged quadruped inspection robot. Sentinel uses articulated legs for research into stepping over obstacles and traversing selected uneven terrain; NOMAD uses wheels for practical rolling mobility. Do not depict or describe NOMAD with four articulated legs, and do not transfer Sentinel's legged-mobility claims to NOMAD.
+NOMAD is deliberately different from **PUI89 Sentinel**, which is the separate four-legged quadruped exploration and inspection robot. Sentinel uses articulated legs; NOMAD uses four luggage-style caster wheels at the bottom of a carry-on suitcase body. Never transfer Sentinel's animal-like or legged design language to NOMAD.
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
@@ -32,7 +32,7 @@ Both products may share PUI89 Shared AI Core interfaces and evidence standards, 
 | Body width | **30–33 cm** |
 | Body length / depth | **35–40 cm** |
 | Body height | **35–40 cm**, excluding the extended handle |
-| Mobility | Four protected/recessed wheels; drive arrangement to be selected after torque, traction and braking analysis |
+| Mobility | Four luggage-style swivel caster wheels at the base; powered-wheel arrangement, steering and braking to be selected after engineering analysis |
 | First operating domain | Indoor, flat, controlled surfaces; owner-supervised |
 | Later operating domain | Selected outdoor surfaces only after separate validation |
 | Compute direction | CPU-first, low-power, local/offline-capable AI; no automatic model or package downloads |
@@ -57,11 +57,11 @@ The 10 kg maximum is the complete robot design-mass limit, including the battery
 
 This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 10.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
 
-### First buildable product: NOMAD Prototype 1
+### First buildable product: NOMAD Carry-on Prototype 1
 
-The first physical prototype should prioritise a dependable supervised mobile base over complex autonomy:
+The first physical prototype should prioritise a dependable supervised carry-on-luggage-style rolling platform over complex autonomy:
 
-- Four-wheel chassis with guarded wheels, low-mounted battery and a stable payload area.
+- Carry-on suitcase-style upright enclosure with four protected swivel caster wheels at the bottom corners, a low-mounted battery and a stable internal payload area.
 - Appropriately sized motor/drive system, wheel encoders and a controller; final drive layout and torque remain to be calculated.
 - Protected battery, fuse/over-current protection, accessible isolation, thermal monitoring and safe wiring.
 - Physical emergency stop and manual recovery/control method.
@@ -80,7 +80,7 @@ The first physical prototype should prioritise a dependable supervised mobile ba
 4. **Electrical and thermal safety:** define battery chemistry/capacity only after runtime and power budgeting; verify fusing, isolation, charge protection, wiring, thermal limits and emergency stop.
 5. **Software-in-the-loop:** test command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery using deterministic tests and documented simulation.
 6. **Controlled physical trials:** begin unloaded at low speed in a closed, flat indoor area; then increase payload and test braking, stability, turning, thresholds and endurance under supervision.
-7. **Operating-domain expansion:** outdoor surfaces, rain/splash, dust, slopes and uneven ground each require their own acceptance criteria and evidence before being described as supported.
+7. **Operating-domain expansion:** different floor surfaces, thresholds, ramps, rain/splash and dust each require their own acceptance criteria and evidence before being described as supported.
 
 **Release rule:** do not publish a measured weight, payload rating, runtime, speed, slope limit, ingress rating or safety claim until the method, conditions, results and supporting evidence are recorded. Simulation and software tests do not prove physical performance.
 
@@ -109,20 +109,20 @@ PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensor
 
 **Planning allowance for one research prototype: ฿36,000–107,000.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
 
-Compact outdoor/mobile four-wheel assistant with a retractable manual handle; 8–10 kg target and 10 kg maximum design mass.
+Compact carry-on suitcase-style mobile assistant with four base caster wheels and a retractable telescopic handle; 8–10 kg target and 10 kg maximum complete-robot design mass.
 
 | Main item | Prototype quantity | Purpose |
 |---|---:|---|
-| Reinforced chassis/weather body | 1 set | Outdoor structure |
-| Encoder drive motors | 4 | Four-wheel-drive candidate |
-| Outdoor wheels + suspension | 4 + 1 set | Traction and vibration isolation |
+| Carry-on suitcase shell and internal frame | 1 set | Upright luggage body structure |
+| Powered wheel/motor modules | TBD | Select only after comparing powered-wheel and passive-caster layouts; do not assume four drive motors |
+| Spinner caster wheels | 4 | Luggage-style swivel wheels at the four base corners; final load rating and wheel material TBD |
 | Retractable handle | 1 | Manual handling |
 | RGB-D camera + 2D LiDAR | 1 each shared | Perception and navigation |
 | IMU/position sensors | 1 set | Motion and location |
 | Battery/BMS | 1 set | Protected power |
 | Compute/motor control | 1 set | Reuse shared compute where suitable |
 
-**Special engineering / purchase gate:** Validate frame strength, centre of gravity, handle locking, wheel/suspension loads, weather protection, battery safety and low-speed supervised stop behaviour. The 8–10 kg target and 10 kg maximum are design targets, not verified payload or performance.
+**Special engineering / purchase gate:** Validate luggage-shell strength, centre of gravity, handle locking, four caster mounts/load ratings, rolling stability, braking/holding, battery safety and low-speed supervised stop behaviour. The 8–10 kg target and 10 kg maximum are design targets, not verified payload or performance.
 
 **Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
 
@@ -130,21 +130,21 @@ Compact outdoor/mobile four-wheel assistant with a retractable manual handle; 8�
 
 ## Perception & Task Intelligence (PTI)
 
-**Role in this product:** support supervised outdoor and mixed-environment mobility for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated all-terrain or autonomous capability.
+**Role in this product:** support supervised luggage-style rolling mobility and travel assistance for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated travel-ready or autonomous capability.
 
 **Priority perception tasks**
 - Check camera/depth/IMU input quality, timestamps, calibration state and sensor availability.
 - Detect people, objects, path boundaries and obstacles relevant to the planned route.
-- Estimate terrain changes, slopes and traversability only when suitable depth/spatial inputs and validation evidence are available.
+- Estimate floor-surface changes, thresholds, ramp limits and obstacle clearance only when suitable depth/spatial inputs and validation evidence are available.
 - Fuse localisation, inertial and perception observations; detect stale data, sensor disagreement and localisation loss.
 - Identify routes or surfaces outside the validated operating envelope and request human guidance.
 - Propose only bounded routes in a defined, supervised operating area; safe-hold when conditions are uncertain.
 
 **Task flow:** OBSERVE → PERCEIVE → ASSESS → DECIDE → RESPOND → LEARN FROM EVIDENCE. Outputs support a human supervisor; they do not authorise unrestricted navigation or physical movement beyond separately validated safeguards.
 
-**First evidence gate:** controlled indoor/outdoor route datasets and synthetic obstacle/terrain cases, then supervised low-speed trials only after independent hardware safety provisions exist. Measure obstacle misses, localisation error, stop response, recovery behaviour and compute/resource use.
+**First evidence gate:** controlled indoor travel-route datasets and synthetic obstacle/threshold cases, then supervised low-speed trials only after independent hardware safety provisions exist. Measure obstacle misses, localisation error, stop response, recovery behaviour and compute/resource use.
 
-**Not established:** all-terrain operation, stair traversal, public-road autonomy, payload or mobility limits, or field-validated navigation. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+**Not established:** stair/escalator traversal, public-road autonomy, payload or mobility limits, airline acceptance, or field-validated navigation. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
 
 ## Six Core Intelligence Groups — Product Allocation
 
@@ -159,12 +159,12 @@ PUI89 uses six shared intelligence groups across its seven independent products.
 
 ### PUI89 AI NOMAD capability allocation
 
-- **Vision:** Outdoor people, animals, vehicles, terrain, obstacles and traversability cues.
-- **Audio:** Voice interaction, sirens/horns and outdoor sound-event awareness.
-- **Multimodal:** Camera/depth/LiDAR/IMU/GNSS/audio/weather context fusion.
-- **Robotics:** Supervised outdoor navigation, follow-me and safe-return planning.
-- **Action & Reaction:** Terrain hazard, localisation loss, nearby traffic and motor/battery anomaly response.
-- **Safety & Control:** Owner supervision, validated-area limits, obstacle stop and safe return/hold.
+- **Vision:** Travel environments, people, luggage, doors, walkways, floor surfaces, thresholds and obstacles.
+- **Audio:** Voice interaction and relevant travel-environment sound awareness, subject to privacy and validation.
+- **Multimodal:** Camera/depth/IMU and optional LiDAR, GNSS or audio context fusion when justified by the travel scenario.
+- **Robotics:** Supervised low-speed rolling mobility, route awareness and manual recovery planning; owner-following remains a future research topic requiring separate validation.
+- **Action & Reaction:** Obstacle alerts, route-context changes, localisation loss, low-battery and motor/system anomaly reporting.
+- **Safety & Control:** Owner supervision, validated-area limits, obstacle stop, manual pull/recovery and safe hold.
 
 **Integration rule:** each product uses only the modules justified by its mission, data rights, hardware, compute budget and validation evidence. Model outputs remain observations or bounded proposals. Safety policy is product-specific and independent of model confidence. Unknown, stale, conflicting or out-of-scope inputs must be surfaced rather than guessed.
 
@@ -191,25 +191,26 @@ PUI89 uses six shared intelligence groups across its seven independent products.
 ## Project website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/nomad.html"><img src="https://pui89.github.io/qr/nomad-en.png" width="160" alt="PUI89 AI Mobile Assistant Robot English website QR code"></a><br><a href="https://pui89.github.io/nomad.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/nomad-th.html"><img src="https://pui89.github.io/qr/nomad-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Mobile Assistant Robot"></a><br><a href="https://pui89.github.io/nomad-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
-### A Compact Four-Wheel Assistant for Home, Travel and Everyday Life
+### A Carry-on Suitcase-Style Four-Wheel AI Assistant for Travel and Everyday Life
 
 **A mobile companion designed to help people indoors and outdoors.**
 
-PUI89 AI NOMAD is an early-stage, owner-supervised compact four-wheel mobile-assistant concept with a rounded suitcase-style body. It is intended to support supervised everyday use, carrying belongings, travel and environmental awareness. These are design goals, not validated capabilities.
+PUI89 AI NOMAD is an early-stage, owner-supervised mobile AI assistant in an upright carry-on suitcase form, with four spinner caster wheels at the base and a retractable telescopic pull handle. It is intended to support supervised luggage carrying, travel and environmental awareness. These are design goals, not validated capabilities; airline cabin-baggage acceptance is not established.
 
 - **Repository:** https://github.com/Pui89/AI-Mobile-Assistant-Robot
 - **Website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html)
 - **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
 
-> **Product boundary:** AI Mobile Assistant Robot is a mobile assistant concept for indoor and outdoor everyday use, travel and carrying assistance. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
+> **Product boundary:** AI NOMAD is a carry-on suitcase-style mobile assistant concept for supervised travel, luggage carrying and suitable everyday mobility. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
-## AI Mobile Assistant Robot purpose
+## PUI89 AI NOMAD purpose
 
-AI Mobile Assistant Robot is intended as an owner-supervised mobile companion. Proposed research areas include:
-- Carrying shopping, luggage and personal belongings within a validated payload limit
-- Owner-supervised accompaniment in suitable indoor and outdoor environments
-- Travel, walking, park, station and campsite assistance concepts
+AI NOMAD is intended as an owner-supervised carry-on-suitcase-style mobile assistant. Proposed research areas include:
+- Rolling and carrying personal belongings in a compact upright luggage body
+- Four-wheel spinner-caster handling and supervised movement in suitable indoor environments
+- Travel assistance and environmental awareness in stations, terminals and other permitted settings, subject to access rules and validation
+- Optional owner-accompaniment research only after separate safety, privacy and navigation validation concepts
 - Indoor/outdoor scene and obstacle awareness
 - Mapping and localization research, with safe-stop behaviour when uncertain
 - Environmental observations when suitable sensors are selected and validated
@@ -234,7 +235,7 @@ The owner remains responsible for decisions. If localization, route safety or ba
 
 ## Shared intelligence, separate product engineering
 
-AI Mobile Assistant Robot may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its four-wheel mobility, indoor/outdoor navigation, sensor layout, environmental protection and risk assessment remain AI NOMAD-specific.
+AI Mobile Assistant Robot may reuse PUI89 AI Core contracts (WorldState, Observation, ActionProposal and FailureReport), evidence provenance, uncertainty handling, safety gates, benchmark records and report formats. Its four-wheel spinner-caster layout, any powered-wheel arrangement, travel-context perception, environmental protection and risk assessment remain AI NOMAD-specific.
 
 ## Current development status
 
@@ -297,7 +298,7 @@ This project uses the shared PUI89 quality framework. The indicators are guidanc
 | Product and commercial readiness | Validate the user problem, intended operator, value, support model, lawful IP/data position and release gates before commercial claims. | 🟠 Evidence required |
 | Professional environment and presentation | Use consistent technical diagrams, demonstrations and partner-facing materials; do not imply facilities or partnerships without evidence. | ⚪ Not assessed |
 
-**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as a compact portable/outdoor mobile assistant. Prioritise stability, obstacle handling, battery isolation, offline behaviour, enclosure drainage/sealing strategy, serviceability and supervised operation; dimensions, weight, locomotion, endurance and weather protection remain design targets until measured.
+**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as a compact carry-on suitcase-style travel assistant. Prioritise luggage-like handling, four spinner caster mounting, stability, obstacle awareness, battery isolation, offline behaviour, handle durability, serviceability and supervised operation; dimensions, weight, powered-wheel architecture, endurance and weather protection remain design targets until measured.
 
 **Status legend:** 🔵 framework guidance added · 🟢 engineering quality target · 🟠 evidence or validation still required · ⚪ not assessed. These labels describe the review state of recommendations, not overall project maturity. Project maturity changes only when supported by verified repository evidence, reproducible tests or controlled validation.
 
@@ -368,11 +369,11 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
 
-## AI Engineering Intelligence & Outdoor-Robot Design
+## AI Engineering Intelligence & Carry-on Travel-Assistant Design
 
-NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
+NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm deep × 35–40 cm high, excluding the extended handle. These are design targets only and do not establish compliance with any airline's carry-on baggage limits.
 
-**Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
+**Project-specific priorities:** stable load distribution and low centre of gravity; four spinner caster mounts; suitable powered-wheel decision (if required); controlled rolling, turning and braking; protected battery and thermal design; durable telescopic handle; manual pull/recovery; obstacle awareness; offline operation; maintainable luggage-style enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
 **Evidence gates:** CAD and mass ledger → mechanical/electrical analysis → deterministic software tests and documented simulation → supervised low-speed closed-area trials → payload, stability, braking, endurance and environmental validation. Proposed mobility limits are not established capabilities.
 
@@ -397,13 +398,13 @@ NOMAD uses a staged, owner-supervised engineering approach. Its current product 
 
 | Subsystem / component type | Qty per prototype | Material / specification and function | Indicative allowance (THB) |
 |---|---:|---|---:|
-| Outdoor chassis + suspension | 1 set | Compact four-wheel frame, weather-resistant covers, suspension and guarded underbody | ฿25,000–฿75,000 |
-| Drive motors + encoders | 4 provisional drive units | Four-wheel drive candidate; final motor count/torque subject to mass and terrain calculations | ฿20,000–฿60,000 |
-| Wheels + brakes + bearings | 1 set | Outdoor tyres, bearings, braking/holding system and replaceable wear parts | ฿10,000–฿35,000 |
-| RGB-D / camera + LiDAR + IMU | 1 set | Perception and navigation sensors selected for outdoor lighting and vibration | ฿25,000–฿75,000 |
+| Carry-on suitcase shell + caster mounting | 1 set | Upright luggage enclosure, internal frame, corner protection and four caster mounts | ฿25,000–฿75,000 |
+| Optional powered-wheel modules + encoders | TBD | Motorisation and motor count remain undecided; compare passive caster handling and powered-wheel options before estimating | TBD |
+| Wheels + brakes + bearings | 1 set | Four swivel spinner casters, bearings, mounting plates and replaceable wear parts | ฿10,000–฿35,000 |
+| RGB-D / camera + LiDAR + IMU | 1 set | Travel-scene perception selected for indoor terminal lighting, movement and vibration | ฿25,000–฿75,000 |
 | Edge computer + motor controller | 1 set | CPU-first edge computer, MCU and protected motor-control electronics | ฿20,000–฿60,000 |
 | Battery + BMS + power | 1 set | Protected battery pack, BMS, fuse, isolation and DC/DC conversion | ฿15,000–฿40,000 |
-| Handle, enclosure + environmental protection | 1 set | Foldable/extendable handle, weather-resistant housing, seals and strain relief | ฿10,000–฿35,000 |
+| Handle, enclosure + environmental protection | 1 set | Retractable telescopic pull handle, luggage-style housing, seals and strain relief | ฿10,000–฿35,000 |
 | Harness, fabrication + integration tests | 1 lot | Wiring, brackets, assembly, low-speed stability/braking/endurance tests | ฿25,000–฿70,000 |
 
 **Material families:** aluminium alloy or stainless-steel structural members where suitable; engineering polymer covers; corrosion-resistant fasteners; rated cables/connectors; protective enclosures; and product-specific seals, guards or vibration isolation. Exact alloy/grade, IP rating, load rating and country of manufacture remain unselected until engineering calculations and supplier evidence are available.
@@ -421,8 +422,8 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 
 ## PUI89 Technical Visual — AI workflow
 
-![AI NOMAD outdoor mobile assistant workflow with environment sensing, localization, terrain perception and supervised route planning.](docs/images/pui89-technical-visual.svg)
+![AI NOMAD carry-on suitcase-style mobile assistant workflow with travel-context perception, four spinner caster wheels and supervised rolling mobility.](docs/images/pui89-technical-visual.svg)
 
-*Proposed mobile-assistant workflow. Terrain, weather, payload, range and outdoor mobility limits require staged testing.*
+*Proposed carry-on suitcase-style mobile assistant workflow. Caster configuration, powered-wheel design, payload, battery endurance and travel-environment limits require staged testing.*
 
 This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
