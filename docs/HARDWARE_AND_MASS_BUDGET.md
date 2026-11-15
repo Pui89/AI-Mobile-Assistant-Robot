@@ -4,6 +4,9 @@
 
 ## Mechanical package
 
+**Overall external envelope target:** 30–33 cm wide × 35–40 cm high × 20–25 cm deep, including the four wheels, corner guards and handle in its stowed position. This is dimensionally cabin-size-oriented against a commonly referenced 56 × 45 × 25 cm example; airline acceptance and weight compliance are not established.
+
+
 | Subsystem | Function | Design questions / evidence |
 |---|---|---|
 | Hard-shell enclosure | Protect luggage and electronics | Shell material, impact, scratch, corner, service and repair tests |
