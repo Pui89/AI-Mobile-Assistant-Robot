@@ -1,38 +1,49 @@
-# Intelligence Catalogue
+# PUI89 AI NOMAD — Intelligence Catalogue
 
-**PROPOSED PRODUCT ARCHITECTURE. Not a claim of implementation.**
+**Status: proposed capability catalogue. Listing a function does not mean it is implemented, integrated, airline-approved or validated.**
 
-## 29 capability areas
-1 Evidence Integrity — missing, conflicting, stale or unreliable evidence.
-2 Loss Intelligence — expected assets/signals/functions that disappeared.
-3 Change Intelligence — compare current observations with previous valid states.
-4 Deterioration Intelligence — persistent worsening trends.
-5 Predictive Intelligence — possible future conditions with calibrated uncertainty.
-6 Decision Intelligence — prioritize verification and human review.
-7 World Model Intelligence — buildings, floors, rooms, components, sensors and relations.
-8 Root Cause Intelligence — compare hypotheses and counter-evidence; correlation is not causation.
-9 Spatial Intelligence — locate observations and affected components.
-10 Adaptive Intelligence — adjust priorities within reviewed limits.
-11 What-If Intelligence — evaluate hypothetical conditions in validated simulations.
-12 Prevention & Recovery Intelligence — mitigation, repairs, verification and recurrence.
-13 Trust & Sensor Intelligence — calibration, drift, health, provenance and quality.
-14 Impact Intelligence — potential consequences and urgency for human review.
-15 Relationship Intelligence — dependencies and possible cascades.
-16 Hidden Pattern Intelligence — unusual combinations and sequences.
-17 Active Investigation Intelligence — recommend the next useful observation.
-18 Confidence Calibration Intelligence — test confidence against observed performance.
-19 Resilience Intelligence — missing sensors, corrupted data, outages and simultaneous faults.
-20 Knowledge Evolution Intelligence — preserve reviewed lessons and regression cases.
-21 Continuous Improvement Intelligence — propose, rank, test and document upgrades.
-22 Acoustic Intelligence — sound features without assuming sound proves cause.
-23 Odour & Gas Intelligence — suitable gas/VOC sensor readings; no universal smell recognition.
-24 Light Intelligence — illumination, darkness, flicker and emergency-light status where instrumented.
-25 Thermal Intelligence — abnormal heat patterns with suitable sensors.
-26 Cold/Temperature Drop Intelligence — unexpected cooling and gradients.
-27 Humidity/Moisture Intelligence — humidity, condensation risk and moisture trends.
-28 Multi-Sensory Fusion Intelligence — combine modalities while preserving provenance/uncertainty.
-29 Electrical Intelligence — voltage, current, power quality, loads and protective-device status.
+## 1. Luggage and travel intelligence
+- Trip checklist, packing/reminder workflow and journey timeline.
+- Luggage/device status, mode, battery and thermal state.
+- Optional local location context and owner-initiated lost-item assistance.
+- Tamper/opening or separation events only with appropriate sensors and privacy review.
+- Airline-rule checklist prompts; the app must not present generic rules as a guarantee of acceptance.
 
-Technology categories: multimodal, predictive, world-model/digital-twin, anomaly detection, explainable, causal/diagnostic, simulation/what-if, bounded agentic workflows, and reviewed continual-learning updates. These are method categories, not nine products or nine neural networks.
+## 2. Vision and scene intelligence
+- Image quality and camera-health checks.
+- Object detection and classification for luggage, people, carts, doors and visible obstacles.
+- Short-lived object tracking for scene understanding; no identity inference.
+- Segmentation and scene understanding where models and compute are validated.
+- Change/anomaly cues with evidence and uncertainty.
 
-Build a shared evidence platform and domain adapters incrementally. The initial foundation does not implement production sensor fusion, a digital twin, trained models, predictive maintenance, causal diagnosis or real-world hazard detection.
+## 3. Spatial and mobility intelligence
+- Calibrated depth or stereo geometry where supported by selected sensors.
+- Free-space and obstacle-clearance estimates.
+- Wheel odometry and IMU state fusion.
+- Turning/clearance and route-context proposals.
+- Mobility-state monitoring, wheel jam/slip cues and safe-stop proposals.
+- Any path proposal is bounded by a separately validated operating envelope.
+
+## 4. Device and battery intelligence
+- Battery voltage/current/temperature/state-of-charge telemetry if available.
+- BMS and protection-state observation; no bypass of battery protections.
+- Wheel/motor temperature/current and encoder fault monitoring if integrated.
+- Handle lock, enclosure access and mode-state monitoring if designed.
+- Fault/event timeline and service diagnostics.
+
+## 5. Human interaction intelligence
+- Owner-controlled dashboard and clear status indicators.
+- Optional local voice commands and travel assistance, subject to consent and privacy review.
+- Explicit mode selection, manual override, stop and operator review.
+- Accessibility and multilingual interface research.
+
+## 6. Safety and trust intelligence
+- Input freshness, provenance, quality and uncertainty.
+- Travel/Robot/Flight mode interlocks.
+- Geofence/area restriction proposals and independent enforcement.
+- Fail-safe stop on sensor, communication, localisation, battery or controller faults.
+- Human-reviewed event and evidence reports.
+
+## Implementation order
+
+Start with luggage form, manual pull function, local dashboard, battery/device status and offline scene awareness. Defer powered movement and following until a complete independent safety case and physical validation exist.
