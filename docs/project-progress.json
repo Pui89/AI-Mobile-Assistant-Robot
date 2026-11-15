@@ -4,8 +4,26 @@
   "scope_revision": "travel_suitcase_first_dual_mode_travel_robot",
   "score_basis": "weighted_evidence_credits",
   "review_timezone": "Asia/Bangkok",
-  "evidence_credit": [8, 8, 5, 4, 0, 1, 3, 1],
-  "gate_weights": [10, 10, 15, 15, 15, 15, 10, 10],
+  "evidence_credit": [
+    8,
+    8,
+    5,
+    4,
+    0,
+    1,
+    3,
+    1
+  ],
+  "gate_weights": [
+    10,
+    10,
+    15,
+    15,
+    15,
+    15,
+    10,
+    10
+  ],
   "gate_names": [
     "Purpose & requirements",
     "Architecture & engineering",
@@ -16,5 +34,8 @@
     "Licensing & regulatory readiness",
     "Release package & support"
   ],
-  "status_note": "Existing evidence credits remain provisional and do not establish a physical suitcase prototype, cabin baggage acceptance, battery compliance or validated mobility. The carry-on suitcase form and travel/robot/flight mode requirements are now the active product definition. New evidence is required for the refined scope."
+  "status_note": "Existing evidence credits remain provisional and do not establish a physical suitcase prototype, cabin baggage acceptance, battery compliance or validated mobility. The carry-on suitcase form and travel/robot/flight mode requirements are now the active product definition. New evidence is required for the refined scope.",
+  "design_targets": {
+    "body_envelope_cm": "30–33 W × 35–40 H × 20–25 D; overall target including wheels and retracted handle; cabin-dimension-oriented but not airline-approved"
+  }
 }
