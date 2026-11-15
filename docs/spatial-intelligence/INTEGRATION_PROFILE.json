@@ -1,40 +1,40 @@
 {
-  "profile_version": "0.1.0",
+  "profile_version": "0.2.0",
   "project_id": "ai-mobile-assistant-robot",
-  "project_name": "AI NOMAD",
-  "integration_status": "profile_added_runtime_integration_pending",
+  "project_name": "PUI89 AI NOMAD — AI Travel Suitcase / Mobile Assistant",
+  "form_factor": "upright_suitcase_four_wheels_retractable_handle",
+  "integration_status": "proposed_documentation_profile_only",
+  "operating_modes": {
+    "travel": "manual_pull_push_drive_disabled",
+    "flight": "fully_powered_off_drive_disabled",
+    "robot": "future_supervised_controlled_area_only"
+  },
   "shared_core": {
     "repository": "Pui89/PUI89-Shared-AI-Core",
-    "pull_request": "https://github.com/Pui89/PUI89-Shared-AI-Core/pull/26",
-    "release_status": "draft_not_merged"
+    "runtime_integration": false
   },
-  "intended_use": "Advisory indoor/outdoor obstacle geometry and spatial context.",
-  "recommended_modalities": [
-    "rgb",
-    "lidar",
-    "depth",
-    "imu",
-    "gps"
-  ],
+  "intended_use": "Local travel/luggage awareness and spatial context; future supervised low-speed movement only in permitted controlled areas outside aircraft and restricted spaces.",
+  "candidate_modalities": ["rgb", "optional_depth_or_stereo", "imu", "wheel_encoders", "battery_telemetry", "optional_gnss"],
   "planned_spatial_tasks": [
-    "Obstacle-relative geometry and room/area context",
-    "Coordinate-frame and timestamp consistency checks",
-    "Evidence records for future mobility evaluation"
+    "image_quality_and_scene_context",
+    "object_and_obstacle_estimation",
+    "free_space_and_clearance_cues",
+    "calibrated_depth_geometry_when_supported",
+    "wheel_odometry_and_imu_state",
+    "localisation_confidence",
+    "luggage_separation_events_with_privacy_review"
   ],
-  "limitations_and_safety_boundaries": [
-    "No localization integrity, weather resistance or mobility safety is validated.",
-    "No autonomous movement or physical control is enabled.",
-    "Outdoor GNSS and environmental degradation require separate testing."
+  "safety_gates": [
+    "travel_mode_drive_disabled",
+    "flight_mode_fully_powered_off",
+    "removable_battery_and_airline_review",
+    "mission_and_area_permission",
+    "source_timestamp_quality_and_calibration_validation",
+    "unknown_and_conflict_preservation",
+    "independent_motion_safety_controller_before_robot_mode",
+    "physical_emergency_stop_and_manual_override",
+    "human_supervision"
   ],
-  "common_gates": [
-    "usable evidence quality",
-    "valid calibration before fusion",
-    "matching coordinate frames",
-    "validated timestamp tolerance",
-    "sensor-health and uncertainty assessment",
-    "human review required",
-    "execution_authorized=false"
-  ],
-  "evidence_status": "No real sensor integration, accuracy, field validation or certification claimed.",
-  "cost_policy": "standard-library-first; no paid APIs, cloud GPU, model downloads or hardware purchases"
+  "evidence_status": "No selected or purchased sensors, runtime integration, airline acceptance, physical prototype, mobility performance or certification is claimed.",
+  "excluded_functions": ["aircraft_cabin_robot_operation", "autonomous_airport_driving", "ride_on_or_passenger_carrying", "facial_recognition", "biometric_identification", "covert_surveillance"]
 }
