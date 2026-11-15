@@ -245,7 +245,7 @@ PUI89 uses six shared intelligence groups across its seven independent products.
 
 **A mobile companion designed to help people indoors and outdoors.**
 
-PUI89 AI NOMAD is an early-stage integrated four-wheel mobile robot in a compact travel-suitcase form factor. It is intended to support supervised ground-based mobility, travel assistance, navigation support and secondary item storage. Its drive system, impact protection and real-world operating performance remain unbuilt and unvalidated.l awareness. These are design goals, not validated capabilities; air transport is outside the baseline product requirement.
+PUI89 AI NOMAD is an early-stage integrated four-wheel mobile robot in a compact travel-suitcase form factor. It is intended to support supervised ground-based mobility, travel assistance, navigation support and secondary item storage. Its drive system, impact protection and real-world operating performance remain unbuilt and unvalidated.
 
 - **Repository:** https://github.com/Pui89/AI-Mobile-Assistant-Robot
 - **Website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html)
@@ -348,7 +348,7 @@ This project uses the shared PUI89 quality framework. The indicators are guidanc
 | Product and commercial readiness | Validate the user problem, intended operator, value, support model, lawful IP/data position and release gates before commercial claims. | 🟠 Evidence required |
 | Professional environment and presentation | Use consistent technical diagrams, demonstrations and partner-facing materials; do not imply facilities or partnerships without evidence. | ⚪ Not assessed |
 
-**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as a compact carry-on suitcase-style travel assistant. Prioritise luggage-like handling, four spinner caster mounting, stability, obstacle awareness, battery isolation, offline behaviour, handle durability, serviceability and supervised operation; dimensions, weight, powered-wheel architecture, endurance and weather protection remain design targets until measured.
+**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as an integrated four-wheel robotic travel companion. Prioritise motorised mobility architecture, wheel-module protection, stability, impact/vibration isolation, obstacle awareness, battery protection, offline behaviour, handle durability, serviceability and supervised operation; dimensions, weight, drive architecture, endurance and environmental limits remain design targets pending validation.
 
 **Status legend:** 🔵 framework guidance added · 🟢 engineering quality target · 🟠 evidence or validation still required · ⚪ not assessed. These labels describe the review state of recommendations, not overall project maturity. Project maturity changes only when supported by verified repository evidence, reproducible tests or controlled validation.
 
