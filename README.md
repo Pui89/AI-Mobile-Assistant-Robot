@@ -147,6 +147,20 @@ Do not start with autonomous following or public-area driving. The first useful 
 
 Software tests do not validate physical mobility. Simulation does not prove airline acceptance or real-world safety. No prototype, airline approval, battery certification, payload, speed, runtime, obstacle clearance or field performance is currently claimed.
 
+## Detailed product and engineering documents
+
+- [Product Definition v1.0](docs/PRODUCT_DEFINITION.md)
+- [Air Travel & Battery Requirements](docs/AIR_TRAVEL_AND_BATTERY_REQUIREMENTS.md)
+- [Hardware, Packaging & Mass Budget](docs/HARDWARE_AND_MASS_BUDGET.md)
+- [System Architecture](docs/ARCHITECTURE.md)
+- [AI Intelligence Catalogue](docs/INTELLIGENCE_CATALOGUE.md)
+- [Safety Case](docs/SAFETY_CASE.md)
+- [Validation Matrix](docs/VALIDATION_MATRIX.md)
+- [Development Roadmap](docs/ROADMAP.md)
+- [Legacy Software Baseline and Reuse Boundary](docs/LEGACY_SOFTWARE_BASELINE.md)
+
+**Software migration note:** the existing Python package retains a historical Homeguard namespace and contains a generic synthetic evidence evaluator. It is not the active NOMAD travel, vision, luggage, battery, airline-compliance or mobile-robot stack. See the legacy baseline document. Do not describe its tests as travel or robotics validation.
+
 ## Project links
 
 - [English product website](https://pui89.github.io/nomad.html)
