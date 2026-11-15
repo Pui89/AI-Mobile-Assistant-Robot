@@ -1,27 +1,11 @@
 {
-  "project": "PUI89 AI NOMAD",
+  "project": "PUI89 AI NOMAD — AI Travel Suitcase / Mobile Assistant",
+  "product_form": "upright_suitcase_four_wheels_retractable_handle",
+  "scope_revision": "travel_suitcase_first_dual_mode_travel_robot",
   "score_basis": "weighted_evidence_credits",
   "review_timezone": "Asia/Bangkok",
-  "evidence_credit": [
-    8,
-    8,
-    5,
-    4,
-    0,
-    1,
-    3,
-    1
-  ],
-  "gate_weights": [
-    10,
-    10,
-    15,
-    15,
-    15,
-    15,
-    10,
-    10
-  ],
+  "evidence_credit": [8, 8, 5, 4, 0, 1, 3, 1],
+  "gate_weights": [10, 10, 15, 15, 15, 15, 10, 10],
   "gate_names": [
     "Purpose & requirements",
     "Architecture & engineering",
@@ -31,5 +15,6 @@
     "Safety & real-world validation",
     "Licensing & regulatory readiness",
     "Release package & support"
-  ]
+  ],
+  "status_note": "Existing evidence credits remain provisional and do not establish a physical suitcase prototype, cabin baggage acceptance, battery compliance or validated mobility. The carry-on suitcase form and travel/robot/flight mode requirements are now the active product definition. New evidence is required for the refined scope."
 }
