@@ -1,4 +1,4 @@
-# PUI89 AI NOMAD — AI Carry-On Suitcase Robot
+# PUI89 AI NOMAD — AI Travel Suitcase Robot
 
 **Product identity:** suitcase-form AI mobile assistant  
 **Design direction:** compact upright travel suitcase with four wheels, retractable pull handle and removable battery  
