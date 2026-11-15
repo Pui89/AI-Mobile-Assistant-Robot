@@ -1,4 +1,4 @@
-# PUI89 AI NOMAD — Four-Wheel Mobile Assistant Robot
+# PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
 
 
 ## Public privacy boundary
@@ -15,7 +15,7 @@ This public README is limited to the project overview, approved concept material
 
 
 
-## Product identity — PUI89 AI NOMAD, four-wheel mobile assistant
+## Product identity — PUI89 AI NOMAD, four-wheel carry-on suitcase-style mobile AI assistant
 
 **PUI89 AI NOMAD is a carry-on-suitcase-style mobile AI assistant with exactly four luggage-style swivel caster wheels at the base and a retractable telescopic pull handle.** Its upright, compact rectangular luggage body is intended to look and be handled like a premium travel suitcase. The four base wheels are caster wheels, not legs. NOMAD must never be depicted or described as a dog, quadruped, four-legged robot or animal-shaped machine. The final powered-wheel arrangement, steering, braking and caster configuration remain engineering decisions. The suitcase-inspired form does not establish airline cabin-baggage approval.
 
@@ -57,7 +57,7 @@ The 10 kg maximum is the complete robot design-mass limit, including the battery
 
 This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 10.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
 
-### First buildable product: NOMAD Prototype 1
+### First buildable product: NOMAD Carry-on Prototype 1
 
 The first physical prototype should prioritise a dependable supervised carry-on-luggage-style rolling platform over complex autonomy:
 
