@@ -8,7 +8,7 @@ NOMAD is a compact suitcase-form AI mobile assistant with four protected wheels,
 
 ## Design targets
 
-- Body envelope: approximately 30–33 cm wide × 35–40 cm deep × 35–40 cm high; final external dimensions TBD.
+- Body envelope: approximately 30–33 cm wide × 35–40 cm high × 20–25 cm deep (overall target; include wheels and handle when retracted); final external dimensions TBD.
 - Complete mass: 8–10 kg target; 12 kg absolute ceiling including battery, handle, wiring, wheels, compute and sensors.
 - Removable protected battery; Wh rating TBD.
 - Four compact protected wheels and load-rated telescopic pull handle.
