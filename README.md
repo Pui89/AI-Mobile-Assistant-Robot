@@ -75,8 +75,8 @@ The first physical prototype should prioritise a dependable supervised mobile ba
 ### Engineering and validation gates
 
 1. **Requirements and CAD packaging:** confirm body envelope, access for service, handle loads, payload location, centre of gravity and wheel guarding.
-2. **Mass closure:** maintain a part-by-part mass ledger, including fasteners, wiring, connectors, guards, handle and battery; demonstrate a design total at or below 6.0 kg with the stated reserve.
-3. **Mechanical and drive analysis:** calculate static/dynamic wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance for the 6.0 kg robot plus up to 1.0 kg payload.
+2. **Mass closure:** maintain a part-by-part mass ledger, including fasteners, wiring, connectors, guards, handle and battery; demonstrate a design total at or below 10.0 kg with the stated reserve.
+3. **Mechanical and drive analysis:** calculate static/dynamic wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance within the 10.0 kg maximum complete-robot mass; payload remains TBD.
 4. **Electrical and thermal safety:** define battery chemistry/capacity only after runtime and power budgeting; verify fusing, isolation, charge protection, wiring, thermal limits and emergency stop.
 5. **Software-in-the-loop:** test command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery using deterministic tests and documented simulation.
 6. **Controlled physical trials:** begin unloaded at low speed in a closed, flat indoor area; then increase payload and test braking, stability, turning, thresholds and endurance under supervision.
@@ -370,7 +370,7 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 ## AI Engineering Intelligence & Outdoor-Robot Design
 
-NOMAD uses a staged, owner-supervised engineering approach. Its current product target is a complete robot mass of no more than 6.0 kg including battery and handle, with a separate initial payload target of 1.0 kg. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
+NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
 
 **Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
