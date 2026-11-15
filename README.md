@@ -23,12 +23,12 @@ NOMAD is deliberately different from **PUI89 Sentinel**, which is a separate fou
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
-## Compact product specification — proposed 6 kg design
+## Compact product specification — 8–10 kg target, 10 kg maximum
 
 | Specification | Proposed engineering target |
 |---|---:|
-| Complete robot mass | **Maximum 6.0 kg**, including battery, retractable handle, wiring and fixed sensors |
-| Payload | **1.0 kg initial target**, carried separately from the robot's own mass |
+| Complete robot mass | **8–10 kg target; 10 kg maximum**, including battery, handle, wiring and installed sensors |
+| Payload | **TBD**; define only after stability, traction and total-mass analysis within the 10 kg design limit |
 | Body width | **30–33 cm** |
 | Body length / depth | **35–40 cm** |
 | Body height | **35–40 cm**, excluding the extended handle |
@@ -38,24 +38,24 @@ Both products may share PUI89 Shared AI Core interfaces and evidence standards, 
 | Compute direction | CPU-first, low-power, local/offline-capable AI; no automatic model or package downloads |
 | Human control | Manual override, physical emergency stop and conservative safe-stop behaviour |
 
-The 6.0 kg limit is the complete robot mass, not the robot-plus-payload mass. The initial 1.0 kg payload target is additional; the design must therefore be engineered and tested for a total moving mass of up to 7.0 kg. The handle's extended height is excluded from body height, but its mass is included in the 6.0 kg robot limit.
+The 10 kg maximum is the complete robot design-mass limit, including the battery, handle, wiring and installed hardware. Payload capacity is not yet specified and must be established through structural, traction, braking and stability analysis; do not add an assumed payload above the 10 kg limit. The handle's extended height is excluded from body height, but its mass is included in the complete robot mass.
 
 **Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These are design targets, not measured prototype specifications. No physical NOMAD robot, payload rating, runtime, speed, braking distance, obstacle-clearance limit, ingress rating or field reliability is established.
 
-### Preliminary 6 kg mass-allocation budget
+### Preliminary 10 kg complete-robot mass-allocation budget
 
 | Assembly | Planning allocation |
 |---|---:|
-| Frame and enclosure | 1.4 kg |
-| Wheels, motors and drivetrain | 1.2 kg |
-| Battery and power protection | 1.0 kg |
-| Compute and control electronics | 0.7 kg |
-| Cameras and other sensors | 0.4 kg |
-| Handle, wiring and safety hardware | 0.5 kg |
-| Engineering allowance / mass reserve | 0.8 kg |
-| **Complete robot mass budget** | **6.0 kg** |
+| Frame and enclosure | 2.2 kg |
+| Wheels, motors and drivetrain | 2.0 kg |
+| Battery and power protection | 1.5 kg |
+| Compute and control electronics | 0.8 kg |
+| Cameras and other sensors | 0.6 kg |
+| Handle, wiring and safety hardware | 1.0 kg |
+| Engineering allowance / mass reserve | 1.9 kg |
+| **Complete robot mass budget** | **10.0 kg** |
 
-This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 6.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
+This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 10.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
 
 ### First buildable product: NOMAD Prototype 1
 
@@ -75,8 +75,8 @@ The first physical prototype should prioritise a dependable supervised mobile ba
 ### Engineering and validation gates
 
 1. **Requirements and CAD packaging:** confirm body envelope, access for service, handle loads, payload location, centre of gravity and wheel guarding.
-2. **Mass closure:** maintain a part-by-part mass ledger, including fasteners, wiring, connectors, guards, handle and battery; demonstrate a design total at or below 6.0 kg with the stated reserve.
-3. **Mechanical and drive analysis:** calculate static/dynamic wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance for the 6.0 kg robot plus up to 1.0 kg payload.
+2. **Mass closure:** maintain a part-by-part mass ledger, including fasteners, wiring, connectors, guards, handle and battery; demonstrate a design total at or below 10.0 kg with the stated reserve.
+3. **Mechanical and drive analysis:** calculate static/dynamic wheel loads, motor torque, traction, turning clearance, slope limits, braking and stopping distance within the 10.0 kg maximum complete-robot mass; payload remains TBD.
 4. **Electrical and thermal safety:** define battery chemistry/capacity only after runtime and power budgeting; verify fusing, isolation, charge protection, wiring, thermal limits and emergency stop.
 5. **Software-in-the-loop:** test command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery using deterministic tests and documented simulation.
 6. **Controlled physical trials:** begin unloaded at low speed in a closed, flat indoor area; then increase payload and test braking, stability, turning, thresholds and endurance under supervision.
@@ -370,8 +370,46 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 
 ## AI Engineering Intelligence & Outdoor-Robot Design
 
-NOMAD uses a staged, owner-supervised engineering approach. Its current product target is a complete robot mass of no more than 6.0 kg including battery and handle, with a separate initial payload target of 1.0 kg. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
+NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
 
 **Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
 **Evidence gates:** CAD and mass ledger → mechanical/electrical analysis → deterministic software tests and documented simulation → supervised low-speed closed-area trials → payload, stability, braking, endurance and environmental validation. Proposed mobility limits are not established capabilities.
+
+---
+
+## Preliminary Prototype Cost Estimate (15 November 2026)
+
+**Indicative one-unit engineering prototype planning range: ฿150,000–฿450,000 (THB).**
+
+**Included at a planning level:** A compact four-wheel mobile platform, drive/braking system, battery, perception/navigation sensors, handle and integration. This is a separate cost target from the current 8–10 kg target (10 kg maximum) and payload requirements, subject to mass-ledger validation; mass and payload must be reconciled before procurement.
+
+**Estimate status:** preliminary internal planning estimate only; not a supplier quotation, purchase commitment, verified bill of materials, fixed project budget or claim that a prototype exists. The range depends on final requirements, component selection, non-Chinese-origin supplier availability, compatibility, import/shipping costs and test scope. Obtain current written quotations and verify country of manufacture/origin, exact model/part number, specifications, warranty and lead time before any procurement.
+
+**Generally excluded:** engineering labour, research salaries, facilities, taxes/VAT, import duties, shipping unless stated in a supplier quotation, certification/regulatory approvals, production tooling, mass production, long-term maintenance and contingency. Project-specific exclusions: any major custom manufacturing or certification not specified in the prototype scope.
+
+**Lower-cost development path:** continue software-first development, open-source tools and simulation before purchasing physical hardware. Shared AI Core software and reusable development equipment may reduce duplicated costs; savings are not yet quantified. No purchase or installation is authorised by this estimate.
+
+
+### Prototype hardware, materials and component budget breakdown
+
+**Planning scope:** one engineering prototype; total planning range remains **฿150,000–฿450,000 THB**. The following subsystem allowances are preliminary engineering estimates, not supplier quotes. Individual ranges are not a promise of purchase price and must be reconciled against exact selected parts and written quotations before procurement.
+
+| Subsystem / component type | Qty per prototype | Material / specification and function | Indicative allowance (THB) |
+|---|---:|---|---:|
+| Outdoor chassis + suspension | 1 set | Compact four-wheel frame, weather-resistant covers, suspension and guarded underbody | ฿25,000–฿75,000 |
+| Drive motors + encoders | 4 provisional drive units | Four-wheel drive candidate; final motor count/torque subject to mass and terrain calculations | ฿20,000–฿60,000 |
+| Wheels + brakes + bearings | 1 set | Outdoor tyres, bearings, braking/holding system and replaceable wear parts | ฿10,000–฿35,000 |
+| RGB-D / camera + LiDAR + IMU | 1 set | Perception and navigation sensors selected for outdoor lighting and vibration | ฿25,000–฿75,000 |
+| Edge computer + motor controller | 1 set | CPU-first edge computer, MCU and protected motor-control electronics | ฿20,000–฿60,000 |
+| Battery + BMS + power | 1 set | Protected battery pack, BMS, fuse, isolation and DC/DC conversion | ฿15,000–฿40,000 |
+| Handle, enclosure + environmental protection | 1 set | Foldable/extendable handle, weather-resistant housing, seals and strain relief | ฿10,000–฿35,000 |
+| Harness, fabrication + integration tests | 1 lot | Wiring, brackets, assembly, low-speed stability/braking/endurance tests | ฿25,000–฿70,000 |
+
+**Material families:** aluminium alloy or stainless-steel structural members where suitable; engineering polymer covers; corrosion-resistant fasteners; rated cables/connectors; protective enclosures; and product-specific seals, guards or vibration isolation. Exact alloy/grade, IP rating, load rating and country of manufacture remain unselected until engineering calculations and supplier evidence are available.
+
+**Shared hardware accounting:** Shared AI Core software is not a product BOM. Reusable development computers, cameras or bench instruments must be listed as shared assets and allocated once; do not duplicate their full purchase cost across all seven products. Product-specific mounts, wiring, protection and integration remain in each product allowance.
+
+**Sourcing controls:** prefer non-Chinese-origin candidates only when the exact manufacturing origin is evidenced. Record legal manufacturer, brand, exact model/part number, manufacturing country, evidence URL/document, authorised supplier, dated price/currency, stock, MOQ, lead time, warranty and landed-cost assumptions. Brand headquarters or seller location is not proof of manufacturing origin. Unknown origin = **UNVERIFIED**.
+
+**Prototype boundary:** the allowance is for a controlled engineering prototype, not a certified commercial product or production-ready system. It excludes labour, research salaries, facilities, VAT/tax, import duties, freight/insurance unless explicitly quoted, certification, production tooling, mass production, maintenance and contingency. No purchase, download, installation or supplier commitment is authorised by this documentation.
