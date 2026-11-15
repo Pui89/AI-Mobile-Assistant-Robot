@@ -1,20 +1,23 @@
-# AI NOMAD: Spatial Intelligence integration profile
+# PUI89 AI NOMAD — Spatial Intelligence Profile
 
 ## Intended use
-Advisory indoor/outdoor obstacle geometry and spatial context.
+Local spatial context for luggage awareness and future supervised low-speed movement in approved areas. Travel Mode remains manual; Flight Mode disables powered movement.
 
 ## Planned tasks
-- Obstacle-relative geometry and room/area context
-- Coordinate-frame and timestamp consistency checks
-- Evidence records for future mobility evaluation
+- Camera image-quality checks and scene context.
+- Object/obstacle geometry and free-space cues.
+- Calibrated depth or stereo range where selected sensors support it.
+- Wheel odometry and IMU state.
+- Indoor/outdoor context and localisation confidence where lawful and available.
+- Luggage separation/tamper events only with reviewed sensors and privacy controls.
+- Evidence references, uncertainty and human review.
 
 ## Safety boundaries
-- No localization integrity, weather resistance or mobility safety is validated.
-- No autonomous movement or physical control is enabled.
-- Outdoor GNSS and environmental degradation require separate testing.
+- Spatial estimates do not authorise movement.
+- No movement in aircraft, restricted airport areas or unapproved public environments.
+- No localisation integrity, obstacle avoidance, braking, travel safety or mobility is validated.
+- Monocular depth is not metric range.
+- No facial recognition or biometric tracking.
+- Missing, stale, uncalibrated or conflicting observations remain UNKNOWN/CONFLICT.
 
-The common interfaces are under development in [Shared AI Core PR #26](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/26), which remains draft and unmerged. This profile documents the intended integration contract only; no runtime import, sensor driver or physical integration is claimed.
-
-Require lawful data provenance, calibration, synchronized timestamps, sensor-health checks, uncertainty handling, synthetic fault tests and human review before runtime use. No physical actuation is enabled.
-
-**Status:** profile documentation added; runtime adapter, real sensor integration, accuracy and field validation pending. No paid services or hardware purchase required.
+This profile documents proposed integration only. No runtime sensor driver, real sensor integration or physical mobility is claimed.
