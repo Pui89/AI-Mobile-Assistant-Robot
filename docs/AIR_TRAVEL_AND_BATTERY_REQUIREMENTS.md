@@ -7,7 +7,7 @@
 
 “Looks like a carry-on suitcase” and “accepted as cabin baggage” are different claims. Airline size, weight, baggage class, battery and smart-bag policies vary by carrier, route, cabin class and aircraft. NOMAD's proposed 8–10 kg complete mass (12 kg ceiling) may exceed some cabin baggage weight limits.
 
-A commonly referenced IATA cabin-baggage dimension example is 56 × 45 × 25 cm, including wheels and handles, but this is not a universal allowance. NOMAD's package target is approximately 30–33 × 35–40 × 35–40 cm; final fit must be checked in all dimensions and against the operating airline's rules.
+A commonly referenced IATA cabin-baggage dimension example is 56 × 45 × 25 cm, including wheels and handles, but this is not a universal allowance. NOMAD's package target is approximately 30–33 × 35–40 × 20–25 cm; final fit must be checked in all dimensions and against the operating airline's rules.
 
 ## 2. Design requirements
 
