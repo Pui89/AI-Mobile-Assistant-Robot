@@ -23,6 +23,42 @@ NOMAD is deliberately different from **PUI89 Sentinel**, which is the separate f
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
+## Product purpose — a multifunctional travel companion, not a security robot
+
+**PUI89 AI NOMAD is designed first as useful carry-on luggage and a personal travel assistant. Security awareness is a supporting safety function, not the product's identity or primary purpose.** The product combines a practical storage compartment, an upright carry-on suitcase form, four base wheels and a proposed AI-assisted mobility and travel-support system.
+
+### User needs and proposed functions
+
+| User need | Proposed NOMAD support | Evidence boundary |
+|---|---|---|
+| Carry belongings with less effort | Practical luggage storage, manual pull handle and future motor-assisted rolling | Storage layout and motorised assistance require prototype validation |
+| Move through a journey more easily | Travel-context information, route guidance and permitted-area navigation assistance | Depends on reliable data, maps, location inputs and venue rules |
+| Keep track of the trip | Itinerary, schedule, checklist and reminder support | External flight/booking data requires an authorised integration; no live feed is assumed |
+| Find and organise belongings | User-defined packing lists, compartment organisation and optional item-location aids | Item detection or tracking requires suitable sensors/tags and privacy review |
+| Interact naturally | Voice and text interaction, multilingual assistance and clear status feedback | Language quality and offline coverage require evaluation |
+| Reduce physical effort | Supervised follow-me and motor-assisted movement research | Future capability; not available or validated today |
+| Travel with confidence | Obstacle/person awareness, separation alerts, battery status and emergency stop | Safety functions require independent engineering and physical tests |
+| Stay useful without connectivity | Local checklists, reminders, status and other essential offline functions | Exact offline feature set depends on local software and storage |
+
+### Proposed user modes
+
+1. **Luggage Mode:** a conventional manually handled suitcase; the user can pull, park and access belongings.
+2. **Assist Mode:** future motor assistance for rolling on a validated surface, with owner supervision.
+3. **Follow Mode:** future owner-following in a defined, permitted environment after navigation, privacy and safety validation.
+4. **Travel Assistant Mode:** itinerary, reminders, packing checklist, destination notes and travel information from authorised sources.
+5. **Navigation Support Mode:** route and wayfinding suggestions for human review; autonomous movement is restricted to separately validated areas.
+6. **Manual / Recovery Mode:** direct human handling and a clear way to stop, isolate or recover the unit.
+7. **Safe Mode:** stop or hold position when obstacle, localisation, communication, battery or sensor conditions are unsafe or uncertain.
+
+### Product boundaries
+
+- NOMAD is not primarily a security guard, patrol robot, surveillance platform or emergency responder. Security-related sensing is optional and subordinate to travel assistance and safe mobility.
+- No unrestricted autonomous movement in airports, hotels, streets or other public spaces is claimed. Venue permission and operating-domain validation are required.
+- It does not replace airline staff, airport security, travel agents, emergency services or accessibility professionals.
+- Flight status, booking, maps, translation and messaging integrations are proposed only where a reliable, authorised source and suitable privacy controls exist; no paid API or cloud service is assumed.
+- Airline cabin-baggage acceptance is not established. Dimensions, total mass and battery transport rules must be checked with each carrier.
+- Every capability in this section is a product requirement or research direction unless a separate implementation record and validation evidence explicitly establish it.
+
 ## Compact product specification — 8–10 kg target, 10 kg maximum
 
 | Specification | Proposed engineering target |
@@ -191,7 +227,7 @@ PUI89 uses six shared intelligence groups across its seven independent products.
 ## Project website QR codes
 
 <table><tr><td align="center"><strong>English website</strong><br><a href="https://pui89.github.io/nomad.html"><img src="https://pui89.github.io/qr/nomad-en.png" width="160" alt="PUI89 AI Mobile Assistant Robot English website QR code"></a><br><a href="https://pui89.github.io/nomad.html">Open English website</a></td><td align="center"><strong>เว็บไซต์ภาษาไทย</strong><br><a href="https://pui89.github.io/nomad-th.html"><img src="https://pui89.github.io/qr/nomad-th.png" width="160" alt="QR Code เว็บไซต์ภาษาไทย PUI89 AI Mobile Assistant Robot"></a><br><a href="https://pui89.github.io/nomad-th.html">เปิดเว็บไซต์ภาษาไทย</a></td></tr></table>
-### A Carry-on Suitcase-Style Four-Wheel AI Assistant for Travel and Everyday Life
+### A Multifunctional Carry-on Travel Companion
 
 **A mobile companion designed to help people indoors and outdoors.**
 
@@ -206,7 +242,7 @@ PUI89 AI NOMAD is an early-stage, owner-supervised mobile AI assistant in an upr
 
 ## PUI89 AI NOMAD purpose
 
-AI NOMAD is intended as an owner-supervised carry-on-suitcase-style mobile assistant. Proposed research areas include:
+AI NOMAD is intended as a practical carry-on suitcase and owner-supervised personal travel companion—not merely a security or surveillance robot. Proposed research areas include:
 - Rolling and carrying personal belongings in a compact upright luggage body
 - Four-wheel spinner-caster handling and supervised movement in suitable indoor environments
 - Travel assistance and environmental awareness in stations, terminals and other permitted settings, subject to access rules and validation
