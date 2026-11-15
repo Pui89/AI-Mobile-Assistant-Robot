@@ -1,13 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI NOMAD — Six Core Intelligence Groups Concept</title><desc id="desc">A conceptual architecture graphic mapping six PUI89 intelligence groups to PUI89 AI NOMAD. It does not represent implemented or validated capabilities.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071426"/><stop offset="1" stop-color="#102B48"/></linearGradient><radialGradient id="glow"><stop offset="0" stop-color="#13BFEA" stop-opacity=".20"/><stop offset="1" stop-color="#13BFEA" stop-opacity="0"/></radialGradient></defs>
-<rect width="1600" height="900" fill="url(#bg)"/><circle cx="1330" cy="90" r="380" fill="url(#glow)"/><path d="M0 205H1600" stroke="#2B4D6C" stroke-width="2"/>
-<text x="70" y="78" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5" fill="#39D6F2">PUI89 • SHARED AI CORE</text>
-<text x="70" y="145" font-family="Arial,sans-serif" font-size="42" font-weight="700" letter-spacing="1.5" fill="#F5F8FF">PUI89 AI NOMAD</text>
-<text x="70" y="184" font-family="Arial,sans-serif" font-size="20" fill="#B8C7D9">Outdoor awareness • supervised mobility • safe return</text>
-<rect x="70" y="218" width="1460" height="1" fill="#294663"/>
-<g><rect x="70" y="260" width="700" height="132" rx="20" fill="#101F35" stroke="#36D7F2" stroke-opacity=".7" stroke-width="2"/><circle cx="118" cy="308" r="22" fill="#36D7F2" fill-opacity=".18" stroke="#36D7F2" stroke-width="2"/><text x="118" y="315" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#36D7F2">1</text><text x="158" y="303" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">VISION</text><text x="158" y="342" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Terrain • people • animals • vehicles</text></g><g><rect x="810" y="260" width="700" height="132" rx="20" fill="#101F35" stroke="#68C9FF" stroke-opacity=".7" stroke-width="2"/><circle cx="858" cy="308" r="22" fill="#68C9FF" fill-opacity=".18" stroke="#68C9FF" stroke-width="2"/><text x="858" y="315" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#68C9FF">2</text><text x="898" y="303" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">AUDIO</text><text x="898" y="342" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Voice • siren • outdoor sound</text></g><g><rect x="70" y="430" width="700" height="132" rx="20" fill="#101F35" stroke="#7F9BFF" stroke-opacity=".7" stroke-width="2"/><circle cx="118" cy="478" r="22" fill="#7F9BFF" fill-opacity=".18" stroke="#7F9BFF" stroke-width="2"/><text x="118" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#7F9BFF">3</text><text x="158" y="473" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">MULTIMODAL</text><text x="158" y="512" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Camera • LiDAR • IMU • GNSS fusion</text></g><g><rect x="810" y="430" width="700" height="132" rx="20" fill="#101F35" stroke="#7CE0C3" stroke-opacity=".7" stroke-width="2"/><circle cx="858" cy="478" r="22" fill="#7CE0C3" fill-opacity=".18" stroke="#7CE0C3" stroke-width="2"/><text x="858" y="485" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#7CE0C3">4</text><text x="898" y="473" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">ROBOTICS</text><text x="898" y="512" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Navigation • follow-me • return</text></g><g><rect x="70" y="600" width="700" height="132" rx="20" fill="#101F35" stroke="#F4C66A" stroke-opacity=".7" stroke-width="2"/><circle cx="118" cy="648" r="22" fill="#F4C66A" fill-opacity=".18" stroke="#F4C66A" stroke-width="2"/><text x="118" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#F4C66A">5</text><text x="158" y="643" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">ACTION & REACTION</text><text x="158" y="682" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Terrain • traffic • motor alerts</text></g><g><rect x="810" y="600" width="700" height="132" rx="20" fill="#101F35" stroke="#B9C6D8" stroke-opacity=".7" stroke-width="2"/><circle cx="858" cy="648" r="22" fill="#B9C6D8" fill-opacity=".18" stroke="#B9C6D8" stroke-width="2"/><text x="858" y="655" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#B9C6D8">6</text><text x="898" y="643" font-family="Arial,sans-serif" font-size="22" font-weight="700" letter-spacing="1.4" fill="#F2F7FF">SAFETY & CONTROL</text><text x="898" y="682" font-family="Arial,sans-serif" font-size="18" fill="#B8C7D9">Supervision • area limits • safe hold</text></g>
-<rect x="70" y="790" width="1460" height="58" rx="14" fill="#0B1728" stroke="#36536E"/>
-<text x="95" y="825" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#39D6F2">CONCEPT ARCHITECTURE</text>
-<text x="355" y="825" font-family="Arial,sans-serif" font-size="17" fill="#D2DCE8">Proposed capability allocation • human oversight • evidence before claims • product-specific safety gates</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD — travel suitcase AI architecture</title>
+<desc id="desc">Proposed architecture for a suitcase-form AI assistant: removable battery and device telemetry, camera and optional depth/IMU/wheel inputs, local perception, travel and luggage world state, dashboard and evidence, with a separate independent safety controller. Travel mode is manual, flight mode powers off, and future robot mode is supervised in permitted controlled areas only.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0C1B2D"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42D9FF"/><stop offset="1" stop-color="#B8F2FF"/></linearGradient></defs>
+<rect width="1440" height="820" rx="28" fill="url(#bg)"/>
+<text x="56" y="76" fill="#42D9FF" font-size="17" font-weight="800" letter-spacing="4">PUI89 / TECHNICAL VISUALS</text>
+<text x="56" y="132" fill="#F3F7FF" font-size="39" font-weight="850">PUI89 AI NOMAD</text>
+<text x="58" y="164" fill="#B8C7DA" font-size="18" letter-spacing="2">AI TRAVEL SUITCASE · FOUR WHEELS · RETRACTABLE HANDLE · REMOVABLE BATTERY</text>
+<path d="M56 194H1384" stroke="#29445E" stroke-width="2"/>
+<text x="56" y="236" fill="#B8F2FF" font-size="16" font-weight="800" letter-spacing="2">LOCAL AI INTELLIGENCE FLOW (PROPOSED)</text>
+<g font-family="Arial,sans-serif">
+ <rect x="56" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="82" y="312" fill="#42D9FF" font-size="16" font-weight="800">01 / INPUTS</text>
+ <text x="82" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Local sensors</text>
+ <text x="82" y="392" fill="#B8C7DA" font-size="17">RGB · optional depth · IMU</text>
+ <text x="82" y="420" fill="#B8C7DA" font-size="17">Wheel / battery telemetry</text>
+ <rect x="392" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="418" y="312" fill="#42D9FF" font-size="16" font-weight="800">02 / VALIDATE</text>
+ <text x="418" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Evidence gate</text>
+ <text x="418" y="392" fill="#B8C7DA" font-size="17">Source · time · quality</text>
+ <text x="418" y="420" fill="#B8C7DA" font-size="17">Calibration · uncertainty</text>
+ <rect x="728" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="754" y="312" fill="#42D9FF" font-size="16" font-weight="800">03 / UNDERSTAND</text>
+ <text x="754" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Travel WorldState</text>
+ <text x="754" y="392" fill="#B8C7DA" font-size="17">Luggage · scene · obstacles</text>
+ <text x="754" y="420" fill="#B8C7DA" font-size="17">Mode · device health · events</text>
+ <rect x="1064" y="270" width="320" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="1090" y="312" fill="#42D9FF" font-size="16" font-weight="800">04 / ASSIST</text>
+ <text x="1090" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Owner dashboard</text>
+ <text x="1090" y="392" fill="#B8C7DA" font-size="17">Checklist · alerts · evidence</text>
+ <text x="1090" y="420" fill="#B8C7DA" font-size="17">Human review · reminders</text>
+ <path d="M360 360H386M696 360H722M1032 360H1058" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+ <path d="M380 352L390 360L380 368M716 352L726 360L716 368M1052 352L1062 360L1052 368" fill="none" stroke="#42D9FF" stroke-width="3"/>
+ <rect x="56" y="510" width="1328" height="110" rx="18" fill="#0B1E31" stroke="#35556E" stroke-width="2"/>
+ <text x="82" y="550" fill="#42D9FF" font-size="16" font-weight="800" letter-spacing="2">INDEPENDENT SAFETY SUPERVISOR — REQUIRED BEFORE POWERED MOBILITY</text>
+ <text x="82" y="590" fill="#F3F7FF" font-size="19">Mode interlocks · motor disable · watchdog · braking · emergency stop · manual override · safe hold</text>
+ <rect x="56" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="82" y="700" fill="#42D9FF" font-size="16" font-weight="800">TRAVEL MODE</text>
+ <text x="82" y="736" fill="#F3F7FF" font-size="18">Manual pull / push · drive disabled</text>
+ <rect x="510" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="536" y="700" fill="#42D9FF" font-size="16" font-weight="800">FLIGHT MODE</text>
+ <text x="536" y="736" fill="#F3F7FF" font-size="18">Fully powered off · no onboard operation</text>
+ <rect x="964" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="990" y="700" fill="#42D9FF" font-size="16" font-weight="800">ROBOT MODE — FUTURE</text>
+ <text x="990" y="736" fill="#F3F7FF" font-size="18">Supervised · permitted controlled areas only</text>
+</g>
 </svg>

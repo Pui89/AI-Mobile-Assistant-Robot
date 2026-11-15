@@ -29,7 +29,7 @@
 - Independent hardware interlocks and protective devices remain necessary where required by the safety case.
 - Physical action proposals require human review until a separately validated safety architecture establishes otherwise.
 - Unknown, stale or conflicting observations must not produce a normal/safe conclusion.
-- Screening decisions remain qualified-human-reviewed and non-coercive.
+- NOMAD travel, baggage and mobility recommendations remain advisory; the owner and operating airline retain authority over travel and carriage decisions.
 - No physical test, deployment or hardware action is authorized by this document.
 
 ## Integration acceptance criteria

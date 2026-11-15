@@ -1,34 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
-<title id="title">HOMEGUARD AI NOMAD robot dog workflow concept</title>
-<desc id="desc">A quadruped robot dog concept and supervised workflow: observe, verify evidence, understand location and context, check safe movement, and report to owner. Simulation and future proposals only.</desc>
-<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#12395b"/></linearGradient><linearGradient id="cyan" x2="1"><stop stop-color="#83f8ff"/><stop offset="1" stop-color="#00bde8"/></linearGradient><style>
-.title{font:800 42px Arial,sans-serif;fill:#f3faff}.sub{font:20px Arial,sans-serif;fill:#b7cede}.head{font:800 22px Arial,sans-serif;fill:#f3faff}.copy{font:17px Arial,sans-serif;fill:#bfd2e2}.eyebrow{font:700 16px Arial,sans-serif;letter-spacing:3px;fill:#80edff}.panel{fill:#102943;stroke:#35617e;stroke-width:2}
-</style></defs>
-<rect width="1600" height="980" rx="28" fill="url(#bg)"/><text x="70" y="68" class="eyebrow">PUI89  /  HOMEGUARD AI NOMAD</text><text x="70" y="130" class="title">QUADRUPED ROBOT DOG — HOW IT IS INTENDED TO WORK</text><text x="72" y="170" class="sub">Owner-supervised outdoor awareness • evidence-led decisions • safe-stop first</text>
-<!-- simplified dog silhouette -->
-<g transform="translate(95 285)">
-<ellipse cx="260" cy="380" rx="245" ry="28" fill="#020a13" opacity=".5"/>
-<rect x="60" y="110" width="390" height="190" rx="60" fill="#173b59" stroke="#75a4c2" stroke-width="5"/>
-<rect x="90" y="135" width="330" height="140" rx="42" fill="#0a2138" stroke="#4ce1f8" stroke-width="4"/>
-<path d="M140 200H370" stroke="#4ce1f8" stroke-width="8" stroke-linecap="round"/>
-<text x="255" y="240" text-anchor="middle" fill="#f5fbff" font-family="Arial" font-size="29" font-weight="800">PUI89 NOMAD</text>
-<path d="M390 140L455 80" stroke="#6b91ac" stroke-width="30" stroke-linecap="round"/>
-<path d="M435 60L475 20H565L585 70L540 110L470 105Z" fill="#173b59" stroke="#84b6d0" stroke-width="5"/>
-<circle cx="500" cy="65" r="12" fill="#8df8ff"/><circle cx="550" cy="60" r="12" fill="#8df8ff"/>
-<g stroke="#7d9eb8" stroke-width="18" stroke-linecap="round" fill="none"><path d="M100 265L65 360L55 430"/><path d="M190 285L180 365L190 430"/><path d="M355 285L370 365L360 430"/><path d="M420 260L475 350L485 430"/></g>
-<g fill="#0a1a2b" stroke="#7bb6d0" stroke-width="5"><circle cx="65" cy="360" r="20"/><circle cx="180" cy="365" r="20"/><circle cx="370" cy="365" r="20"/><circle cx="475" cy="350" r="20"/></g>
-<text x="255" y="500" text-anchor="middle" class="head">FOUR-LEG ROBOT DOG</text><text x="255" y="530" text-anchor="middle" class="copy">Proposed mechanical platform</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD — travel suitcase AI architecture</title>
+<desc id="desc">Proposed architecture for a suitcase-form AI assistant: removable battery and device telemetry, camera and optional depth/IMU/wheel inputs, local perception, travel and luggage world state, dashboard and evidence, with a separate independent safety controller. Travel mode is manual, flight mode powers off, and future robot mode is supervised in permitted controlled areas only.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0C1B2D"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42D9FF"/><stop offset="1" stop-color="#B8F2FF"/></linearGradient></defs>
+<rect width="1440" height="820" rx="28" fill="url(#bg)"/>
+<text x="56" y="76" fill="#42D9FF" font-size="17" font-weight="800" letter-spacing="4">PUI89 / TECHNICAL VISUALS</text>
+<text x="56" y="132" fill="#F3F7FF" font-size="39" font-weight="850">PUI89 AI NOMAD</text>
+<text x="58" y="164" fill="#B8C7DA" font-size="18" letter-spacing="2">AI TRAVEL SUITCASE · FOUR WHEELS · RETRACTABLE HANDLE · REMOVABLE BATTERY</text>
+<path d="M56 194H1384" stroke="#29445E" stroke-width="2"/>
+<text x="56" y="236" fill="#B8F2FF" font-size="16" font-weight="800" letter-spacing="2">LOCAL AI INTELLIGENCE FLOW (PROPOSED)</text>
+<g font-family="Arial,sans-serif">
+ <rect x="56" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="82" y="312" fill="#42D9FF" font-size="16" font-weight="800">01 / INPUTS</text>
+ <text x="82" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Local sensors</text>
+ <text x="82" y="392" fill="#B8C7DA" font-size="17">RGB · optional depth · IMU</text>
+ <text x="82" y="420" fill="#B8C7DA" font-size="17">Wheel / battery telemetry</text>
+ <rect x="392" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="418" y="312" fill="#42D9FF" font-size="16" font-weight="800">02 / VALIDATE</text>
+ <text x="418" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Evidence gate</text>
+ <text x="418" y="392" fill="#B8C7DA" font-size="17">Source · time · quality</text>
+ <text x="418" y="420" fill="#B8C7DA" font-size="17">Calibration · uncertainty</text>
+ <rect x="728" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="754" y="312" fill="#42D9FF" font-size="16" font-weight="800">03 / UNDERSTAND</text>
+ <text x="754" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Travel WorldState</text>
+ <text x="754" y="392" fill="#B8C7DA" font-size="17">Luggage · scene · obstacles</text>
+ <text x="754" y="420" fill="#B8C7DA" font-size="17">Mode · device health · events</text>
+ <rect x="1064" y="270" width="320" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="1090" y="312" fill="#42D9FF" font-size="16" font-weight="800">04 / ASSIST</text>
+ <text x="1090" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Owner dashboard</text>
+ <text x="1090" y="392" fill="#B8C7DA" font-size="17">Checklist · alerts · evidence</text>
+ <text x="1090" y="420" fill="#B8C7DA" font-size="17">Human review · reminders</text>
+ <path d="M360 360H386M696 360H722M1032 360H1058" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+ <path d="M380 352L390 360L380 368M716 352L726 360L716 368M1052 352L1062 360L1052 368" fill="none" stroke="#42D9FF" stroke-width="3"/>
+ <rect x="56" y="510" width="1328" height="110" rx="18" fill="#0B1E31" stroke="#35556E" stroke-width="2"/>
+ <text x="82" y="550" fill="#42D9FF" font-size="16" font-weight="800" letter-spacing="2">INDEPENDENT SAFETY SUPERVISOR — REQUIRED BEFORE POWERED MOBILITY</text>
+ <text x="82" y="590" fill="#F3F7FF" font-size="19">Mode interlocks · motor disable · watchdog · braking · emergency stop · manual override · safe hold</text>
+ <rect x="56" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="82" y="700" fill="#42D9FF" font-size="16" font-weight="800">TRAVEL MODE</text>
+ <text x="82" y="736" fill="#F3F7FF" font-size="18">Manual pull / push · drive disabled</text>
+ <rect x="510" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="536" y="700" fill="#42D9FF" font-size="16" font-weight="800">FLIGHT MODE</text>
+ <text x="536" y="736" fill="#F3F7FF" font-size="18">Fully powered off · no onboard operation</text>
+ <rect x="964" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="990" y="700" fill="#42D9FF" font-size="16" font-weight="800">ROBOT MODE — FUTURE</text>
+ <text x="990" y="736" fill="#F3F7FF" font-size="18">Supervised · permitted controlled areas only</text>
 </g>
-<!-- flow cards -->
-<g>
-<rect x="700" y="250" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="295" r="22" fill="url(#cyan)"/><text x="745" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">1</text><text x="785" y="303" class="head">OBSERVE</text><text x="735" y="350" class="copy">Camera and optional validated</text><text x="735" y="375" class="copy">environmental sensor inputs</text>
-<path d="M1060 322H1110" stroke="#62e7fa" stroke-width="4"/>
-<rect x="1120" y="250" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="295" r="22" fill="url(#cyan)"/><text x="1165" y="303" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">2</text><text x="1205" y="303" class="head">VERIFY EVIDENCE</text><text x="1155" y="350" class="copy">Check freshness, calibration,</text><text x="1155" y="375" class="copy">sensor health and uncertainty</text>
-<rect x="700" y="455" width="360" height="145" rx="20" class="panel"/><circle cx="745" cy="500" r="22" fill="url(#cyan)"/><text x="745" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">3</text><text x="785" y="508" class="head">UNDERSTAND</text><text x="735" y="555" class="copy">Track location, context, change</text><text x="735" y="580" class="copy">and known / unknown state</text>
-<path d="M1060 527H1110" stroke="#62e7fa" stroke-width="4"/>
-<rect x="1120" y="455" width="390" height="145" rx="20" class="panel"/><circle cx="1165" cy="500" r="22" fill="url(#cyan)"/><text x="1165" y="508" text-anchor="middle" fill="#071727" font-family="Arial" font-size="20" font-weight="800">4</text><text x="1205" y="508" class="head">CHECK SAFE MOVEMENT</text><text x="1155" y="555" class="copy">Respect terrain, obstacles, battery</text><text x="1155" y="580" class="copy">and defined operating limits</text>
-<rect x="910" y="665" width="390" height="125" rx="20" fill="#12334b" stroke="#51dff9" stroke-width="2"/><text x="1105" y="710" text-anchor="middle" class="head">5  REPORT TO OWNER</text><text x="1105" y="750" text-anchor="middle" class="copy">Human review • safe stop if uncertain</text>
-<path d="M1315 600V635H1300V665" fill="none" stroke="#62e7fa" stroke-width="4"/>
-</g>
-<rect x="70" y="850" width="1460" height="72" rx="16" fill="#0b2035" stroke="#315a77" stroke-width="2"/><text x="100" y="895" class="copy">PROPOSED ONLY — no quadruped hardware, autonomous navigation, real sensor integration or outdoor performance is claimed.</text>
 </svg>

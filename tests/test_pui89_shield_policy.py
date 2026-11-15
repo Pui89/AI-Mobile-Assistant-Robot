@@ -102,7 +102,7 @@ class ShieldContractTests(unittest.TestCase):
     def test_six_project_matrix_covers_vehicle_projects_and_existing_projects(self):
         matrix = (ROOT / "docs/PUI89_SHIELD_PROJECT_IMPLEMENTATION_MATRIX.md").read_text(encoding="utf-8")
         for project in ("Coconut Harvest AI", "Flood Rescue AI",
-                        "Multimodal Screening AI", "Homeguard AI Nomad",
+                        "Multimodal Screening AI", "PUI89 AI NOMAD",
                         "AI Robot Car", "AI Robot Motorcycle"):
             self.assertIn(project, matrix)
         self.assertIn("Repository not found / not created", matrix)

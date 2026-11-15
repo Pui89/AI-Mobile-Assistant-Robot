@@ -1,24 +1,31 @@
-# HOMEGUARD AI — Brand and Concept
+# PUI89 AI NOMAD — Brand & Industrial Design
 
-## Identity direction
+## Product reading
 
-HOMEGUARD is represented by a geometric three-storey building matrix. Three clear floor plates communicate real building structure; squared vertical members communicate engineering; a bright central cyan spine and connected sensor nodes communicate the intelligence layer.
+The silhouette must read immediately as a premium upright travel suitcase. The robot identity is expressed through discreet sensing, precise engineering details and subtle cyan status lighting—not exposed robot limbs or a bulky mobile chassis.
 
-The mark deliberately avoids a roof, house, shield, lock or generic alarm icon. It should read as **building intelligence and condition understanding**, not only home security.
+## Form language
+
+- Upright rounded-rectangle hard-shell suitcase.
+- Four compact, recessed/protected wheels at the base.
+- Retractable telescopic manual pull handle and separate carry grip.
+- Secure luggage compartment with practical access and serviceable shell panels.
+- Discreet front perception/status fascia; visible camera/microphone status when active.
+- Protected removable battery bay with clear labelling and safe isolation.
+- No quadruped legs, dog-like body, cargo-cart platform or ride-on silhouette.
 
 ## Visual system
 
-- Deep navy foundation: `#061426` / `#0A2038`
-- Electric cyan signal: `#52E5FA` / `#83F8FF`
-- Architectural blue: `#153B5C`
-- White text: `#EAF7FF`
-- Geometry: flat-cut edges, strong horizontal floor plates, clear vertical structure
-- Light: glow stays inside the central intelligence spine and sensor nodes
+- Deep Navy: #061426 / #0A2038
+- Electric Cyan: #42D9FF / #83F8FF
+- Titanium Silver: brushed-metal accents
+- Flat-cut edges, clean shell seams, premium luggage proportions and controlled cyan illumination.
+- The PUI89 N mark remains clean and unobstructed.
 
-## Product concept
+## Travel-first interaction
 
-Observe multiple building evidence sources, locate them in a building/floor/room/component model, verify data quality and uncertainty, maintain a changing world-state, explain recommendations and measure improvements against a baseline.
+Travel Mode is the default and behaves as manual luggage. Robot Mode is a separate future capability for supervised controlled environments only. Flight Mode powers the system down and disables drive. Mode and power state must be obvious to the owner.
 
 ## Evidence boundary
 
-The illustrations show intended product direction, not current implementation. Current repository status remains FOUNDATION / SIMULATION-ONLY. They do not imply live sensors, trained models, certified alarms, structural certification or validated field performance. Human review is required; certified protection remains primary.
+Illustrations show a proposed design, not a physical prototype, airline-approved smart bag, installed sensor suite or validated mobility system. No airline, battery, ingress, impact or safety certification is claimed.

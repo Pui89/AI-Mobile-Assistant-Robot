@@ -10,7 +10,7 @@ Protect people, animals, assets, data, and project integrity through evidence-le
 1. Coconut Harvest AI — agricultural perception and harvesting-robot concept.
 2. Flood Rescue AI — flood/disaster rescue-robot concept.
 3. Multimodal Narcotics Screening AI — multimodal screening decision-support and robotic concept.
-4. Homeguard AI Nomad — home/environment monitoring platform and future robot concept.
+4. PUI89 AI NOMAD — suitcase-form AI travel luggage with four wheels, retractable pull handle and removable battery; future supervised mobile assistance.
 5. AI Car — vehicle intelligence and driver-assistance research.
 6. AI Motorcycle — rider-focused vehicle intelligence research.
 
@@ -126,7 +126,7 @@ For every project/release, report:
 - **Coconut Harvest AI:** falling coconuts/tools, cutting and pinch zones, worker/animal exclusion, height and reach limits, tree/branch uncertainty, dropped-load containment.
 - **Flood Rescue AI:** current, depth, debris, entrapment, capsizing, tether/anchor failure, battery isolation in water, rescue-person exposure, communications loss, safe withdrawal. Any depth/current capability requires measured test evidence.
 - **Multimodal Narcotics Screening AI:** false positives/negatives, modality disagreement, sensor calibration, dataset bias/provenance, chain of custody, privacy, human review, and prohibition on autonomous enforcement.
-- **Homeguard AI Nomad:** electrical/fire/water/mold and structural-warning uncertainty, false alarms, privacy, offline operation, safe charging, and clear emergency escalation.
+- **PUI89 AI NOMAD:** travel/flight/robot mode confusion, accidental drive activation, luggage stability and load shift, removable-battery handling, airline acceptance, collision/pinch risk in future Robot Mode, privacy, offline operation and safe shutdown.
 - **AI Car:** collision exposure, vulnerable road users, vehicle electrical/thermal hazards, occupant privacy, degraded sensing, and no direct steering/throttle/brake control.
 - **AI Motorcycle:** rider vulnerability, two-wheel stability/traction context, road-surface contamination, weather/visibility, distraction minimization, and no direct steering/throttle/brake control.
 

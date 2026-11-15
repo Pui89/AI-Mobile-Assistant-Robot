@@ -3,9 +3,9 @@ requires = ["setuptools>=84.1.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "homeguard-ai"
-version = "0.1.0"
-description = "Evidence-driven multi-sensor building monitoring demonstrator"
+name = "pui89-ai-nomad"
+version = "0.2.0"
+description = "PUI89 AI NOMAD travel-suitcase assistant software foundations; product-specific travel and robotics capabilities remain under development"
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
@@ -16,6 +16,7 @@ dependencies = []
 dev = ["pytest>=9.0.3"]
 
 [project.scripts]
+pui89-nomad-legacy-evidence-simulate = "homeguard_ai.simulator:main"
 homeguard-simulate = "homeguard_ai.simulator:main"
 
 [tool.setuptools.packages.find]
