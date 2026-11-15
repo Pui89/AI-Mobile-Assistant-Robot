@@ -113,7 +113,7 @@ Compact carry-on suitcase-style mobile assistant with four base caster wheels an
 
 | Main item | Prototype quantity | Purpose |
 |---|---:|---|
-| Reinforced chassis/weather body | 1 set | Outdoor structure |
+| Carry-on suitcase shell and internal frame | 1 set | Upright luggage body structure |
 | Powered wheel/motor modules | TBD | Select only after comparing powered-wheel and passive-caster layouts; do not assume four drive motors |
 | Spinner caster wheels | 4 | Luggage-style swivel wheels at the four base corners; final load rating and wheel material TBD |
 | Retractable handle | 1 | Manual handling |
@@ -122,7 +122,7 @@ Compact carry-on suitcase-style mobile assistant with four base caster wheels an
 | Battery/BMS | 1 set | Protected power |
 | Compute/motor control | 1 set | Reuse shared compute where suitable |
 
-**Special engineering / purchase gate:** Validate frame strength, centre of gravity, handle locking, wheel/suspension loads, weather protection, battery safety and low-speed supervised stop behaviour. The 8–10 kg target and 10 kg maximum are design targets, not verified payload or performance.
+**Special engineering / purchase gate:** Validate luggage-shell strength, centre of gravity, handle locking, four caster mounts/load ratings, rolling stability, braking/holding, battery safety and low-speed supervised stop behaviour. The 8–10 kg target and 10 kg maximum are design targets, not verified payload or performance.
 
 **Shared engineering bench (tracked separately):** approximately ฿16,500–46,000 if the existing development computer is reused. This is a portfolio-level allowance for reusable compute, one RGB-D camera, bench power supply/multimeter, two microcontroller boards and reusable tools/wiring/adapters; it is not added to each project total. Allocate each shared item once, not once per product.
 
@@ -398,13 +398,13 @@ NOMAD uses a staged, owner-supervised engineering approach. Its current product 
 
 | Subsystem / component type | Qty per prototype | Material / specification and function | Indicative allowance (THB) |
 |---|---:|---|---:|
-| Carry-on luggage chassis + caster mounting | 1 set | Compact four-wheel frame, weather-resistant covers, suspension and guarded underbody | ฿25,000–฿75,000 |
-| Drive motors + encoders | 4 provisional drive units | Powered-wheel arrangement TBD; do not assume four drive motors; select after mass, turning, traction and braking calculations | ฿20,000–฿60,000 |
+| Carry-on suitcase shell + caster mounting | 1 set | Upright luggage enclosure, internal frame, corner protection and four caster mounts | ฿25,000–฿75,000 |
+| Optional powered-wheel modules + encoders | TBD | Motorisation and motor count remain undecided; compare passive caster handling and powered-wheel options before estimating | TBD |
 | Wheels + brakes + bearings | 1 set | Four swivel spinner casters, bearings, mounting plates and replaceable wear parts | ฿10,000–฿35,000 |
-| RGB-D / camera + LiDAR + IMU | 1 set | Perception and navigation sensors selected for outdoor lighting and vibration | ฿25,000–฿75,000 |
+| RGB-D / camera + LiDAR + IMU | 1 set | Travel-scene perception selected for indoor terminal lighting, movement and vibration | ฿25,000–฿75,000 |
 | Edge computer + motor controller | 1 set | CPU-first edge computer, MCU and protected motor-control electronics | ฿20,000–฿60,000 |
 | Battery + BMS + power | 1 set | Protected battery pack, BMS, fuse, isolation and DC/DC conversion | ฿15,000–฿40,000 |
-| Handle, enclosure + environmental protection | 1 set | Foldable/extendable handle, weather-resistant housing, seals and strain relief | ฿10,000–฿35,000 |
+| Handle, enclosure + environmental protection | 1 set | Retractable telescopic pull handle, luggage-style housing, seals and strain relief | ฿10,000–฿35,000 |
 | Harness, fabrication + integration tests | 1 lot | Wiring, brackets, assembly, low-speed stability/braking/endurance tests | ฿25,000–฿70,000 |
 
 **Material families:** aluminium alloy or stainless-steel structural members where suitable; engineering polymer covers; corrosion-resistant fasteners; rated cables/connectors; protective enclosures; and product-specific seals, guards or vibration isolation. Exact alloy/grade, IP rating, load rating and country of manufacture remain unselected until engineering calculations and supplier evidence are available.
