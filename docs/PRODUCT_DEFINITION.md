@@ -25,10 +25,10 @@ The first visual impression must be a premium carry-on-style suitcase, not a rob
 
 ### Preliminary package envelope
 - Width: 30–33 cm.
-- Depth: 35–40 cm.
-- Body height: 35–40 cm, excluding an extended handle.
+- Depth: 20–25 cm maximum.
+- Overall height: 35–40 cm maximum, including wheels and handle in its stowed position.
 - Final external dimensions must include wheel housings, feet, corner guards, handle recesses and every protrusion.
-- The proposed overall envelope is cabin-size-oriented and designed to remain within a commonly referenced 56 × 45 × 25 cm example by dimensions only. It is not a certified cabin-baggage size; carrier rules differ and mass remains a separate constraint.
+- The proposed overall envelope is 30–33 cm wide × 35–40 cm high × 20–25 cm deep, including wheels and the retracted handle. This is designed to remain within a commonly referenced 56 × 45 × 25 cm example by dimensions only. It is not a certified cabin-baggage size; carrier rules differ and mass remains a separate constraint.
 
 ### Mass and storage
 - Complete robot target: 8–10 kg.
