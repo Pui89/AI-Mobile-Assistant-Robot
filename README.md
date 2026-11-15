@@ -382,7 +382,7 @@ NOMAD uses a staged, owner-supervised engineering approach. Its current product 
 
 **Indicative one-unit engineering prototype planning range: ฿150,000–฿450,000 (THB).**
 
-**Included at a planning level:** A compact four-wheel mobile platform, drive/braking system, battery, perception/navigation sensors, handle and integration. This is a separate cost target from the current current 8–10 kg target (10 kg maximum) and payload requirements, subject to mass-ledger validation; mass and payload must be reconciled before procurement.
+**Included at a planning level:** A compact four-wheel mobile platform, drive/braking system, battery, perception/navigation sensors, handle and integration. This is a separate cost target from the current 8–10 kg target (10 kg maximum) and payload requirements, subject to mass-ledger validation; mass and payload must be reconciled before procurement.
 
 **Estimate status:** preliminary internal planning estimate only; not a supplier quotation, purchase commitment, verified bill of materials, fixed project budget or claim that a prototype exists. The range depends on final requirements, component selection, non-Chinese-origin supplier availability, compatibility, import/shipping costs and test scope. Obtain current written quotations and verify country of manufacture/origin, exact model/part number, specifications, warranty and lead time before any procurement.
 
