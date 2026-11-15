@@ -147,6 +147,30 @@ Do not start with autonomous following or public-area driving. The first useful 
 
 Software tests do not validate physical mobility. Simulation does not prove airline acceptance or real-world safety. No prototype, airline approval, battery certification, payload, speed, runtime, obstacle clearance or field performance is currently claimed.
 
+## PUI89 Perception & Task Intelligence (PTI)
+
+PTI is the shared perception-and-task framework; NOMAD uses a travel-suitcase-specific configuration. These are proposed capability groups, not six separate neural networks and not a claim that all features are implemented.
+
+### Six shared intelligence groups applied to NOMAD
+
+1. **Vision Intelligence:** image quality, luggage/obstacle/object detection, classification, short-term tracking, segmentation and scene understanding. No facial recognition or biometric identification.
+2. **Audio Intelligence:** optional local voice interaction and sound-event cues only if a microphone is selected, privacy indicators and consent controls are designed, and noise performance is tested.
+3. **Multimodal Intelligence:** combine authorised RGB/depth, IMU, wheel, battery/device telemetry and travel context while retaining source provenance, timestamps, confidence and conflicts.
+4. **Robotics Intelligence:** wheel odometry, localisation and supervised motion interfaces for future Robot Mode; this does not establish autonomous following or public-space navigation.
+5. **Action & Reaction Intelligence:** reminders, trip checklists, event notifications, owner-approved tasks and bounded safe-stop/return proposals.
+6. **Safety & Control Intelligence:** Travel/Flight/Robot mode interlocks, drive disable, battery state monitoring, independent safety controller, emergency stop, manual override and fail-safe handling.
+
+**Common task lifecycle:** OBSERVE → PERCEIVE → ASSESS → PLAN → PROPOSE → HUMAN AUTHORISATION → EXECUTE ONLY THROUGH AN INDEPENDENT SAFETY-CONTROLLED PATH → MONITOR → REPORT. In Travel and Flight modes the powered drive remains disabled. AI does not directly authorise motor commands.
+
+## Open-source-first and hardware sourcing
+
+- Prefer local-first, CPU-first, open-source software with transparent licence, provenance and resource requirements.
+- No paid APIs, subscriptions, cloud GPUs, metered services or automatic model downloads.
+- Do not install dependencies, download models or purchase components without a separate review and explicit approval.
+- For hardware candidates, record exact manufacturer, model/part number, country of manufacture and origin evidence, datasheet, weight, dimensions, power, interface, supplier, dated price, lead time, warranty and compatibility.
+- Prefer verifiable non-Chinese-origin options where technically suitable; unclear origin remains unverified.
+- No hardware vendor, battery, wheel, motor, sensor, compute board, price or supplier has been selected or approved by this README.
+
 ## Detailed product and engineering documents
 
 - [Product Definition v1.0](docs/PRODUCT_DEFINITION.md)
