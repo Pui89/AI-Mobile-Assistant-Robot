@@ -80,7 +80,7 @@ The first physical prototype should prioritise a dependable supervised carry-on-
 4. **Electrical and thermal safety:** define battery chemistry/capacity only after runtime and power budgeting; verify fusing, isolation, charge protection, wiring, thermal limits and emergency stop.
 5. **Software-in-the-loop:** test command limits, stale/missing sensors, communication loss, low battery, obstacle states, safe hold and recovery using deterministic tests and documented simulation.
 6. **Controlled physical trials:** begin unloaded at low speed in a closed, flat indoor area; then increase payload and test braking, stability, turning, thresholds and endurance under supervision.
-7. **Operating-domain expansion:** outdoor surfaces, rain/splash, dust, slopes and uneven ground each require their own acceptance criteria and evidence before being described as supported.
+7. **Operating-domain expansion:** different floor surfaces, thresholds, ramps, rain/splash and dust each require their own acceptance criteria and evidence before being described as supported.
 
 **Release rule:** do not publish a measured weight, payload rating, runtime, speed, slope limit, ingress rating or safety claim until the method, conditions, results and supporting evidence are recorded. Simulation and software tests do not prove physical performance.
 
@@ -130,21 +130,21 @@ Compact carry-on suitcase-style mobile assistant with four base caster wheels an
 
 ## Perception & Task Intelligence (PTI)
 
-**Role in this product:** support supervised luggage-style rolling mobility and travel assistance for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated all-terrain or autonomous capability.
+**Role in this product:** support supervised luggage-style rolling mobility and travel assistance for the compact four-wheel NOMAD assistant. PTI is the shared PUI89 perception-and-task framework; the tasks below are research priorities, not validated travel-ready or autonomous capability.
 
 **Priority perception tasks**
 - Check camera/depth/IMU input quality, timestamps, calibration state and sensor availability.
 - Detect people, objects, path boundaries and obstacles relevant to the planned route.
-- Estimate terrain changes, slopes and traversability only when suitable depth/spatial inputs and validation evidence are available.
+- Estimate floor-surface changes, thresholds, ramp limits and obstacle clearance only when suitable depth/spatial inputs and validation evidence are available.
 - Fuse localisation, inertial and perception observations; detect stale data, sensor disagreement and localisation loss.
 - Identify routes or surfaces outside the validated operating envelope and request human guidance.
 - Propose only bounded routes in a defined, supervised operating area; safe-hold when conditions are uncertain.
 
 **Task flow:** OBSERVE → PERCEIVE → ASSESS → DECIDE → RESPOND → LEARN FROM EVIDENCE. Outputs support a human supervisor; they do not authorise unrestricted navigation or physical movement beyond separately validated safeguards.
 
-**First evidence gate:** controlled indoor/outdoor route datasets and synthetic obstacle/terrain cases, then supervised low-speed trials only after independent hardware safety provisions exist. Measure obstacle misses, localisation error, stop response, recovery behaviour and compute/resource use.
+**First evidence gate:** controlled indoor travel-route datasets and synthetic obstacle/threshold cases, then supervised low-speed trials only after independent hardware safety provisions exist. Measure obstacle misses, localisation error, stop response, recovery behaviour and compute/resource use.
 
-**Not established:** all-terrain operation, stair traversal, public-road autonomy, payload or mobility limits, or field-validated navigation. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
+**Not established:** stair/escalator traversal, public-road autonomy, payload or mobility limits, airline acceptance, or field-validated navigation. See the [shared PTI specification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/perception/PUI89_PERCEPTION_TASK_INTELLIGENCE_V1.0.md) (maintainer repository access required).
 
 ## Six Core Intelligence Groups — Product Allocation
 
@@ -159,12 +159,12 @@ PUI89 uses six shared intelligence groups across its seven independent products.
 
 ### PUI89 AI NOMAD capability allocation
 
-- **Vision:** Outdoor people, animals, vehicles, terrain, obstacles and traversability cues.
-- **Audio:** Voice interaction, sirens/horns and outdoor sound-event awareness.
-- **Multimodal:** Camera/depth/LiDAR/IMU/GNSS/audio/weather context fusion.
+- **Vision:** Travel environments, people, luggage, doors, walkways, floor surfaces, thresholds and obstacles.
+- **Audio:** Voice interaction and relevant travel-environment sound awareness, subject to privacy and validation.
+- **Multimodal:** Camera/depth/IMU and optional LiDAR, GNSS or audio context fusion when justified by the travel scenario.
 - **Robotics:** Supervised low-speed rolling mobility, route awareness and manual recovery planning; owner-following remains a future research topic requiring separate validation.
-- **Action & Reaction:** Terrain hazard, localisation loss, nearby traffic and motor/battery anomaly response.
-- **Safety & Control:** Owner supervision, validated-area limits, obstacle stop and safe return/hold.
+- **Action & Reaction:** Obstacle alerts, route-context changes, localisation loss, low-battery and motor/system anomaly reporting.
+- **Safety & Control:** Owner supervision, validated-area limits, obstacle stop, manual pull/recovery and safe hold.
 
 **Integration rule:** each product uses only the modules justified by its mission, data rights, hardware, compute budget and validation evidence. Model outputs remain observations or bounded proposals. Safety policy is product-specific and independent of model confidence. Unknown, stale, conflicting or out-of-scope inputs must be surfaced rather than guessed.
 
@@ -369,11 +369,11 @@ The portfolio-wide count is published on the [PUI89 website](https://pui89.githu
 จะนับเมื่อมีสถานะเสร็จสมบูรณ์ วันที่ ขอบเขต บทบาทผู้ทบทวน ผลการทบทวน และหลักฐานอ้างอิงอย่างน้อยหนึ่งรายการครบถ้วนเท่านั้น รายการร่าง คะแนน ดาว ยอดเข้าชม และความคิดเห็นจะไม่นับ
 <!-- PUI89_EVIDENCE_BACKED_REVIEW:END -->
 
-## AI Engineering Intelligence & Outdoor-Robot Design
+## AI Engineering Intelligence & Carry-on Travel-Assistant Design
 
-NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm long/deep × 35–40 cm high, excluding the extended handle. All figures remain proposed and unvalidated.
+NOMAD uses a staged, owner-supervised engineering approach. Its current product target is 8–10 kg complete robot mass, with a 10 kg maximum including battery, handle and installed hardware. Payload capacity remains TBD and must not be assumed above this design limit. The proposed body envelope is 30–33 cm wide × 35–40 cm deep × 35–40 cm high, excluding the extended handle. These are design targets only and do not establish compliance with any airline's carry-on baggage limits.
 
-**Project-specific priorities:** stable load distribution and low centre of gravity; guarded wheels; appropriate motor torque and braking; protected battery and thermal design; manual recovery; obstacle awareness; offline operation; maintainable enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
+**Project-specific priorities:** stable load distribution and low centre of gravity; four spinner caster mounts; suitable powered-wheel decision (if required); controlled rolling, turning and braking; protected battery and thermal design; durable telescopic handle; manual pull/recovery; obstacle awareness; offline operation; maintainable luggage-style enclosure; and clear safe-stop behaviour. Indoor controlled operation is the first physical validation domain. Outdoor use is a later, separately gated objective.
 
 **Evidence gates:** CAD and mass ledger → mechanical/electrical analysis → deterministic software tests and documented simulation → supervised low-speed closed-area trials → payload, stability, braking, endurance and environmental validation. Proposed mobility limits are not established capabilities.
 
@@ -424,6 +424,6 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 
 ![AI NOMAD carry-on suitcase-style mobile assistant workflow with travel-context perception, four spinner caster wheels and supervised rolling mobility.](docs/images/pui89-technical-visual.svg)
 
-*Proposed mobile-assistant workflow. Terrain, weather, payload, range and outdoor mobility limits require staged testing.*
+*Proposed carry-on suitcase-style mobile assistant workflow. Caster configuration, powered-wheel design, payload, battery endurance and travel-environment limits require staged testing.*
 
 This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
