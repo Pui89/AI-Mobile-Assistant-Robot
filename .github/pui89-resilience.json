@@ -2,28 +2,28 @@
   "schema_version": 1,
   "standard": "PUI89-TOTAL-RESILIENCE",
   "project": "PUI89 AI NOMAD",
-  "project_type": "owner-supervised-quadruped-mobile-assistant-concept",
-  "status": "policy-baseline-only; software and physical protections not fully verified",
+  "project_type": "ai_travel_suitcase_four_wheels_retractable_handle_removable_battery",
+  "status": "policy-and-requirements-baseline-only; physical safeguards and travel compliance not verified",
   "protection_domains": {
-    "cybersecurity": "least privilege, authenticated owner commands, secure updates, local privacy, network isolation, tamper and replay resistance",
-    "water_environment": "rain and splash only as future test cases, puddle and water-entry exclusion, humidity, condensation, dust, mud, corrosion and temperature; ingress rating not established",
-    "fire_heat_power": "battery BMS, charging safety, thermal monitoring, overcurrent and short-circuit protection, protected wiring and independently engineered power isolation",
-    "communications": "network and GPS loss or spoofing, sensor disconnection, stale or replayed commands, clock faults and local safe behavior",
-    "ai_data": "false or missed detections, uncertain localization, out-of-distribution terrain, sensor conflict, privacy and data retention",
-    "mechanical": "quadruped balance and falls, joint and actuator faults, pinch and crush points, collision, payload shift, emergency stop and manual recovery",
-    "human_mission": "owner supervision, child and pet separation, bystander safety, excluded areas, mission abort, safe stop, carry/lift recovery and privacy zones"
+    "cybersecurity": "local-first privacy, least privilege, authenticated owner access, secure updates, data minimisation, tamper and replay resistance",
+    "water_environment": "rain, splash, dust, humidity, condensation and corrosion are future test cases; no ingress rating established",
+    "fire_heat_power": "removable lithium battery design, Wh marking, BMS, fuse, short-circuit/over-current protection, thermal monitoring, terminal protection and safe isolation",
+    "communications": "network and positioning loss, sensor disconnection, stale or replayed commands, clock faults and safe local behaviour",
+    "ai_data": "false/missed object detections, uncertain spatial estimates, sensor conflicts, out-of-distribution scenes, privacy and evidence provenance",
+    "mechanical": "four-wheel load and bearing faults, handle lock/fatigue, shell impact, tip-over/load shift, pinch zones, future drive/motor faults, emergency stop and manual handling",
+    "human_mission": "owner control, luggage handling, mode confusion, airport/aircraft restrictions, bystander safety, airline-specific carriage decisions and privacy"
   },
   "project_specific_hazards": [
-    "loss of balance, trip, fall or tip-over",
-    "stairs, ledges, thresholds, slopes and unknown terrain",
-    "collision or contact with people, children and pets",
-    "joint pinch, crush, shear, entanglement and actuator jam",
-    "payload overload or shifting load",
-    "battery damage, unsafe charging, overheating and fire",
-    "rain, splash, puddles, dust, humidity, condensation and corrosion",
-    "localization, GPS, sensor or communication loss and spoofing",
-    "privacy exposure from camera, audio and location data",
-    "unsafe restart or manual recovery after a fault"
+    "airline cabin baggage rejection due to dimensions, weight or carrier-specific smart-baggage policy",
+    "removable lithium battery restriction, damage, short circuit, overheating or unsafe handling",
+    "unexpected powered movement caused by mode confusion, reboot or power restoration",
+    "telescopic handle lock failure, excessive pull load or fatigue",
+    "wheel failure, jam, instability, tipping or shifting luggage payload",
+    "collision, pinch or entanglement during future supervised Robot Mode",
+    "camera, microphone, location or trip-data privacy exposure",
+    "sensor, localisation, communication or battery telemetry loss",
+    "unintended motor activation or unsafe operation onboard aircraft",
+    "poor storage restraint, enclosure damage or service-access hazard"
   ],
   "shield_system": {
     "status": "architecture_baseline; implementation_and_physical_validation_not_verified",
@@ -56,25 +56,25 @@
       "software_version"
     ],
     "fail_safe_rules": [
-      "missing_stale_invalid_implausible_or_conflicting_inputs_must_not_be_treated_as_safe",
+      "Travel_Mode_must_be_manual_and_powered_drive_disabled",
+      "Flight_Mode_must_be_fully_powered_off_with_no_onboard_motion_or_charging",
+      "removable_battery_must_be_isolated_and_protected_during_removal_and_transport",
+      "airline_acceptance_must_not_be_inferred_from_generic_IATA_guidance",
+      "future_Robot_Mode_requires_independent_motion_controller_braking_emergency_stop_and_manual_override",
+      "missing_stale_invalid_or_conflicting_inputs_must_not_be_treated_as_safe",
       "AI_outputs_are_proposals_and_must_not_bypass_project_safety_gates",
-      "physical_motion_requires_separate_hardware_safety_design_and_explicit_authorization",
-      "loss_of_supervision_localization_or_required_sensor_health_must_inhibit_new_motion_proposals",
-      "post_fall_collision_ingress_or_battery_fault_requires_inspection_before_restart",
-      "critical_hardware_protection_must_be_independent_of_AI_software_where_required",
-      "human_authority_is_required_for_high_risk_recovery_and_reset",
+      "human_owner_and_operating_airline_retain_authority_over_travel_and_carriage_decisions",
       "no_physical_actuation_or_deployment_without_separate_authorization_and_validation"
     ],
     "physical_validation": "NOT_VERIFIED",
     "project_specific_warning_focus": [
-      "quadruped_balance_fall_and_tip_over",
-      "stairs_edges_and_out_of_envelope_terrain",
-      "people_children_pets_and_collision",
-      "joint_actuator_and_payload_hazards",
-      "battery_thermal_and_electrical_faults",
-      "water_ingress_weather_and_corrosion",
-      "localization_sensor_and_communication_loss",
-      "privacy_tampering_and_unauthorized_movement"
+      "Travel_Flight_Robot_mode_confusion_and_drive_disable",
+      "removable_battery_Wh_BMS_terminal_and_thermal_safety",
+      "airline_dimensions_mass_and_smart_baggage_acceptance",
+      "handle_wheel_shell_and_payload_mechanical_integrity",
+      "future_robot_mode_collision_pinch_braking_and_emergency_stop",
+      "privacy_location_and_sensor_data_governance",
+      "sensor_communication_and_battery_fault_safe_state"
     ]
   }
 }
