@@ -1,71 +1,47 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820" role="img" aria-labelledby="title desc">
-<title id="title">PUI89 AI NOMAD — compact mobile assistant with retractable handle</title>
-<desc id="desc">A separate compact four-wheel mobile assistant with a rounded vertical suitcase-like body, telescopic pull handle, recessed protected wheels and a front sensing panel. Proposed body envelope 30–33 cm wide, 35–40 cm long and 35–40 cm high excluding the handle. Complete robot mass target 8–10 kg, 12 kg absolute design ceiling including battery, handle and installed hardware; payload remains TBD. Suitcase form does not guarantee airline cabin acceptance.</desc>
-<defs>
- <linearGradient id="bg" x2="1" y2="1"><stop stop-color="#061426"/><stop offset="1" stop-color="#153650"/></linearGradient>
- <linearGradient id="shell" x2="1" y2="1"><stop stop-color="#315b76"/><stop offset=".52" stop-color="#142f46"/><stop offset="1" stop-color="#071827"/></linearGradient>
- <linearGradient id="metal" x2="0" y2="1"><stop stop-color="#eef5f8"/><stop offset="1" stop-color="#7d99aa"/></linearGradient>
- <linearGradient id="cyan"><stop stop-color="#19b9d9"/><stop offset="1" stop-color="#83efff"/></linearGradient>
- <filter id="shadow"><feGaussianBlur stdDeviation="18"/></filter>
-</defs>
-<rect width="1200" height="820" rx="28" fill="url(#bg)"/>
-<text x="64" y="70" fill="#78eaff" font-family="Arial,sans-serif" font-size="21" letter-spacing="5">PUI89 / MOBILE ROBOTICS</text>
-<text x="64" y="132" fill="#fff" font-family="Arial,sans-serif" font-size="56" font-weight="700">AI NOMAD</text>
-<text x="66" y="172" fill="#b9d0df" font-family="Arial,sans-serif" font-size="20" letter-spacing="1">AI TRAVEL SUITCASE · CARRY-ON-STYLE FORM</text>
-<ellipse cx="555" cy="680" rx="270" ry="34" fill="#000" opacity=".42" filter="url(#shadow)"/>
-<!-- telescopic pull handle, deliberately distinct from HOME -->
-<path d="M477 285 V192 Q477 177 494 177 H654 Q671 177 671 192 V285" fill="none" stroke="url(#metal)" stroke-width="15" stroke-linecap="round"/>
-<path d="M462 183 H686" stroke="#6ee8fa" stroke-width="4" stroke-linecap="round"/>
-<rect x="451" y="158" width="245" height="34" rx="17" fill="#173a54" stroke="#8aefff" stroke-width="3"/>
-<!-- upright rounded travel shell -->
-<path d="M378 302 Q382 266 422 258 L702 258 Q744 267 750 307 L783 604 Q788 648 748 660 L394 660 Q354 649 359 605Z" fill="url(#shell)" stroke="#4e86a1" stroke-width="5"/>
-<path d="M405 315 Q409 284 440 282 H687 Q720 286 726 318 L756 601 Q760 631 734 638 H408 Q382 631 386 601Z" fill="none" stroke="#5e8197" stroke-width="3"/>
-<path d="M420 322 H708" stroke="url(#cyan)" stroke-width="7" stroke-linecap="round"/>
-<!-- front sensor / status fascia -->
-<rect x="459" y="371" width="214" height="152" rx="25" fill="#061827" stroke="#2bc6e5" stroke-width="3"/>
-<rect x="489" y="396" width="154" height="72" rx="17" fill="#153d57" stroke="#6de6f8" stroke-width="2"/>
-<circle cx="535" cy="432" r="17" fill="#081d2d" stroke="#91efff" stroke-width="3"/>
-<circle cx="535" cy="432" r="6" fill="#8befff"/>
-<circle cx="594" cy="432" r="10" fill="#081d2d" stroke="#91efff" stroke-width="3"/>
-<path d="M510 487 Q566 465 622 487" fill="none" stroke="#42d3ec" stroke-width="4" stroke-linecap="round"/>
-<text x="566" y="560" text-anchor="middle" fill="#e7faff" font-family="Arial,sans-serif" font-size="24" font-weight="700" letter-spacing="3">NOMAD</text>
-<text x="566" y="588" text-anchor="middle" fill="#91b9cc" font-family="Arial,sans-serif" font-size="13" letter-spacing="2">SMART LUGGAGE · LOCAL AI</text>
-<!-- visible emergency stop -->
-<circle cx="710" cy="349" r="17" fill="#d84c56" stroke="#ffd6d6" stroke-width="4"/>
-<!-- recessed wheel pods -->
-<g fill="#050f1a" stroke="#63869b" stroke-width="4">
- <rect x="337" y="548" width="70" height="120" rx="26"/>
- <rect x="735" y="548" width="70" height="120" rx="26"/>
- <rect x="390" y="641" width="76" height="45" rx="18"/>
- <rect x="680" y="641" width="76" height="45" rx="18"/>
-</g>
-<g fill="#1b3548" stroke="#91adbc" stroke-width="3">
- <rect x="352" y="565" width="40" height="85" rx="17"/>
- <rect x="750" y="565" width="40" height="85" rx="17"/>
- <rect x="405" y="649" width="43" height="28" rx="12"/>
- <rect x="697" y="649" width="43" height="28" rx="12"/>
-</g>
-<path d="M385 624 Q566 655 758 624" fill="none" stroke="#2ac8e6" stroke-width="7"/>
-<!-- callouts -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="820" viewBox="0 0 1440 820" role="img" aria-labelledby="title desc">
+<title id="title">PUI89 AI NOMAD — travel suitcase AI architecture</title>
+<desc id="desc">Proposed architecture for a suitcase-form AI assistant: removable battery and device telemetry, camera and optional depth/IMU/wheel inputs, local perception, travel and luggage world state, dashboard and evidence, with a separate independent safety controller. Travel mode is manual, flight mode powers off, and future robot mode is supervised in permitted controlled areas only.</desc>
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07111F"/><stop offset="1" stop-color="#0C1B2D"/></linearGradient><linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#42D9FF"/><stop offset="1" stop-color="#B8F2FF"/></linearGradient></defs>
+<rect width="1440" height="820" rx="28" fill="url(#bg)"/>
+<text x="56" y="76" fill="#42D9FF" font-size="17" font-weight="800" letter-spacing="4">PUI89 / TECHNICAL VISUALS</text>
+<text x="56" y="132" fill="#F3F7FF" font-size="39" font-weight="850">PUI89 AI NOMAD</text>
+<text x="58" y="164" fill="#B8C7DA" font-size="18" letter-spacing="2">AI TRAVEL SUITCASE · FOUR WHEELS · RETRACTABLE HANDLE · REMOVABLE BATTERY</text>
+<path d="M56 194H1384" stroke="#29445E" stroke-width="2"/>
+<text x="56" y="236" fill="#B8F2FF" font-size="16" font-weight="800" letter-spacing="2">LOCAL AI INTELLIGENCE FLOW (PROPOSED)</text>
 <g font-family="Arial,sans-serif">
- <path d="M680 175 H850 L877 148" stroke="#70e7f8" stroke-width="2" fill="none"/>
- <text x="890" y="147" fill="#fff" font-size="21" font-weight="700">Telescopic pull handle</text>
- <text x="890" y="174" fill="#b4cbd9" font-size="16">Manual luggage pull / carry</text>
- <path d="M710 349 H850 L877 322" stroke="#70e7f8" stroke-width="2" fill="none"/>
- <text x="890" y="321" fill="#fff" font-size="21" font-weight="700">Emergency-stop control</text>
- <text x="890" y="348" fill="#b4cbd9" font-size="16">Physical design requirement</text>
- <path d="M783 607 H850 L877 580" stroke="#70e7f8" stroke-width="2" fill="none"/>
- <text x="890" y="579" fill="#fff" font-size="21" font-weight="700">Four protected luggage wheels</text>
- <text x="890" y="606" fill="#b4cbd9" font-size="16">Protected wheel housings</text>
- <text x="65" y="250" fill="#fff" font-size="21" font-weight="700">Upright travel suitcase</text>
- <text x="65" y="278" fill="#b4cbd9" font-size="16">Four wheels · pull handle · removable battery</text>
+ <rect x="56" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="82" y="312" fill="#42D9FF" font-size="16" font-weight="800">01 / INPUTS</text>
+ <text x="82" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Local sensors</text>
+ <text x="82" y="392" fill="#B8C7DA" font-size="17">RGB · optional depth · IMU</text>
+ <text x="82" y="420" fill="#B8C7DA" font-size="17">Wheel / battery telemetry</text>
+ <rect x="392" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="418" y="312" fill="#42D9FF" font-size="16" font-weight="800">02 / VALIDATE</text>
+ <text x="418" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Evidence gate</text>
+ <text x="418" y="392" fill="#B8C7DA" font-size="17">Source · time · quality</text>
+ <text x="418" y="420" fill="#B8C7DA" font-size="17">Calibration · uncertainty</text>
+ <rect x="728" y="270" width="300" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="754" y="312" fill="#42D9FF" font-size="16" font-weight="800">03 / UNDERSTAND</text>
+ <text x="754" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Travel WorldState</text>
+ <text x="754" y="392" fill="#B8C7DA" font-size="17">Luggage · scene · obstacles</text>
+ <text x="754" y="420" fill="#B8C7DA" font-size="17">Mode · device health · events</text>
+ <rect x="1064" y="270" width="320" height="180" rx="20" fill="#10243A" stroke="#29445E" stroke-width="2"/>
+ <text x="1090" y="312" fill="#42D9FF" font-size="16" font-weight="800">04 / ASSIST</text>
+ <text x="1090" y="354" fill="#F3F7FF" font-size="24" font-weight="750">Owner dashboard</text>
+ <text x="1090" y="392" fill="#B8C7DA" font-size="17">Checklist · alerts · evidence</text>
+ <text x="1090" y="420" fill="#B8C7DA" font-size="17">Human review · reminders</text>
+ <path d="M360 360H386M696 360H722M1032 360H1058" stroke="url(#line)" stroke-width="4" stroke-linecap="round"/>
+ <path d="M380 352L390 360L380 368M716 352L726 360L716 368M1052 352L1062 360L1052 368" fill="none" stroke="#42D9FF" stroke-width="3"/>
+ <rect x="56" y="510" width="1328" height="110" rx="18" fill="#0B1E31" stroke="#35556E" stroke-width="2"/>
+ <text x="82" y="550" fill="#42D9FF" font-size="16" font-weight="800" letter-spacing="2">INDEPENDENT SAFETY SUPERVISOR — REQUIRED BEFORE POWERED MOBILITY</text>
+ <text x="82" y="590" fill="#F3F7FF" font-size="19">Mode interlocks · motor disable · watchdog · braking · emergency stop · manual override · safe hold</text>
+ <rect x="56" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="82" y="700" fill="#42D9FF" font-size="16" font-weight="800">TRAVEL MODE</text>
+ <text x="82" y="736" fill="#F3F7FF" font-size="18">Manual pull / push · drive disabled</text>
+ <rect x="510" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="536" y="700" fill="#42D9FF" font-size="16" font-weight="800">FLIGHT MODE</text>
+ <text x="536" y="736" fill="#F3F7FF" font-size="18">Fully powered off · no onboard operation</text>
+ <rect x="964" y="660" width="420" height="105" rx="16" fill="#122B43" stroke="#36546D"/>
+ <text x="990" y="700" fill="#42D9FF" font-size="16" font-weight="800">ROBOT MODE — FUTURE</text>
+ <text x="990" y="736" fill="#F3F7FF" font-size="18">Supervised · permitted controlled areas only</text>
 </g>
-<rect x="64" y="712" width="1072" height="76" rx="15" fill="#061827" stroke="#285a76" stroke-width="2"/>
-<g font-family="Arial,sans-serif" text-anchor="middle">
- <text x="190" y="740" fill="#78eaff" font-size="13" letter-spacing="2">WIDTH</text><text x="190" y="770" fill="#fff" font-size="21" font-weight="700">30–33 cm</text>
- <text x="410" y="740" fill="#78eaff" font-size="13" letter-spacing="2">LENGTH</text><text x="410" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
- <text x="630" y="740" fill="#78eaff" font-size="13" letter-spacing="2">BODY HEIGHT</text><text x="630" y="770" fill="#fff" font-size="21" font-weight="700">35–40 cm</text>
- <text x="870" y="740" fill="#78eaff" font-size="13" letter-spacing="2">COMPLETE MASS TARGET</text><text x="870" y="770" fill="#fff" font-size="21" font-weight="700">8–10 kg target</text>
-</g>
-<text x="65" y="808" fill="#91a9ba" font-family="Arial,sans-serif" font-size="13">PROPOSED DESIGN ONLY · Complete mass target 8–10 kg; absolute ceiling 12 kg. Airline size/weight acceptance, payload and mobility remain unvalidated.</text>
 </svg>
