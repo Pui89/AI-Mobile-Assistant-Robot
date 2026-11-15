@@ -1,27 +1,31 @@
-# HOMEGUARD AI — Concept Overview
+# PUI89 AI NOMAD — Product Concept Overview
 
-HOMEGUARD AI is a software-first building-condition intelligence concept. It brings building observations into one traceable view, checks whether the evidence is trustworthy, compares it with documented baselines and helps a responsible person decide what should be verified.
+PUI89 AI NOMAD is a suitcase-form AI mobile assistant designed around familiar travel luggage: a compact upright hard shell, four protected wheels, a telescopic manual pull handle, internal storage and a removable battery.
 
-![HOMEGUARD AI concept overview](images/homeguard-ai-overview.svg)
+![PUI89 AI NOMAD suitcase-form concept](images/ai-nomad-compact-four-wheel.svg)
 
-## How to read the concept
+## Product promise
 
-1. **Sense:** structural, electrical, water, air/gas, acoustic, light and thermal sources provide different observations.
-2. **Locate:** every usable observation should be connected to its building, floor, room, component and sensor.
-3. **Check evidence:** the system checks timestamps, freshness, calibration, sensor health, units, missing values, conflicts and uncertainty before relying on a reading.
-4. **Understand:** the AI Core maintains a world-state view of what is known, unknown, changed, conflicting or in need of review.
-5. **Support people:** it creates an evidence report and a proposed verification priority for a responsible human.
+Bring local AI awareness and useful travel assistance into a practical luggage form. The first product must work as a normal manually handled suitcase before any powered mobility is considered.
 
-## What the first version actually does
+## Two distinct modes
 
-The current repository contains a deterministic software foundation, typed observations and baselines, evidence quality/freshness checks, a synthetic three-floor scenario, JSON findings and automated tests. The illustration describes the intended product architecture; it does not mean every sensor channel or AI capability is implemented.
+- **Travel Mode:** manual pull/push, drive disabled, battery and luggage status visible. Flight mode means powered down and compliant with the airline's battery and baggage rules.
+- **Robot Mode:** a future supervised low-speed assistance mode for approved controlled areas outside aircraft and restricted airport zones. It requires independent motion safety, braking, emergency stop and manual override.
 
-## What it does not do
+## Proposed capability areas
 
-- It does not currently connect to real building sensors.
-- It does not diagnose a building, certify structural safety or guarantee hazard detection.
-- It does not replace certified fire, smoke, carbon-monoxide or electrical protection.
-- It does not control breakers, valves, lifts, doors, alarms or evacuation systems.
-- It does not infer a confirmed cause from one sensor or an uncertain pattern.
+1. Luggage and trip status, checklist, local reminders and travel timeline.
+2. Camera-based image quality and scene perception.
+3. Object/obstacle detection, classification and short-term tracking.
+4. Depth/spatial awareness when a calibrated depth sensor is available.
+5. Indoor/outdoor location context where permitted positioning sources exist.
+6. Battery, thermal, wheel/motor and device-health monitoring where sensors are integrated.
+7. Owner-facing dashboard, event notifications and evidence history.
+8. Future supervised mobile assistance, with safe stop and human override.
 
-**Current evidence status: FOUNDATION / SIMULATION-ONLY.** Any future real-building pilot requires appropriately selected and calibrated sensors, qualified installation, privacy and security review, professional oversight and independent validation.
+## What is not implied
+
+The concept does not prove that a robot has been built, airline-approved, accepted as cabin baggage, integrated with sensors, trained on project-specific data or validated in a public environment. It is not a rideable suitcase, passenger carrier, autonomous airport vehicle or aircraft cabin robot. No face recognition or covert surveillance is intended.
+
+See [Product Definition](PRODUCT_DEFINITION.md), [Air Travel & Battery Requirements](AIR_TRAVEL_AND_BATTERY_REQUIREMENTS.md) and [Safety Case](SAFETY_CASE.md).
