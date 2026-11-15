@@ -20,6 +20,9 @@ The common evidence-first workflow applies to NOMAD's travel-suitcase and future
 - Robot Mode: future supervised movement in permitted controlled areas, outside aircraft and restricted areas.
 - Shared AI Core: Observation, WorldState, ActionProposal and FailureReport.
 
+## Human review
+Human review is required for consequential travel, baggage, privacy and any future physical-mobility decision. The owner and operating airline retain authority over carriage and travel acceptance.
+
 ## Boundaries
 - No autonomous movement onboard an aircraft.
 - No airport/public-space autonomous following without explicit authorisation and validated safeguards.
