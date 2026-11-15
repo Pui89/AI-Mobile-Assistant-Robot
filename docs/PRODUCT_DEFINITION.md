@@ -28,7 +28,7 @@ The first visual impression must be a premium carry-on-style suitcase, not a rob
 - Depth: 35–40 cm.
 - Body height: 35–40 cm, excluding an extended handle.
 - Final external dimensions must include wheel housings, feet, corner guards, handle recesses and every protrusion.
-- These are product packaging targets, not a certified cabin-baggage size. Carrier rules differ.
+- The proposed overall envelope is cabin-size-oriented and designed to remain within a commonly referenced 56 × 45 × 25 cm example by dimensions only. It is not a certified cabin-baggage size; carrier rules differ and mass remains a separate constraint.
 
 ### Mass and storage
 - Complete robot target: 8–10 kg.
