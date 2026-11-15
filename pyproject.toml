@@ -17,6 +17,7 @@ dev = ["pytest>=9.0.3"]
 
 [project.scripts]
 pui89-nomad-legacy-evidence-simulate = "homeguard_ai.simulator:main"
+homeguard-simulate = "homeguard_ai.simulator:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]
