@@ -23,12 +23,12 @@ NOMAD is deliberately different from **PUI89 Sentinel**, which is a separate fou
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
-## Compact product specification — proposed 6 kg design
+## Compact product specification — 8–10 kg target, 10 kg maximum
 
 | Specification | Proposed engineering target |
 |---|---:|
-| Complete robot mass | **Maximum 6.0 kg**, including battery, retractable handle, wiring and fixed sensors |
-| Payload | **1.0 kg initial target**, carried separately from the robot's own mass |
+| Complete robot mass | **8–10 kg target; 10 kg maximum**, including battery, handle, wiring and installed sensors |
+| Payload | **TBD**; define only after stability, traction and total-mass analysis within the 10 kg design limit |
 | Body width | **30–33 cm** |
 | Body length / depth | **35–40 cm** |
 | Body height | **35–40 cm**, excluding the extended handle |
@@ -38,24 +38,24 @@ Both products may share PUI89 Shared AI Core interfaces and evidence standards, 
 | Compute direction | CPU-first, low-power, local/offline-capable AI; no automatic model or package downloads |
 | Human control | Manual override, physical emergency stop and conservative safe-stop behaviour |
 
-The 6.0 kg limit is the complete robot mass, not the robot-plus-payload mass. The initial 1.0 kg payload target is additional; the design must therefore be engineered and tested for a total moving mass of up to 7.0 kg. The handle's extended height is excluded from body height, but its mass is included in the 6.0 kg robot limit.
+The 10 kg maximum is the complete robot design-mass limit, including the battery, handle, wiring and installed hardware. Payload capacity is not yet specified and must be established through structural, traction, braking and stability analysis; do not add an assumed payload above the 10 kg limit. The handle's extended height is excluded from body height, but its mass is included in the complete robot mass.
 
 **Status: PROPOSED / NOT MEASURED / NOT VALIDATED.** These are design targets, not measured prototype specifications. No physical NOMAD robot, payload rating, runtime, speed, braking distance, obstacle-clearance limit, ingress rating or field reliability is established.
 
-### Preliminary 6 kg mass-allocation budget
+### Preliminary 10 kg complete-robot mass-allocation budget
 
 | Assembly | Planning allocation |
 |---|---:|
-| Frame and enclosure | 1.4 kg |
-| Wheels, motors and drivetrain | 1.2 kg |
-| Battery and power protection | 1.0 kg |
-| Compute and control electronics | 0.7 kg |
-| Cameras and other sensors | 0.4 kg |
-| Handle, wiring and safety hardware | 0.5 kg |
-| Engineering allowance / mass reserve | 0.8 kg |
-| **Complete robot mass budget** | **6.0 kg** |
+| Frame and enclosure | 2.2 kg |
+| Wheels, motors and drivetrain | 2.0 kg |
+| Battery and power protection | 1.5 kg |
+| Compute and control electronics | 0.8 kg |
+| Cameras and other sensors | 0.6 kg |
+| Handle, wiring and safety hardware | 1.0 kg |
+| Engineering allowance / mass reserve | 1.9 kg |
+| **Complete robot mass budget** | **10.0 kg** |
 
-This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 6.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
+This is a top-down planning allocation only. It is not a supplier-based bill of materials or measured component inventory. The engineering allowance is reserved within the 10.0 kg ceiling; it must not be treated as extra mass above the limit. Component selection must be supported by exact part numbers, verified mass, origin evidence, availability, compatibility and dated sourcing records before design freeze.
 
 ### First buildable product: NOMAD Prototype 1
 
