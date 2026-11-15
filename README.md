@@ -38,7 +38,7 @@ Changing modes must be deliberate and visible. The default state is non-powered 
 | Form | Upright hard-shell travel suitcase / smart luggage |
 | Wheels | Four compact, recessed/protected wheels |
 | Handle | Telescopic manual pull handle; lockable and load-rated |
-| Body envelope | About 30–33 cm wide × 35–40 cm deep × 35–40 cm high; final dimensions TBD |
+| Body envelope | About 30–33 cm wide × 35–40 cm high × 20–25 cm deep (overall target; include wheels and handle when retracted); final dimensions TBD |
 | Complete mass | **8–10 kg target; 12 kg absolute design ceiling**, including battery, handle, wiring, wheels, compute and installed sensors |
 | Storage | Secure internal compartment; usable volume TBD after mechanical packaging |
 | Battery | Removable, protected battery pack; Wh rating and chemistry TBD |
@@ -46,7 +46,7 @@ Changing modes must be deliberate and visible. The default state is non-powered 
 | Compute | CPU-first local processing; optional accelerator only after resource and power review |
 | Appearance | PUI89 deep navy, electric cyan and titanium/silver details |
 
-All dimensions and mass figures are proposed targets, not measured specifications. The body envelope is a luggage-form design target, **not a promise that it meets every airline's cabin-baggage dimensions**. Airlines set their own size, weight, route and aircraft limits. The 8–10 kg target (12 kg ceiling) may exceed some cabin baggage weight allowances. A specific airline, route and cabin class must be selected before claiming carry-on acceptance. If the product cannot meet the applicable cabin limit, it must be treated as checked smart baggage or not carried, subject to airline approval.
+All dimensions and mass figures are proposed targets, not measured specifications. The proposed overall envelope is now cabin-size-oriented at 30–33 cm wide × 35–40 cm high × 20–25 cm deep, including wheels and retracted handle. This fits within the cited 56 × 45 × 25 cm example by dimensions only; it does not guarantee carrier acceptance or weight compliance. Airlines set their own size, weight, route and aircraft limits. The 8–10 kg target (12 kg ceiling) may exceed some cabin baggage weight allowances. A specific airline, route and cabin class must be selected before claiming carry-on acceptance. If the product cannot meet the applicable cabin limit, it must be treated as checked smart baggage or not carried, subject to airline approval.
 
 ## AI and assistance capabilities — proposed
 
@@ -190,6 +190,6 @@ PTI is the shared perception-and-task framework; NOMAD uses a travel-suitcase-sp
 - [English product website](https://pui89.github.io/nomad.html)
 - [เว็บไซต์ผลิตภัณฑ์ภาษาไทย](https://pui89.github.io/nomad-th.html)
 - [PUI89 portfolio](https://pui89.github.io/)
-- [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core)
+- [PUI89 Shared AI Core](https://pui89.github.io/ai-core.html)
 
 **PUI89 | Intelligent Systems. Verifiable Decisions. Safer Outcomes.**
