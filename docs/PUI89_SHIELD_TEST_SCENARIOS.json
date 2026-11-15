@@ -73,26 +73,47 @@
       "expected_behavior": "Inhibit operation that depends on the unavailable safety function until inspected."
     },
     {
-      "id": "HOME-001",
-      "name": "Smoke or abnormal temperature observation",
+      "id": "NOMAD-001",
+      "name": "Flight mode drive disable and no automatic restart",
+      "domain": "mechanical",
+      "expected_warning": "CRITICAL_OR_UNKNOWN_DEGRADED",
+      "expected_behavior": "Verify motor drive remains electrically disabled after power-up, reboot and network reconnect; no powered operation onboard aircraft."
+    },
+    {
+      "id": "NOMAD-002",
+      "name": "Removable battery terminal protection and safe removal",
       "domain": "fire_heat_power",
       "expected_warning": "WARNING_OR_CRITICAL_PROJECT_DEFINED",
-      "expected_behavior": "Notify authorized occupant and follow validated emergency guidance; do not claim suppression capability."
+      "expected_behavior": "Require isolation, protected terminals, documented Wh and a verified removal procedure; do not bypass BMS protections."
     },
     {
-      "id": "HOME-002",
-      "name": "Water leak near electrical equipment",
-      "domain": "water_environment",
-      "expected_warning": "CRITICAL",
-      "expected_behavior": "Warn occupant and recommend safe human isolation; no autonomous contact with electrical hazards."
+      "id": "NOMAD-003",
+      "name": "Airline baggage dimensions or mass exceed allowance",
+      "domain": "human_mission",
+      "expected_warning": "ADVISORY",
+      "expected_behavior": "Display that acceptance is carrier/route-specific and request owner verification; never claim universal cabin acceptance."
     },
     {
-      "id": "HOME-003",
-      "name": "Robot approaches stairs or child/pet",
+      "id": "NOMAD-004",
+      "name": "Future Robot Mode obstacle or person proximity uncertainty",
+      "domain": "mechanical",
+      "expected_warning": "UNKNOWN_DEGRADED",
+      "expected_behavior": "Do not issue a movement proposal beyond validated limits; request safe stop and human review."
+    },
+    {
+      "id": "NOMAD-005",
+      "name": "Handle lock or wheel failure during manual handling",
       "domain": "mechanical",
       "expected_warning": "WARNING",
-      "expected_behavior": "Request tested stop/avoid behavior; preserve human override and privacy."
+      "expected_behavior": "Notify owner, inhibit future powered movement and require inspection before further use."
+    },
+    {
+      "id": "NOMAD-006",
+      "name": "Camera or location privacy mode disabled",
+      "domain": "ai_data",
+      "expected_warning": "WARNING",
+      "expected_behavior": "Stop collection, expose visible status, retain only authorised data and request owner review."
     }
   ],
-  "project": "homeguard-ai-nomad"
+  "project": "pui89-ai-nomad"
 }
