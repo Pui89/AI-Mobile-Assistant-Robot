@@ -463,6 +463,19 @@ AI NOMAD selects a mobile-assistant interaction profile from the [PUI89 Shared A
 
 Interaction is subordinate to safe mobility. Voice commands cannot bypass obstacle avoidance, safe-stop, manual recovery or the independent action gate. Security-patrol events must be described as observations with timestamps, evidence and uncertainty; the AI must not label a person a criminal or intruder based only on appearance or a model score.
 
+**Recommended model candidates for AI NOMAD (not approved or integrated):**
+
+| Model/tool | Role in NOMAD | Status |
+|---|---|---|
+| [openai/whisper-small](https://huggingface.co/openai/whisper-small) | Thai/English operator and resident speech-to-text; evaluate outdoor noise and CPU/RAM | PENDING_REVIEW |
+| [microsoft/Phi-4-mini-instruct](https://huggingface.co/microsoft/Phi-4-mini-instruct) | Optional dialogue and instruction clarification; higher-resource candidate, not assumed to run on-device | PENDING_REVIEW |
+| [hexgrad/Kokoro-82M](https://huggingface.co/hexgrad/Kokoro-82M) | English spoken status reports; Thai TTS is not established | PENDING_REVIEW |
+| [qualcomm/YamNet](https://huggingface.co/qualcomm/YamNet) | Selected alarm / environmental sound-event classification, advisory only | PENDING_REVIEW |
+| [Silero VAD](https://github.com/snakers4/silero-vad) | Speech-segment detection for push-to-talk or bounded listening | PENDING_REVIEW |
+| [HuggingFaceTB/SmolVLM2-500M-Video-Instruct](https://huggingface.co/HuggingFaceTB/SmolVLM2-500M-Video-Instruct) | Optional bounded camera-scene descriptions for operator assistance, not identity or threat decisions | PENDING_REVIEW |
+
+Do not add openWakeWord's included pretrained weights at this stage: their CC BY-NC-SA 4.0 terms require separate review. Thai speech generation remains an open candidate-research task.
+
 **Maturity:** proposed configuration only. No interaction model is approved, downloaded, installed, integrated or validated for NOMAD.
 
 ## World-Class Engineering Standard v1.0
