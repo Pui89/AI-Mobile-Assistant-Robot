@@ -451,6 +451,20 @@ NOMAD uses a staged, owner-supervised engineering approach. Its current product 
 
 **Prototype boundary:** the allowance is for a controlled engineering prototype, not a certified commercial product or production-ready system. It excludes labour, research salaries, facilities, VAT/tax, import duties, freight/insurance unless explicitly quoted, certification, production tooling, mass production, maintenance and contingency. No purchase, download, installation or supplier commitment is authorised by this documentation.
 
+## Shared Interaction Intelligence — AI NOMAD
+
+AI NOMAD selects a mobile-assistant interaction profile from the [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core):
+
+- Operator/resident voice commands and spoken status reports.
+- Thai/English speech recognition and speech response, subject to measured language quality.
+- Voice activity detection; optional wake phrase with an explicit microphone/privacy state.
+- Environmental sound-event awareness for selected alarms, calls for help and unusual events.
+- Optional visual question answering to help an operator interpret a current camera observation.
+
+Interaction is subordinate to safe mobility. Voice commands cannot bypass obstacle avoidance, safe-stop, manual recovery or the independent action gate. Security-patrol events must be described as observations with timestamps, evidence and uncertainty; the AI must not label a person a criminal or intruder based only on appearance or a model score.
+
+**Maturity:** proposed configuration only. No interaction model is approved, downloaded, installed, integrated or validated for NOMAD.
+
 ## World-Class Engineering Standard v1.0
 
 This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_WORLD_CLASS_ENGINEERING_STANDARD_V1.0.md), alongside the [PUI89 Simple, Safe & Professional Engineering Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_SIMPLE_SAFE_PROFESSIONAL_STANDARD.md). The shared standard defines requirements traceability, Shared AI Core contracts, PTI evaluation, simulation, safety, hardware provenance, cost engineering, verification and release gates. Product capabilities remain subject to their stated evidence and validation boundaries; this reference does not imply that a gate has been passed.
