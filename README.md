@@ -73,7 +73,7 @@ The current physical product status is concept/requirements. A passing software 
 - [English project website](https://pui89.github.io/nomad.html)
 - [เว็บไซต์ภาษาไทย](https://pui89.github.io/nomad-th.html)
 - [PUI89 portfolio](https://pui89.github.io/)
-- [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core)
+- [PUI89 Shared AI Core public overview](https://pui89.github.io/ai-core.html)
 
 ## Portfolio boundary
 
