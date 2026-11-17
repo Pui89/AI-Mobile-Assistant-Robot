@@ -490,3 +490,15 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 *Proposed carry-on suitcase-style mobile assistant workflow. Caster configuration, powered-wheel design, payload, battery endurance and travel-environment limits require staged testing.*
 
 This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
+
+## Portfolio consistency and founder-approved requirements
+
+**PUI89 AI NOMAD**
+
+Product identity: a **ground-use four-wheel mobile assistant robot**, not a suitcase, luggage product, airline cabin bag or checked baggage. The compact upright enclosure may use a convenient carry-handle, but storage is secondary to supervised mobility and assistance. Do not describe or market NOMAD as aircraft luggage. Physical mobility remains unvalidated until supported by test evidence.
+
+**ข้อกำหนดภาษาไทย**
+
+อัตลักษณ์ผลิตภัณฑ์: **หุ่นยนต์ผู้ช่วยเคลื่อนที่ภาคพื้นดินแบบ 4 ล้อ** ไม่ใช่กระเป๋าเดินทาง สินค้าสัมภาระ หรือกระเป๋าสำหรับนำขึ้นห้องโดยสาร/โหลดใต้ท้องเครื่องบิน รูปทรงตัวถังและพื้นที่จัดเก็บเป็นองค์ประกอบรองจากการเคลื่อนที่และการช่วยเหลือภายใต้การกำกับดูแล
+
+**Portfolio boundary:** PUI89 has exactly six active products. Shared AI Core is infrastructure, not a product. Extreme Flood Rescue AI is inactive as a standalone product; preserve historical records but do not present it as an active product.
