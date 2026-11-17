@@ -1,4 +1,4 @@
-# PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
+# PUI89 AI NOMAD — Four-Wheel Mobile AI Assistant Robot
 
 
 ## Public privacy boundary
@@ -6,7 +6,7 @@
 This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
 
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
-![PUI89 AI NOMAD — carry-on suitcase-style mobile assistant with four spinner wheels and telescopic handle](docs/images/ai-nomad-compact-four-wheel.svg)
+![PUI89 AI NOMAD — compact mobile-robot mobile assistant with four spinner wheels and telescopic handle](docs/images/ai-nomad-compact-four-wheel.svg)
 
 *Concept illustration built as an embedded SVG. Proposed design only; physical construction and validation remain pending.*
 
@@ -15,23 +15,23 @@ This public README is limited to the project overview, approved concept material
 
 
 
-## Product identity — PUI89 AI NOMAD, four-wheel carry-on suitcase-style mobile AI assistant
+## Product identity — PUI89 AI NOMAD, four-wheel four-wheel mobile AI assistant robot
 
-**PUI89 AI NOMAD is a carry-on-suitcase-style mobile AI assistant with exactly four luggage-style swivel caster wheels at the base and a retractable telescopic pull handle.** Its upright, compact rectangular luggage body is intended to look and be handled like a premium travel suitcase. The four base wheels are caster wheels, not legs. NOMAD must never be depicted or described as a dog, quadruped, four-legged robot or animal-shaped machine. The final powered-wheel arrangement, steering, braking and caster configuration remain engineering decisions. The suitcase-inspired form does not establish airline cabin-baggage approval.
+**PUI89 AI NOMAD is a carry-on-suitcase-style mobile AI assistant with exactly four four-wheel mobile base at the base and a retractable telescopic pull handle.** Its upright, compact rectangular luggage body is intended to look and be handled like a premium travel suitcase. The four base wheels are caster wheels, not legs. NOMAD must never be depicted or described as a dog, quadruped, four-legged robot or animal-shaped machine. The final powered-wheel arrangement, steering, braking and caster configuration remain engineering decisions. The suitcase-inspired form does not establish airline cabin-baggage approval.
 
-NOMAD is deliberately different from **PUI89 Sentinel**, which is the separate four-legged quadruped exploration and inspection robot. Sentinel uses articulated legs; NOMAD uses four luggage-style caster wheels at the bottom of a carry-on suitcase body. Never transfer Sentinel's animal-like or legged design language to NOMAD.
+NOMAD is deliberately different from **PUI89 Sentinel**, which is the separate four-legged quadruped exploration and inspection robot. Sentinel uses articulated legs; NOMAD uses four luggage-style caster wheels at the bottom of a compact robot body. Never transfer Sentinel's animal-like or legged design language to NOMAD.
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
 ## Product purpose — a multifunctional travel companion, not a security robot
 
-**PUI89 AI NOMAD is designed first as useful carry-on luggage and a personal travel assistant. Security awareness is a supporting safety function, not the product's identity or primary purpose.** The product combines a practical storage compartment, an upright carry-on suitcase form, four base wheels and a proposed AI-assisted mobility and travel-support system.
+**PUI89 AI NOMAD is designed first as useful robotic travel companion and a personal travel assistant. Security awareness is a supporting safety function, not the product's identity or primary purpose.** The product combines a practical storage compartment, an upright carry-on suitcase form, four base wheels and a proposed AI-assisted mobility and travel-support system.
 
 ### User needs and proposed functions
 
 | User need | Proposed NOMAD support | Evidence boundary |
 |---|---|---|
-| Carry belongings with less effort | Practical luggage storage, manual pull handle and future motor-assisted rolling | Storage layout and motorised assistance require prototype validation |
+| Carry belongings with less effort | Practical secondary storage, manual pull handle and future motor-assisted rolling | Storage layout and motorised assistance require prototype validation |
 | Move through a journey more easily | Travel-context information, route guidance and permitted-area navigation assistance | Depends on reliable data, maps, location inputs and venue rules |
 | Keep track of the trip | Itinerary, schedule, checklist and reminder support | External flight/booking data requires an authorised integration; no live feed is assumed |
 | Find and organise belongings | User-defined packing lists, compartment organisation and optional item-location aids | Item detection or tracking requires suitable sensors/tags and privacy review |
@@ -68,7 +68,7 @@ Both products may share PUI89 Shared AI Core interfaces and evidence standards, 
 | Body width | **30–33 cm** |
 | Body length / depth | **35–40 cm** |
 | Body height | **35–40 cm**, excluding the extended handle |
-| Mobility | Four luggage-style swivel caster wheels at the base; powered-wheel arrangement, steering and braking to be selected after engineering analysis |
+| Mobility | Four four-wheel mobile base at the base; powered-wheel arrangement, steering and braking to be selected after engineering analysis |
 | First operating domain | Indoor, flat, controlled surfaces; owner-supervised |
 | Later operating domain | Selected outdoor surfaces only after separate validation |
 | Compute direction | CPU-first, low-power, local/offline-capable AI; no automatic model or package downloads |
@@ -97,7 +97,7 @@ This is a top-down planning allocation only. It is not a supplier-based bill of 
 
 The first physical prototype should prioritise a dependable supervised carry-on-luggage-style rolling platform over complex autonomy:
 
-- Carry-on suitcase-style upright enclosure with four protected swivel caster wheels at the bottom corners, a low-mounted battery and a stable internal payload area.
+- compact mobile-robot upright enclosure with four protected swivel caster wheels at the bottom corners, a low-mounted battery and a stable internal payload area.
 - Appropriately sized motor/drive system, wheel encoders and a controller; final drive layout and torque remain to be calculated.
 - Protected battery, fuse/over-current protection, accessible isolation, thermal monitoring and safe wiring.
 - Physical emergency stop and manual recovery/control method.
@@ -145,7 +145,7 @@ PUI89 uses a traceable sourcing workflow for materials, mechanical parts, sensor
 
 **Planning allowance for one research prototype: ฿36,000–107,000.** This is a preliminary estimate from the [PUI89 project-specific BOM](https://pui89.github.io/materials.html#project-boms), not a supplier quotation or verified current market price.
 
-Compact carry-on suitcase-style mobile assistant with four base caster wheels and a retractable telescopic handle; 8–10 kg target and 10 kg maximum complete-robot design mass.
+Compact compact mobile-robot mobile assistant with four base caster wheels and a retractable telescopic handle; 8–10 kg target and 10 kg maximum complete-robot design mass.
 
 | Main item | Prototype quantity | Purpose |
 |---|---:|---|
@@ -238,7 +238,7 @@ PUI89 AI NOMAD is an early-stage, owner-supervised mobile AI assistant in an upr
 - **Separate indoor home-safety product:** [PUI89 AI HOME](https://github.com/Pui89/AI-Home-Safety-Robot) · [English website](https://pui89.github.io/home.html) · [ภาษาไทย](https://pui89.github.io/home-th.html)
 
 
-> **Product boundary:** AI NOMAD is a carry-on suitcase-style mobile assistant concept for supervised travel, luggage carrying and suitable everyday mobility. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
+> **Product boundary:** AI NOMAD is a compact mobile-robot mobile assistant concept for supervised travel, luggage carrying and suitable everyday mobility. HOME is a separate four-wheel indoor home-safety robot. The products may share versioned PUI89 AI Core contracts, but they are not one robot and do not share physical operating assumptions.
 
 ## PUI89 AI NOMAD purpose
 
@@ -334,7 +334,7 @@ This project uses the shared PUI89 quality framework. The indicators are guidanc
 | Product and commercial readiness | Validate the user problem, intended operator, value, support model, lawful IP/data position and release gates before commercial claims. | 🟠 Evidence required |
 | Professional environment and presentation | Use consistent technical diagrams, demonstrations and partner-facing materials; do not imply facilities or partnerships without evidence. | ⚪ Not assessed |
 
-**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as a compact carry-on suitcase-style travel assistant. Prioritise luggage-like handling, four spinner caster mounting, stability, obstacle awareness, battery isolation, offline behaviour, handle durability, serviceability and supervised operation; dimensions, weight, powered-wheel architecture, endurance and weather protection remain design targets until measured.
+**Project-specific priority:** Keep AI NOMAD distinct from indoor HOME as a compact compact mobile-robot travel assistant. Prioritise luggage-like handling, four spinner caster mounting, stability, obstacle awareness, battery isolation, offline behaviour, handle durability, serviceability and supervised operation; dimensions, weight, powered-wheel architecture, endurance and weather protection remain design targets until measured.
 
 **Status legend:** 🔵 framework guidance added · 🟢 engineering quality target · 🟠 evidence or validation still required · ⚪ not assessed. These labels describe the review state of recommendations, not overall project maturity. Project maturity changes only when supported by verified repository evidence, reproducible tests or controlled validation.
 
@@ -485,8 +485,16 @@ This product follows the proposed [PUI89 World-Class Engineering Standard v1.0](
 
 ## PUI89 Technical Visual — AI workflow
 
-![AI NOMAD carry-on suitcase-style mobile assistant workflow with travel-context perception, four spinner caster wheels and supervised rolling mobility.](docs/images/pui89-technical-visual.svg)
+![AI NOMAD compact mobile-robot mobile assistant workflow with travel-context perception, four spinner caster wheels and supervised rolling mobility.](docs/images/pui89-technical-visual.svg)
 
-*Proposed carry-on suitcase-style mobile assistant workflow. Caster configuration, powered-wheel design, payload, battery endurance and travel-environment limits require staged testing.*
+*Proposed compact mobile-robot mobile assistant workflow. Caster configuration, powered-wheel design, payload, battery endurance and travel-environment limits require staged testing.*
 
 This diagram follows the [PUI89 Technical Visual Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_TECHNICAL_VISUAL_STANDARD_V1.0.md). It explains the proposed product-specific AI workflow and does not imply unverified implementation or physical capability.
+
+## Quality engineering and evidence
+
+This repository's nine-part quality-engineering adoption record is [PUI89_QUALITY_ENGINEERING_ADOPTION.md](docs/PUI89_QUALITY_ENGINEERING_ADOPTION.md). Product failure scenarios are maintained in [quality/failure-scenarios.json](quality/failure-scenarios.json).
+
+**Current product-specific boundary:** NOMAD is a four-wheel mobile assistant robot for ground use. Its compact body may provide secondary storage, but it is not airline luggage or an airline cabin-baggage product. Rugged robot structure, powered mobility, integrated AI, sensors, battery and safe human override take priority.
+
+**Local scenario-contract check:** `python -m unittest discover -s tests -p test_pui89_failure_scenarios.py -v`. Passing this check verifies the scenario data contract only; it does not prove model performance, end-to-end simulation, physical safety or field validation.
