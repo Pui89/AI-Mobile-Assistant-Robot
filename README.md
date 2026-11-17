@@ -1,10 +1,5 @@
 # PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
 
-
-## Public privacy boundary
-
-This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
-
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
 ![PUI89 AI NOMAD — carry-on suitcase-style mobile assistant with four spinner wheels and telescopic handle](docs/images/ai-nomad-compact-four-wheel.svg)
 
@@ -12,6 +7,28 @@ This public README is limited to the project overview, approved concept material
 
 *Conceptual design illustration — not a built or validated robot. Dimensions, weight, mobility, endurance, weather resistance and field performance remain design targets pending engineering and physical validation.*
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:END -->
+
+## Product at a glance
+
+**Product direction:** A suitcase-style, four-wheel mobile assistant designed for ground travel and everyday mobility.
+
+**User value:** Combine practical storage with supervised ground mobility and travel-context assistance, without presenting the product as airline-approved luggage.
+
+**Key capabilities and design priorities:** Four luggage-style caster wheels and telescopic handle as design direction; travel-context awareness; supervised rolling mobility; optional assistance and evidence-based alerts.
+
+**Current development stage:** Early software foundation and design targets; locomotion, endurance and field performance are not validated.
+
+**Portfolio readiness baseline:** **30%** — last recorded baseline dated **7 November 2026**. This is a historical, evidence-based portfolio readiness snapshot, not a live progress feed or a claim of physical product completion. Refresh it only from the dated PUI89 portfolio register.
+
+**Evidence boundary:** The suitcase-inspired form does not establish airline cabin-baggage acceptance; physical mobility and endurance remain unvalidated.
+
+**Project links:** [English website](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)  
+
+---
+## Public privacy boundary
+
+This public README is limited to the project overview, approved concept material and evidence that can be shared openly. Do not publish API keys, passwords, private tokens, Wi-Fi or internal network settings, private camera footage, personal or precise location data, detailed security configurations, unreleased engineering specifications, or confidential commercial plans. Keep sensitive material in an appropriately access-controlled private location. If a credential may have been exposed, revoke it; removing it from the latest commit does not remove it from Git history.
+
 
 
 
