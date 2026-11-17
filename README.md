@@ -16,9 +16,9 @@
 
 **Key capabilities and design priorities:** Four luggage-style caster wheels and telescopic handle as design direction; travel-context awareness; supervised rolling mobility; optional assistance and evidence-based alerts.
 
-**Current development stage:** Early software foundation and design targets; locomotion, endurance and field performance are not validated.
+**Evidence maturity:** **Implemented** — a software foundation for the ground-use four-wheel mobile assistant is documented. Physical mobility, steering, braking, endurance and field performance remain unvalidated.
 
-**Portfolio readiness baseline:** **30%** — last recorded baseline dated **7 November 2026**. This is a historical, evidence-based portfolio readiness snapshot, not a live progress feed or a claim of physical product completion. Refresh it only from the dated PUI89 portfolio register.
+**Evidence reviewed:** 17 November 2026. See the [shared PUI89 development record](https://pui89.github.io/) for current evidence, limitations and the next milestone.
 
 **Evidence boundary:** The suitcase-inspired form does not establish airline cabin-baggage acceptance; physical mobility and endurance remain unvalidated.
 
