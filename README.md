@@ -26,6 +26,60 @@
 
 ## Product at a glance
 
+
+## Latest Product Capability Baseline — 18 November 2026
+
+**Capability lifecycle:** Perceive → Understand → Predict → Decide → Act. The following is the product-specific target capability map. Shared AI Core provides reusable foundations; each product selects sensors and functions appropriate to its mission.
+
+### Perception and sensory intelligence
+
+- Four-wheel ground mobility, obstacle/distance perception, people/object awareness and route context.
+
+- Environmental awareness options: temperature, humidity, sound events, vibration/impact, water/leak, air-quality and mission-specific gas sensors.
+
+- Spatial mapping, localisation, surface/gradient awareness and fall/tip/ collision cues.
+
+### Understanding, prediction and companion assistance
+
+- Context-aware travel/ground-use assistance, owner-following research and supervised route/task planning in permitted environments.
+
+- Storage-space awareness and payload/weight distribution monitoring as future engineering requirements.
+
+- Battery, motor, wheel and system-health trends; predictive maintenance only after suitable telemetry baselines exist.
+
+- Human interaction, status updates, alerts and bounded proposals; owner/operator retains authority.
+
+### Reliability and edge intelligence
+
+- Sensor health, timestamp/freshness, uncertainty, fault reporting, safe stop/hold and recovery workflow.
+
+- CPU/edge-first resource management and graceful fallback when perception or communication is degraded.
+
+- Privacy-aware local processing and event evidence.
+
+### ภาษาไทย — ความสามารถและแนวทางพัฒนา
+
+- เคลื่อนที่ภาคพื้นดินด้วยล้อ 4 ล้อ รับรู้สิ่งกีดขวาง ระยะห่าง บุคคล สิ่งของ และบริบทเส้นทาง
+
+- แนวทางตรวจวัดอุณหภูมิ ความชื้น เหตุการณ์เสียง การสั่น/แรงกระแทก น้ำรั่ว คุณภาพอากาศ และก๊าซเฉพาะภารกิจ
+
+- ทำแผนที่ ระบุตำแหน่ง ประเมินพื้นผิว/ความลาดชัน และตรวจจับการเอียง การชน หรือความเสี่ยงพลิกคว่ำ
+
+- ช่วยเหลือการเดินทางภาคพื้นดิน ศึกษาการติดตามเจ้าของ และวางแผนงานในพื้นที่ที่ได้รับอนุญาตภายใต้การกำกับ
+
+- ศึกษาการรับรู้พื้นที่จัดเก็บและการกระจายน้ำหนักบรรทุก
+
+- ติดตามสุขภาพแบตเตอรี่ มอเตอร์ ล้อ และระบบ พร้อมวิจัย Predictive Maintenance เมื่อมีข้อมูลเพียงพอ
+
+- โต้ตอบ แจ้งสถานะ เตือน และเสนอการดำเนินการที่มีขอบเขต โดยเจ้าของ/ผู้ควบคุมมีอำนาจ
+
+- ตรวจสุขภาพเซนเซอร์ เวลาและความใหม่ของข้อมูล ความไม่แน่นอน ข้อผิดพลาด การหยุดอย่างปลอดภัย และการกู้คืน
+
+- ประมวลผลบน CPU/Edge และลดระดับการทำงานเมื่อการรับรู้หรือการสื่อสารผิดปกติ
+
+**Evidence boundary / ขอบเขตหลักฐาน:** NOMAD is a four-wheel ground-use mobile assistant concept, not airline luggage and not a security guard robot. Powered mobility, following, payload, battery endurance and environmental sensing are not validated. / NOMAD เป็นแนวคิดหุ่นยนต์ผู้ช่วยภาคพื้นดิน 4 ล้อ ไม่ใช่กระเป๋าสำหรับนำขึ้นเครื่องและไม่ใช่หุ่นยนต์ยาม ยังไม่มีการยืนยันการขับเคลื่อน การติดตามเจ้าของ น้ำหนักบรรทุก ระยะเวลาการใช้งานแบตเตอรี่ หรือเซนเซอร์สิ่งแวดล้อม
+
+
 **Product direction:** A suitcase-style, four-wheel mobile assistant designed for ground travel and everyday mobility.
 
 **User value:** Combine practical storage with supervised ground mobility and travel-context assistance, without presenting the product as airline-approved luggage.
