@@ -1,5 +1,21 @@
 # PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
 
+## Product and AI system update — 18 November 2026
+
+**Public product summary (EN):** PUI89 AI NOMAD is a suitcase-style, four-wheel ground-use mobile assistant. Its defining form is an upright compact luggage body with exactly four caster wheels at the base, a retractable telescopic pull handle, practical internal storage and a proposed rechargeable battery system. It accompanies its owner during travel; the owner can manually pull it and supervise any future powered assistance.
+
+**เทคโนโลยีและประโยชน์ (TH):** กระเป๋าผู้ช่วยอัจฉริยะเคลื่อนที่บนพื้น มีล้อ 4 ล้อ มือจับลาก ช่องเก็บสัมภาระ และแนวคิดแบตเตอรี่ชาร์จได้ ช่วยจัดการรายการเดินทาง เตือนความจำ สังเกตสิ่งกีดขวางและเหตุผิดปกติ พร้อมส่งการแจ้งเตือนให้เจ้าของ ระบบรักษาความปลอดภัยเป็นฟังก์ชันสนับสนุน ไม่ใช่การรับประกันการป้องกันภัย
+
+**AI technology direction:** computer vision and obstacle/person awareness; proximity sensing; location and route context; edge AI; voice/text travel assistance; owner notifications; event history; battery management/BMS and power-state monitoring. Follow-me or powered rolling is a future research mode and must be validated in a bounded permitted environment.
+
+**Who it serves:** travellers, commuters, older users and people who want useful luggage storage combined with travel assistance and additional owner-supervised security awareness.
+
+**Safety and identity boundary:** NOMAD is not a dog or quadruped; it is not Sentinel. It is not marketed as airline-approved cabin baggage. No physical powered mobility, follow-me performance, battery endurance, obstacle avoidance or security effectiveness is validated. No autonomous pursuit, confrontation or enforcement.
+
+**Project website:** [English](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
+
+---
+
 <!-- PUI89_PINNED_CONCEPT_ILLUSTRATION:START -->
 ![PUI89 AI NOMAD — carry-on suitcase-style mobile assistant with four spinner wheels and telescopic handle](docs/images/ai-nomad-compact-four-wheel.svg)
 
