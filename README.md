@@ -650,3 +650,11 @@ Each record should include, where available: unique incident ID; local date/time
 **ขอบเขตหลักฐานเฉพาะผลิตภัณฑ์:** Mobility/assistance observations: obstacle and route concerns, localisation uncertainty, blocked sensors, battery reserve, motor/thermal faults, communication loss, safe-stop and recovery events. Respect bystander privacy.
 
 **สถานะหลักฐาน:** ข้อกำหนดการออกแบบเท่านั้น การบันทึกภาพ การจัดเก็บ การค้นหาตามวัน/เดือน การเล่นเสียงย้อนหลัง การรักษาหลักฐาน ความเป็นส่วนตัว และการกู้คืนยังเป็น **Unknown / Not Tested** จนกว่าจะพัฒนาและทดสอบกับผลิตภัณฑ์จริง
+
+## PUI89 Easy Direct Control Standard v1.0 — Proposed
+
+This product follows the shared [PUI89 Easy Direct Control Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_EASY_DIRECT_CONTROL_STANDARD_V1.0.md). Users must be able to operate and check the robot directly, without a smartphone or application.
+
+**Proposed product controls:** large POWER and START / STOP controls; simple MODE choices such as Mobile Assistant, Follow and Guided Movement only where implemented; a readable on-device STATUS / ALERT display; and a physical stop control. Controls should remain reachable when the product is upright and when it is being handled using its carry handle.
+
+**Usability boundary:** plain Thai/English labels, large icons, tactile differentiation and clear feedback. Remote monitoring and optional applications are supplementary only. Do not claim tracking, navigation or follow functions until implemented and validated.
