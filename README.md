@@ -10,7 +10,7 @@
 
 ## What this product is
 
-PUI89 AI NOMAD is a **ground-use four-wheel mobile assistant** for supervised assistance in suitable, defined environments. Its compact, dog-inspired form and handle are product-design features; it has four wheels, not articulated legs. It is not a suitcase, travel-luggage product or airline cabin-baggage product.
+PUI89 AI NOMAD is a **ground-use four-wheel mobile assistant** intended for supervised assistance in suitable indoor and outdoor ground environments. Its actual operating envelope must be defined and validated before deployment. Its compact, dog-inspired form and handle are product-design features; it has four wheels, not articulated legs. It is not a suitcase, travel-luggage product or airline cabin-baggage product.
 
 **NOMAD is different from:**
 - **AI HOME:** an indoor home-awareness assistant with a separate home-focused mission.
@@ -42,7 +42,7 @@ The 10 kg limit applies to the complete robot. Do not add an assumed payload abo
 
 ## What is not established
 
-- No physical mobility, navigation, obstacle avoidance, outdoor endurance, weather resistance or field safety is validated.
+- No physical mobility, navigation, obstacle avoidance, outdoor endurance, weather resistance or field safety is validated; outdoor use remains a design intention, not a proven capability.
 - No public-space unsupervised autonomy, person identification, pursuit, confrontation or enforcement is claimed.
 - No stair/escalator traversal or waterproofing rating is claimed.
 - A concept image or software test does not prove physical mobility or safety.
