@@ -119,3 +119,10 @@ Current maturity labels follow the [PUI89 Portfolio Alignment Register](https://
 - Do not describe the robot as a suitcase, luggage product, quadruped or stair-capable platform.
 
 **Capacity evidence status:** 8–10 kg target and 10 kg maximum are design constraints, not measured prototype results; all other physical capacities remain TBD / not validated.
+
+
+## Physical & Multimodal Sensor Privacy
+
+PUI89 adopts the [Physical & Multimodal Sensor Privacy Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/privacy/PUI89_PHYSICAL_MULTIMODAL_SENSOR_PRIVACY_STANDARD_V1.0.md) as a shared engineering requirement. All cameras and microphones require physical controls. Location, route, movement and spatial histories are minimised and local. If privacy settings disable required navigation perception, movement is safely restricted or stopped.
+
+**Evidence status:** requirements/specification only. No product-level hardware implementation or verification is claimed by this README section.
