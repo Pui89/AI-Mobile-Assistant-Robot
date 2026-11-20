@@ -63,3 +63,59 @@ The 10 kg limit applies to the complete robot. Do not add an assumed payload abo
 Cross-product architecture, evidence contracts, safety, privacy, security, recovery, device interaction and localization requirements are maintained in the [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core). NOMAD's mobility, handling, payload and environment limits require separate product-specific validation.
 
 Current maturity labels follow the [PUI89 Portfolio Alignment Register](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_PORTFOLIO_ALIGNMENT_REGISTER_2026-11-18.md) and [Evidence-Based Development Maturity Standard](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_DEVELOPMENT_STAGE_STANDARD.md).
+
+## Robot Capabilities & Functional Capacity
+
+**Scope boundary:** AI NOMAD is a proposed compact, dog-inspired, four-wheel ground-use mobile assistant with a manual handling handle. It is not a quadruped and does not have articulated legs. Physical performance remains unvalidated.
+
+### 1. Physical capacity
+- Four-wheel ground platform with a manual handling handle.
+- Complete robot mass: **8–10 kg target; 10 kg maximum**, including battery, handle, wiring and installed hardware.
+- Payload: **TBD**; do not assume payload can be added above the complete-robot mass ceiling.
+- Define dimensions, centre of gravity, structural strength, wheel loading, handle strength and stability after mission analysis.
+
+### 2. Mobility capacity
+- Intended for supervised ground operation in suitable, defined indoor/outdoor environments.
+- Define supported surface types, slope, speed, turning radius, ground clearance, obstacle height, stopping distance and endurance through testing.
+- No stair/escalator traversal, swimming, waterproofing rating or unrestricted off-road capability is claimed.
+- **Validated terrain and mobility envelope:** TBD.
+
+### 3. Perception capacity
+- Architectural sensor groups may include Vision, Depth/3D, Audio, Tactile & Vibration/IMU, and Environmental & Safety.
+- Detect and track relevant people, animals, vehicles, obstacles and ground features in permitted operating areas.
+- Assess walkway boundaries, slopes, edges, surface changes and route context when supported by calibrated sensors.
+- Fuse observations with timestamps, provenance, confidence and uncertainty; stop or request assistance when evidence is insufficient.
+- Detection range, coverage, localisation accuracy and environmental limits remain TBD.
+
+### 4. Computing capacity
+- Prefer local edge AI and CPU-first development; select GPU/NPU resources only after workload, latency, RAM and thermal measurements.
+- Define navigation, perception and control compute budgets separately.
+- **Processor, memory, storage and measured performance:** TBD.
+
+### 5. Power capacity
+- Define battery energy, operating time by terrain/load, peak motor current, charging, battery protection and thermal envelope.
+- Low-battery and power faults must trigger a safe, clearly reported state.
+- **Battery and runtime values:** TBD.
+
+### 6. Communication capacity
+- Local operation and safe behaviour during communication loss are required design goals.
+- Define authorised local control/telemetry, link range, pairing, data permissions and recovery after reconnection.
+- No unapproved cloud dependency or remote control is assumed.
+- **Protocols and range:** TBD.
+
+### 7. Safety capacity
+- Specify emergency stop, manual recovery, safe-stop conditions, wheel/motor fault response, obstacle response and supervised operating boundaries.
+- Do not pursue, confront, restrain or autonomously enforce against people or animals.
+- Loss of localisation, sensor disagreement, unsafe slope or uncertain obstacle clearance must cause a conservative response.
+
+### 8. Maintenance capacity
+- Plan for wheel/tyre, motor, handle, battery, connector and sensor inspection/replacement.
+- Include sensor calibration, wheel/odometry checks, fault logs and accessible service points.
+- **Service intervals and repair procedures:** TBD.
+
+### 9. Operating limits
+- Concept only; no physical mobility, navigation, obstacle avoidance, outdoor endurance, weather resistance or field safety is validated.
+- Actual payload, terrain, slope, speed, obstacle clearance and runtime are unknown until measured.
+- Do not describe the robot as a suitcase, luggage product, quadruped or stair-capable platform.
+
+**Capacity evidence status:** 8–10 kg target and 10 kg maximum are design constraints, not measured prototype results; all other physical capacities remain TBD / not validated.
