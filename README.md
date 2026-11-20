@@ -66,9 +66,9 @@ NOMAD is deliberately different from **PUI89 Sentinel**, which is the separate f
 
 Both products may share PUI89 Shared AI Core interfaces and evidence standards, but their chassis, locomotion, sensors, safety cases and validation plans remain product-specific. NOMAD's physical capabilities remain proposed until a prototype is built and tested.
 
-## Product purpose — a multifunctional travel companion, not a security robot
+## Product purpose — a multifunctional travel companion with optional safety awareness
 
-**PUI89 AI NOMAD is designed first as useful carry-on luggage and a personal travel assistant. Security awareness is a supporting safety function, not the product's identity or primary purpose.** The product combines a practical storage compartment, an upright carry-on suitcase form, four base wheels and a proposed AI-assisted mobility and travel-support system.
+**PUI89 AI NOMAD is designed first as useful carry-on luggage and a personal travel assistant. Environmental monitoring and security patrol are optional, supervised operating profiles; they do not change NOMAD's primary travel-assistant identity.** The product combines a practical storage compartment, an upright carry-on suitcase form, four base wheels and a proposed AI-assisted mobility and travel-support system.
 
 ### User needs and proposed functions
 
@@ -82,6 +82,34 @@ Both products may share PUI89 Shared AI Core interfaces and evidence standards, 
 | Reduce physical effort | Supervised follow-me and motor-assisted movement research | Future capability; not available or validated today |
 | Travel with confidence | Obstacle/person awareness, separation alerts, battery status and emergency stop | Safety functions require independent engineering and physical tests |
 | Stay useful without connectivity | Local checklists, reminders, status and other essential offline functions | Exact offline feature set depends on local software and storage |
+
+### Two optional operating profiles
+
+NOMAD may be configured around two distinct, supervised profiles. These are product-level use cases that reuse PUI89 Shared AI Core capabilities; they are proposed requirements, not implemented or validated functions.
+
+#### Mode 1 — Intelligent Living & Environmental Safety
+
+Support authorized inspection and awareness tasks in homes, buildings and selected environments:
+
+- Observe environmental conditions and report supported sensor readings or anomalies, such as vibration, temperature, humidity, air quality, water-leak indicators and smoke/gas sensor alerts where suitable sensors are installed.
+- Support visual inspection for visible cracks, moisture marks and surface changes, with image evidence and human review.
+- Compare observations over time and at different locations when sensor placement, calibration, timestamps and location records are adequate.
+- For vibration measurements, use a stationary measurement state with drive motors stopped; isolate and account for robot-generated vibration before interpreting readings.
+- Treat all structural observations as screening evidence only. NOMAD must not certify that a building is structurally safe or unsafe; significant findings require qualified professional assessment.
+
+#### Mode 2 — Security Patrol & Incident Detection
+
+Provide optional, authorized-area patrol support for a human security team:
+
+- Detect people, vehicles and relevant objects within the configured observation area.
+- Support temporary, anonymous person tracking within a camera session for continuity of observation; do not identify people.
+- Flag configured restricted-area entry, unexpected objects, visible signs of forced entry, smoke/fire indicators and selected alarm or distress sounds when suitable sensors are available.
+- Record an event summary with time, patrol location, event category, confidence/uncertainty and reviewable evidence, subject to privacy and retention rules.
+- Notify an authorized human operator for verification and response.
+
+**Security and privacy boundaries:** Patrol only in areas where operation is authorized. No facial recognition, identity profiling, autonomous accusation, pursuit, physical confrontation, restraint, weapon use or law-enforcement action. An AI detection is an unverified observation, not proof of wrongdoing. Human review is required before consequential action. NOMAD is not a replacement for trained security personnel or emergency services.
+
+Both profiles must preserve safe navigation, obstacle avoidance, manual recovery and safe-stop behaviour. Security alerts must never override mobility safety controls. Every capability remains proposed until its sensors, software, privacy controls and operating limits are independently tested and documented.
 
 ### Proposed user modes
 
