@@ -126,3 +126,10 @@ Current maturity labels follow the [PUI89 Portfolio Alignment Register](https://
 PUI89 adopts the [Physical & Multimodal Sensor Privacy Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/privacy/PUI89_PHYSICAL_MULTIMODAL_SENSOR_PRIVACY_STANDARD_V1.0.md) as a shared engineering requirement. All cameras and microphones require physical controls. Location, route, movement and spatial histories are minimised and local. If privacy settings disable required navigation perception, movement is safely restricted or stopped.
 
 **Evidence status:** requirements/specification only. No product-level hardware implementation or verification is claimed by this README section.
+
+
+## Long-Life Battery & Energy Intelligence
+
+PUI89 adopts the [Long-Life Battery & Energy Intelligence Standard v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/energy/PUI89_LONG_LIFE_BATTERY_ENERGY_INTELLIGENCE_STANDARD_V1.0.md) as a shared engineering requirement. Prioritise efficient outdoor mobility, sensing and navigation, with energy reserve for uncertain terrain. Balance battery capacity against the 8–10 kg target / 10 kg maximum overall robot mass.
+
+Battery runtime, chemistry, capacity, cycle life, charging performance and safety compliance remain **TBD until designed and evidenced**. No unverified runtime or battery-life claim is made. The design must include an energy budget, independent BMS protections, thermal/electrical safety, service strategy and representative runtime validation.
