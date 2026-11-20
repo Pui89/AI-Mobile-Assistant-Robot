@@ -58,6 +58,15 @@ This public README is limited to the project overview, approved concept material
 
 
 
+
+## Physical camera privacy — manual-only shutter
+
+NOMAD's proposed camera privacy control is a **hand-operated sliding opaque lens cover**. The owner must physically slide the cover at the robot; no motor, servo, solenoid, app, network command, voice assistant, AI agent or model may move or open it. A mechanically linked OPEN/CLOSED marker and tactile end positions make the physical state visible. When fully closed, a hardware interlock must disable camera capture independently of software. If the state is uncertain or faulty, camera capture remains disabled and the status is UNKNOWN.
+
+For NOMAD's mobile use, the cover must be retained and assessed for vibration, accidental movement, dust, splash, contamination and wear. Each camera aperture requires its own cover or independently verified hardware disable. Opening the cover manually does not automatically authorise camera capture. These are **proposed requirements only**; no shutter, interlock, prototype or test is currently claimed.
+
+See [Manual Physical Privacy Shutter Requirements](docs/MANUAL_PHYSICAL_PRIVACY_SHUTTER_REQUIREMENTS.md).
+
 ## Product identity — PUI89 AI NOMAD, four-wheel carry-on suitcase-style mobile AI assistant
 
 **PUI89 AI NOMAD is a carry-on-suitcase-style mobile AI assistant with exactly four luggage-style swivel caster wheels at the base and a retractable telescopic pull handle.** Its upright, compact rectangular luggage body is intended to look and be handled like a premium travel suitcase. The four base wheels are caster wheels, not legs. NOMAD must never be depicted or described as a dog, quadruped, four-legged robot or animal-shaped machine. The final powered-wheel arrangement, steering, braking and caster configuration remain engineering decisions. The suitcase-inspired form does not establish airline cabin-baggage approval.

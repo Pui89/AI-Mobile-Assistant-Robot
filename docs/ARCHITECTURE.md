@@ -18,3 +18,8 @@ Structural health; electrical condition and safety indicators; fire/life-safety 
 Start with deterministic rules, signal-quality checks, baseline statistics and transparent feature extraction. Deep learning is not required for the first demonstrator.
 
 Deployment stages: synthetic simulation → offline evaluation → bench-tested calibrated sensors → supervised building pilot → independent validation.
+
+
+## Physical camera privacy boundary
+
+Camera privacy is a physical, owner-controlled boundary, not an AI feature. NOMAD requires a manual-only opaque sliding lens cover, mechanically visible OPEN/CLOSED state and a hardware capture inhibit when closed. No powered actuator or software, network, voice or AI command may move the cover. Uncertain state disables capture. Product-specific mechanical and environmental requirements are defined in [Manual Physical Privacy Shutter Requirements](MANUAL_PHYSICAL_PRIVACY_SHUTTER_REQUIREMENTS.md). This is a proposed requirement; no hardware implementation is claimed.
