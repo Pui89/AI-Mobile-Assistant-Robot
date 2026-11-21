@@ -1,5 +1,8 @@
 # PUI89 AI NOMAD — Ground-Use Four-Wheel Mobile Assistant Robot
 
+[English](README.md) · [ภาษาไทย](README.th.md)
+
+
 **A compact, dog-inspired four-wheel mobile assistant concept with a manual handling handle.**
 
 [English project page](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
