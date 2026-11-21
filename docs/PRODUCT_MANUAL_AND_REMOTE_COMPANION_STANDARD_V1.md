@@ -165,3 +165,50 @@ Before claiming offline capability, test with no smartphone/app, radios disabled
 
 ### 9.6 Status boundary
 This appendix defines proposed engineering requirements only. Mark each item planned, specified, implemented, tested or validated based on evidence. Do not claim the product is fully offline, fail-safe, certified or commercially ready until its applicable release gates pass.
+
+
+## 10. Engineering implementation and acceptance criteria
+
+Specification only; no implementation or test pass is implied.
+
+### Independence and controls
+- Essential local operation, protective interlocks, STOP/E-stop and safe shutdown must not depend on phone, app, Bluetooth, Wi-Fi, internet, DNS, cloud or remote operator.
+- Define basic-use workflow using physical controls and printed manual only. Classify every feature as local/offline, optional-connected or unavailable, listing sensor/compute/model/storage/power dependencies.
+- Maintain control inventory (ID, location, action, feedback, misuse protection, failure response). Physical STOP and hazard-analysis-required latching E-stop have deliberate reset; reset never restarts movement.
+- Provide local ready/active/warning/fault/connectivity-lost/safe indication with text/icons and distinguishable signals, not colour alone. Safety logic is partitioned from app/network services.
+
+### Data, commands and recovery
+- Keep bounded local event logs with time source, sequence, severity, build/configuration and integrity check. Define retention/export/storage-full/corruption behaviour; never silently overwrite protected evidence.
+- Reject unauthenticated, expired, duplicated, replayed and out-of-order commands. Reconnection requires fresh state sync and deliberate local authorisation; never replay old motion commands. Restart in defined safe state.
+- Document user-safe checks, operator stop/isolation, authorised technician diagnostics and manufacturer service. Recovery never bypasses guards/interlocks/E-stop.
+- Define response to absent phone, app crash, radio/Wi-Fi/internet/cloud loss, expired authentication, stale telemetry, sensor/model failure, low battery and power loss.
+
+### Printed manual
+Every shipped unit includes complete printed User Manual and Quick Start & Safety Guide in destination-market language. Include no-phone/no-app/no-Wi-Fi/no-internet operation, controls, indicators, stop/E-stop, connectivity/power loss, troubleshooting, manual recovery, maintenance, privacy and revision. Contents/page numbers/index work without QR; QR/short URL are supplemental.
+
+### OFF-01–OFF-15 mandatory verification
+| ID | Test | Acceptance |
+|---|---|---|
+| OFF-01 | No phone/app | Basic use and local stop work; no account blocks use |
+| OFF-02 | Wi-Fi off/no internet | Declared offline functions remain usable |
+| OFF-03 | Cloud/DNS unavailable | Safety/basic local workflow unaffected |
+| OFF-04 | App terminated | Local controls/status remain correct; link loss shown |
+| OFF-05 | Remote lost during task | Hazard-analysis safe response; no unsafe continuation |
+| OFF-06 | Delayed/duplicate/replay/out-of-order command | Rejected and logged |
+| OFF-07 | Reconnection | No automatic resume; fresh state and local re-authorisation |
+| OFF-08 | E-stop with radios off | Stop independent; reset does not auto-start |
+| OFF-09 | Low power/power interruption | Safe transition; no unexpected motion on restart |
+| OFF-10 | Storage full/corrupt | Safety effective; fault shown; protected evidence retained |
+| OFF-11 | Sensor/model/runtime unavailable | Explicit unavailable/uncertain; no fabricated output |
+| OFF-12 | Printed manual only | Safe-use/recovery instructions found without QR/phone |
+| OFF-13 | Local service/no cloud | Authorised technician can inspect/recover |
+| OFF-14 | Reboot after fault | Safe startup; no stale command replay |
+| OFF-15 | Wrong manual language/revision | Packaging check catches mismatch |
+
+Test exact builds with safe fixtures and appropriate safety observer. Record setup, procedure, expected/actual, evidence, tester/date and defects. Applicable tests must pass; N/A needs approved safety rationale. Checklist/simulation alone is not physical proof.
+
+### Product profile
+PUI89 AI NOMAD: Outdoor/mobile assistant robot concept. Local operator control and stop must work without app/cloud. Link loss during movement requires hazard-analysis-defined controlled stop/hold, fresh local authorisation and no automatic resume.
+
+### Release/status
+Offline-ready requires approved hazard/architecture review, control/fault matrices, no-phone/no-network usability, applicable OFF tests, stop-path verification, stale-command/reconnection tests, printed manual proof and service demonstration. Use separate Specified, Implemented, Tested, Validated and Released labels. Current docs establish requirements only.
