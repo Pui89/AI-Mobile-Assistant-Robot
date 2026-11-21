@@ -6,7 +6,7 @@
 
 [English project page](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 
-![PUI89 AI NOMAD intelligent suitcase concept](docs/images/ai-nomad-compact-four-wheel.svg)
+![PUI89 AI NOMAD intelligent suitcase concept](docs/images/ai-nomad-smart-suitcase.svg)
 
 *Concept illustration only. It is not evidence of a built, integrated, tested or validated product.*
 
@@ -14,7 +14,7 @@
 
 PUI89 AI NOMAD is a **suitcase-form intelligent mobile assistant**. Its defining physical language is a compact luggage-inspired body, an integrated telescopic pull handle and integrated wheels, combined with discreet AI sensing and interaction features.
 
-NOMAD is a smart suitcase/mobile-assistant concept. It is not a truck, utility rover, industrial cart, quadruped or robot dog. Do not substitute another vehicle or robot chassis for its suitcase identity.
+NOMAD is a smart suitcase/mobile-assistant concept. Its suitcase form is the defining physical identity.
 
 ## Intended role
 
