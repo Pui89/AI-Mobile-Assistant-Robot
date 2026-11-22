@@ -84,3 +84,34 @@ For international engineering, factory and worker handoff, use the controlled PU
 - [PUI89 Global Manufacturing Handoff System v1.0](https://github.com/Pui89/Pui89.github.io/blob/main/docs/PUI89_GLOBAL_MANUFACTURING_HANDOFF_SYSTEM_V1.0.md)
 
 **Production rule:** Build, buy, substitute, inspect or release only against the exact approved product configuration, revision, drawing, BOM and work instruction. Missing or conflicting values are **STOP — DO NOT GUESS**; raise a Technical Query (TQ). The shared blank manufacturing templates are being reviewed in [PUI89 website PR #639](https://github.com/Pui89/Pui89.github.io/pull/639) and are not yet production authority.
+
+## Future-Ready Technology Policy
+
+This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1.0](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md). The policy requires upgradeable interfaces, evidence-based technology selection, provenance/licence review, local-first resource discipline, compatibility testing, safe fallback and controlled release scope. Technology candidates are reviewed monthly and architecture decisions quarterly. This link records policy adoption intent; it does **not** claim that model switching, hardware abstraction, sensor adapters, automated monitoring or product-level validation are already implemented.
+
+## Product-Specific Technology Upgrade Plan
+
+**Gartner 2026 alignment:** Physical AI, Domain-Specific Models, hybrid compute and Digital Provenance. See the [canonical portfolio policy](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/architecture/PUI89_FUTURE_READY_TECHNOLOGY_POLICY_V1.0.md).
+
+| Upgrade area | Planned sequence (not yet a capability claim) |
+|---|---|
+| Context-aware assistance | Define supported contexts and conservative fallback; use traceable task/domain knowledge rather than unrestricted generic agent behaviour. |
+| Vision & edge intelligence | Benchmark low-power perception and inference; measure latency, memory, energy and thermal limits on intended hardware. |
+| Navigation & localisation | Specify indoor/outdoor operating envelope, localisation inputs and loss-of-localisation response; test in controlled environments. |
+| Offline resilience | Define which functions remain available without network access and how stale/uncertain context is disclosed. |
+
+**First gate:** verify the physical mobility concept and safety boundaries before integrating higher-level AI. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Stabilize the physical mobility concept, operating envelope, low-power compute budget, offline feature set and safe human-override behaviour. |
+| 2028 | Evaluate efficient vision/context models, localisation and navigation assistance; quantify battery, thermal, latency and connectivity trade-offs. |
+| 2029 | Explore context continuity, adaptive route/obstacle awareness and privacy-preserving personalisation with explicit user controls. |
+| 2030+ | Keep compute, battery-management, sensor and AI modules replaceable; preserve useful offline operation and avoid dependence on continuous cloud access. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
