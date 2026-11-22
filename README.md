@@ -57,3 +57,18 @@ The 10 kg figure is a preliminary complete-product design ceiling, not a measure
 
 NOMAD may reuse versioned interfaces and evidence practices from the [PUI89 Shared AI Core](https://github.com/Pui89/PUI89-Shared-AI-Core). Its suitcase enclosure, handling, rolling mechanics, power, sensors, privacy and product safety require NOMAD-specific engineering and validation.
 
+
+
+## Latest engineering progress — 22 November 2026
+
+**Maturity:** Implemented — early software foundation. **Evidence status:** PARTIAL. The product remains a suitcase-form AI mobile-assistant concept; this status does not imply a built or integrated suitcase robot.
+
+**Recent verified repository progress:**
+- Merged the NOMAD identity correction to the suitcase form and removed obsolete non-suitcase/rover concept references (PR #121).
+- The current README identifies the telescopic pull handle and luggage-style wheel direction; the 8–10 kg target and 10 kg maximum remain design targets, not measured prototype values.
+
+**Not established:** a physical prototype, integrated sensor suite, validated rolling/mobility performance, environmental protection, battery endurance, airline/cabin-baggage acceptance or field reliability.
+
+**Next evidence gate:** validate the primary user journey and ergonomic requirements; baseline external dimensions, handle geometry, wheel arrangement, complete mass budget, sensor placement, power budget, privacy controls and measurable acceptance criteria before selecting hardware.
+
+**Last reviewed:** 22 November 2026. See [NOMAD suitcase-identity correction PR #121](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/121).
