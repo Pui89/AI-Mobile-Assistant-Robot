@@ -72,3 +72,7 @@ NOMAD may reuse versioned interfaces and evidence practices from the [PUI89 Shar
 **Next evidence gate:** validate the primary user journey and ergonomic requirements; baseline external dimensions, handle geometry, wheel arrangement, complete mass budget, sensor placement, power budget, privacy controls and measurable acceptance criteria before selecting hardware.
 
 **Last reviewed:** 22 November 2026. See [NOMAD suitcase-identity correction PR #121](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/121).
+
+## Global manufacturing engineering
+
+The product-specific [PUI89 Global Manufacturing Design Brief v1.0](docs/PUI89_GLOBAL_MANUFACTURING_DESIGN_BRIEF_V1.0.md) defines the preliminary product envelope, candidate material families, component architecture, global human-factors requirements, extreme-environment design strategy, manufacturing transfer package, quality gates and unresolved specifications. It distinguishes proposed targets from tested or verified performance. Candidate materials and component types are not an approved BOM; exact grades, models, dimensions and tolerances remain open until engineering analysis and validation.
