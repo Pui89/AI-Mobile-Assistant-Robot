@@ -101,3 +101,17 @@ This product follows the portfolio-wide [PUI89 Future-Ready Technology Policy v1
 | Offline resilience | Define which functions remain available without network access and how stale/uncertain context is disclosed. |
 
 **First gate:** verify the physical mobility concept and safety boundaries before integrating higher-level AI. **Status:** Planned roadmap only.
+
+
+## Long-Term Technology Evolution & Anti-Obsolescence Strategy (2027–2030+)
+
+This forward-looking roadmap extends the current P1–P4 development sequence beyond the 2026 trend baseline. It identifies evaluation horizons, not guaranteed future capabilities or fixed adoption dates. Each technology remains conditional on verified user value, provenance and licensing, target-hardware fit, safety, maintainability and reproducible evidence.
+
+| Horizon | Product evolution focus |
+|---|---|
+| 2027 | Stabilize the physical mobility concept, operating envelope, low-power compute budget, offline feature set and safe human-override behaviour. |
+| 2028 | Evaluate efficient vision/context models, localisation and navigation assistance; quantify battery, thermal, latency and connectivity trade-offs. |
+| 2029 | Explore context continuity, adaptive route/obstacle awareness and privacy-preserving personalisation with explicit user controls. |
+| 2030+ | Keep compute, battery-management, sensor and AI modules replaceable; preserve useful offline operation and avoid dependence on continuous cloud access. |
+
+**Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
