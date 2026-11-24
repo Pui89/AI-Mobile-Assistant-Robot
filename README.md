@@ -1,5 +1,7 @@
 # PUI89 AI NOMAD — Carry-on Suitcase-Style Mobile AI Assistant
 
+**ภาษาไทย:** [อ่าน README ภาษาไทย](README.th.md)
+
 ## Product and AI system update — 18 November 2026
 
 **Public product summary (EN):** PUI89 AI NOMAD is a suitcase-style, four-wheel ground-use mobile assistant. Its defining form is an upright compact luggage body with exactly four caster wheels at the base, a retractable telescopic pull handle, practical internal storage and a proposed rechargeable battery system. It accompanies its owner during travel; the owner can manually pull it and supervise any future powered assistance.
