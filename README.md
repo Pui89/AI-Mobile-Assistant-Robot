@@ -2,6 +2,10 @@
 
 [English](README.md) · [ภาษาไทย](README.th.md)
 
+![PUI89 AI NOMAD compact four-wheel mobile assistant concept](docs/images/ai-nomad-concept.svg)
+
+
+
 **A compact dog-inspired four-wheel mobile assistant with an integrated handle.**
 
 [English project page](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
