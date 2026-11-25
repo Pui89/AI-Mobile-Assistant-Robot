@@ -167,3 +167,7 @@ A reproducible resource-aware inference policy showing when lightweight speciali
 
 ### Product and publication boundaries
 AI NOMAD is a compact dog-inspired four-wheel mobile assistant with an integrated handle; its 8–10 kg mass target and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
+
+## 360° Intelligence
+
+The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines supervised surround awareness for the user-directed four-wheel assistant, including handle, wheel, user and payload occlusion. **Status: Proposed**; no physical prototype or validated 360° sensor suite is established.
