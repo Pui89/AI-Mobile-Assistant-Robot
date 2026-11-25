@@ -2,6 +2,10 @@
 
 [English](README.md) · [ภาษาไทย](README.th.md)
 
+![PUI89 AI NOMAD compact four-wheel mobile assistant concept](docs/images/ai-nomad-concept.svg)
+
+
+
 **แนวคิดผู้ช่วยเคลื่อนที่ 4 ล้อขนาดกะทัดรัด รูปทรงได้แรงบันดาลใจจากสุนัข พร้อมด้ามจับในตัว**
 
 [เว็บไซต์ภาษาอังกฤษ](https://pui89.github.io/nomad.html) · [เว็บไซต์ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 Portfolio](https://pui89.github.io/)
