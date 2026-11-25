@@ -111,3 +111,59 @@ This forward-looking roadmap extends the current P1–P4 development sequence be
 | 2030+ | Keep compute, battery-management, sensor and AI modules replaceable; preserve useful offline operation and avoid dependence on continuous cloud access. |
 
 **Continuous anti-obsolescence rule:** review technology signals monthly, architecture quarterly and the full roadmap annually; trigger an out-of-cycle review when a critical dependency is unsupported, a security issue emerges, or measured performance/resource limits are breached. Keep a verified baseline, migration and rollback path, compatibility/regression tests and a documented decision for every upgrade. Do not adopt a trend solely because it is new. **Status:** Planned roadmap; no future capability is claimed as implemented or validated.
+
+
+---
+
+## Academic Research Direction — Q1-Targeted Study (Proposed)
+
+**Research topic:** Adaptive Edge AI for Mobile Assistant Robotics  
+**Working title:** *Resource-Adaptive Hybrid Edge Intelligence for Reliable Perception and Navigation in Compact Outdoor Mobile Assistants*
+
+**Status:** Proposed for lecturer review. Research novelty, data access, hardware assumptions and physical validation remain unverified. No integrated robot or measured field capability is claimed.
+
+### Problem and motivation
+A compact mobile assistant has limited compute, memory, battery energy and thermal capacity. A large vision-language model may be too costly to run continuously, while a small detector may fail to interpret unfamiliar situations. This study investigates adaptive inference according to scene complexity, sensor quality, uncertainty and available resources.
+
+### Candidate research gaps
+- Fixed model selection may waste resources in easy scenes or underperform in difficult ones.
+- Accuracy-only evaluations often omit latency, RAM, energy and thermal constraints.
+- Model switching may create inconsistent outputs or delays.
+- Generalisation across independent routes, lighting, weather and terrain requires testing.
+
+### Research questions and hypotheses
+- **RQ1:** Can adaptive selection between lightweight specialist models and a larger semantic model improve the accuracy–resource trade-off over fixed-model baselines?
+- **RQ2:** How should scene complexity, uncertainty and compute headroom govern model selection and inference frequency?
+- **RQ3:** Does degraded-mode and safe-stop logic improve reliability during overload, sensor dropout or model failure?
+- **H1:** Adaptive inference will improve a predeclared accuracy/latency or accuracy/energy trade-off over always-small and always-large baselines.
+- **H2:** Reliability gates will reduce unsupported navigation outputs under resource or sensor degradation.
+
+### Proposed hybrid-AI method
+1. Run a compact specialist detector/segmenter for continuous perception.
+2. Estimate scene complexity, ambiguity, sensor quality, uncertainty and compute headroom.
+3. Trigger a higher-capacity vision/foundation model only when justified and available.
+4. Evaluate quantization/distillation where model and hardware support reproducible measurement.
+5. Retain conventional geometry, localisation, mapping and obstacle checks.
+6. Use a resource-aware scheduler to select model, resolution and inference frequency under measured budgets.
+7. On overload, missing evidence or model failure, degrade conservatively, request human input or stop.
+
+### Candidate datasets and original evidence
+- **RELLIS-3D** for off-road perception, **TartanAir** for simulation/visual robustness, and **OpenLORIS-Scene** for long-term RGB-D perception may be considered after licence and suitability review.
+- Original authorised outdoor-route data should include RGB/depth where available, IMU/odometry where available, route/session identity, lighting, weather, terrain and obstacle labels.
+- Record target CPU/GPU/NPU, RAM, energy-measurement method and thermal conditions. Report simulation, desktop and embedded-device results separately.
+
+### Experiments and evaluation
+- Baselines: always-small, always-large, fixed cascade, adaptive scheduler and conventional navigation/perception.
+- Compare model-selection decisions across scene complexity and ambiguity.
+- Profile latency distributions, throughput, peak RAM, model size, energy/inference and thermal throttling on declared hardware.
+- Test low light, glare, moving obstacles, terrain changes, unfamiliar routes, sensor dropout, delayed observations and compute saturation.
+- Compare fixed and adaptive inference under equal compute/energy budgets.
+
+**Primary outcome:** pre-register task success at a fixed energy/latency budget or accuracy at a fixed compute budget.  
+**Secondary metrics:** detection/segmentation F1, path completion, intervention/stuck rate, safe-stop response, latency, RAM, energy, thermal behaviour and model-switch overhead.
+
+### Expected contribution
+A reproducible resource-aware inference policy showing when lightweight specialist perception is sufficient, when semantic escalation is useful, and how uncertainty and compute constraints should govern degraded operation.
+
+### Product and publication boundaries
+AI NOMAD is a compact dog-inspired four-wheel mobile assistant with an integrated handle; its 8–10 kg mass target and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
