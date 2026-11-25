@@ -56,3 +56,40 @@ NOMAD ยังเป็นแนวคิดผลิตภัณฑ์ ไม�
 | 2030+ | ออกแบบให้ Compute, Battery Management, Sensor และ AI Module เปลี่ยนได้ รักษาความสามารถ Offline ที่จำเป็น และไม่พึ่ง Cloud ตลอดเวลา |
 
 **กฎป้องกันความล้าสมัยอย่างต่อเนื่อง:** ติดตามสัญญาณเทคโนโลยีทุกเดือน ทบทวนสถาปัตยกรรมทุกไตรมาส และทบทวน Roadmap ทั้งหมดทุกปี พร้อมทบทวนนอกกำหนดเมื่อ Dependency สำคัญหยุดสนับสนุน พบปัญหาความปลอดภัย หรือผลทดสอบเกินข้อจำกัดด้านประสิทธิภาพ/ทรัพยากร ทุกการอัปเกรดต้องมี Baseline ที่ตรวจสอบแล้ว แผน Migration/Rollback ชุดทดสอบ Compatibility/Regression และบันทึกเหตุผลการตัดสินใจ ห้ามเลือกเทคโนโลยีเพียงเพราะเป็นของใหม่ **สถานะ:** เป็นแผนที่เสนอ ยังไม่กล่าวอ้างว่าความสามารถในอนาคตถูกพัฒนาหรือ Validate แล้ว
+
+
+---
+
+## ทิศทางการวิจัยทางวิชาการ — เป้าหมายวารสาร Q1 (ข้อเสนอ)
+
+**หัวข้อวิจัย:** Adaptive Edge AI สำหรับหุ่นยนต์ผู้ช่วยเคลื่อนที่  
+**ชื่อบทความเบื้องต้น:** *Resource-Adaptive Hybrid Edge Intelligence for Reliable Perception and Navigation in Compact Outdoor Mobile Assistants*
+
+**สถานะ:** ข้อเสนอเพื่อให้อาจารย์พิจารณา ความใหม่ ชุดข้อมูล ฮาร์ดแวร์ และการทดสอบจริงยังไม่ผ่านการยืนยัน
+
+### ปัญหาและช่องว่าง
+หุ่นยนต์ผู้ช่วยขนาดเล็กมีข้อจำกัดด้าน Compute, Memory, Battery และความร้อน โมเดลใหญ่ใช้ทรัพยากรมาก ส่วนโมเดลเล็กอาจไม่เข้าใจสถานการณ์ใหม่ ต้องศึกษาการปรับ Inference ตามความซับซ้อนของฉาก คุณภาพ Sensor และทรัพยากรที่เหลืออยู่ ช่องว่างที่ต้องตรวจสอบ ได้แก่ การเลือกโมเดลแบบคงที่ การขาดการวัด Latency/RAM/Energy/Thermal และความต่อเนื่องของผลเมื่อสลับโมเดล
+
+### คำถามและสมมติฐาน
+- RQ1 การเลือกโมเดล Specialist ขนาดเล็กและ Semantic Model ตามสถานการณ์ให้ Trade-off ดีกว่าโมเดลคงที่หรือไม่
+- RQ2 ควรใช้ Scene Complexity, Uncertainty และ Compute Headroom กำหนดโมเดลและความถี่ Inference อย่างไร
+- RQ3 Degraded Mode และ Safe Stop ช่วยเมื่อ Compute เกินกำลัง Sensor ขาด หรือโมเดลผิดพลาดหรือไม่
+- H1 Adaptive Inference จะปรับปรุง Accuracy/Latency หรือ Accuracy/Energy ภายใต้งบที่กำหนด
+- H2 Reliability Gate จะลดผลลัพธ์นำทางที่ไม่มีหลักฐานรองรับเมื่อระบบเสื่อมลง
+
+### วิธีการแบบ Hybrid AI
+ใช้ Detector/Segmenter ขนาดเล็กสำหรับงานต่อเนื่อง ประเมินความซับซ้อน ความกำกวม คุณภาพ Sensor และ Compute Headroom ก่อนเรียก Vision/Foundation Model ขนาดใหญ่ขึ้น ทดลอง Quantization/Distillation เมื่อวัดผลได้จริง คง Geometry, Localization, Mapping และ Obstacle Check แบบดั้งเดิม ใช้ Scheduler ปรับโมเดล Resolution และความถี่ Inference เมื่อเกินกำลังหรือหลักฐานไม่พอ ให้ลดระดับ ขอมนุษย์ช่วย หรือหยุด
+
+### ชุดข้อมูล
+พิจารณา RELLIS-3D, TartanAir และ OpenLORIS-Scene หลังตรวจสอบใบอนุญาตและความเหมาะสม ต้องมีข้อมูลเส้นทางภายนอกที่ได้รับอนุญาต พร้อม RGB/Depth, IMU/Odometry เท่าที่มี Route/Session, แสง อากาศ พื้นผิว และป้ายกำกับสิ่งกีดขวาง บันทึก CPU/GPU/NPU, RAM, วิธีวัด Energy และ Thermal แยกผล Simulation, Desktop และ Embedded Device
+
+### การทดลองและตัวชี้วัด
+เปรียบเทียบ Always-small, Always-large, Fixed Cascade, Adaptive Scheduler และ Navigation Baseline ทดสอบความซับซ้อน/กำกวม แสงน้อย แสงสะท้อน สิ่งกีดขวางเคลื่อนที่ เส้นทางใหม่ Sensor Dropout และ Compute Saturation วัด Latency, Throughput, RAM, Model Size, Energy, Thermal และผลภายใต้งบ Compute/Energy ที่เท่ากัน
+
+**ผลหลัก:** Task Success ภายใต้งบ Energy/Latency หรือ Accuracy ภายใต้งบ Compute ที่กำหนดล่วงหน้า  
+**ผลรอง:** F1, Path Completion, Intervention/Stuck Rate, Safe-stop, Latency, RAM, Energy และ Model-switch Overhead
+
+### ผลงานที่คาดหวังและขอบเขต
+นโยบาย Adaptive Inference ที่ทำซ้ำได้สำหรับหุ่นยนต์ผู้ช่วยเคลื่อนที่ แสดงเงื่อนไขที่โมเดลเล็กเพียงพอและเงื่อนไขที่ควรใช้ Semantic Model
+
+AI NOMAD เป็นผู้ช่วยเคลื่อนที่ 4 ล้อรูปแบบได้แรงบันดาลใจจากสุนัข มีด้ามจับในตัว เป้าหมายน้ำหนัก 8–10 กก. และขีดจำกัดออกแบบ 10 กก. ซึ่งยังไม่ Validate และแตกต่างจาก AI HOME ต้องตรวจสอบที่มา ใบอนุญาต และแหล่งกำเนิดโมเดล/ข้อมูล ห้ามกล่าวอ้างความสามารถภาคสนามหรือ Runtime หากไม่มีผลวัดจริง
