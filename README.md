@@ -211,3 +211,10 @@ See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://g
 NOMAD should keep essential assistant functions local and use conservative movement behavior. Return-to-Owner must remain NOT IMPLEMENTED until independently built and field-validated. If route confidence or energy reserve is insufficient, safe-stop and manual recovery take priority.
 
 When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+An optional forward/environment camera may support local navigation assistance and post-event inspection. After tip-over or a jam, stop drive, assess posture and available route; do not self-right unless engineered and tested. Return-to-Owner is not assumed available.
