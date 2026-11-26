@@ -202,3 +202,12 @@ The NOMAD console is intended for its distinct compact mobile-assistant/suitcase
 - Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
 
 See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). This is a proposed product requirement, not evidence of a working NOMAD or console.
+
+
+## Simple Local Intelligence for Offline and Uncertain Conditions
+
+**Design requirement — not implemented or field-validated.** Keep essential functions on-device; no mandatory cloud, internet, phone app or remote control. Use energy conservatively: warn at a validated low-power threshold, shed nonessential workloads first, and preserve energy for a safe stop. Do not assume self-charging or unlimited runtime.
+
+NOMAD should keep essential assistant functions local and use conservative movement behavior. Return-to-Owner must remain NOT IMPLEMENTED until independently built and field-validated. If route confidence or energy reserve is insufficient, safe-stop and manual recovery take priority.
+
+When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
