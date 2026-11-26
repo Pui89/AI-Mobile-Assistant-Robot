@@ -113,3 +113,18 @@ AI NOMAD เป็นหุ่นยนต์ผู้ช่วยเคลื�
 **สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแบบสดต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU/Accelerometer บนแชสซี และเซนเซอร์ดุมล้อหรือจุดยึดมอเตอร์เพิ่มเติมหลังทบทวนแบบ วิเคราะห์แรงสั่นจากล้อ/การกลิ้ง สัมภาระหลวมหรือเปลือกสั่น แรงกระแทกธรณีประตูและแนวโน้มระบบขับเคลื่อน โดยคำนึงถึงน้ำหนักบรรทุก
 
 Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) แสดง Not installed, No live data, Not tested และ TBD อย่างชัดเจน ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล การเลือกเซนเซอร์ จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency ต้องมีหลักฐาน AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
+
+
+## Local Product Console — แนวคิด Console ภายในผลิตภัณฑ์ (ข้อเสนอ)
+
+**สถานะ: Proposed / Not implemented / Not tested** ยังไม่มีหลักฐานว่ามี Console ของ NOMAD จริง มีการเลือกจอ หรือเชื่อมต่อ Console แบบ Live แล้ว
+
+Console ของ NOMAD ต้องสะท้อนบทบาทเฉพาะของผู้ช่วยเคลื่อนที่ขนาดกะทัดรัด/กระเป๋าเดินทาง ได้แก่ สถานะผู้ช่วย สถานะการเคลื่อนที่และนำทาง แบตเตอรี่ สถานะช่องเก็บของเมื่อมีเซนเซอร์ การแจ้งเตือนภายในเครื่อง การวินิจฉัย และสถานะ Return-to-Owner เมื่อพัฒนาฟังก์ชันดังกล่าวแล้ว โดยต้องแยก UI ออกจาก AI HOME ซึ่งเป็นผลิตภัณฑ์สำหรับใช้ในบ้าน
+
+- การใช้งานพื้นฐานภายในเครื่องต้องไม่บังคับแอปโทรศัพท์ รีโมต บัญชี Cloud หรืออินเทอร์เน็ต
+- Return-to-Owner ยังไม่ใช่ความสามารถที่ยืนยันแล้ว จนกว่าจะสร้างและทดสอบต้องแสดง NOT IMPLEMENTED พร้อมมีวิธีกู้คืนด้วยมือและหยุดอย่างปลอดภัย
+- แสดงค่าที่เซนเซอร์วัดได้ ค่าประเมินของ AI ความไม่แน่นอน และข้อมูลเก่า/ขาดหายแยกจากกัน
+- ต้นแบบเคลื่อนที่ในอนาคตต้องมีเส้นทางหยุดทางกายภาพที่เป็นอิสระ ขีดจำกัดการเคลื่อนที่ การตอบสนองต่อสิ่งกีดขวาง และ Safe State ปุ่ม Shutdown บนหน้าจอไม่ใช่ Emergency Stop
+- ใช้วงจร POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN พร้อมการจัดการ FAULT/RECOVERY
+
+ดู [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210) นี่เป็นข้อกำหนดที่เสนอ ไม่ใช่หลักฐานว่ามี NOMAD หรือ Console ที่ทำงานได้จริง
