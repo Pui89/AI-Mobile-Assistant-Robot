@@ -175,3 +175,8 @@ AI NOMAD is a compact suitcase-style four-wheel mobile assistant with an integra
 ## 360° Intelligence
 
 The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines supervised surround awareness for the user-directed four-wheel assistant, including handle, wheel, user and payload occlusion. **Status: Proposed**; no physical prototype or validated 360° sensor suite is established.
+
+
+## Environmental, Material & Safety Qualification
+
+This product follows the [PUI89 Six-Product Environmental, Material & Safety Qualification Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md). NOMAD-specific candidate requirements cover a suitcase-style four-wheel shell, reinforced impact corners, replaceable wheel modules, protected handle mounts, separated internal storage and battery/power compartments, rain/dust exposure, vibration, payload restraint and safe-stop behaviour. Candidate enclosure ratings are zone-specific and remain TBD pending design/testing. NOMAD must not be treated as ordinary passenger cabin luggage; air cargo requires carrier approval and applicable battery/dangerous-goods compliance. All requirements remain proposed; no payload, ingress, impact or fire qualification is claimed.
