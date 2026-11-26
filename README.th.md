@@ -113,3 +113,34 @@ AI NOMAD เป็นหุ่นยนต์ผู้ช่วยเคลื�
 **สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแบบสดต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU/Accelerometer บนแชสซี และเซนเซอร์ดุมล้อหรือจุดยึดมอเตอร์เพิ่มเติมหลังทบทวนแบบ วิเคราะห์แรงสั่นจากล้อ/การกลิ้ง สัมภาระหลวมหรือเปลือกสั่น แรงกระแทกธรณีประตูและแนวโน้มระบบขับเคลื่อน โดยคำนึงถึงน้ำหนักบรรทุก
 
 Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) แสดง Not installed, No live data, Not tested และ TBD อย่างชัดเจน ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล การเลือกเซนเซอร์ จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency ต้องมีหลักฐาน AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
+
+
+## Local Product Console — แนวคิด Console ภายในผลิตภัณฑ์ (ข้อเสนอ)
+
+**สถานะ: Proposed / Not implemented / Not tested** ยังไม่มีหลักฐานว่ามี Console ของ NOMAD จริง มีการเลือกจอ หรือเชื่อมต่อ Console แบบ Live แล้ว
+
+Console ของ NOMAD ต้องสะท้อนบทบาทเฉพาะของผู้ช่วยเคลื่อนที่ขนาดกะทัดรัด/กระเป๋าเดินทาง ได้แก่ สถานะผู้ช่วย สถานะการเคลื่อนที่และนำทาง แบตเตอรี่ สถานะช่องเก็บของเมื่อมีเซนเซอร์ การแจ้งเตือนภายในเครื่อง การวินิจฉัย และสถานะ Return-to-Owner เมื่อพัฒนาฟังก์ชันดังกล่าวแล้ว โดยต้องแยก UI ออกจาก AI HOME ซึ่งเป็นผลิตภัณฑ์สำหรับใช้ในบ้าน
+
+- การใช้งานพื้นฐานภายในเครื่องต้องไม่บังคับแอปโทรศัพท์ รีโมต บัญชี Cloud หรืออินเทอร์เน็ต
+- Return-to-Owner ยังไม่ใช่ความสามารถที่ยืนยันแล้ว จนกว่าจะสร้างและทดสอบต้องแสดง NOT IMPLEMENTED พร้อมมีวิธีกู้คืนด้วยมือและหยุดอย่างปลอดภัย
+- แสดงค่าที่เซนเซอร์วัดได้ ค่าประเมินของ AI ความไม่แน่นอน และข้อมูลเก่า/ขาดหายแยกจากกัน
+- ต้นแบบเคลื่อนที่ในอนาคตต้องมีเส้นทางหยุดทางกายภาพที่เป็นอิสระ ขีดจำกัดการเคลื่อนที่ การตอบสนองต่อสิ่งกีดขวาง และ Safe State ปุ่ม Shutdown บนหน้าจอไม่ใช่ Emergency Stop
+- ใช้วงจร POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN พร้อมการจัดการ FAULT/RECOVERY
+
+ดู [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210) นี่เป็นข้อกำหนดที่เสนอ ไม่ใช่หลักฐานว่ามี NOMAD หรือ Console ที่ทำงานได้จริง
+
+
+## Local Intelligence ที่เรียบง่ายสำหรับพื้นที่ Offline และไม่แน่นอน
+
+**ข้อกำหนดการออกแบบ — ยังไม่ได้พัฒนาและตรวจสอบภาคสนาม** ให้ฟังก์ชันที่จำเป็นทำงานภายในอุปกรณ์ ไม่บังคับ Cloud อินเทอร์เน็ต แอปโทรศัพท์ หรือรีโมต ใช้พลังงานอย่างประหยัด: เตือนเมื่อถึงระดับพลังงานต่ำที่ผ่านการกำหนดจากการทดสอบ ลดงานที่ไม่จำเป็นก่อน และสำรองพลังงานไว้สำหรับการหยุดอย่างปลอดภัย ห้ามสมมติว่าชาร์จไฟเองได้หรือทำงานได้ไม่จำกัดเวลา
+
+NOMAD ควรทำงานผู้ช่วยที่จำเป็นภายในเครื่องและเคลื่อนที่อย่างระมัดระวัง Return-to-Owner ต้องแสดง NOT IMPLEMENTED จนกว่าจะพัฒนาและตรวจสอบภาคสนามแยกต่างหาก หากความมั่นใจของเส้นทางหรือพลังงานสำรองไม่เพียงพอ ให้หยุดอย่างปลอดภัยและใช้การกู้คืนด้วยมือเป็นหลัก
+
+เมื่อข้อมูลขาดหาย เก่า ขัดแย้ง หรือไม่น่าเชื่อถือ ให้แสดงเหตุผลและงดการกระทำที่ได้รับผลกระทบ ใช้เฉพาะข้อมูลและความสามารถภายในเครื่องที่ตรวจสอบแล้ว หากความปลอดภัย ความมั่นใจของเส้นทาง หรือพลังงานสำรองไม่เพียงพอ ให้เข้าสู่ SAFE STOP / NEED HELP แทนการคาดเดา คำว่า “Offline capable” ไม่ได้หมายถึงรับประกันการทำงานได้ในทุกพื้นที่ห่างไกล ป่า ใต้ดิน หรือพื้นที่ภาคสนามลึก
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+กล้องมองด้านหน้า/สภาพแวดล้อมเป็นอุปกรณ์เสริมเพื่อช่วยนำทางภายในเครื่องและตรวจสอบหลังเกิดเหตุ เมื่อล้มหรือติดขัดให้หยุดระบบขับเคลื่อน ประเมินท่าทางและเส้นทาง ห้ามพลิกตัวเองหากยังไม่ได้ออกแบบและทดสอบ และไม่ถือว่า Return-to-Owner พร้อมใช้งาน

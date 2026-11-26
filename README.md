@@ -187,3 +187,34 @@ This product follows the [PUI89 Six-Product Environmental, Material & Safety Qua
 **Status: Proposed / Not implemented / Not tested.** Live vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: chassis-mounted IMU/accelerometer, with optional wheel-hub or motor-mount sensors after design review. Candidate analysis: rolling/wheel vibration, loose cargo or shell resonance, threshold impacts and drivetrain trends, accounting for payload.
 
 The console must separate **Hardware** (sensor presence/type/location/connection/calibration), **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality), **AI/Analytics** (anomaly/trend model and confidence), **Integration** (module mapping and maintenance workflow), and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Show Not installed, No live data, Not tested and TBD explicitly. Do not invent live metrics or show healthy status without sensor data. Sensor selection, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the [shared vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).
+
+
+## Local Product Console — Proposed
+
+**Status: Proposed / Not implemented / Not tested.** No physical NOMAD console, selected display hardware or live console integration is established.
+
+The NOMAD console is intended for its distinct compact mobile-assistant/suitcase role: local assistant status, movement and navigation state, battery, storage/compartment state where instrumented, local alerts, diagnostics and a proposed Return-to-Owner status when that feature is implemented. It must remain distinct from the indoor AI HOME interface.
+
+- Essential local use must not require a phone application, remote control, cloud account or internet.
+- Return-to-Owner is not a verified capability; console labels must show NOT IMPLEMENTED until built and tested. Provide manual recovery and a safe stop.
+- Display sensor measurements, AI estimates, uncertainty and stale/missing data separately.
+- Any future mobile prototype needs an independent physical stop path, motion limits, obstacle response and safe-state behavior. A touchscreen shutdown is not an emergency stop.
+- Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
+
+See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). This is a proposed product requirement, not evidence of a working NOMAD or console.
+
+
+## Simple Local Intelligence for Offline and Uncertain Conditions
+
+**Design requirement — not implemented or field-validated.** Keep essential functions on-device; no mandatory cloud, internet, phone app or remote control. Use energy conservatively: warn at a validated low-power threshold, shed nonessential workloads first, and preserve energy for a safe stop. Do not assume self-charging or unlimited runtime.
+
+NOMAD should keep essential assistant functions local and use conservative movement behavior. Return-to-Owner must remain NOT IMPLEMENTED until independently built and field-validated. If route confidence or energy reserve is insufficient, safe-stop and manual recovery take priority.
+
+When inputs are missing, stale, conflicting or unreliable, show the reason and abstain from the affected action. Use only verified local data and capabilities. If safety, route confidence or energy reserve is insufficient, enter SAFE STOP / NEED HELP rather than guessing. “Offline capable” does not mean guaranteed operation in every remote, wild, underground or deep-field environment.
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+An optional forward/environment camera may support local navigation assistance and post-event inspection. After tip-over or a jam, stop drive, assess posture and available route; do not self-right unless engineered and tested. Return-to-Owner is not assumed available.
