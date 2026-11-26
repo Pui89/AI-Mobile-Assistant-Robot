@@ -187,3 +187,18 @@ This product follows the [PUI89 Six-Product Environmental, Material & Safety Qua
 **Status: Proposed / Not implemented / Not tested.** Live vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: chassis-mounted IMU/accelerometer, with optional wheel-hub or motor-mount sensors after design review. Candidate analysis: rolling/wheel vibration, loose cargo or shell resonance, threshold impacts and drivetrain trends, accounting for payload.
 
 The console must separate **Hardware** (sensor presence/type/location/connection/calibration), **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality), **AI/Analytics** (anomaly/trend model and confidence), **Integration** (module mapping and maintenance workflow), and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Show Not installed, No live data, Not tested and TBD explicitly. Do not invent live metrics or show healthy status without sensor data. Sensor selection, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the [shared vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).
+
+
+## Local Product Console — Proposed
+
+**Status: Proposed / Not implemented / Not tested.** No physical NOMAD console, selected display hardware or live console integration is established.
+
+The NOMAD console is intended for its distinct compact mobile-assistant/suitcase role: local assistant status, movement and navigation state, battery, storage/compartment state where instrumented, local alerts, diagnostics and a proposed Return-to-Owner status when that feature is implemented. It must remain distinct from the indoor AI HOME interface.
+
+- Essential local use must not require a phone application, remote control, cloud account or internet.
+- Return-to-Owner is not a verified capability; console labels must show NOT IMPLEMENTED until built and tested. Provide manual recovery and a safe stop.
+- Display sensor measurements, AI estimates, uncertainty and stale/missing data separately.
+- Any future mobile prototype needs an independent physical stop path, motion limits, obstacle response and safe-state behavior. A touchscreen shutdown is not an emergency stop.
+- Use POWER OFF → POWER ON/SELF-CHECK → NOT READY/READY → OPERATING → STOPPING → SHUTDOWN, with FAULT/RECOVERY handling.
+
+See the [PUI89 Universal Local Console Architecture v1.0 — Draft PR](https://github.com/Pui89/PUI89-Shared-AI-Core/pull/210). This is a proposed product requirement, not evidence of a working NOMAD or console.
