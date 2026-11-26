@@ -175,3 +175,15 @@ AI NOMAD is a compact suitcase-style four-wheel mobile assistant with an integra
 ## 360° Intelligence
 
 The [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) defines supervised surround awareness for the user-directed four-wheel assistant, including handle, wheel, user and payload occlusion. **Status: Proposed**; no physical prototype or validated 360° sensor suite is established.
+
+
+## Environmental, Material & Safety Qualification
+
+This product follows the [PUI89 Six-Product Environmental, Material & Safety Qualification Framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md). NOMAD-specific candidate requirements cover a suitcase-style four-wheel shell, reinforced impact corners, replaceable wheel modules, protected handle mounts, separated internal storage and battery/power compartments, rain/dust exposure, vibration, payload restraint and safe-stop behaviour. Candidate enclosure ratings are zone-specific and remain TBD pending design/testing. NOMAD must not be treated as ordinary passenger cabin luggage; air cargo requires carrier approval and applicable battery/dangerous-goods compliance. All requirements remain proposed; no payload, ingress, impact or fire qualification is claimed.
+
+
+## Vibration Detection & Console Classification
+
+**Status: Proposed / Not implemented / Not tested.** Live vibration monitoring requires physical sensing hardware plus embedded acquisition and software/AI analysis; it is not AI-only. Candidate hardware: chassis-mounted IMU/accelerometer, with optional wheel-hub or motor-mount sensors after design review. Candidate analysis: rolling/wheel vibration, loose cargo or shell resonance, threshold impacts and drivetrain trends, accounting for payload.
+
+The console must separate **Hardware** (sensor presence/type/location/connection/calibration), **Embedded & Signal Processing** (acquisition, RMS/peak/FFT and data quality), **AI/Analytics** (anomaly/trend model and confidence), **Integration** (module mapping and maintenance workflow), and **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available). Show Not installed, No live data, Not tested and TBD explicitly. Do not invent live metrics or show healthy status without sensor data. Sensor selection, mounting, calibration, baseline, thresholds, false alarms and detection latency require evidence. AI diagnosis is advisory; independent safety controls retain stop authority. See the [shared vibration and console framework](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.md).

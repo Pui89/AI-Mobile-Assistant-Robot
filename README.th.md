@@ -101,3 +101,15 @@ AI NOMAD เป็นหุ่นยนต์ผู้ช่วยเคลื�
 ## 360° Intelligence
 
 กำหนดการรับรู้สิ่งแวดล้อมรอบ AI NOMAD สำหรับการใช้งานแบบมีผู้ใช้กำกับ โดยคำนึงถึงด้ามจับ ล้อ ผู้ใช้ สิ่งบรรทุก และจุดบอดระยะใกล้ ดู [360° Intelligence Profile v1.0](docs/PUI89_360_DEGREE_INTELLIGENCE_PROFILE_V1.0.md) และ [สถาปัตยกรรมกลาง](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/PUI89_360_DEGREE_INTELLIGENCE_V1.0.md) **สถานะ: Proposed** ยังไม่มีต้นแบบจริงหรือระบบเซนเซอร์ 360° ที่ผ่านการทดสอบ
+
+
+## การตรวจสอบคุณสมบัติด้านสภาพแวดล้อม วัสดุ และความปลอดภัย
+
+ผลิตภัณฑ์นี้ใช้ [กรอบ PUI89 Six-Product Environmental, Material & Safety Qualification](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/main/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md) ข้อกำหนดเฉพาะ NOMAD ครอบคลุมเปลือกแบบกระเป๋าเดินทาง 4 ล้อ มุมเสริมความแข็งแรง โมดูลล้อเปลี่ยนได้ จุดยึดหูจับป้องกันแรงกระแทก การแยกช่องเก็บของออกจากแบตเตอรี่/ระบบกำลัง ฝน/ฝุ่น การสั่นสะเทือน การยึดสัมภาระ และการหยุดอย่างปลอดภัย ระดับการป้องกันของแต่ละโซนยังเป็น TBD จนกว่าจะออกแบบและทดสอบ NOMAD ไม่ใช่กระเป๋าสำหรับนำขึ้นห้องโดยสารผู้โดยสาร การขนส่งทางอากาศแบบ Cargo ต้องได้รับอนุมัติจากผู้ขนส่งและปฏิบัติตามข้อกำหนดแบตเตอรี่/วัตถุอันตราย ข้อกำหนดทั้งหมดเป็นข้อเสนอ ยังไม่มีการรับรองน้ำหนักบรรทุก การกันน้ำ แรงกระแทก หรือการลามไฟ
+
+
+## การตรวจจับแรงสั่นสะเทือนและการแสดงผลบน Console
+
+**สถานะ: Proposed / Not implemented / Not tested.** การตรวจจับแบบสดต้องใช้เซนเซอร์จริงร่วมกับ Embedded Acquisition และ Software/AI ไม่ใช่ AI อย่างเดียว Hardware ที่ควรศึกษา: IMU/Accelerometer บนแชสซี และเซนเซอร์ดุมล้อหรือจุดยึดมอเตอร์เพิ่มเติมหลังทบทวนแบบ วิเคราะห์แรงสั่นจากล้อ/การกลิ้ง สัมภาระหลวมหรือเปลือกสั่น แรงกระแทกธรณีประตูและแนวโน้มระบบขับเคลื่อน โดยคำนึงถึงน้ำหนักบรรทุก
+
+Console ต้องแยก **Hardware** (มีเซนเซอร์ ชนิด/ตำแหน่ง/การเชื่อมต่อ/Calibration), **Embedded & Signal Processing** (Acquisition, RMS/Peak/FFT และคุณภาพข้อมูล), **AI/Analytics** (โมเดลตรวจจับ/แนวโน้มและ Confidence), **Integration** (จับคู่โมดูลและ Workflow ซ่อม) และ **Overall capability** (Hardware required / AI-Software only / Hardware + AI / Not available) แสดง Not installed, No live data, Not tested และ TBD อย่างชัดเจน ห้ามสร้างค่าการสั่นสดหรือแสดง Healthy เมื่อไม่มีข้อมูล การเลือกเซนเซอร์ จุดยึด Calibration Baseline Threshold False Alarm และ Detection Latency ต้องมีหลักฐาน AI เป็นคำแนะนำ ระบบความปลอดภัยอิสระมีอำนาจหยุด ดู [กรอบ Vibration และ Console ทั้ง 6 ผลิตภัณฑ์](https://github.com/Pui89/PUI89-Shared-AI-Core/blob/feature/vibration-detection-console-v1/docs/standards/PUI89_SIX_PRODUCT_ENVIRONMENTAL_MATERIAL_SAFETY_QUALIFICATION_V1.0.th.md)
