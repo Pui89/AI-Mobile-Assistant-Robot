@@ -137,3 +137,10 @@ Console ของ NOMAD ต้องสะท้อนบทบาทเฉพ�
 NOMAD ควรทำงานผู้ช่วยที่จำเป็นภายในเครื่องและเคลื่อนที่อย่างระมัดระวัง Return-to-Owner ต้องแสดง NOT IMPLEMENTED จนกว่าจะพัฒนาและตรวจสอบภาคสนามแยกต่างหาก หากความมั่นใจของเส้นทางหรือพลังงานสำรองไม่เพียงพอ ให้หยุดอย่างปลอดภัยและใช้การกู้คืนด้วยมือเป็นหลัก
 
 เมื่อข้อมูลขาดหาย เก่า ขัดแย้ง หรือไม่น่าเชื่อถือ ให้แสดงเหตุผลและงดการกระทำที่ได้รับผลกระทบ ใช้เฉพาะข้อมูลและความสามารถภายในเครื่องที่ตรวจสอบแล้ว หากความปลอดภัย ความมั่นใจของเส้นทาง หรือพลังงานสำรองไม่เพียงพอ ให้เข้าสู่ SAFE STOP / NEED HELP แทนการคาดเดา คำว่า “Offline capable” ไม่ได้หมายถึงรับประกันการทำงานได้ในทุกพื้นที่ห่างไกล ป่า ใต้ดิน หรือพื้นที่ภาคสนามลึก
+
+
+## Self-Recovery and Camera-Assisted Awareness
+
+**Proposed requirements — not implemented, camera hardware not selected, not field-validated.** A restart returns to a safe software state and repeats self-checks; it never automatically resumes motion or erases fault history. Detect stalls, impact/fall, abnormal power, sensor faults or software failures; stop safely, log the event, run bounded diagnostics and resume only after the fault is cleared. Suspected electrical short, overheating or physical damage requires hardware isolation and human inspection; do not repeatedly power-cycle. Camera inputs are local-first and are not the sole safety sensor.
+
+กล้องมองด้านหน้า/สภาพแวดล้อมเป็นอุปกรณ์เสริมเพื่อช่วยนำทางภายในเครื่องและตรวจสอบหลังเกิดเหตุ เมื่อล้มหรือติดขัดให้หยุดระบบขับเคลื่อน ประเมินท่าทางและเส้นทาง ห้ามพลิกตัวเองหากยังไม่ได้ออกแบบและทดสอบ และไม่ถือว่า Return-to-Owner พร้อมใช้งาน
