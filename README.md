@@ -14,11 +14,12 @@
 
 ## Product identity
 
-PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an integrated pull handle**. Its enclosure resembles a compact suitcase, includes an internal compartment intended to hold user belongings, and moves on four wheels. It is an AI mobile-assistance robot, not a four-legged robot or ordinary travel suitcase. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The internal compartment is for carrying approved personal items while the robot is used on the ground; storage capacity, payload and secure-retention limits remain unvalidated. NOMAD is not designed or permitted for passenger cabin carry-on or overhead-bin use on aircraft because it is an operating robot with sensitive electronic and mechanical systems that may be damaged by handling or impact. Any exceptional air-freight transport must be separately approved by the carrier and comply with applicable battery and dangerous-goods rules. The handle supports user-directed handling; it does not imply autonomous following or unsupervised operation.
+PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an integrated pull handle**. Its enclosure resembles a compact suitcase, includes an internal compartment intended to hold user belongings, and moves on four wheels. It is an AI mobile-assistance robot, not a four-legged robot or ordinary travel suitcase. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The internal compartment is for carrying approved personal items while the robot is used on the ground; storage capacity, payload and secure-retention limits remain unvalidated. NOMAD is not designed or permitted for passenger cabin carry-on or overhead-bin use on aircraft because it is an operating robot with sensitive electronic and mechanical systems that may be damaged by handling or impact. Any exceptional air-freight transport must be separately approved by the carrier and comply with applicable battery and dangerous-goods rules. The handle supports user-directed handling. The intended mobility roadmap now includes **Return-to-Owner**: when explicitly requested by its owner, NOMAD may locate/identify the paired owner and navigate back to them in a defined, supervised operating area, conceptually similar to Sentinel's return-to-owner behaviour. This is a proposed capability, not an implemented or validated function. It requires reliable owner authentication/association, localisation, route planning, obstacle and human detection, speed/distance limits, geofencing, emergency stop, loss-of-localisation handling and a safe stop whenever the route or owner identity is uncertain. NOMAD's four-wheel base has different terrain and mobility limits from Sentinel's quadruped platform; feature parity or all-terrain capability is not implied.
 
 ## Intended role
 
 NOMAD is intended to explore helpful, user-directed mobile assistance in suitable supervised environments. Candidate functions may include:
+- **Return-to-Owner (proposed):** on an explicit owner command, autonomously navigate back to the paired owner within a validated operating zone, then stop at a safe distance. Not implemented or tested.
 - Context-aware user assistance and information.
 - Obstacle and surrounding-environment awareness.
 - Status, safety and battery-related notifications where supported by verified hardware.
@@ -44,7 +45,7 @@ The 10 kg figure is a preliminary complete-product design ceiling, not a measure
 
 - Keep essential handling, power and stop functions available without an app or internet connection.
 - Use human-reviewed assistance and clearly communicate uncertainty and sensor limitations.
-- Do not claim autonomous travel, obstacle avoidance, follow-me operation, weather resistance, airline approval or any physical performance without repeatable evidence.
+- Do not claim autonomous travel, Return-to-Owner, follow-me operation, obstacle avoidance, weather resistance, airline approval or any physical performance as implemented without repeatable evidence.
 - Distinguish design proposals, implemented software, test results and validated physical capabilities.
 
 ## Development status
