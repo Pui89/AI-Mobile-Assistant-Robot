@@ -12,6 +12,16 @@
 
 *Concept illustration only. It is not evidence of a built, integrated, tested or validated product.*
 
+## Image Evidence & Licensing Standard
+
+**Real-world reference:** cite existing compact four-wheel service robots, mobile-assistant platforms, handles, wheels, sensors and relevant indoor/outdoor routes. References illustrate available components and contexts, not a completed PUI89 NOMAD.
+
+**PUI89 concept image:** NOMAD artwork represents the proposed compact dog-inspired four-wheel assistant with an integrated handle. It is a design concept, not evidence of a built or validated product.
+
+**Evidence caption:** identify real third-party reference equipment, PUI89 concept artwork, simulations and verified prototype tests separately. Never imply autonomous following, payload capacity, range or terrain capability without measured evidence.
+
+**Image source & licence:** prefer [Wikimedia Commons](https://commons.wikimedia.org/) and [Pexels](https://www.pexels.com/). Preserve the source page, creator, asset URL, licence, attribution, access date and edit history. Verify each asset's exact licence and commercial/derivative permissions.
+
 ## Product identity
 
 PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an integrated pull handle**. Its enclosure resembles a compact suitcase, and it moves on four wheels. It is a mobile-assistance robot, not a four-legged robot or ordinary luggage. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The handle supports user-directed handling; it does not imply autonomous following or unsupervised operation.
