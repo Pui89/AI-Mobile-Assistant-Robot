@@ -3,11 +3,11 @@
 **Status:** Proposed product-specific requirements; no physical prototype or integrated 360° sensor suite is established.
 
 ## Mission
-Give the user a clear, local understanding of the immediate surroundings of the compact dog-inspired four-wheel assistant. The integrated handle and user-directed handling remain part of the product identity.
+Support a discreet suitcase-style personal assistant that can provide its owner with a clear, local understanding of nearby surroundings while blending naturally into everyday travel settings. The intended public presence is understated and non-threatening—not that of an obvious robot or robotic bodyguard. The upright luggage form, four integrated wheels and retractable telescopic handle are the canonical product identity.
 
 ## Candidate workflow
 1. Define supervised indoor and suitable outdoor operating zones.
-2. Map candidate sensor fields of view around the body, handle, wheels and carried loads.
+2. Map candidate sensor fields of view around the upright suitcase body, telescopic handle, four wheels and carried loads; integrate sensors discreetly without sacrificing coverage or serviceability.
 3. Detect relevant obstacles, people and environmental context; preserve object tracks only when continuity is verified.
 4. Estimate local free/occupied/unknown space only when calibrated depth or range evidence exists.
 5. Provide concise status and route-context advice; stop or request human input when coverage or localisation is uncertain.
@@ -16,14 +16,16 @@ Give the user a clear, local understanding of the immediate surroundings of the 
 RGB/depth object detection, segmentation, short-horizon tracking, optional visual-inertial/SLAM and sensor fusion. Select modalities only after mission, mass, power, weather exposure, privacy and compute budgets are defined.
 
 ## 360° requirements
-- Define horizontal/elevation coverage at all expected body and handle configurations.
+- Define horizontal/elevation coverage at all expected suitcase-body and telescopic-handle configurations.
+- Prefer discreetly integrated sensing and minimal non-essential illumination; retain clear owner-facing and safety-critical status indications.
+- Evaluate wheel noise, motion smoothness, approach distance, turning and stopping behaviour as human-factors properties; do not infer them from perception coverage.
 - Include wheel-level near-field blind zones, self-occlusion, user legs, handle, payload and environmental occlusion.
 - Distinguish "not observed" from "clear"; loss of a sensor or localisation confidence must trigger a conservative degraded mode.
 - No automatic follow-me, obstacle-avoidance or public-space autonomy claim follows from this document.
 - Keep local operation and essential physical controls independent of app, internet and cloud connectivity.
 
 ## Safety and exclusions
-NOMAD remains user-directed and supervised. AI outputs are advisory; no autonomous motion or unsafe manoeuvre is authorised by perception alone. Do not infer all-terrain, weatherproofing, payload or battery endurance.
+NOMAD remains user-directed and supervised. AI outputs are advisory; no autonomous motion or unsafe manoeuvre is authorised by perception alone. A discreet luggage-like appearance must not hide safety-critical status or override venue rules. Do not infer all-terrain, weatherproofing, payload, quiet operation, follow-me capability or battery endurance without measured evidence.
 
 ## Evidence gates
 User journey/operating envelope → sensor coverage and privacy review → synthetic obstacle and occlusion tests → bench calibration → controlled supervised mobility tests → independent validation.
