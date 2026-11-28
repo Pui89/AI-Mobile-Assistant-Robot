@@ -74,14 +74,14 @@ NOMAD may reuse versioned interfaces and evidence practices from the [PUI89 Shar
 **Maturity:** Implemented — early software foundation. **Evidence status:** PARTIAL. The product remains a compact dog-inspired four-wheel mobile-assistant concept; this status does not imply a built or integrated robot.
 
 **Recent verified repository progress:**
-- The dog-inspired four-wheel body is the canonical product direction; it is not a quadruped and does not use articulated legs. This supersedes the earlier suitcase-style identityseded.
+- The dog-inspired four-wheel body is the canonical product direction; it is not a quadruped and does not use articulated legs. This supersedes the earlier suitcase-style identity.
 - The intended form is a compact dog-inspired four-wheel assistant with an integrated pull handle; the 8–10 kg target and 10 kg maximum remain design targets, not measured prototype values.
 
 **Not established:** a physical prototype, integrated sensor suite, validated mobility/stability performance, environmental protection, battery endurance or field reliability.
 
 **Next evidence gate:** validate the primary user journey and ergonomic requirements; baseline external dimensions, handle geometry, four-wheel arrangement, stability, complete mass budget, sensor placement, power budget, privacy controls and measurable acceptance criteria before selecting hardware.
 
-**Last reviewed:** 26 November 2026. See the [suitcase-style four-wheel identity correction PR](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/135).
+**Last reviewed:** 26 November 2026. See the [historical suitcase-style identity correction PR (superseded by the 28 November 2026 owner-confirmed direction)](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/135).
 
 ## Global manufacturing engineering
 
@@ -180,7 +180,7 @@ A compact mobile assistant has limited compute, memory, battery energy and therm
 A reproducible resource-aware inference policy showing when lightweight specialist perception is sufficient, when semantic escalation is useful, and how uncertainty and compute constraints should govern degraded operation.
 
 ### Product and publication boundaries
-AI NOMAD is a compact suitcase-style four-wheel mobile assistant with an integrated pull handle; its approximately 7 kg mass target and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
+AI NOMAD is a compact, dog-inspired four-wheel mobile assistant with an integrated manual handling/repositioning handle; its approximately 7 kg target mass and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
 
 ## 360° Intelligence
 
