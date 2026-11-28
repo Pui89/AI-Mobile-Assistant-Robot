@@ -16,7 +16,7 @@
 
 **Real-world reference:** cite existing compact four-wheel service robots, mobile-assistant platforms, handles, wheels, sensors and relevant indoor/outdoor routes. References illustrate available components and contexts, not a completed PUI89 NOMAD.
 
-**PUI89 concept image:** NOMAD artwork represents the proposed compact dog-inspired four-wheel assistant with an integrated handle. It is a design concept, not evidence of a built or validated product.
+**PUI89 concept image:** NOMAD artwork represents an upright suitcase-style assistant with four integrated wheels and a retractable telescopic handle, in Deep Navy with restrained Electric Cyan details. It is a design concept, not evidence of a built or validated product.
 
 **Evidence caption:** identify real third-party reference equipment, PUI89 concept artwork, simulations and verified prototype tests separately. Never imply autonomous following, payload capacity, range or terrain capability without measured evidence.
 
@@ -24,7 +24,13 @@
 
 ## Product identity
 
-PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an integrated pull handle**. Its enclosure resembles a compact suitcase, and it moves on four wheels. It is a mobile-assistance robot, not a four-legged robot or ordinary luggage. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The handle supports user-directed handling; it does not imply autonomous following or unsupervised operation.
+PUI89 AI NOMAD is an **upright suitcase-style mobile assistant designed to blend into everyday travel settings**. Its defining form is ordinary premium luggage: four integrated wheels, a retractable telescopic handle, a Deep Navy finish and restrained Electric Cyan details. It should remain understated and non-threatening, so people nearby do not immediately perceive it as a robot or robotic bodyguard. Its design goal is to accompany and assist its owner without attracting unnecessary attention. The handle also supports user-directed manual handling; it does not imply autonomous following or unsupervised operation.
+
+## Discreet design philosophy
+
+> **Designed to blend in, built to assist.**
+
+NOMAD should look like a normal premium suitcase rather than an obvious robot. Its public presence should be understated, quiet and non-threatening—useful without becoming the centre of attention. Movement should be smooth, predictable and natural when future engineering and testing support it. Avoid unnecessary lighting, sounds, exposed robotic styling and abrupt motion. This is a design objective, not a validated behavioural capability. Safety-critical status and legally required disclosures must remain clear.
 
 ## Intended role
 
