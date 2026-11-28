@@ -81,7 +81,7 @@ NOMAD may reuse versioned interfaces and evidence practices from the [PUI89 Shar
 
 **Next evidence gate:** validate the primary user journey and ergonomic requirements; baseline external dimensions, handle geometry, four-wheel arrangement, stability, complete mass budget, sensor placement, power budget, privacy controls and measurable acceptance criteria before selecting hardware.
 
-**Last reviewed:** 26 November 2026. See the [historical suitcase-style identity correction PR (superseded by the 28 November 2026 owner-confirmed direction)](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/135).
+**Last reviewed:** 28 November 2026. See the [historical suitcase-style identity correction PR (superseded by the 28 November 2026 owner-confirmed direction)](https://github.com/Pui89/AI-Mobile-Assistant-Robot/pull/135).
 
 ## Global manufacturing engineering
 
