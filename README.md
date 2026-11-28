@@ -6,7 +6,7 @@
 
 
 
-**A compact suitcase-style mobile assistant with four wheels and an integrated pull handle.**
+**A compact suitcase-style mobile assistant with four wheels and an retractable telescopic handle.**
 
 [English project page](https://pui89.github.io/nomad.html) · [ภาษาไทย](https://pui89.github.io/nomad-th.html) · [PUI89 portfolio](https://pui89.github.io/)
 
@@ -16,7 +16,7 @@
 
 **Real-world reference:** cite existing compact four-wheel service robots, mobile-assistant platforms, handles, wheels, sensors and relevant indoor/outdoor routes. References illustrate available components and contexts, not a completed PUI89 NOMAD.
 
-**PUI89 concept image:** NOMAD artwork represents the proposed compact dog-inspired four-wheel assistant with an integrated handle. It is a design concept, not evidence of a built or validated product.
+**PUI89 concept image:** NOMAD artwork represents the proposed compact discreet premium upright suitcase-style four-wheel assistant with an retractable telescopic handle. It is a design concept, not evidence of a built or validated product.
 
 **Evidence caption:** identify real third-party reference equipment, PUI89 concept artwork, simulations and verified prototype tests separately. Never imply autonomous following, payload capacity, range or terrain capability without measured evidence.
 
@@ -24,7 +24,7 @@
 
 ## Product identity
 
-PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an integrated pull handle**. Its enclosure resembles a compact suitcase, and it moves on four wheels. It is a mobile-assistance robot, not a four-legged robot or ordinary luggage. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The handle supports user-directed handling; it does not imply autonomous following or unsupervised operation.
+PUI89 AI NOMAD is a **suitcase-style four-wheel mobile assistant with an retractable telescopic handle**. Its enclosure resembles a compact suitcase, and it moves on four wheels. It is a mobile-assistance robot, not a four-legged robot or ordinary luggage. Its defining product identity is a small, mobile assistant platform distinct from the indoor AI HOME robot. The handle supports user-directed handling; it does not imply autonomous following or unsupervised operation.
 
 ## Intended role
 
@@ -41,7 +41,7 @@ These are proposed product directions, not verified or implemented capabilities.
 
 | Element | Design direction | Evidence status |
 |---|---|---|
-| Form | Compact suitcase-style mobile assistant with four wheels and an integrated pull handle | Design direction |
+| Form | Compact suitcase-style mobile assistant with four wheels and an retractable telescopic handle | Design direction |
 | Handling | Integrated user-handling handle | Design direction |
 | Mobility | Four-wheel mobile base; layout and drive system to be engineered | Design direction |
 | Intelligence | Discreet embedded sensing and user interaction | Concept |
@@ -74,8 +74,8 @@ NOMAD may reuse versioned interfaces and evidence practices from the [PUI89 Shar
 **Maturity:** Implemented — early software foundation. **Evidence status:** PARTIAL. The product remains a compact suitcase-style four-wheel mobile-assistant concept; this status does not imply a built or integrated robot.
 
 **Recent verified repository progress:**
-- The suitcase-style body is the canonical product direction; references to a dog-inspired or four-legged form are incorrect and superseded.
-- The intended form is a compact suitcase-style four-wheel assistant with an integrated pull handle; the 8–10 kg target and 10 kg maximum remain design targets, not measured prototype values.
+- The suitcase-style body is the canonical product direction; references to a discreet premium upright suitcase-style or four-legged form are incorrect and superseded.
+- The intended form is a compact suitcase-style four-wheel assistant with an retractable telescopic handle; the 8–10 kg target and 10 kg maximum remain design targets, not measured prototype values.
 
 **Not established:** a physical prototype, integrated sensor suite, validated mobility/stability performance, environmental protection, battery endurance or field reliability.
 
@@ -180,7 +180,7 @@ A compact mobile assistant has limited compute, memory, battery energy and therm
 A reproducible resource-aware inference policy showing when lightweight specialist perception is sufficient, when semantic escalation is useful, and how uncertainty and compute constraints should govern degraded operation.
 
 ### Product and publication boundaries
-AI NOMAD is a compact suitcase-style four-wheel mobile assistant with an integrated pull handle; its 8–10 kg mass target and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
+AI NOMAD is a compact suitcase-style four-wheel mobile assistant with an retractable telescopic handle; its 8–10 kg mass target and 10 kg maximum design limit are unvalidated. It is distinct from indoor AI HOME. Check model/data provenance, licence and non-Chinese origin before use. Do not claim outdoor navigation, payload, runtime or safe operation without measured tests. Q1 publication is a target, not a guarantee.
 
 ## 360° Intelligence
 
