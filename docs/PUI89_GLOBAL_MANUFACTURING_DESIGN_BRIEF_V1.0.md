@@ -35,6 +35,16 @@ Must remain easy to lift, pull, roll, store and service. Handle ergonomics for d
 
 Use representative anthropometric datasets for intended markets and validate with users of different body sizes, ages, abilities, clothing and protective equipment. Provide clear physical controls, readable alerts, accessible service points and local-language/operator documentation where needed. Do not claim universal fit; document the tested user population and limitations.
 
+### 5.1 Discreet public-space form and behaviour
+
+- The canonical exterior is an upright, premium suitcase-style enclosure—not a low rover, dog-inspired body, quadruped or humanoid bodyguard form.
+- Use four integrated luggage-style wheels and a retractable telescopic handle; detailed caster geometry, drive architecture and handle dimensions remain subject to engineering review.
+- Deep Navy is the primary exterior direction, with restrained Electric Cyan accents. Avoid excessive glow, conspicuous light bars, exposed mechanical limbs, face-like displays or aggressive security styling.
+- Integrate cameras and sensors into the enclosure with a clean luggage-like appearance while preserving required fields of view, serviceability and safety visibility.
+- Target smooth, quiet, predictable movement and unobtrusive owner accompaniment. These are human-factors objectives requiring acoustic, motion, stability and user studies; they are not current performance claims.
+- Public-space discretion must not conceal safety-critical status, bypass venue/security rules or mislead the owner or bystanders where disclosure is required.
+- Evaluate luggage-like handling, wheel noise, turning behaviour, approach distance, stopping behaviour, visual salience and perceived comfort in representative user studies before making usability claims.
+
 ## 6. Extreme-environment design strategy
 
 PUI89's programme-level study envelope is -50°C to +60°C. This is a design objective, not a blanket operating rating. Each subsystem must have separate operating, storage, transport, charging and survival limits.
